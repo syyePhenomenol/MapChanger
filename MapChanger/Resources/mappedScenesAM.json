@@ -1,0 +1,90 @@
+﻿{
+  "White_Palace_01": {
+    "MappedScene": "White_Palace_01",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_02": {
+    "MappedScene": "White_Palace_02",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_03_hub": {
+    "MappedScene": "White_Palace_03_hub",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_04": {
+    "MappedScene": "White_Palace_04",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_05": {
+    "MappedScene": "White_Palace_05",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_06": {
+    "MappedScene": "White_Palace_06",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_07": {
+    "MappedScene": "White_Palace_07",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_08": {
+    "MappedScene": "White_Palace_08",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_09": {
+    "MappedScene": "White_Palace_09",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_11": {
+    "MappedScene": "White_Palace_01",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_12": {
+    "MappedScene": "White_Palace_12",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_13": {
+    "MappedScene": "White_Palace_13",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_14": {
+    "MappedScene": "White_Palace_14",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_15": {
+    "MappedScene": "White_Palace_15",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_16": {
+    "MappedScene": "White_Palace_16",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_17": {
+    "MappedScene": "White_Palace_17",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_18": {
+    "MappedScene": "White_Palace_18",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_19": {
+    "MappedScene": "White_Palace_19",
+    "MapZone": "WHITE_PALACE"
+  },
+  "White_Palace_20": {
+    "MappedScene": "White_Palace_20",
+    "MapZone": "WHITE_PALACE"
+  },
+  "GG_Atrium": {
+    "MappedScene": "GG_Atrium",
+    "MapZone": "GODS_GLORY"
+  },
+  "GG_Workshop": {
+    "MappedScene": "GG_Atrium",
+    "MapZone": "GODS_GLORY"
+  },
+  "GG_Atrium_Roof": {
+    "MappedScene": "GG_Atrium_Roof",
+    "MapZone": "GODS_GLORY"
+  }
+}

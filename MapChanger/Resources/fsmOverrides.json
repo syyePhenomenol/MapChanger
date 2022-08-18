@@ -1,0 +1,1166 @@
+{
+  "Knight-Map Control": {
+    "BoolsIndex": {
+      "Button Down Check": [
+        {
+          "Index": 1,
+          "Type": "Map"
+        }
+      ],
+      "Has Map?": [
+        {
+          "Index": 3,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Inventory-Inventory Control": {
+    "BoolsIndex": {
+      "Next Map": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Next Map 2": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Next Map 3": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "World Map-UI Control": {
+    "BoolsIndex": {
+      "Ancient Basin": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "City": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Cliffs": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Crossroads": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Deepnest": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Fog Canyon": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Fungus": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Greenpath": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Hive": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Mines": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Outskirts": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Resting Grounds": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Royal Gardens": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Waterways": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "WHITE_PALACE": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "GODS_GLORY": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Activate": [
+        {
+          "Index": 8,
+          "Type": "Map"
+        }
+      ],
+      //"Have Markers?": [
+      //  {
+      //    "Index": 0,
+      //    "Type": "Pins"
+      //  }
+      //],
+      "To Map": [
+        {
+          "Index": 1,
+          "Type": "Map"
+        },
+        {
+          "Index": 2,
+          "Type": "Map"
+        },
+        {
+          "Index": 3,
+          "Type": "Map"
+        },
+        {
+          "Index": 4,
+          "Type": "Map"
+        },
+        {
+          "Index": 5,
+          "Type": "Map"
+        },
+        {
+          "Index": 6,
+          "Type": "Map"
+        },
+        {
+          "Index": 8,
+          "Type": "Map"
+        },
+        {
+          "Index": 9,
+          "Type": "Map"
+        },
+        {
+          "Index": 10,
+          "Type": "Map"
+        },
+        {
+          "Index": 11,
+          "Type": "Map"
+        },
+        {
+          "Index": 12,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+      "Ab Left": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "Ab Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "Ab Up": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "C Down": {
+        "Range": 4,
+        "Type": "Map"
+      },
+      "C Left": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "C Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "C Up": {
+        "Range": 3,
+        "Type": "Map"
+      },
+      "Cl Down": {
+        "Range": 9,
+        "Type": "Map"
+      },
+      "CR Down": {
+        "Range": 7,
+        "Type": "Map"
+      },
+      "CR Left": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "CR Right": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "D Right": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "D Up": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "FG Down": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "FG Left": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "FG Right": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "FG Up": {
+        "Range": 3,
+        "Type": "Map"
+      },
+      "FW Down": {
+        "Range": 3,
+        "Type": "Map"
+      },
+      "FW Left": {
+        "Range": 4,
+        "Type": "Map"
+      },
+      "FW Right": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "FW Up": {
+        "Range": 3,
+        "Type": "Map"
+      },
+      "GP Down": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "GP Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "GP Up": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "Hive Down": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "Mi Down": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "Mi Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "Out Down": {
+        "Range": 2,
+        "Type": "Map"
+      },
+      "Out Left": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "Out Up": {
+        "Range": 3,
+        "Type": "Map"
+      },
+      "Pos Check": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "QG Down": {
+        "Range": 4,
+        "Type": "Map"
+      },
+      "QG Right": {
+        "Range": 8,
+        "Type": "Map"
+      },
+      "QG Up": {
+        "Range": 2,
+        "Type": "Map"
+      },
+      "RG Down": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      "RG Left": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "RG Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "RG Up": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "T Down": {
+        "Range": 10,
+        "Type": "Map"
+      },
+      "T Left": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "T Right": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "Wat Down": {
+        "Range": 2,
+        "Type": "Map"
+      },
+      "Wat Left": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      "Wat Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      "Wat Up": {
+        "Range": 4,
+        "Type": "Map"
+      }
+    }
+  },
+  "Ancient Basin-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "City-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Cliffs-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Crossroads-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Deepnest-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Fog Canyon-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Fungal Wastes-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Greenpath-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Hive-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Mines-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Outskirts-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Resting Grounds-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Royal Gardens-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Waterways-deactivate": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Quick Map-Quick Map": {
+    "BoolsIndex": {
+      "Abyss": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "City": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Cliffs": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Crossroads": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Deepnest": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Fog Canyon": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Fungal Wastes": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Greenpath": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Mines": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Outskirts": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Resting Grounds": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Royal Gardens": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "Waterways": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "WHITE_PALACE": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ],
+      "GODS_GLORY": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Bench Control": {
+    "BoolsIndex": {
+      "Open Map": [
+        {
+          "Index": 0,
+          "Type": "Map"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Map Key-Control": {
+    "BoolsIndex": {
+      "Draw Pins": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Bench": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Cocoon": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Vendor": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Dream Plant": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Spa": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Stag": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Tram": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Ghost": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Grub": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Dreamer": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ],
+      "Check Black Egg": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "toll_bench_pin": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Check Grub Map Owned": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Backer Ghost-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        },
+        {
+          "Index": 3,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_banker-pin_activation": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_charm_slug-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_colosseum-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_dream moth-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_grub_king-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_hunter-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_jiji-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_leg eater-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_mapper-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_nailsmith-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_relic_dealer-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_sly (1)-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_sly-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        },
+        {
+          "Index": 2,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_spa-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_stag_station (7)-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_stag_station-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_tram-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_bench-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "pin_bench(Clone)(Clone)-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+        //{
+        //  "Index": 2,
+        //  "Type": "Pins"
+        //}
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_BlackEgg-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Beast-Display": {
+    "BoolsIndex": {
+      "Init": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Teacher-Display": {
+    "BoolsIndex": {
+      "Init": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Watcher-Display": {
+    "BoolsIndex": {
+      "Init": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Beast-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Teacher-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  },
+  "Pin_Watcher-FSM": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 0,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
+  }
+}

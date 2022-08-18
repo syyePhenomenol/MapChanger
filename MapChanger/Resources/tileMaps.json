@@ -1,0 +1,1612 @@
+{
+  "Tutorial_01": {
+    "SceneName": "Tutorial_01",
+    "Width": 201,
+    "Height": 80
+  },
+  "Deepnest_36": {
+    "SceneName": "Deepnest_36",
+    "Width": 80,
+    "Height": 28
+  },
+  "Fungus2_11": {
+    "SceneName": "Fungus2_11",
+    "Width": 31,
+    "Height": 70
+  },
+  "Abyss_19": {
+    "SceneName": "Abyss_19",
+    "Width": 160,
+    "Height": 94
+  },
+  "Ruins2_05": {
+    "SceneName": "Ruins2_05",
+    "Width": 55,
+    "Height": 84
+  },
+  "Deepnest_02": {
+    "SceneName": "Deepnest_02",
+    "Width": 31,
+    "Height": 76
+  },
+  "RestingGrounds_10": {
+    "SceneName": "RestingGrounds_10",
+    "Width": 230,
+    "Height": 30
+  },
+  "Fungus1_12": {
+    "SceneName": "Fungus1_12",
+    "Width": 32,
+    "Height": 67
+  },
+  "Hive_01": {
+    "SceneName": "Hive_01",
+    "Width": 120,
+    "Height": 62
+  },
+  "Mines_20": {
+    "SceneName": "Mines_20",
+    "Width": 75,
+    "Height": 201
+  },
+  "Cliffs_02": {
+    "SceneName": "Cliffs_02",
+    "Width": 240,
+    "Height": 85
+  },
+  "Abyss_04": {
+    "SceneName": "Abyss_04",
+    "Width": 100,
+    "Height": 90
+  },
+  "Deepnest_10": {
+    "SceneName": "Deepnest_10",
+    "Width": 75,
+    "Height": 150
+  },
+  "RestingGrounds_05": {
+    "SceneName": "RestingGrounds_05",
+    "Width": 45,
+    "Height": 95
+  },
+  "Ruins1_32": {
+    "SceneName": "Ruins1_32",
+    "Width": 52,
+    "Height": 120
+  },
+  "White_Palace_02": {
+    "SceneName": "White_Palace_02",
+    "Width": 160,
+    "Height": 90
+  },
+  "White_Palace_18": {
+    "SceneName": "White_Palace_18",
+    "Width": 300,
+    "Height": 108
+  },
+  "Crossroads_47": {
+    "SceneName": "Crossroads_47",
+    "Width": 47,
+    "Height": 19
+  },
+  "Abyss_10": {
+    "SceneName": "Abyss_10",
+    "Width": 121,
+    "Height": 55
+  },
+  "Abyss_12": {
+    "SceneName": "Abyss_12",
+    "Width": 180,
+    "Height": 30
+  },
+  "Abyss_21": {
+    "SceneName": "Abyss_21",
+    "Width": 170,
+    "Height": 265
+  },
+  "Crossroads_50": {
+    "SceneName": "Crossroads_50",
+    "Width": 260,
+    "Height": 60
+  },
+  "Deepnest_East_12": {
+    "SceneName": "Deepnest_East_12",
+    "Width": 120,
+    "Height": 35
+  },
+  "Town": {
+    "SceneName": "Town",
+    "Width": 263,
+    "Height": 70
+  },
+  "Room_Mask_Maker": {
+    "SceneName": "Room_Mask_Maker",
+    "Width": 60,
+    "Height": 23
+  },
+  "Crossroads_01": {
+    "SceneName": "Crossroads_01",
+    "Width": 100,
+    "Height": 42
+  },
+  "Crossroads_02": {
+    "SceneName": "Crossroads_02",
+    "Width": 90,
+    "Height": 35
+  },
+  "Crossroads_03": {
+    "SceneName": "Crossroads_03",
+    "Width": 30,
+    "Height": 72
+  },
+  "Crossroads_04": {
+    "SceneName": "Crossroads_04",
+    "Width": 160,
+    "Height": 30
+  },
+  "Crossroads_05": {
+    "SceneName": "Crossroads_05",
+    "Width": 75,
+    "Height": 25
+  },
+  "Crossroads_06": {
+    "SceneName": "Crossroads_06",
+    "Width": 60,
+    "Height": 60
+  },
+  "Crossroads_07": {
+    "SceneName": "Crossroads_07",
+    "Width": 43,
+    "Height": 115
+  },
+  "Crossroads_08": {
+    "SceneName": "Crossroads_08",
+    "Width": 52,
+    "Height": 43
+  },
+  "Crossroads_09": {
+    "SceneName": "Crossroads_09",
+    "Width": 86,
+    "Height": 25
+  },
+  "Crossroads_10": {
+    "SceneName": "Crossroads_10",
+    "Width": 75,
+    "Height": 68
+  },
+  "Crossroads_11_alt": {
+    "SceneName": "Crossroads_11_alt",
+    "Width": 120,
+    "Height": 36
+  },
+  "Crossroads_12": {
+    "SceneName": "Crossroads_12",
+    "Width": 70,
+    "Height": 24
+  },
+  "Crossroads_13": {
+    "SceneName": "Crossroads_13",
+    "Width": 80,
+    "Height": 47
+  },
+  "Crossroads_14": {
+    "SceneName": "Crossroads_14",
+    "Width": 33,
+    "Height": 48
+  },
+  "Crossroads_15": {
+    "SceneName": "Crossroads_15",
+    "Width": 60,
+    "Height": 18
+  },
+  "Crossroads_16": {
+    "SceneName": "Crossroads_16",
+    "Width": 76,
+    "Height": 27
+  },
+  "Crossroads_18": {
+    "SceneName": "Crossroads_18",
+    "Width": 41,
+    "Height": 50
+  },
+  "Crossroads_19": {
+    "SceneName": "Crossroads_19",
+    "Width": 50,
+    "Height": 45
+  },
+  "Crossroads_21": {
+    "SceneName": "Crossroads_21",
+    "Width": 100,
+    "Height": 29
+  },
+  "Crossroads_22": {
+    "SceneName": "Crossroads_22",
+    "Width": 105,
+    "Height": 35
+  },
+  "Crossroads_25": {
+    "SceneName": "Crossroads_25",
+    "Width": 70,
+    "Height": 27
+  },
+  "Crossroads_27": {
+    "SceneName": "Crossroads_27",
+    "Width": 30,
+    "Height": 72
+  },
+  "Crossroads_30": {
+    "SceneName": "Crossroads_30",
+    "Width": 50,
+    "Height": 23
+  },
+  "Crossroads_31": {
+    "SceneName": "Crossroads_31",
+    "Width": 69,
+    "Height": 23
+  },
+  "Crossroads_33": {
+    "SceneName": "Crossroads_33",
+    "Width": 45,
+    "Height": 50
+  },
+  "Crossroads_35": {
+    "SceneName": "Crossroads_35",
+    "Width": 70,
+    "Height": 75
+  },
+  "Crossroads_36": {
+    "SceneName": "Crossroads_36",
+    "Width": 60,
+    "Height": 58
+  },
+  "Crossroads_37": {
+    "SceneName": "Crossroads_37",
+    "Width": 110,
+    "Height": 30
+  },
+  "Crossroads_38": {
+    "SceneName": "Crossroads_38",
+    "Width": 70,
+    "Height": 25
+  },
+  "Crossroads_39": {
+    "SceneName": "Crossroads_39",
+    "Width": 88,
+    "Height": 25
+  },
+  "Crossroads_40": {
+    "SceneName": "Crossroads_40",
+    "Width": 88,
+    "Height": 25
+  },
+  "Crossroads_42": {
+    "SceneName": "Crossroads_42",
+    "Width": 110,
+    "Height": 25
+  },
+  "Crossroads_43": {
+    "SceneName": "Crossroads_43",
+    "Width": 88,
+    "Height": 25
+  },
+  "Crossroads_45": {
+    "SceneName": "Crossroads_45",
+    "Width": 70,
+    "Height": 50
+  },
+  "Crossroads_46": {
+    "SceneName": "Crossroads_46",
+    "Width": 55,
+    "Height": 25
+  },
+  "Crossroads_46b": {
+    "SceneName": "Crossroads_46b",
+    "Width": 55,
+    "Height": 25
+  },
+  "Crossroads_48": {
+    "SceneName": "Crossroads_48",
+    "Width": 57,
+    "Height": 19
+  },
+  "Crossroads_49": {
+    "SceneName": "Crossroads_49",
+    "Width": 30,
+    "Height": 176
+  },
+  "Crossroads_49b": {
+    "SceneName": "Crossroads_49b",
+    "Width": 30,
+    "Height": 86
+  },
+  "Crossroads_52": {
+    "SceneName": "Crossroads_52",
+    "Width": 55,
+    "Height": 70
+  },
+  "Ruins_Elevator": {
+    "SceneName": "Ruins_Elevator",
+    "Width": 95,
+    "Height": 160
+  },
+  "Ruins_Bathhouse": {
+    "SceneName": "Ruins_Bathhouse",
+    "Width": 80,
+    "Height": 50
+  },
+  "Ruins1_01": {
+    "SceneName": "Ruins1_01",
+    "Width": 129,
+    "Height": 35
+  },
+  "Ruins1_02": {
+    "SceneName": "Ruins1_02",
+    "Width": 60,
+    "Height": 76
+  },
+  "Ruins1_03": {
+    "SceneName": "Ruins1_03",
+    "Width": 150,
+    "Height": 70
+  },
+  "Ruins1_04": {
+    "SceneName": "Ruins1_04",
+    "Width": 150,
+    "Height": 60
+  },
+  "Ruins1_05": {
+    "SceneName": "Ruins1_05",
+    "Width": 65,
+    "Height": 167
+  },
+  "Ruins1_05b": {
+    "SceneName": "Ruins1_05b",
+    "Width": 65,
+    "Height": 35
+  },
+  "Ruins1_05c": {
+    "SceneName": "Ruins1_05c",
+    "Width": 65,
+    "Height": 167
+  },
+  "Ruins1_06": {
+    "SceneName": "Ruins1_06",
+    "Width": 100,
+    "Height": 40
+  },
+  "Ruins1_09": {
+    "SceneName": "Ruins1_09",
+    "Width": 80,
+    "Height": 30
+  },
+  "Ruins1_17": {
+    "SceneName": "Ruins1_17",
+    "Width": 90,
+    "Height": 70
+  },
+  "Ruins1_18": {
+    "SceneName": "Ruins1_18",
+    "Width": 90,
+    "Height": 40
+  },
+  "Ruins1_23": {
+    "SceneName": "Ruins1_23",
+    "Width": 50,
+    "Height": 87
+  },
+  "Ruins1_30": {
+    "SceneName": "Ruins1_30",
+    "Width": 80,
+    "Height": 65
+  },
+  "Ruins1_24": {
+    "SceneName": "Ruins1_24",
+    "Width": 70,
+    "Height": 60
+  },
+  "Ruins1_25": {
+    "SceneName": "Ruins1_25",
+    "Width": 40,
+    "Height": 120
+  },
+  "Ruins1_27": {
+    "SceneName": "Ruins1_27",
+    "Width": 80,
+    "Height": 47
+  },
+  "Ruins1_28": {
+    "SceneName": "Ruins1_28",
+    "Width": 120,
+    "Height": 40
+  },
+  "Ruins1_29": {
+    "SceneName": "Ruins1_29",
+    "Width": 47,
+    "Height": 19
+  },
+  "Ruins1_31": {
+    "SceneName": "Ruins1_31",
+    "Width": 65,
+    "Height": 75
+  },
+  "Ruins1_31b": {
+    "SceneName": "Ruins1_31b",
+    "Width": 65,
+    "Height": 75
+  },
+  "Ruins2_01": {
+    "SceneName": "Ruins2_01",
+    "Width": 80,
+    "Height": 90
+  },
+  "Ruins2_01_b": {
+    "SceneName": "Ruins2_01_b",
+    "Width": 80,
+    "Height": 48
+  },
+  "Ruins2_03": {
+    "SceneName": "Ruins2_03",
+    "Width": 80,
+    "Height": 124
+  },
+  "Ruins2_03b": {
+    "SceneName": "Ruins2_03b",
+    "Width": 80,
+    "Height": 124
+  },
+  "Ruins2_04": {
+    "SceneName": "Ruins2_04",
+    "Width": 150,
+    "Height": 70
+  },
+  "Ruins2_06": {
+    "SceneName": "Ruins2_06",
+    "Width": 55,
+    "Height": 52
+  },
+  "Ruins2_07": {
+    "SceneName": "Ruins2_07",
+    "Width": 130,
+    "Height": 20
+  },
+  "Ruins2_08": {
+    "SceneName": "Ruins2_08",
+    "Width": 47,
+    "Height": 34
+  },
+  "Ruins2_09": {
+    "SceneName": "Ruins2_09",
+    "Width": 80,
+    "Height": 25
+  },
+  "Ruins2_10": {
+    "SceneName": "Ruins2_10",
+    "Width": 30,
+    "Height": 176
+  },
+  "Ruins2_10b": {
+    "SceneName": "Ruins2_10b",
+    "Width": 30,
+    "Height": 185
+  },
+  "Ruins2_11": {
+    "SceneName": "Ruins2_11",
+    "Width": 80,
+    "Height": 145
+  },
+  "Ruins2_11_b": {
+    "SceneName": "Ruins2_11_b",
+    "Width": 80,
+    "Height": 145
+  },
+  "Ruins2_Watcher_Room": {
+    "SceneName": "Ruins2_Watcher_Room",
+    "Width": 80,
+    "Height": 160
+  },
+  "Fungus1_01": {
+    "SceneName": "Fungus1_01",
+    "Width": 170,
+    "Height": 30
+  },
+  "Fungus1_01b": {
+    "SceneName": "Fungus1_01b",
+    "Width": 45,
+    "Height": 45
+  },
+  "Fungus1_02": {
+    "SceneName": "Fungus1_02",
+    "Width": 46,
+    "Height": 71
+  },
+  "Fungus1_03": {
+    "SceneName": "Fungus1_03",
+    "Width": 80,
+    "Height": 35
+  },
+  "Fungus1_04": {
+    "SceneName": "Fungus1_04",
+    "Width": 95,
+    "Height": 50
+  },
+  "Fungus1_05": {
+    "SceneName": "Fungus1_05",
+    "Width": 31,
+    "Height": 85
+  },
+  "Fungus1_06": {
+    "SceneName": "Fungus1_06",
+    "Width": 170,
+    "Height": 30
+  },
+  "Fungus1_07": {
+    "SceneName": "Fungus1_07",
+    "Width": 70,
+    "Height": 58
+  },
+  "Fungus1_08": {
+    "SceneName": "Fungus1_08",
+    "Width": 80,
+    "Height": 55
+  },
+  "Fungus1_09": {
+    "SceneName": "Fungus1_09",
+    "Width": 250,
+    "Height": 34
+  },
+  "Fungus1_10": {
+    "SceneName": "Fungus1_10",
+    "Width": 180,
+    "Height": 25
+  },
+  "Fungus1_11": {
+    "SceneName": "Fungus1_11",
+    "Width": 55,
+    "Height": 69
+  },
+  "Fungus1_13": {
+    "SceneName": "Fungus1_13",
+    "Width": 220,
+    "Height": 47
+  },
+  "Fungus1_14": {
+    "SceneName": "Fungus1_14",
+    "Width": 100,
+    "Height": 25
+  },
+  "Fungus1_15": {
+    "SceneName": "Fungus1_15",
+    "Width": 57,
+    "Height": 50
+  },
+  "Fungus1_16_alt": {
+    "SceneName": "Fungus1_16_alt",
+    "Width": 47,
+    "Height": 19
+  },
+  "Fungus1_17": {
+    "SceneName": "Fungus1_17",
+    "Width": 80,
+    "Height": 35
+  },
+  "Fungus1_19": {
+    "SceneName": "Fungus1_19",
+    "Width": 90,
+    "Height": 24
+  },
+  "Fungus1_20_v02": {
+    "SceneName": "Fungus1_20_v02",
+    "Width": 180,
+    "Height": 25
+  },
+  "Fungus1_21": {
+    "SceneName": "Fungus1_21",
+    "Width": 90,
+    "Height": 50
+  },
+  "Fungus1_22": {
+    "SceneName": "Fungus1_22",
+    "Width": 36,
+    "Height": 120
+  },
+  "Fungus1_23": {
+    "SceneName": "Fungus1_23",
+    "Width": 150,
+    "Height": 30
+  },
+  "Fungus1_24": {
+    "SceneName": "Fungus1_24",
+    "Width": 95,
+    "Height": 40
+  },
+  "Fungus1_25": {
+    "SceneName": "Fungus1_25",
+    "Width": 90,
+    "Height": 25
+  },
+  "Fungus1_26": {
+    "SceneName": "Fungus1_26",
+    "Width": 110,
+    "Height": 65
+  },
+  "Fungus1_28": {
+    "SceneName": "Fungus1_28",
+    "Width": 150,
+    "Height": 70
+  },
+  "Fungus1_29": {
+    "SceneName": "Fungus1_29",
+    "Width": 85,
+    "Height": 34
+  },
+  "Fungus1_30": {
+    "SceneName": "Fungus1_30",
+    "Width": 100,
+    "Height": 32
+  },
+  "Fungus1_31": {
+    "SceneName": "Fungus1_31",
+    "Width": 36,
+    "Height": 133
+  },
+  "Fungus1_32": {
+    "SceneName": "Fungus1_32",
+    "Width": 82,
+    "Height": 40
+  },
+  "Fungus1_34": {
+    "SceneName": "Fungus1_34",
+    "Width": 120,
+    "Height": 35
+  },
+  "Fungus1_37": {
+    "SceneName": "Fungus1_37",
+    "Width": 45,
+    "Height": 25
+  },
+  "Fungus1_Slug": {
+    "SceneName": "Fungus1_Slug",
+    "Width": 70,
+    "Height": 110
+  },
+  "Fungus2_01": {
+    "SceneName": "Fungus2_01",
+    "Width": 60,
+    "Height": 50
+  },
+  "Fungus2_02": {
+    "SceneName": "Fungus2_02",
+    "Width": 47,
+    "Height": 19
+  },
+  "Fungus2_03": {
+    "SceneName": "Fungus2_03",
+    "Width": 130,
+    "Height": 80
+  },
+  "Fungus2_04": {
+    "SceneName": "Fungus2_04",
+    "Width": 36,
+    "Height": 76
+  },
+  "Fungus2_05": {
+    "SceneName": "Fungus2_05",
+    "Width": 75,
+    "Height": 30
+  },
+  "Fungus2_06": {
+    "SceneName": "Fungus2_06",
+    "Width": 36,
+    "Height": 160
+  },
+  "Fungus2_07": {
+    "SceneName": "Fungus2_07",
+    "Width": 70,
+    "Height": 40
+  },
+  "Fungus2_08": {
+    "SceneName": "Fungus2_08",
+    "Width": 30,
+    "Height": 70
+  },
+  "Fungus2_09": {
+    "SceneName": "Fungus2_09",
+    "Width": 70,
+    "Height": 25
+  },
+  "Fungus2_10": {
+    "SceneName": "Fungus2_10",
+    "Width": 70,
+    "Height": 75
+  },
+  "Fungus2_12": {
+    "SceneName": "Fungus2_12",
+    "Width": 170,
+    "Height": 31
+  },
+  "Fungus2_13": {
+    "SceneName": "Fungus2_13",
+    "Width": 41,
+    "Height": 116
+  },
+  "Fungus2_14": {
+    "SceneName": "Fungus2_14",
+    "Width": 175,
+    "Height": 41
+  },
+  "Fungus2_15": {
+    "SceneName": "Fungus2_15",
+    "Width": 61,
+    "Height": 120
+  },
+  "Fungus2_17": {
+    "SceneName": "Fungus2_17",
+    "Width": 45,
+    "Height": 45
+  },
+  "Fungus2_18": {
+    "SceneName": "Fungus2_18",
+    "Width": 150,
+    "Height": 60
+  },
+  "Fungus2_19": {
+    "SceneName": "Fungus2_19",
+    "Width": 60,
+    "Height": 25
+  },
+  "Fungus2_20": {
+    "SceneName": "Fungus2_20",
+    "Width": 63,
+    "Height": 51
+  },
+  "Fungus2_21": {
+    "SceneName": "Fungus2_21",
+    "Width": 150,
+    "Height": 55
+  },
+  "Fungus2_23": {
+    "SceneName": "Fungus2_23",
+    "Width": 90,
+    "Height": 70
+  },
+  "Fungus2_25": {
+    "SceneName": "Fungus2_25",
+    "Width": 170,
+    "Height": 35
+  },
+  "Fungus2_26": {
+    "SceneName": "Fungus2_26",
+    "Width": 60,
+    "Height": 24
+  },
+  "Fungus2_28": {
+    "SceneName": "Fungus2_28",
+    "Width": 100,
+    "Height": 29
+  },
+  "Fungus2_29": {
+    "SceneName": "Fungus2_29",
+    "Width": 94,
+    "Height": 68
+  },
+  "Fungus2_30": {
+    "SceneName": "Fungus2_30",
+    "Width": 80,
+    "Height": 140
+  },
+  "Fungus2_31": {
+    "SceneName": "Fungus2_31",
+    "Width": 90,
+    "Height": 40
+  },
+  "Fungus2_32": {
+    "SceneName": "Fungus2_32",
+    "Width": 71,
+    "Height": 18
+  },
+  "Fungus2_33": {
+    "SceneName": "Fungus2_33",
+    "Width": 60,
+    "Height": 80
+  },
+  "Fungus2_34": {
+    "SceneName": "Fungus2_34",
+    "Width": 47,
+    "Height": 25
+  },
+  "Fungus3_01": {
+    "SceneName": "Fungus3_01",
+    "Width": 33,
+    "Height": 80
+  },
+  "Fungus3_02": {
+    "SceneName": "Fungus3_02",
+    "Width": 31,
+    "Height": 105
+  },
+  "Fungus3_03": {
+    "SceneName": "Fungus3_03",
+    "Width": 100,
+    "Height": 25
+  },
+  "Fungus3_04": {
+    "SceneName": "Fungus3_04",
+    "Width": 40,
+    "Height": 93
+  },
+  "Fungus3_05": {
+    "SceneName": "Fungus3_05",
+    "Width": 73,
+    "Height": 70
+  },
+  "Fungus3_08": {
+    "SceneName": "Fungus3_08",
+    "Width": 150,
+    "Height": 25
+  },
+  "Fungus3_10": {
+    "SceneName": "Fungus3_10",
+    "Width": 112,
+    "Height": 44
+  },
+  "Fungus3_11": {
+    "SceneName": "Fungus3_11",
+    "Width": 52,
+    "Height": 75
+  },
+  "Fungus3_13": {
+    "SceneName": "Fungus3_13",
+    "Width": 30,
+    "Height": 70
+  },
+  "Fungus3_21": {
+    "SceneName": "Fungus3_21",
+    "Width": 75,
+    "Height": 25
+  },
+  "Fungus3_22": {
+    "SceneName": "Fungus3_22",
+    "Width": 31,
+    "Height": 143
+  },
+  "Fungus3_23": {
+    "SceneName": "Fungus3_23",
+    "Width": 100,
+    "Height": 50
+  },
+  "Fungus3_24": {
+    "SceneName": "Fungus3_24",
+    "Width": 100,
+    "Height": 30
+  },
+  "Fungus3_25": {
+    "SceneName": "Fungus3_25",
+    "Width": 100,
+    "Height": 50
+  },
+  "Fungus3_25b": {
+    "SceneName": "Fungus3_25b",
+    "Width": 100,
+    "Height": 31
+  },
+  "Fungus3_26": {
+    "SceneName": "Fungus3_26",
+    "Width": 31,
+    "Height": 105
+  },
+  "Fungus3_27": {
+    "SceneName": "Fungus3_27",
+    "Width": 75,
+    "Height": 25
+  },
+  "Fungus3_28": {
+    "SceneName": "Fungus3_28",
+    "Width": 75,
+    "Height": 42
+  },
+  "Fungus3_30": {
+    "SceneName": "Fungus3_30",
+    "Width": 40,
+    "Height": 26
+  },
+  "Fungus3_34": {
+    "SceneName": "Fungus3_34",
+    "Width": 160,
+    "Height": 27
+  },
+  "Fungus3_35": {
+    "SceneName": "Fungus3_35",
+    "Width": 65,
+    "Height": 25
+  },
+  "Fungus3_39": {
+    "SceneName": "Fungus3_39",
+    "Width": 110,
+    "Height": 55
+  },
+  "Fungus3_40": {
+    "SceneName": "Fungus3_40",
+    "Width": 187,
+    "Height": 35
+  },
+  "Fungus3_44": {
+    "SceneName": "Fungus3_44",
+    "Width": 95,
+    "Height": 60
+  },
+  "Fungus3_47": {
+    "SceneName": "Fungus3_47",
+    "Width": 80,
+    "Height": 50
+  },
+  "Fungus3_48": {
+    "SceneName": "Fungus3_48",
+    "Width": 95,
+    "Height": 118
+  },
+  "Fungus3_49": {
+    "SceneName": "Fungus3_49",
+    "Width": 87,
+    "Height": 40
+  },
+  "Fungus3_50": {
+    "SceneName": "Fungus3_50",
+    "Width": 40,
+    "Height": 133
+  },
+  "Cliffs_01": {
+    "SceneName": "Cliffs_01",
+    "Width": 140,
+    "Height": 170
+  },
+  "Cliffs_04": {
+    "SceneName": "Cliffs_04",
+    "Width": 85,
+    "Height": 60
+  },
+  "Cliffs_05": {
+    "SceneName": "Cliffs_05",
+    "Width": 82,
+    "Height": 60
+  },
+  "Cliffs_06": {
+    "SceneName": "Cliffs_06",
+    "Width": 100,
+    "Height": 25
+  },
+  "RestingGrounds_02": {
+    "SceneName": "RestingGrounds_02",
+    "Width": 129,
+    "Height": 25
+  },
+  "RestingGrounds_04": {
+    "SceneName": "RestingGrounds_04",
+    "Width": 110,
+    "Height": 35
+  },
+  "RestingGrounds_06": {
+    "SceneName": "RestingGrounds_06",
+    "Width": 110,
+    "Height": 30
+  },
+  "RestingGrounds_08": {
+    "SceneName": "RestingGrounds_08",
+    "Width": 220,
+    "Height": 80
+  },
+  "RestingGrounds_09": {
+    "SceneName": "RestingGrounds_09",
+    "Width": 47,
+    "Height": 19
+  },
+  "RestingGrounds_12": {
+    "SceneName": "RestingGrounds_12",
+    "Width": 95,
+    "Height": 35
+  },
+  "RestingGrounds_17": {
+    "SceneName": "RestingGrounds_17",
+    "Width": 70,
+    "Height": 25
+  },
+  "Mines_01": {
+    "SceneName": "Mines_01",
+    "Width": 32,
+    "Height": 60
+  },
+  "Mines_02": {
+    "SceneName": "Mines_02",
+    "Width": 160,
+    "Height": 36
+  },
+  "Mines_03": {
+    "SceneName": "Mines_03",
+    "Width": 45,
+    "Height": 80
+  },
+  "Mines_04": {
+    "SceneName": "Mines_04",
+    "Width": 36,
+    "Height": 85
+  },
+  "Mines_05": {
+    "SceneName": "Mines_05",
+    "Width": 35,
+    "Height": 74
+  },
+  "Mines_06": {
+    "SceneName": "Mines_06",
+    "Width": 150,
+    "Height": 27
+  },
+  "Mines_07": {
+    "SceneName": "Mines_07",
+    "Width": 120,
+    "Height": 19
+  },
+  "Mines_10": {
+    "SceneName": "Mines_10",
+    "Width": 187,
+    "Height": 25
+  },
+  "Mines_11": {
+    "SceneName": "Mines_11",
+    "Width": 43,
+    "Height": 65
+  },
+  "Mines_13": {
+    "SceneName": "Mines_13",
+    "Width": 100,
+    "Height": 45
+  },
+  "Mines_16": {
+    "SceneName": "Mines_16",
+    "Width": 66,
+    "Height": 35
+  },
+  "Mines_17": {
+    "SceneName": "Mines_17",
+    "Width": 75,
+    "Height": 30
+  },
+  "Mines_18": {
+    "SceneName": "Mines_18",
+    "Width": 65,
+    "Height": 30
+  },
+  "Mines_19": {
+    "SceneName": "Mines_19",
+    "Width": 60,
+    "Height": 35
+  },
+  "Mines_23": {
+    "SceneName": "Mines_23",
+    "Width": 180,
+    "Height": 40
+  },
+  "Mines_24": {
+    "SceneName": "Mines_24",
+    "Width": 60,
+    "Height": 20
+  },
+  "Mines_25": {
+    "SceneName": "Mines_25",
+    "Width": 70,
+    "Height": 130
+  },
+  "Mines_28": {
+    "SceneName": "Mines_28",
+    "Width": 100,
+    "Height": 70
+  },
+  "Mines_29": {
+    "SceneName": "Mines_29",
+    "Width": 45,
+    "Height": 65
+  },
+  "Mines_30": {
+    "SceneName": "Mines_30",
+    "Width": 180,
+    "Height": 25
+  },
+  "Mines_31": {
+    "SceneName": "Mines_31",
+    "Width": 257,
+    "Height": 65
+  },
+  "Mines_32": {
+    "SceneName": "Mines_32",
+    "Width": 65,
+    "Height": 30
+  },
+  "Mines_33": {
+    "SceneName": "Mines_33",
+    "Width": 100,
+    "Height": 25
+  },
+  "Mines_34": {
+    "SceneName": "Mines_34",
+    "Width": 193,
+    "Height": 80
+  },
+  "Mines_36": {
+    "SceneName": "Mines_36",
+    "Width": 43,
+    "Height": 40
+  },
+  "Mines_37": {
+    "SceneName": "Mines_37",
+    "Width": 75,
+    "Height": 65
+  },
+  "Deepnest_01": {
+    "SceneName": "Deepnest_01",
+    "Width": 60,
+    "Height": 38
+  },
+  "Deepnest_01b": {
+    "SceneName": "Deepnest_01b",
+    "Width": 60,
+    "Height": 84
+  },
+  "Deepnest_03": {
+    "SceneName": "Deepnest_03",
+    "Width": 60,
+    "Height": 113
+  },
+  "Deepnest_09": {
+    "SceneName": "Deepnest_09",
+    "Width": 47,
+    "Height": 19
+  },
+  "Deepnest_14": {
+    "SceneName": "Deepnest_14",
+    "Width": 80,
+    "Height": 60
+  },
+  "Deepnest_16": {
+    "SceneName": "Deepnest_16",
+    "Width": 97,
+    "Height": 60
+  },
+  "Deepnest_17": {
+    "SceneName": "Deepnest_17",
+    "Width": 31,
+    "Height": 62
+  },
+  "Deepnest_26": {
+    "SceneName": "Deepnest_26",
+    "Width": 250,
+    "Height": 50
+  },
+  "Deepnest_26b": {
+    "SceneName": "Deepnest_26b",
+    "Width": 128,
+    "Height": 50
+  },
+  "Deepnest_30": {
+    "SceneName": "Deepnest_30",
+    "Width": 120,
+    "Height": 160
+  },
+  "Deepnest_31": {
+    "SceneName": "Deepnest_31",
+    "Width": 125,
+    "Height": 60
+  },
+  "Deepnest_32": {
+    "SceneName": "Deepnest_32",
+    "Width": 180,
+    "Height": 26
+  },
+  "Deepnest_33": {
+    "SceneName": "Deepnest_33",
+    "Width": 85,
+    "Height": 45
+  },
+  "Deepnest_34": {
+    "SceneName": "Deepnest_34",
+    "Width": 150,
+    "Height": 50
+  },
+  "Deepnest_35": {
+    "SceneName": "Deepnest_35",
+    "Width": 52,
+    "Height": 110
+  },
+  "Deepnest_37": {
+    "SceneName": "Deepnest_37",
+    "Width": 82,
+    "Height": 32
+  },
+  "Deepnest_38": {
+    "SceneName": "Deepnest_38",
+    "Width": 205,
+    "Height": 42
+  },
+  "Deepnest_39": {
+    "SceneName": "Deepnest_39",
+    "Width": 210,
+    "Height": 70
+  },
+  "Deepnest_40": {
+    "SceneName": "Deepnest_40",
+    "Width": 150,
+    "Height": 60
+  },
+  "Deepnest_41": {
+    "SceneName": "Deepnest_41",
+    "Width": 120,
+    "Height": 115
+  },
+  "Deepnest_42": {
+    "SceneName": "Deepnest_42",
+    "Width": 40,
+    "Height": 146
+  },
+  "Deepnest_43": {
+    "SceneName": "Deepnest_43",
+    "Width": 40,
+    "Height": 133
+  },
+  "Deepnest_44": {
+    "SceneName": "Deepnest_44",
+    "Width": 150,
+    "Height": 60
+  },
+  "Deepnest_East_01": {
+    "SceneName": "Deepnest_East_01",
+    "Width": 49,
+    "Height": 85
+  },
+  "Deepnest_East_02": {
+    "SceneName": "Deepnest_East_02",
+    "Width": 110,
+    "Height": 32
+  },
+  "Deepnest_East_03": {
+    "SceneName": "Deepnest_East_03",
+    "Width": 80,
+    "Height": 150
+  },
+  "Deepnest_East_04": {
+    "SceneName": "Deepnest_East_04",
+    "Width": 45,
+    "Height": 200
+  },
+  "Deepnest_East_06": {
+    "SceneName": "Deepnest_East_06",
+    "Width": 351,
+    "Height": 43
+  },
+  "Deepnest_East_07": {
+    "SceneName": "Deepnest_East_07",
+    "Width": 90,
+    "Height": 190
+  },
+  "Deepnest_East_08": {
+    "SceneName": "Deepnest_East_08",
+    "Width": 120,
+    "Height": 40
+  },
+  "Deepnest_East_09": {
+    "SceneName": "Deepnest_East_09",
+    "Width": 200,
+    "Height": 50
+  },
+  "Deepnest_East_10": {
+    "SceneName": "Deepnest_East_10",
+    "Width": 46,
+    "Height": 28
+  },
+  "Deepnest_East_11": {
+    "SceneName": "Deepnest_East_11",
+    "Width": 110,
+    "Height": 130
+  },
+  "Deepnest_East_13": {
+    "SceneName": "Deepnest_East_13",
+    "Width": 60,
+    "Height": 30
+  },
+  "Deepnest_East_14": {
+    "SceneName": "Deepnest_East_14",
+    "Width": 160,
+    "Height": 70
+  },
+  "Deepnest_East_14b": {
+    "SceneName": "Deepnest_East_14b",
+    "Width": 90,
+    "Height": 70
+  },
+  "Deepnest_East_15": {
+    "SceneName": "Deepnest_East_15",
+    "Width": 42,
+    "Height": 28
+  },
+  "Deepnest_East_16": {
+    "SceneName": "Deepnest_East_16",
+    "Width": 65,
+    "Height": 28
+  },
+  "Deepnest_East_18": {
+    "SceneName": "Deepnest_East_18",
+    "Width": 110,
+    "Height": 41
+  },
+  "Deepnest_East_Hornet": {
+    "SceneName": "Deepnest_East_Hornet",
+    "Width": 68,
+    "Height": 100
+  },
+  "Abyss_01": {
+    "SceneName": "Abyss_01",
+    "Width": 45,
+    "Height": 176
+  },
+  "Abyss_02": {
+    "SceneName": "Abyss_02",
+    "Width": 170,
+    "Height": 42
+  },
+  "Abyss_03": {
+    "SceneName": "Abyss_03",
+    "Width": 130,
+    "Height": 25
+  },
+  "Abyss_03_b": {
+    "SceneName": "Abyss_03_b",
+    "Width": 75,
+    "Height": 25
+  },
+  "Abyss_03_c": {
+    "SceneName": "Abyss_03_c",
+    "Width": 150,
+    "Height": 25
+  },
+  "Abyss_05": {
+    "SceneName": "Abyss_05",
+    "Width": 200,
+    "Height": 90
+  },
+  "Abyss_06_Core": {
+    "SceneName": "Abyss_06_Core",
+    "Width": 100,
+    "Height": 270
+  },
+  "Abyss_08": {
+    "SceneName": "Abyss_08",
+    "Width": 110,
+    "Height": 100
+  },
+  "Abyss_09": {
+    "SceneName": "Abyss_09",
+    "Width": 260,
+    "Height": 120
+  },
+  "Abyss_16": {
+    "SceneName": "Abyss_16",
+    "Width": 100,
+    "Height": 30
+  },
+  "Abyss_17": {
+    "SceneName": "Abyss_17",
+    "Width": 170,
+    "Height": 60
+  },
+  "Abyss_18": {
+    "SceneName": "Abyss_18",
+    "Width": 200,
+    "Height": 30
+  },
+  "Abyss_20": {
+    "SceneName": "Abyss_20",
+    "Width": 180,
+    "Height": 70
+  },
+  "Abyss_22": {
+    "SceneName": "Abyss_22",
+    "Width": 85,
+    "Height": 34
+  },
+  "Waterways_01": {
+    "SceneName": "Waterways_01",
+    "Width": 152,
+    "Height": 47
+  },
+  "Waterways_02": {
+    "SceneName": "Waterways_02",
+    "Width": 240,
+    "Height": 45
+  },
+  "Waterways_03": {
+    "SceneName": "Waterways_03",
+    "Width": 110,
+    "Height": 25
+  },
+  "Waterways_04": {
+    "SceneName": "Waterways_04",
+    "Width": 154,
+    "Height": 43
+  },
+  "Waterways_04b": {
+    "SceneName": "Waterways_04b",
+    "Width": 130,
+    "Height": 50
+  },
+  "Waterways_05": {
+    "SceneName": "Waterways_05",
+    "Width": 120,
+    "Height": 48
+  },
+  "Waterways_06": {
+    "SceneName": "Waterways_06",
+    "Width": 140,
+    "Height": 50
+  },
+  "Waterways_07": {
+    "SceneName": "Waterways_07",
+    "Width": 110,
+    "Height": 100
+  },
+  "Waterways_08": {
+    "SceneName": "Waterways_08",
+    "Width": 140,
+    "Height": 60
+  },
+  "Waterways_09": {
+    "SceneName": "Waterways_09",
+    "Width": 50,
+    "Height": 46
+  },
+  "Waterways_12": {
+    "SceneName": "Waterways_12",
+    "Width": 80,
+    "Height": 35
+  },
+  "Waterways_13": {
+    "SceneName": "Waterways_13",
+    "Width": 125,
+    "Height": 105
+  },
+  "Waterways_14": {
+    "SceneName": "Waterways_14",
+    "Width": 260,
+    "Height": 50
+  },
+  "Waterways_15": {
+    "SceneName": "Waterways_15",
+    "Width": 60,
+    "Height": 25
+  },
+  "White_Palace_01": {
+    "SceneName": "White_Palace_01",
+    "Width": 200,
+    "Height": 140
+  },
+  "White_Palace_03_hub": {
+    "SceneName": "White_Palace_03_hub",
+    "Width": 100,
+    "Height": 140
+  },
+  "White_Palace_04": {
+    "SceneName": "White_Palace_04",
+    "Width": 200,
+    "Height": 78
+  },
+  "White_Palace_05": {
+    "SceneName": "White_Palace_05",
+    "Width": 156,
+    "Height": 160
+  },
+  "White_Palace_06": {
+    "SceneName": "White_Palace_06",
+    "Width": 50,
+    "Height": 75
+  },
+  "White_Palace_07": {
+    "SceneName": "White_Palace_07",
+    "Width": 160,
+    "Height": 140
+  },
+  "White_Palace_08": {
+    "SceneName": "White_Palace_08",
+    "Width": 160,
+    "Height": 45
+  },
+  "White_Palace_09": {
+    "SceneName": "White_Palace_09",
+    "Width": 150,
+    "Height": 150
+  },
+  "White_Palace_12": {
+    "SceneName": "White_Palace_12",
+    "Width": 74,
+    "Height": 220
+  },
+  "White_Palace_13": {
+    "SceneName": "White_Palace_13",
+    "Width": 175,
+    "Height": 250
+  },
+  "White_Palace_14": {
+    "SceneName": "White_Palace_14",
+    "Width": 200,
+    "Height": 150
+  },
+  "White_Palace_15": {
+    "SceneName": "White_Palace_15",
+    "Width": 70,
+    "Height": 130
+  },
+  "White_Palace_16": {
+    "SceneName": "White_Palace_16",
+    "Width": 200,
+    "Height": 160
+  },
+  "White_Palace_17": {
+    "SceneName": "White_Palace_17",
+    "Width": 120,
+    "Height": 115
+  },
+  "White_Palace_19": {
+    "SceneName": "White_Palace_19",
+    "Width": 180,
+    "Height": 168
+  },
+  "White_Palace_20": {
+    "SceneName": "White_Palace_20",
+    "Width": 300,
+    "Height": 182
+  },
+  "Hive_02": {
+    "SceneName": "Hive_02",
+    "Width": 206,
+    "Height": 87
+  },
+  "Hive_03": {
+    "SceneName": "Hive_03",
+    "Width": 140,
+    "Height": 150
+  },
+  "Hive_03_c": {
+    "SceneName": "Hive_03_c",
+    "Width": 140,
+    "Height": 110
+  },
+  "Hive_04": {
+    "SceneName": "Hive_04",
+    "Width": 220,
+    "Height": 152
+  },
+  "Hive_05": {
+    "SceneName": "Hive_05",
+    "Width": 120,
+    "Height": 60
+  },
+  "GG_Waterways": {
+    "SceneName": "GG_Waterways",
+    "Width": 200,
+    "Height": 97
+  },
+  "GG_Atrium": {
+    "SceneName": "GG_Atrium",
+    "Width": 190,
+    "Height": 90
+  },
+  "GG_Lurker": {
+    "SceneName": "GG_Lurker",
+    "Width": 250,
+    "Height": 140
+  },
+  "GG_Pipeway": {
+    "SceneName": "GG_Pipeway",
+    "Width": 150,
+    "Height": 51
+  },
+  "GG_Atrium_Roof": {
+    "SceneName": "GG_Atrium_Roof",
+    "Width": 160,
+    "Height": 110
+  }
+}

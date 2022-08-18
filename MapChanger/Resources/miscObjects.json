@@ -1,0 +1,470 @@
+{
+  "Crossroads/Crossroads_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Crossroads/Crossroads_04/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Dirtmouth"
+  },
+  "Crossroads/Crossroads_06/Sub Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Crossroads/Crossroads_11_alt/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Crossroads/Crossroads_18_b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Crossroads/Crossroads_45/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Crossroads/Crossroads_46/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "Crossroads/Crossroads_49/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Crossroads/Mines_33/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Crossroads/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Crossroads/Crossroads_35_b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Waterways/Abyss_01/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Waterways/Waterways_01/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Waterways/Waterways_09/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Waterways/Waterways_13/Sub Area Name (4)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Waterways/Waterways_14/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "Waterways/Abyss_02/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "Waterways/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Waterways/GG_Waterways/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Cliffs/Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Howling_Cliffs"
+  },
+  "Cliffs/Cliffs_02/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Dirtmouth"
+  },
+  "Cliffs/Cliffs_05/Sub Area Name (4)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Howling_Cliffs"
+  },
+  "Cliffs/Fungus1_28/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Kingdoms_Edge/Abyss_03_c/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "Kingdoms_Edge/Deepnest_East_02/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Kingdoms_Edge/Deepnest_East_03/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Kingdoms_Edge/Deepnest_East_07/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Kingdoms_Edge/Deepnest_East_09/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Kingdoms_Edge/Deepnest_East_09/Sub Area Name": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "Kingdoms_Edge/Deepnest_East_Hornet_b/Sub Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "Kingdoms_Edge/Hive_01/Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Hive"
+  },
+  "Kingdoms_Edge/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "Green_Path/Fungus1_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Green_Path/Fungus1_11/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Green_Path/Fungus1_13/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Green_Path/Fungus1_20_v02/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Howling_Cliffs"
+  },
+  "Green_Path/Fungus1_26/Sub Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Green_Path/Fungus1_34/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Green_Path/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Fog_Canyon/Fungus3_01/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Fog_Canyon/Fungus3_02/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Fog_Canyon/Fungus3_03/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Fog_Canyon/Fungus3_26/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Fog_Canyon/Fungus3_26/*Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Fog_Canyon/Fungus3_47/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Fog_Canyon/Fungus3_44/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Fog_Canyon/Fungus3_44/Sub Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Fog_Canyon/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Fungal Wastes/Fungus2_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Fungal Wastes/Fungus2_01/Sub Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Queens_Station"
+  },
+  "Fungal Wastes/Fungus2_06/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Fungal Wastes/Fungus2_14/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Fungal Wastes/Fungus2_15/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Fungal Wastes/Fungus2_21/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Fungal Wastes/Fungus2_23/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Fungal Wastes/Fungus2_30/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Fungal Wastes/Fungus2_33/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Fungal Wastes/Deepnest_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Fungal Wastes/Deepnest_01/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Fungal Wastes/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Queens_Gardens/Fungus3_22/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Greenpath"
+  },
+  "Queens_Gardens/Fungus3_34/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Queens_Gardens/Fungus3_34/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fog_Canyon"
+  },
+  "Queens_Gardens/Fungus3_39/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Queens_Gardens/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Queens_Gardens/Deepnest_43_b/Next Area (5)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Deepnest/Abyss_03_b/Next Area (5)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "Deepnest/Deepnest_01b/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Deepnest/Deepnest_10/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Deepnest/Deepnest_26/Sub Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Deepnest/Deepnest_42/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Queens_Gardens"
+  },
+  "Deepnest/Fungus2_25/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "Deepnest/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Town_Tutorial/Tutorial_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Howling_Cliffs"
+  },
+  "Town_Tutorial/Town/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Town_Tutorial/Town/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Town_Tutorial/Area Name": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Dirtmouth"
+  },
+  "Town_Tutorial/Sub Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Dirtmouth"
+  },
+  "Resting_Grounds/Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "Resting_Grounds/Crossroads_46b/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Resting_Grounds/Crossroads_50/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Resting_Grounds/Crossroads_50/Sub Area Name (4)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "Resting_Grounds/RestingGrounds_08/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "Resting_Grounds/Ruins2_10/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "Crystal Peak/Mines_01/Next Area (2)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Crystal Peak/Mines_02/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "Crystal Peak/Mines_10/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Dirtmouth"
+  },
+  "Crystal Peak/Mines_28/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "Crystal Peak/Mines_28_b/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Crystal Peak/Mines_34/Sub Area Name": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Crystal Peak/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Crystal_Peak"
+  },
+  "Ancient Basin/Abyss_03/Next Area (3)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "Ancient Basin/Abyss_03/Next Area (1)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "Ancient Basin/Abyss_03/Next Area (4)": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Deepnest"
+  },
+  "Ancient Basin/Abyss_05/Sub Area Name (3)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "Ancient Basin/Abyss_06_Core_b/Sub Area Name (4)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Abyss"
+  },
+  "Ancient Basin/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "City of Tears/Crossroads_49b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Forgotten_Crossroads"
+  },
+  "City of Tears/Ruins1_01/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Fungal_Wastes"
+  },
+  "City of Tears/Ruins1_05b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Royal_Waterways"
+  },
+  "City of Tears/Ruins1_23/Sub Area Name": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Soul_Sanctum"
+  },
+  "City of Tears/Ruins2_03/Sub Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Watchers_Spire"
+  },
+  "City of Tears/Ruins2_04/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Ancient_Basin"
+  },
+  "City of Tears/Ruins2_06/Sub Area Name (1)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "City of Tears/Ruins2_07_right/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "City of Tears/Ruins2_10b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Resting_Grounds"
+  },
+  "City of Tears/Ruins2_10b/*Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "City of Tears/Ruins2_11_b/Next Area": {
+    "Type": "NextArea",
+    "ColorSetting": "Map_Kingdoms_Edge"
+  },
+  "City of Tears/Ruins2_11/Sub Area Name - Love Tower": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Watchers_Spire"
+  },
+  "City of Tears/Ruins_Bathhouse/Sub Area Name (4)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "City of Tears/Area Name (2)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_City_of_Tears"
+  },
+  "WHITE_PALACE/White_Palace_07/Sub Area Name (4)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_White_Palace"
+  },
+  "WHITE_PALACE/White_Palace_08/Sub Area Name (4)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_White_Palace"
+  },
+  "WHITE_PALACE/White_Palace_18/Sub Area Name (4)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_White_Palace"
+  },
+  "WHITE_PALACE/Area Name (1)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_White_Palace"
+  },
+  "GODS_GLORY/GG_Atrium/Sub Area Name (4)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Godhome"
+  },
+  "GODS_GLORY/Area Name (1)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_Godhome"
+  }
+}
