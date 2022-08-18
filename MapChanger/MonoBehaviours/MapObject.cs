@@ -69,8 +69,6 @@ namespace MapChanger.MonoBehaviours
                 }
             }
 
-            //MapChangerMod.Instance.LogDebug($"UpdateActive: {name}, {value}");
-
             gameObject.SetActive(value);
 
             OnMainUpdate(value);

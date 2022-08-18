@@ -27,14 +27,6 @@ namespace MapChanger
             return go.AddComponent<T>();
         }
 
-        //public static string ToCleanPreviewText(string text)
-        //{
-        //    return text.Replace("Pay ", "")
-        //        .Replace("Once you own ", "")
-        //        .Replace(", I'll gladly sell it to you.", "")
-        //        .Replace("Requires ", "");
-        //}
-
         public static string ToCleanName(this string name)
         {
             return name.Replace("-", " ").Replace("_", " ");
