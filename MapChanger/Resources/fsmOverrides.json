@@ -1162,5 +1162,17 @@
     },
     "BoolsRange": {
     }
+  },
+  "Flame Pins-Check Grimmchild Equipped": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
   }
 }
