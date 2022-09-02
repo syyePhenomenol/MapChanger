@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using GlobalEnums;
 using HutongGames.PlayMaker;
 using Modding;
@@ -53,15 +54,17 @@ namespace MapChanger.Map
         public override void OnEnterGame()
         {
             On.PlayMakerFSM.Start += ModifyFsms;
-            On.RoughMapRoom.OnEnable += StoreRoughMapCopy;
 
+            On.HutongGames.PlayMaker.FsmState.OnEnter += SetQuickMapZone;
+            On.GameManager.GetCurrentMapZone += OverrideGetCurrentMapZone;
+
+            On.RoughMapRoom.OnEnable += StoreRoughMapCopy;
+            
             On.MapNextAreaDisplay.OnEnable += NextAreaOverride;
             On.GameMap.SetupMapMarkers += SetupMarkersOverride;
             On.GameMap.DisableMarkers += DisableMarkersOverride;
 
             On.GameMap.PositionCompass += HideCompassInNonMappedScene;
-            On.GameMap.GetDoorMapZone += DoorMapZoneOverride;
-            On.GameManager.GetCurrentMapZone += CurrentMapZoneOverride;
 
             On.GameMap.Update += ZoomFasterOnKeyboard;
             On.GameManager.UpdateGameMap += DisableUpdatedMapPrompt;
@@ -72,6 +75,9 @@ namespace MapChanger.Map
         public override void OnQuitToMenu()
         {
             On.PlayMakerFSM.Start -= ModifyFsms;
+
+            On.HutongGames.PlayMaker.FsmState.OnEnter += SetQuickMapZone;
+
             On.RoughMapRoom.OnEnable -= StoreRoughMapCopy;
 
             On.MapNextAreaDisplay.OnEnable -= NextAreaOverride;
@@ -79,8 +85,6 @@ namespace MapChanger.Map
             On.GameMap.DisableMarkers -= DisableMarkersOverride;
 
             On.GameMap.PositionCompass -= HideCompassInNonMappedScene;
-            On.GameMap.GetDoorMapZone -= DoorMapZoneOverride;
-            On.GameManager.GetCurrentMapZone -= CurrentMapZoneOverride;
 
             On.GameMap.Update -= ZoomFasterOnKeyboard;
             On.GameManager.UpdateGameMap -= DisableUpdatedMapPrompt;
@@ -154,12 +158,20 @@ namespace MapChanger.Map
             self.gameObject.Child(MAP_MARKERS).SetActive(false);
         }
 
+        // currentMapZone is a local variable assigned during orig, so this is the most convenient way to override it
+        private static bool overrideMapZone = false;
+
         private static void HideCompassInNonMappedScene(On.GameMap.orig_PositionCompass orig, GameMap self, bool posShade)
         {
-            // Not sure if necessary, but it might fix some NREs
-            self.doorMapZone = self.GetDoorMapZone();
+            if (Settings.MapModEnabled())
+            {
+                self.doorMapZone = Finder.GetCurrentMapZone().ToString();
+                overrideMapZone = true;
+            }
 
             orig(self, posShade);
+
+            overrideMapZone = false;
 
             if (!Finder.IsMappedScene(Utils.CurrentScene()))
             {
@@ -168,34 +180,26 @@ namespace MapChanger.Map
             }
         }
 
-        /// <summary>
-        /// This fixes loading the Quick Map in some of the non-mapped areas (like Ancestral Mound).
-        /// </summary>
-        private static string DoorMapZoneOverride(On.GameMap.orig_GetDoorMapZone orig, GameMap self)
+        private static string OverrideGetCurrentMapZone(On.GameManager.orig_GetCurrentMapZone orig, GameManager self)
         {
-            if (!Settings.MapModEnabled()) return orig(self);
-
-            MapZone mapZone = Finder.GetCurrentMapZone();
-            if (mapZone != MapZone.NONE)
+            if (overrideMapZone)
             {
-                return mapZone.ToString();
+                return Finder.GetCurrentMapZone().ToString();
             }
+
             return orig(self);
         }
 
-        private static string CurrentMapZoneOverride(On.GameManager.orig_GetCurrentMapZone orig, GameManager self)
+        private static void SetQuickMapZone(On.HutongGames.PlayMaker.FsmState.orig_OnEnter orig, FsmState self)
         {
-            if (!Settings.MapModEnabled()) return orig(self);
-
-            // Modifying the MapZone in colosseum results in a softlock
-            if (Utils.CurrentScene() is "Room_Colosseum_Bronze" or "Room_Colosseum_Silver" or "Room_Colosseum_Gold") return orig(self);
-
-            MapZone mapZone = Finder.GetCurrentMapZone();
-            if (mapZone != MapZone.NONE)
+            if (Settings.MapModEnabled()
+                && self.Name is "Check Area"
+                && (self.Fsm.Variables.StringVariables.Where(var => var.Name is "Map Zone").FirstOrDefault() is FsmString mapZone))
             {
-                return mapZone.ToString();
+                mapZone.Value = Finder.GetCurrentMapZone().ToString();
             }
-            return orig(self);
+
+            orig(self);
         }
 
         private static void ZoomFasterOnKeyboard(On.GameMap.orig_Update orig, GameMap self)
