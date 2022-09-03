@@ -116,7 +116,7 @@ namespace MapChanger.Map
             if (self.GetComponent<SpriteRenderer>() is SpriteRenderer sr)
             {
                 RoughMapCopy rmc = self.GetComponent<RoughMapCopy>();
-                if (rmc is null)
+                if (rmc == null)
                 {
                     rmc = self.gameObject.AddComponent<RoughMapCopy>();
                     rmc.AddSprite(sr.sprite);

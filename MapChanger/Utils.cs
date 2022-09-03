@@ -19,7 +19,7 @@ namespace MapChanger
         public static T MakeMonoBehaviour<T>(GameObject parent, string name) where T : MonoBehaviour
         {
             GameObject go = new(name);
-            if (parent is not null)
+            if (parent != null)
             {
                 go.transform.SetParent(parent.transform, false);
             }
@@ -127,7 +127,7 @@ namespace MapChanger
             {
                 if (splitName == "") return transform;
                 Transform child = transform.Find(splitName);
-                if (child is null) return null;
+                if (child == null) return null;
                 transform = child;
             }
             return transform;

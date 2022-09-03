@@ -24,7 +24,7 @@ namespace MapChanger
         {
             foreach (MapObject mapObject in mapObjects)
             {
-                if (mapObject is not null)
+                if (mapObject != null)
                 {
                     mapObject.DestroyAll();
                 }
@@ -70,7 +70,7 @@ namespace MapChanger
 
         private void ClearNullMapObjects()
         {
-            mapObjects.RemoveAll(mapObject => mapObject is null);
+            mapObjects.RemoveAll(mapObject => mapObject == null);
         }
     }
 }

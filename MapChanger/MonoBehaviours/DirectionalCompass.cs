@@ -67,7 +67,7 @@ namespace RandoMapMod.UI
 
         public void Update()
         {
-            if (entity is not null && Condition() && TryGetClosestObject(out GameObject o))
+            if (entity != null && Condition() && TryGetClosestObject(out GameObject o))
             {
                 Vector2 dir = o.transform.position - entity.transform.position;
 
@@ -81,7 +81,7 @@ namespace RandoMapMod.UI
                 // Do lerp stuff
                 if (lerp)
                 {
-                    if (currentTarget is null || currentTarget != o)
+                    if (currentTarget == null || currentTarget != o)
                     {
                         currentTarget = o;
                         lerpStartTime = Time.time;
@@ -112,7 +112,7 @@ namespace RandoMapMod.UI
 
         private bool TryGetClosestObject(out GameObject o)
         {
-            if (TrackedObjects is null || !TrackedObjects.Any() || entity is null)
+            if (TrackedObjects is null || !TrackedObjects.Any() || entity == null)
             {
                 o = null;
 
@@ -126,7 +126,7 @@ namespace RandoMapMod.UI
 
         private float SqrDistanceFromEntity(GameObject o)
         {
-            if (o is null || entity is null) return float.PositiveInfinity;
+            if (o == null || entity == null) return float.PositiveInfinity;
 
             return ((Vector2)(o.transform.position - entity.transform.position)).sqrMagnitude;
         }

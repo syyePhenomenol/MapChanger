@@ -27,7 +27,7 @@ namespace MapChanger.MonoBehaviours
 
             tmp = GetComponent<TextMeshPro>();
 
-            if (tmp is null)
+            if (tmp == null)
             {
                 MapChangerMod.Instance.LogWarn($"Missing component references! {transform.name}");
                 Destroy(this);

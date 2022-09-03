@@ -32,7 +32,7 @@ namespace MapChanger.MonoBehaviours
             tmp = transform.FindChildInHierarchy("Area Name")?.GetComponent<TextMeshPro>();
             sr = transform.FindChildInHierarchy("Map_Arrow")?.GetComponent<SpriteRenderer>();
 
-            if (tmp is null || sr is null)
+            if (tmp == null || sr == null)
             {
                 MapChangerMod.Instance.LogWarn($"Missing component references! {transform.name}");
                 Destroy(this);

@@ -59,7 +59,7 @@ namespace MapChanger.Map
             foreach ((string pathName, RoomSpriteDef rsd) in roomSpriteDefs.Select(kvp => (kvp.Key, kvp.Value)))
             {
                 Transform child = goMap.transform.FindChildInHierarchy(pathName);
-                if (child is null) continue;
+                if (child == null) continue;
 
                 child.gameObject.SetActive(false);
                 RoomSprite roomSprite = child.gameObject.AddComponent<RoomSprite>();
@@ -83,7 +83,7 @@ namespace MapChanger.Map
                     child = goMap.transform.FindChildInHierarchy(pathName);
                 }
 
-                if (child is null)
+                if (child == null)
                 {
                     MapChangerMod.Instance.LogDebug($"Transform not found: {pathName}");
                     continue;
