@@ -1183,14 +1183,18 @@
     "MappedScene": "Deepnest_East_09",
     "MapZone": "OUTSKIRTS"
   },
-  //"Room_Colosseum_Bronze": {
-  //  "MappedScene": "Deepnest_East_09",
-  //  "MapZone": "OUTSKIRTS"
-  //},
-  //"Room_Colosseum_Silver": {
-  //  "MappedScene": "Deepnest_East_09",
-  //  "MapZone": "OUTSKIRTS"
-  //},
+  "Room_Colosseum_Bronze": {
+    "MappedScene": "Deepnest_East_09",
+    "MapZone": "OUTSKIRTS"
+  },
+  "Room_Colosseum_Silver": {
+    "MappedScene": "Deepnest_East_09",
+    "MapZone": "OUTSKIRTS"
+  },
+  "Room_Colosseum_Gold": {
+    "MappedScene": "Deepnest_East_09",
+    "MapZone": "OUTSKIRTS"
+  },
   "Room_Colosseum_02": {
     "MappedScene": "Deepnest_East_09",
     "MapZone": "OUTSKIRTS"

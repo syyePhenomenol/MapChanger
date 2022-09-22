@@ -4,6 +4,7 @@ using GlobalEnums;
 using HutongGames.PlayMaker;
 using Modding;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Vasi;
 
 namespace MapChanger.Map
@@ -47,9 +48,6 @@ namespace MapChanger.Map
 
         internal static Transform MapKey => GameCameras.instance.hudCamera.transform
             .FindChildInHierarchy("Inventory")?.FindChildInHierarchy("Map Key");
-        internal static Transform MarkerAction => GameCameras.instance.hudCamera.transform
-            .FindChildInHierarchy("Inventory")?.FindChildInHierarchy("Map")?
-            .FindChildInHierarchy("World Map")?.FindChildInHierarchy("Map Marker Action");
 
         public override void OnEnterGame()
         {
@@ -64,6 +62,7 @@ namespace MapChanger.Map
             On.GameMap.SetupMapMarkers += SetupMarkersOverride;
             On.GameMap.DisableMarkers += DisableMarkersOverride;
 
+            UnityEngine.SceneManagement.SceneManager.activeSceneChanged += UpdateSceneMapZone;
             On.GameMap.PositionCompass += HideCompassInNonMappedScene;
 
             On.GameMap.Update += ZoomFasterOnKeyboard;
@@ -84,6 +83,7 @@ namespace MapChanger.Map
             On.GameMap.SetupMapMarkers -= SetupMarkersOverride;
             On.GameMap.DisableMarkers -= DisableMarkersOverride;
 
+            UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= UpdateSceneMapZone;
             On.GameMap.PositionCompass -= HideCompassInNonMappedScene;
 
             On.GameMap.Update -= ZoomFasterOnKeyboard;
@@ -158,14 +158,22 @@ namespace MapChanger.Map
             self.gameObject.Child(MAP_MARKERS).SetActive(false);
         }
 
+        // Cached map zone for the current scene.
+        private static MapZone sceneMapZone;
+
+        private static void UpdateSceneMapZone(Scene from, Scene to)
+        {
+            sceneMapZone = Finder.GetMapZone(GameManager.GetBaseSceneName(to.name));
+        }
+
         // currentMapZone is a local variable assigned during orig, so this is the most convenient way to override it
         private static bool overrideMapZone = false;
 
         private static void HideCompassInNonMappedScene(On.GameMap.orig_PositionCompass orig, GameMap self, bool posShade)
         {
-            if (Settings.MapModEnabled())
+            if (Settings.MapModEnabled() && sceneMapZone is not MapZone.NONE)
             {
-                self.doorMapZone = Finder.GetCurrentMapZone().ToString();
+                self.doorMapZone = sceneMapZone.ToString();
                 overrideMapZone = true;
             }
 
@@ -184,7 +192,7 @@ namespace MapChanger.Map
         {
             if (overrideMapZone)
             {
-                return Finder.GetCurrentMapZone().ToString();
+                return sceneMapZone.ToString();
             }
 
             return orig(self);
@@ -194,9 +202,10 @@ namespace MapChanger.Map
         {
             if (Settings.MapModEnabled()
                 && self.Name is "Check Area"
-                && (self.Fsm.Variables.StringVariables.Where(var => var.Name is "Map Zone").FirstOrDefault() is FsmString mapZone))
+                && (self.Fsm.Variables.StringVariables.Where(var => var.Name is "Map Zone").FirstOrDefault() is FsmString mapZoneString)
+                && sceneMapZone is not MapZone.NONE)
             {
-                mapZone.Value = Finder.GetCurrentMapZone().ToString();
+                mapZoneString.Value = sceneMapZone.ToString();
             }
 
             orig(self);
