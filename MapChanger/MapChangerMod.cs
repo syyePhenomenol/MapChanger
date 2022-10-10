@@ -8,7 +8,7 @@ namespace MapChanger
     public class MapChangerMod : Mod, ILocalSettings<Settings>
     {
         public static MapChangerMod Instance;
-        public override string GetVersion() => "1.0.2";
+        public override string GetVersion() => "1.0.3";
         public void OnLoadLocal(Settings ls) => Settings.Instance = ls;
         public Settings OnSaveLocal() => Settings.Instance;
 
@@ -26,7 +26,7 @@ namespace MapChanger
                     return;
                 }
             }
-            
+
             Finder.Load();
             Tracker.Load();
             BuiltInObjects.Load();
