@@ -33,8 +33,8 @@ namespace MapChanger.Defs
                 || !Finder.TryGetTileMapDef(mapLocation.MappedScene, out TileMapDef tmd)) return false;
 
             Vector2 spriteSize = roomSprite.GetComponent<SpriteRenderer>().sprite.bounds.size;
-            RelativeX = mapLocation.X / tmd.Width * spriteSize.x - spriteSize.x / 2f;
-            RelativeY = mapLocation.Y / tmd.Height * spriteSize.y - spriteSize.y / 2f;
+            RelativeX = (mapLocation.X + tmd.OffsetX) / tmd.Width * spriteSize.x - spriteSize.x / 2f;
+            RelativeY = (mapLocation.Y + tmd.OffsetY) / tmd.Height * spriteSize.y - spriteSize.y / 2f;
             X = baseX + RelativeX;
             Y = baseY + RelativeY;
             return true;
