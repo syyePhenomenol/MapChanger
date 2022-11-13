@@ -5,36 +5,35 @@ using UnityEngine;
 
 namespace MapChanger.MonoBehaviours
 {
-    public class NextArea : ColoredMapObject
+    public class NextAreaName : ColoredMapObject
     {
         public MiscObjectDef MiscObjectDef { get; private set; }
 
         private TextMeshPro tmp;
-        private SpriteRenderer sr;
+
         public override Vector4 Color
         {
             get => tmp.color;
             set
             {
                 tmp.color = value;
-                sr.color = value;
             }
         }
 
-        private MapNextAreaDisplay Mnad => GetComponent<MapNextAreaDisplay>();
+        private MapNextAreaDisplay Mnad => transform.parent.GetComponent<MapNextAreaDisplay>();
 
         internal void Initialize(MiscObjectDef miscObjectDef)
         {
             MiscObjectDef = miscObjectDef;
 
+            ActiveModifiers.Add(QuickMapOpen);
             ActiveModifiers.Add(IsActive);
 
-            tmp = transform.FindChildInHierarchy("Area Name")?.GetComponent<TextMeshPro>();
-            sr = transform.FindChildInHierarchy("Map_Arrow")?.GetComponent<SpriteRenderer>();
+            tmp = transform?.GetComponent<TextMeshPro>();
 
-            if (tmp == null || sr == null)
+            if (tmp == null)
             {
-                MapChangerMod.Instance.LogWarn($"Missing component references! {transform.name}");
+                MapChangerMod.Instance.LogWarn($"Missing component reference! {transform.name}");
                 Destroy(this);
                 return;
             }
@@ -46,16 +45,30 @@ namespace MapChanger.MonoBehaviours
 
         private bool IsActive()
         {
-            return States.QuickMapOpen
-                && !(Settings.MapModEnabled() && Settings.CurrentMode().DisableNextArea)
-                && (Mnad.visitedString is "" || PlayerData.instance.GetBool(Mnad.visitedString));
+            if (Settings.MapModEnabled())
+            {
+                try { return Settings.CurrentMode().NextAreaNameActiveOverride(this) ?? DefaultActive(); }
+                catch (Exception e) { MapChangerMod.Instance.LogError(e); }
+            }
+
+            return DefaultActive();
+
+            bool DefaultActive()
+            {
+                return Mnad.visitedString is "" || PlayerData.instance.GetBool(Mnad.visitedString);
+            }
+        }
+
+        private bool QuickMapOpen()
+        {
+            return States.QuickMapOpen;
         }
 
         public override void UpdateColor()
         {
             if (Settings.MapModEnabled())
             {
-                try { Color = Settings.CurrentMode().NextAreaColorOverride(this) ?? OrigColor; }
+                try { Color = Settings.CurrentMode().NextAreaColorOverride(MiscObjectDef) ?? OrigColor; }
                 catch (Exception e) { MapChangerMod.Instance.LogError(e); }
             }
             else

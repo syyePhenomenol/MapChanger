@@ -1,4 +1,5 @@
-﻿using MapChanger.MonoBehaviours;
+﻿using MapChanger.Defs;
+using MapChanger.MonoBehaviours;
 using UnityEngine;
 
 namespace MapChanger
@@ -37,15 +38,13 @@ namespace MapChanger
         /// Whether or not to display area names on the World Map or Quick Map.
         /// </summary>
         public virtual bool DisableAreaNames => false;
-        /// <summary>
-        /// Whether or not to display adjacent area names and arrows on the Quick Map.
-        /// </summary>
-        public virtual bool DisableNextArea => false;
         public virtual bool? RoomActiveOverride(RoomSprite roomSprite) => null;
         public virtual bool? RoomCanSelectOverride(RoomSprite roomSprite) => null;
         public virtual Vector4? RoomColorOverride(RoomSprite roomSprite) => null;
         public virtual Vector4? AreaNameColorOverride(AreaName areaName) => null;
-        public virtual Vector4? NextAreaColorOverride(NextArea nextArea) => null;
+        public virtual bool? NextAreaNameActiveOverride(NextAreaName nextAreaName) => null;
+        public virtual bool? NextAreaArrowActiveOverride(NextAreaArrow nextAreaArrow) => null;
+        public virtual Vector4? NextAreaColorOverride(MiscObjectDef miscObjectDef) => null;
         public virtual Vector4? QuickMapTitleColorOverride(QuickMapTitle qmt) => null;
     }
 }

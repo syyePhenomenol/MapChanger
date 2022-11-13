@@ -89,12 +89,23 @@ namespace MapChanger.Map
                     continue;
                 }
 
-                child.gameObject.SetActive(false);
+                child.gameObject.SetActive(true);
 
                 if (mod.Type == MiscObjectType.NextArea)
                 {
-                    NextArea nextArea = child.gameObject.AddComponent<NextArea>();
-                    nextArea.Initialize(mod);
+                    Transform areaName = child.FindChildInHierarchy("Area Name");
+                    if (areaName != null)
+                    {
+                        NextAreaName nextAreaName = areaName.gameObject.AddComponent<NextAreaName>();
+                        nextAreaName.Initialize(mod);
+                    }
+
+                    Transform mapArrow = child.FindChildInHierarchy("Map_Arrow");
+                    if (mapArrow != null)
+                    {
+                        NextAreaArrow nextAreaArrow = mapArrow.gameObject.AddComponent<NextAreaArrow>();
+                        nextAreaArrow.Initialize(mod);
+                    }
                 }
                 else if (mod.Type == MiscObjectType.AreaName)
                 {
