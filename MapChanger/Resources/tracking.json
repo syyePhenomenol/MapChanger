@@ -181,8 +181,11 @@
   "Hiveblood": {
     "PdBoolName": "gotCharm_29"
   },
-  "Dashmaster": {
+  "Dream_Wielder": {
     "PdBoolName": "gotCharm_30"
+  },
+  "Dashmaster": {
+    "PdBoolName": "gotCharm_31"
   },
   "Quick_Slash": {
     "PdBoolName": "gotCharm_32"

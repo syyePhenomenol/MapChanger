@@ -169,27 +169,31 @@ namespace MapChanger
                 if (!pbd.activated || pbd.id.Contains("-")) continue;
 
                 if ((pbd.id.Contains("Shiny Item")
-                    || pbd.id == "Heart Piece"
-                    || pbd.id == "Vessel Fragment"
+                    || pbd.id is "Heart Piece"
+                    || pbd.id is "Vessel Fragment"
                     || pbd.id.Contains("Chest")
+                    || pbd.id is "Grub Mimic"
+                    || pbd.id is "Grub Mimic 1"
+                    || pbd.id is "Grub Mimic 2"
+                    || pbd.id is "Grub Mimic 3"
                     // Crystal/Enraged Guardian Boss Geo
-                    || pbd.id == "Mega Zombie Beam Miner (1)"
-                    || pbd.id == "Zombie Beam Miner Rematch"))
+                    || pbd.id is "Mega Zombie Beam Miner (1)"
+                    || pbd.id is "Zombie Beam Miner Rematch"))
                 {
                     AddVanillaItem(pbd.id, pbd.sceneName);
                 }
                 // Soul Warrior Sanctum Boss Geo
-                else if (pbd.id == "Battle Scene v2" && pbd.sceneName == "Ruins1_23")
+                else if (pbd.id is "Battle Scene v2" && pbd.sceneName is "Ruins1_23")
                 {
                     AddVanillaItem("Mage Knight", pbd.sceneName);
                 }
                 // Soul Warrior Elegant Key Boss Geo
-                else if (pbd.id == "Battle Scene v2" && pbd.sceneName == "Ruins1_31")
+                else if (pbd.id is "Battle Scene v2" && pbd.sceneName is "Ruins1_31")
                 {
                     AddVanillaItem("Mage Knight", $"{pbd.sceneName}b");
                 }
                 // Gruz Mother Boss Geo
-                else if (pbd.id == "Battle Scene" && pbd.sceneName == "Crossroads_04")
+                else if (pbd.id is "Battle Scene" && pbd.sceneName is "Crossroads_04")
                 {
                     AddVanillaItem("Giant Fly", pbd.sceneName);
                 }
@@ -224,19 +228,19 @@ namespace MapChanger
             string name = self.gameObject.name;
             FsmState state;
 
-            if (self.FsmName == "Shiny Control")
+            if (self.FsmName is "Shiny Control")
             {
                 if (!FsmUtil.TryGetState(self, "Finish", out state)) return;
             }
-            else if (name == "Heart Piece" || name == "Vessel Fragment")
+            else if (name is "Heart Piece" || name is "Vessel Fragment")
             {
                 if (!FsmUtil.TryGetState(self, "Get", out state)) return;
             }
-            else if (self.FsmName == "Chest Control")
+            else if (self.FsmName is "Chest Control")
             {
                 if (!FsmUtil.TryGetState(self, "Open", out state)) return;
             }
-            else if (self.FsmName == "Geo Rock")
+            else if (self.FsmName is "Geo Rock")
             {
                 if (FsmUtil.TryGetState(self, "Destroy", out state))
                 {
@@ -257,15 +261,15 @@ namespace MapChanger
         {
             orig(self);
 
-            if (self.gameObject.scene.name == "Crossroads_ShamanTemple"
-                && self.gameObject.name == "Geo Rock 2"
+            if (self.gameObject.scene.name is "Crossroads_ShamanTemple"
+                && self.gameObject.name is "Geo Rock 2"
                 && self.transform.parent != null)
             {
                 self.geoRockData.id = "_Items/Geo Rock 2";
             }
 
-            if (self.gameObject.scene.name == "Abyss_06_Core"
-                && self.gameObject.name == "Geo Rock Abyss"
+            if (self.gameObject.scene.name is "Abyss_06_Core"
+                && self.gameObject.name is "Geo Rock Abyss"
                 && self.transform.parent != null)
             {
                 self.geoRockData.id = "_Props/Geo Rock Abyss";
