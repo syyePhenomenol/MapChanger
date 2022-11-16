@@ -240,7 +240,7 @@
     "PdBoolName": "gotLurkerKey"
   },
   "Shopkeeper's_Key": {
-    "PdBoolName": "hasSlykey"
+    "ObjectName": "Shiny Item Stand"
   },
   "Love_Key": {
     "PdBoolName": "hasLoveKey"
