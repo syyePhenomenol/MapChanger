@@ -22,7 +22,7 @@ namespace MapChanger.Map
         {
             public override void OnEnter()
             {
-                if (!Settings.MapModEnabled() || Settings.CurrentMode().VanillaPins != OverrideType.ForceOff)
+                if (Settings.CurrentMode().VanillaPins ?? true)
                 {
                     PlayMakerFSM.BroadcastEvent("NEW MAP KEY ADDED");
                     MapKey?.gameObject.LocateMyFSM("Control")?.SendEvent("MAP KEY UP");
@@ -62,6 +62,8 @@ namespace MapChanger.Map
             On.GameMap.SetupMapMarkers += SetupMarkersOverride;
             On.GameMap.DisableMarkers += DisableMarkersOverride;
 
+            On.DeactivateIfPlayerdataFalse.Start += ControlMarkersUI;
+
             UnityEngine.SceneManagement.SceneManager.activeSceneChanged += UpdateSceneMapZone;
             On.GameMap.PositionCompass += HideCompassInNonMappedScene;
 
@@ -82,6 +84,8 @@ namespace MapChanger.Map
             On.MapNextAreaDisplay.OnEnable -= NextAreaOverride;
             On.GameMap.SetupMapMarkers -= SetupMarkersOverride;
             On.GameMap.DisableMarkers -= DisableMarkersOverride;
+
+            On.DeactivateIfPlayerdataFalse.Start -= ControlMarkersUI;
 
             UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= UpdateSceneMapZone;
             On.GameMap.PositionCompass -= HideCompassInNonMappedScene;
@@ -144,7 +148,7 @@ namespace MapChanger.Map
         {
             orig(self);
 
-            self.gameObject.Child(MAP_MARKERS).SetActive(PlayerData.instance.GetBool("hasMarker"));
+            self.gameObject.Child(MAP_MARKERS).SetActive(PlayerData.instance.GetBool(VariableOverrides.MARKERS_PREFIX + "hasMarker"));
         }
 
         /// <summary>
@@ -156,6 +160,16 @@ namespace MapChanger.Map
             orig(self);
 
             self.gameObject.Child(MAP_MARKERS).SetActive(false);
+        }
+
+        private static void ControlMarkersUI(On.DeactivateIfPlayerdataFalse.orig_Start orig, DeactivateIfPlayerdataFalse self)
+        {
+            orig(self);
+
+            if (self.boolName is "hasMarker")
+            {
+                self.boolName = VariableOverrides.MARKERS_PREFIX + "hasMarker";
+            }
         }
 
         // Cached map zone for the current scene.

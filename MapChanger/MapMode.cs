@@ -4,13 +4,6 @@ using UnityEngine;
 
 namespace MapChanger
 {
-    public enum OverrideType
-    {
-        Neutral,
-        ForceOff,
-        ForceOn
-    }
-
     public class MapMode
     {
         public (string, string) ModeKey => (Mod, ModeName);
@@ -24,8 +17,8 @@ namespace MapChanger
         public virtual float Priority => float.PositiveInfinity;
         public virtual bool ForceHasMap => false;
         public virtual bool ForceHasQuill => false;
-        public virtual OverrideType VanillaPins => OverrideType.Neutral;
-        public virtual OverrideType MapMarkers => OverrideType.Neutral;
+        public virtual bool? VanillaPins => null;
+        public virtual bool? MapMarkers => null;
         /// <summary>
         /// Determines if the map immediately gets filled in when visiting a new scene with Quill.
         /// </summary>

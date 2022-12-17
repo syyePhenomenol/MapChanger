@@ -19,7 +19,8 @@ namespace MapChanger.Map
         private enum OverrideType
         {
             Map,
-            Pins
+            Pins,
+            Markers
         }
 
         private record FsmBoolOverrideDef
@@ -48,6 +49,7 @@ namespace MapChanger.Map
 
         internal const string MAP_PREFIX = "MCO0";
         internal const string PINS_PREFIX = "MCO1";
+        internal const string MARKERS_PREFIX = "MC02";
         internal const string HAS_MAP = "hasMap";
         internal const string GOT_WHITE_PALACE_MAP = "AdditionalMapsGotWpMap";
         internal const string GOT_GODHOME_MAP = "AdditionalMapsGotGhMap";
@@ -162,7 +164,8 @@ namespace MapChanger.Map
                 static FsmString NewBoolName(FsmString name, OverrideType type)
                 {
                     if (name.ToString().StartsWith(MAP_PREFIX)
-                        || name.ToString().StartsWith(PINS_PREFIX))
+                        || name.ToString().StartsWith(PINS_PREFIX)
+                        || name.ToString().StartsWith(MARKERS_PREFIX))
                     {
                         return name;
                     }
@@ -170,6 +173,7 @@ namespace MapChanger.Map
                     {
                         OverrideType.Map => MAP_PREFIX + name,
                         OverrideType.Pins => PINS_PREFIX + name,
+                        OverrideType.Markers => MARKERS_PREFIX + name,
                         _ => name
                     };
                 }
@@ -194,54 +198,38 @@ namespace MapChanger.Map
             {
                 return true;
             }
-            if (name.StartsWith("hasMarker"))
+
+            if (Settings.MapModEnabled())
             {
-                if (Settings.CurrentMode().MapMarkers == MapChanger.OverrideType.ForceOn)
+                if (name.StartsWith(MAP_PREFIX))
                 {
-                    return true;
+                    if (name.EndsWith(HAS_MAP))
+                    {
+                        if (Settings.CurrentMode().ForceHasMap)
+                        {
+                            return true;
+                        }
+                    }
+                    if (Settings.CurrentMode().FullMap)
+                    {
+                        return true;
+                    }
+                    return GetOriginalBool(name);
                 }
-                if (Settings.CurrentMode().MapMarkers == MapChanger.OverrideType.ForceOff)
+                if (name.StartsWith(PINS_PREFIX))
                 {
-                    return false;
+                    return Settings.CurrentMode().VanillaPins ?? GetOriginalBool(name);
                 }
-                return orig;
+                if (name.StartsWith(MARKERS_PREFIX))
+                {
+                    return Settings.CurrentMode().MapMarkers ?? GetOriginalBool(name);
+                }
             }
-            if (!name.StartsWith(MAP_PREFIX) && !name.StartsWith(PINS_PREFIX))
-            {
-                return orig;
-            }
-            if (!Settings.MapModEnabled())
+            else if (name.StartsWith(MAP_PREFIX) || name.StartsWith(PINS_PREFIX) || name.StartsWith(MARKERS_PREFIX))
             {
                 return GetOriginalBool(name);
             }
-            if (name == MAP_PREFIX + HAS_MAP)
-            {
-                if (Settings.CurrentMode().ForceHasMap)
-                {
-                    return true;
-                }
-                return GetOriginalBool(name);
-            }
-            if (name.StartsWith(MAP_PREFIX))
-            {
-                if (Settings.CurrentMode().FullMap)
-                {
-                    return true;
-                }
-                return GetOriginalBool(name);
-            }
-            if (name.StartsWith(PINS_PREFIX))
-            {
-                if (Settings.CurrentMode().VanillaPins == MapChanger.OverrideType.ForceOn)
-                {
-                    return true;
-                }
-                if (Settings.CurrentMode().VanillaPins == MapChanger.OverrideType.ForceOff)
-                {
-                    return false;
-                }
-                return GetOriginalBool(name);
-            }
+
             return orig;
 
             static bool GetOriginalBool(string name)
@@ -269,7 +257,7 @@ namespace MapChanger.Map
             }
             if (name.StartsWith(PINS_PREFIX) && type == typeof(List<string>))
             {
-                if (Settings.CurrentMode().VanillaPins == MapChanger.OverrideType.ForceOff)
+                if ((!Settings.CurrentMode().VanillaPins) ?? false)
                 {
                     return new List<string> { };
                 }

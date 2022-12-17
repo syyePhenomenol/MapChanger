@@ -145,12 +145,12 @@
           "Type": "Map"
         }
       ],
-      //"Have Markers?": [
-      //  {
-      //    "Index": 0,
-      //    "Type": "Pins"
-      //  }
-      //],
+      "Have Markers?": [
+        {
+          "Index": 0,
+          "Type": "Markers"
+        }
+      ],
       "To Map": [
         {
           "Index": 1,
