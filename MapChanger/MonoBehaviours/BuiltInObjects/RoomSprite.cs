@@ -62,7 +62,7 @@ namespace MapChanger.MonoBehaviours
 
             bool DefaultActive()
             {
-                return Settings.CurrentMode().FullMap
+                return (Settings.MapModEnabled() && Settings.CurrentMode().FullMap)
                 || PlayerData.instance.GetVariable<List<string>>("scenesMapped").Contains(Rsd.SceneName)
                 || Finder.IsMinimalMapScene(transform.name);
             }

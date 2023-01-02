@@ -1380,15 +1380,7 @@
     "SceneName": "White_Palace_01",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_01/RWP01": {
-    "SceneName": "White_Palace_01",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_02": {
-    "SceneName": "White_Palace_02",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_02/RWP02": {
     "SceneName": "White_Palace_02",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1396,15 +1388,7 @@
     "SceneName": "White_Palace_03_hub",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_03_hub/RWP03": {
-    "SceneName": "White_Palace_03_hub",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_04": {
-    "SceneName": "White_Palace_04",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_04/RWP04": {
     "SceneName": "White_Palace_04",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1412,15 +1396,7 @@
     "SceneName": "White_Palace_05",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_05/RWP05": {
-    "SceneName": "White_Palace_05",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_06": {
-    "SceneName": "White_Palace_06",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_06/RWP06": {
     "SceneName": "White_Palace_06",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1428,15 +1404,7 @@
     "SceneName": "White_Palace_07",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_07/RWP07": {
-    "SceneName": "White_Palace_07",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_08": {
-    "SceneName": "White_Palace_08",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_08/RWP08": {
     "SceneName": "White_Palace_08",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1444,15 +1412,7 @@
     "SceneName": "White_Palace_09",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_09/RWP09": {
-    "SceneName": "White_Palace_09",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_12": {
-    "SceneName": "White_Palace_12",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_12/RWP12": {
     "SceneName": "White_Palace_12",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1460,15 +1420,7 @@
     "SceneName": "White_Palace_13",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_13/RWP13": {
-    "SceneName": "White_Palace_13",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_14": {
-    "SceneName": "White_Palace_14",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_14/RWP14": {
     "SceneName": "White_Palace_14",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1476,15 +1428,7 @@
     "SceneName": "White_Palace_15",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_15/RWP15": {
-    "SceneName": "White_Palace_15",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_16": {
-    "SceneName": "White_Palace_16",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_16/RWP16": {
     "SceneName": "White_Palace_16",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1492,15 +1436,7 @@
     "SceneName": "White_Palace_17",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_17/RWP17": {
-    "SceneName": "White_Palace_17",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_18": {
-    "SceneName": "White_Palace_18",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_18/RWP18": {
     "SceneName": "White_Palace_18",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1508,15 +1444,7 @@
     "SceneName": "White_Palace_19",
     "ColorSetting": "Map_White_Palace"
   },
-  "WHITE_PALACE/White_Palace_19/RWP19": {
-    "SceneName": "White_Palace_19",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_20": {
-    "SceneName": "White_Palace_20",
-    "ColorSetting": "Map_White_Palace"
-  },
-  "WHITE_PALACE/White_Palace_20/RWP20": {
     "SceneName": "White_Palace_20",
     "ColorSetting": "Map_White_Palace"
   },
@@ -1524,15 +1452,7 @@
     "SceneName": "GG_Atrium",
     "ColorSetting": "Map_Godhome"
   },
-  "GODS_GLORY/GG_Atrium/RGH0": {
-    "SceneName": "GG_Atrium",
-    "ColorSetting": "Map_Godhome"
-  },
   "GODS_GLORY/GG_Atrium_Roof": {
-    "SceneName": "GG_Atrium_Roof",
-    "ColorSetting": "Map_Godhome"
-  },
-  "GODS_GLORY/GG_Atrium_Roof/RGH1": {
     "SceneName": "GG_Atrium_Roof",
     "ColorSetting": "Map_Godhome"
   }
