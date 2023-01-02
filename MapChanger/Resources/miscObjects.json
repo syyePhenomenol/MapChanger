@@ -443,10 +443,6 @@
     "Type": "AreaName",
     "ColorSetting": "Map_City_of_Tears"
   },
-  "WHITE_PALACE/White_Palace_07/Sub Area Name (4)(Clone)(Clone)": {
-    "Type": "AreaName",
-    "ColorSetting": "Map_White_Palace"
-  },
   "WHITE_PALACE/White_Palace_08/Sub Area Name (4)(Clone)(Clone)": {
     "Type": "AreaName",
     "ColorSetting": "Map_White_Palace"
@@ -455,11 +451,15 @@
     "Type": "AreaName",
     "ColorSetting": "Map_White_Palace"
   },
+  "WHITE_PALACE/Sub Area Name (4)(Clone)(Clone)": {
+    "Type": "AreaName",
+    "ColorSetting": "Map_White_Palace"
+  },
   "WHITE_PALACE/Area Name (1)(Clone)(Clone)": {
     "Type": "AreaName",
     "ColorSetting": "Map_White_Palace"
   },
-  "GODS_GLORY/GG_Atrium/Sub Area Name (4)(Clone)(Clone)": {
+  "GODS_GLORY/Sub Area Name (4)(Clone)(Clone)": {
     "Type": "AreaName",
     "ColorSetting": "Map_Godhome"
   },
