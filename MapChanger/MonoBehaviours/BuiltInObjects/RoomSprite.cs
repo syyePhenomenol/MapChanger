@@ -39,7 +39,16 @@ namespace MapChanger.MonoBehaviours
 
             ActiveModifiers.Add(IsActive);
             
-            sr = GetComponentInChildren<SpriteRenderer>();
+            // Hotfix for AdditionalMaps with different GameObject hierarchy
+            if (transform.parent.name is "WHITE_PALACE" or "GODS_GLORY")
+            {
+                sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
+            }
+            else
+            {
+                sr = GetComponentInChildren<SpriteRenderer>();
+            }
+            
             OrigColor = sr.color;
 
             if (!Finder.IsScene(Rsd.SceneName))
