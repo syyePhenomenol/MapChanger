@@ -1288,10 +1288,10 @@
     "SceneName": "Ruins1_31",
     "ColorSetting": "Map_Soul_Sanctum"
   },
-  "City of Tears/Ruins1_31_top_2": {
-    "SceneName": "Ruins1_31",
-    "ColorSetting": "Map_Soul_Sanctum"
-  },
+  //"City of Tears/Ruins1_31_top_2": {
+  //  "SceneName": "Ruins1_31b",
+  //  "ColorSetting": "Map_Soul_Sanctum"
+  //},
   "City of Tears/Ruins1_31": {
     "SceneName": "Ruins1_31",
     "ColorSetting": "Map_City_of_Tears"

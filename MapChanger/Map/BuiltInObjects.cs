@@ -34,6 +34,16 @@ namespace MapChanger.Map
 
             MappedRooms = new();
 
+            // Destroy empty Ruins1_31b object and rename the actual one to it
+            if (goMap.transform.FindChildInHierarchy("City of Tears/Ruins1_31b") is Transform emptyRoom)
+            {
+                Object.Destroy(emptyRoom.gameObject);
+            }
+            if (goMap.transform.FindChildInHierarchy("City of Tears/Ruins1_31_top_2") is Transform elegantKeyRoom)
+            {
+                elegantKeyRoom.name = "Ruins1_31b";
+            }
+
             foreach (Transform t0 in goMap.transform)
             {
                 if (t0.name.Contains("WHITE_PALACE") || t0.name.Contains("GODS_GLORY")) continue;
