@@ -309,6 +309,7 @@
     "PdBoolName": "notchFogCanyon"
   },
   "Charm_Notch-Colosseum": {
+    "SceneName": "Room_Colosseum_Bronze",
     "ObjectName": "Shiny Item"
   },
   "Charm_Notch-Grimm": {
@@ -324,6 +325,7 @@
     "ObjectName": "Shiny Item Stand"
   },
   "Pale_Ore-Colosseum": {
+    "SceneName": "Room_Colosseum_Silver",
     "ObjectName": "Shiny Item"
   },
   "Geo_Chest-False_Knight": {

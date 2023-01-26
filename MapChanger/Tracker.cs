@@ -14,6 +14,8 @@ namespace MapChanger
         internal record TrackingDef
         {
             [JsonProperty]
+            internal string SceneName { get; init; }
+            [JsonProperty]
             internal string ObjectName { get; init; }
             [JsonProperty]
             internal string PdBoolName { get; init; }
@@ -132,6 +134,10 @@ namespace MapChanger
                 {
                     if (td.ObjectName is not null)
                     {
+                        if (td.SceneName is not null)
+                        {
+                            return HasObtainedItem(td.ObjectName, td.SceneName);
+                        }
                         return HasObtainedItem(td.ObjectName, mld.SceneName);
                     }
                     if (td.PdListName is not null)
