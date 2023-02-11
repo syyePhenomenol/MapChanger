@@ -1174,5 +1174,17 @@
     },
     "BoolsRange": {
     }
+  },
+  "Crossroads_02-Dreamer Pin": {
+    "BoolsIndex": {
+      "Check": [
+        {
+          "Index": 1,
+          "Type": "Pins"
+        }
+      ]
+    },
+    "BoolsRange": {
+    }
   }
 }

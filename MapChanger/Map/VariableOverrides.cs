@@ -139,6 +139,8 @@ namespace MapChanger.Map
 
             static void ReplaceBool(FsmState state, int index, OverrideType type)
             {
+                if (index >= state.Actions.Length) return;
+
                 FsmStateAction action = state.Actions[index];
                 if (action.GetType() == typeof(PlayerDataBoolTest))
                 {

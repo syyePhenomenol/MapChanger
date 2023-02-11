@@ -3625,7 +3625,7 @@
     "MapLocations": [
       {
         "MappedScene": "Crossroads_42",
-        "X": 0.5,
+        "X": 0.0,
         "Y": -0.1
       }
     ]
@@ -3636,7 +3636,7 @@
     "MapLocations": [
       {
         "MappedScene": "Crossroads_42",
-        "X": 0.0,
+        "X": 0.5,
         "Y": -0.1
       }
     ]

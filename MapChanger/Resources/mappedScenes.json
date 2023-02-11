@@ -35,10 +35,6 @@
     "MappedScene": "Abyss_06_Core",
     "MapZone": "ABYSS"
   },
-  "Dream_Abyss": {
-    "MappedScene": "Abyss_06_Core",
-    "MapZone": "ABYSS"
-  },
   "Abyss_16": {
     "MappedScene": "Abyss_16",
     "MapZone": "ABYSS"
@@ -240,10 +236,6 @@
     "MapZone": "CITY"
   },
   "Ruins2_Watcher_Room": {
-    "MappedScene": "Ruins2_Watcher_Room",
-    "MapZone": "CITY"
-  },
-  "Dream_Guardian_Lurien": {
     "MappedScene": "Ruins2_Watcher_Room",
     "MapZone": "CITY"
   },
@@ -463,10 +455,6 @@
     "MappedScene": "Deepnest_10",
     "MapZone": "DEEPNEST"
   },
-  "Dream_Guardian_Hegemol": {
-    "MappedScene": "Deepnest_10",
-    "MapZone": "DEEPNEST"
-  },
   "Fungus2_25": {
     "MappedScene": "Fungus2_25",
     "MapZone": "DEEPNEST"
@@ -580,10 +568,6 @@
     "MapZone": "FOG_CANYON"
   },
   "Fungus3_archive_02": {
-    "MappedScene": "Fungus3_47",
-    "MapZone": "FOG_CANYON"
-  },
-  "Dream_Guardian_Monomon": {
     "MappedScene": "Fungus3_47",
     "MapZone": "FOG_CANYON"
   },
@@ -768,10 +752,6 @@
     "MapZone": "CROSSROADS"
   },
   "Room_temple": {
-    "MappedScene": "Crossroads_02",
-    "MapZone": "CROSSROADS"
-  },
-  "Room_Final_Boss_Atrium": {
     "MappedScene": "Crossroads_02",
     "MapZone": "CROSSROADS"
   },
@@ -1311,10 +1291,6 @@
     "MappedScene": "RestingGrounds_04",
     "MapZone": "RESTING_GROUNDS"
   },
-  "Dream_Nailcollection": {
-    "MappedScene": "RestingGrounds_04",
-    "MapZone": "RESTING_GROUNDS"
-  },
   "RestingGrounds_05": {
     "MappedScene": "RestingGrounds_05",
     "MapZone": "RESTING_GROUNDS"
@@ -1526,5 +1502,69 @@
   "Room_Tram": {
     "MappedScene": "Abyss_03_b",
     "MapZone": "ABYSS"
+  },
+  "Grimm_Nightmare": {
+    "MappedScene": "Town",
+    "MapZone": "TOWN"
+  },
+  "Dream_Nailcollection": {
+    "MappedScene": "RestingGrounds_04",
+    "MapZone": "RESTING_GROUNDS"
+  },
+  "Dream_01_False_Knight": {
+    "MappedScene": "Crossroads_10",
+    "MapZone": "CROSSROADS"
+  },
+  "Dream_02_Mage_Lord": {
+    "MappedScene": "Ruins1_24",
+    "MapZone": "CITY"
+  },
+  "Dream_03_Infected_Knight": {
+    "MappedScene": "Abyss_19",
+    "MapZone": "ABYSS"
+  },
+  "Dream_04_White_Defender": {
+    "MappedScene": "Waterways_15",
+    "MapZone": "WATERWAYS"
+  },
+  "Dream_Mighty_Zote": {
+    "MappedScene": "Town",
+    "MapZone": "TOWN"
+  },
+  "Dream_Guardian_Hegemol": {
+    "MappedScene": "Deepnest_10",
+    "MapZone": "DEEPNEST"
+  },
+  "Dream_Guardian_Lurien": {
+    "MappedScene": "Ruins2_Watcher_Room",
+    "MapZone": "CITY"
+  },
+  "Dream_Guardian_Monomon": {
+    "MappedScene": "Fungus3_47",
+    "MapZone": "FOG_CANYON"
+  },
+  "Dream_Backer_Shrine": {
+    "MappedScene": "RestingGrounds_08",
+    "MapZone": "RESTING_GROUNDS"
+  },
+  "Dream_Room_Believer_Shrine": {
+    "MappedScene": "RestingGrounds_08",
+    "MapZone": "RESTING_GROUNDS"
+  },
+  "Dream_Abyss": {
+    "MappedScene": "Abyss_06_Core",
+    "MapZone": "ABYSS"
+  },
+  "Dream_Final_Boss": {
+    "MappedScene": "Crossroads_02",
+    "MapZone": "CROSSROADS"
+  },
+  "Room_Final_Boss_Atrium": {
+    "MappedScene": "Crossroads_02",
+    "MapZone": "CROSSROADS"
+  },
+  "Room_Final_Boss_Core": {
+    "MappedScene": "Crossroads_02",
+    "MapZone": "CROSSROADS"
   }
 }
