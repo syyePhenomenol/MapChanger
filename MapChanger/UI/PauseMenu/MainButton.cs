@@ -34,6 +34,8 @@ namespace MapChanger.UI
             }.WithProp(GridLayout.Row, Row).WithProp(GridLayout.Column, Column);
 
             Button.Click += OnClickInternal;
+            Button.OnHover += OnHover;
+            Button.OnUnhover += OnUnhover;
             PauseMenu.MainButtonsGrid.Children.Add(Button);
             PauseMenu.MainButtons.Add(this);
         }

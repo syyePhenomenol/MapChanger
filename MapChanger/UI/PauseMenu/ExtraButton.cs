@@ -31,6 +31,8 @@ namespace MapChanger.UI
             };
 
             Button.Click += OnClickInternal;
+            Button.OnHover += OnHover;
+            Button.OnUnhover += OnUnhover;
         }
     }
 }
