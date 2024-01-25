@@ -69,7 +69,7 @@ namespace MapChanger
             return newLocations;
         }
 
-        internal static bool IsMinimalMapScene(string scene)
+        public static bool IsMinimalMapScene(string scene)
         {
             return minimalMapScenes.Contains(scene);
         }
