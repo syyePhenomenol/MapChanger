@@ -15,6 +15,7 @@ namespace MapChanger.MonoBehaviours
     {
         /// <summary>
         /// A list of conditions to determine whether or not the GameObject should be set active or inactive.
+        /// Short circuits on first false.
         /// </summary>
         public readonly List<Func<bool>> ActiveModifiers = new();
 
@@ -55,29 +56,40 @@ namespace MapChanger.MonoBehaviours
         /// </summary>
         public void MainUpdate()
         {
-            bool value = true;
+            BeforeMainUpdate();
 
-            foreach (Func<bool> activeModifier in ActiveModifiers)
-            {
-                try
-                {
-                    value &= activeModifier.Invoke();
-                }
-                catch (Exception e)
-                {
-                    MapChangerMod.Instance.LogError(e);
-                }
-            }
+            bool active = GetActive();
 
-            gameObject.SetActive(value);
+            gameObject.SetActive(active);
 
-            OnMainUpdate(value);
+            OnMainUpdate(active);
 
             foreach (MapObject mapObject in children)
             {
                 mapObject.MainUpdate();
             }
+
+            bool GetActive()
+            {
+                foreach (Func<bool> activeModifier in ActiveModifiers)
+                {
+                    try
+                    {
+                        if (!activeModifier.Invoke()) return false;
+                    }
+                    catch (Exception e)
+                    {
+                        MapChangerMod.Instance.LogError(e);
+                    }
+                }
+                return true;
+            }
         }
+
+        /// <summary>
+        /// User-defined behaviour before MainUpdate sets the active state of the MapObject.
+        /// </summary>
+        public virtual void BeforeMainUpdate() { }
 
         /// <summary>
         /// User-defined behaviour after MainUpdate sets the active state of the MapObject.

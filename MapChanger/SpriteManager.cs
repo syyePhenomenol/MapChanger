@@ -92,8 +92,8 @@ namespace MapChanger
             }
             else
             {
-                MapChangerMod.Instance.LogError($"{name} did not correspond to an embedded image file.");
-                return Modding.CanvasUtil.NullSprite();
+                MapChangerMod.Instance.LogWarn($"{name} did not correspond to an embedded image file.");
+                return null;
             }
         }
 
@@ -111,7 +111,7 @@ namespace MapChanger
             }
             else
             {
-                MapChangerMod.Instance.LogError($"{name} did not correspond to an embedded image file.");
+                MapChangerMod.Instance.LogWarn($"{name} did not correspond to an embedded image file.");
                 return null;
             }
         }

@@ -1,2256 +1,2487 @@
 {
   "Tutorial_01": {
     "SceneName": "Tutorial_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
+    "Width": 201,
+    "Height": 80
   },
   "Deepnest_36": {
     "SceneName": "Deepnest_36",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
+    "Width": 80,
+    "Height": 28
+  },
+  "Ruins1_05b": {
+    "SceneName": "Ruins1_05b",
+    "Width": 65,
+    "Height": 35
   },
   "Fungus2_11": {
     "SceneName": "Fungus2_11",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
+    "Width": 31,
+    "Height": 70
   },
   "Abyss_19": {
     "SceneName": "Abyss_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
-  },
-  "Ruins2_05": {
-    "SceneName": "Ruins2_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
+    "Width": 160,
+    "Height": 94
   },
   "Deepnest_02": {
     "SceneName": "Deepnest_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 310,
-    "Height": 95
+    "Width": 31,
+    "Height": 76
   },
   "RestingGrounds_10": {
     "SceneName": "RestingGrounds_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 160,
+    "Width": 230,
     "Height": 30
+  },
+  "Deepnest_East_17": {
+    "SceneName": "Deepnest_East_17",
+    "Width": 43,
+    "Height": 315
   },
   "Fungus1_12": {
     "SceneName": "Fungus1_12",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 30
+    "Width": 32,
+    "Height": 67
   },
   "Hive_01": {
     "SceneName": "Hive_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 62
   },
   "Mines_20": {
     "SceneName": "Mines_20",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 120,
-    "Height": 62
+    "Width": 75,
+    "Height": 201
   },
   "Cliffs_02": {
     "SceneName": "Cliffs_02",
-    "OffsetX": 0,
-    "OffsetY": 82,
     "Width": 240,
-    "Height": 160
+    "Height": 85
   },
   "Abyss_04": {
     "SceneName": "Abyss_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 90
   },
   "Deepnest_10": {
     "SceneName": "Deepnest_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 150
   },
   "RestingGrounds_05": {
     "SceneName": "RestingGrounds_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 95
   },
+  "Crossroads_ShamanTemple": {
+    "SceneName": "Crossroads_ShamanTemple",
+    "Width": 142,
+    "Height": 75
+  },
   "Ruins1_32": {
     "SceneName": "Ruins1_32",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 52,
     "Height": 120
   },
   "White_Palace_02": {
     "SceneName": "White_Palace_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 90
   },
   "White_Palace_18": {
     "SceneName": "White_Palace_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 300,
     "Height": 108
   },
   "Crossroads_47": {
     "SceneName": "Crossroads_47",
-    "OffsetX": 0,
-    "OffsetY": 18,
-    "Width": 263,
-    "Height": 110
+    "Width": 47,
+    "Height": 19
   },
-  "Abyss_10": {
-    "SceneName": "Abyss_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 121,
-    "Height": 55
+  "BetaEnd": {
+    "SceneName": "BetaEnd",
+    "Width": 47,
+    "Height": 19
   },
-  "Abyss_12": {
-    "SceneName": "Abyss_12",
-    "OffsetX": -30,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 30
+  "Knight_Pickup": {
+    "SceneName": "Knight_Pickup",
+    "Width": 47,
+    "Height": 19
   },
-  "Abyss_21": {
-    "SceneName": "Abyss_21",
-    "OffsetX": -30,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 30
-  },
-  "Crossroads_50": {
-    "SceneName": "Crossroads_50",
-    "OffsetX": -30,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 30
-  },
-  "Deepnest_East_12": {
-    "SceneName": "Deepnest_East_12",
-    "OffsetX": -30,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 30
+  "Opening_Sequence": {
+    "SceneName": "Opening_Sequence",
+    "Width": 47,
+    "Height": 19
   },
   "Town": {
     "SceneName": "Town",
-    "OffsetX": 0,
-    "OffsetY": 18,
     "Width": 263,
-    "Height": 110
+    "Height": 70
+  },
+  "Cinematic_Stag_travel": {
+    "SceneName": "Cinematic_Stag_travel",
+    "Width": 263,
+    "Height": 70
+  },
+  "Room_Town_Stag_Station": {
+    "SceneName": "Room_Town_Stag_Station",
+    "Width": 70,
+    "Height": 35
+  },
+  "Room_Charm_Shop": {
+    "SceneName": "Room_Charm_Shop",
+    "Width": 35,
+    "Height": 25
+  },
+  "Room_Mender_House": {
+    "SceneName": "Room_Mender_House",
+    "Width": 35,
+    "Height": 25
+  },
+  "Room_mapper": {
+    "SceneName": "Room_mapper",
+    "Width": 35,
+    "Height": 25
+  },
+  "Room_nailmaster": {
+    "SceneName": "Room_nailmaster",
+    "Width": 90,
+    "Height": 30
+  },
+  "Room_nailmaster_02": {
+    "SceneName": "Room_nailmaster_02",
+    "Width": 55,
+    "Height": 30
+  },
+  "Room_nailmaster_03": {
+    "SceneName": "Room_nailmaster_03",
+    "Width": 55,
+    "Height": 30
+  },
+  "Room_nailsmith": {
+    "SceneName": "Room_nailsmith",
+    "Width": 31,
+    "Height": 17
+  },
+  "Room_shop": {
+    "SceneName": "Room_shop",
+    "Width": 33,
+    "Height": 30
+  },
+  "Room_Sly_Storeroom": {
+    "SceneName": "Room_Sly_Storeroom",
+    "Width": 110,
+    "Height": 30
+  },
+  "Room_temple": {
+    "SceneName": "Room_temple",
+    "Width": 70,
+    "Height": 35
+  },
+  "Room_ruinhouse": {
+    "SceneName": "Room_ruinhouse",
+    "Width": 30,
+    "Height": 25
   },
   "Room_Mask_Maker": {
     "SceneName": "Room_Mask_Maker",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 23
   },
+  "Room_Mansion": {
+    "SceneName": "Room_Mansion",
+    "Width": 50,
+    "Height": 25
+  },
+  "Room_Tram": {
+    "SceneName": "Room_Tram",
+    "Width": 45,
+    "Height": 30
+  },
+  "Room_Tram_RG": {
+    "SceneName": "Room_Tram_RG",
+    "Width": 45,
+    "Height": 30
+  },
+  "Room_Bretta": {
+    "SceneName": "Room_Bretta",
+    "Width": 35,
+    "Height": 25
+  },
+  "Room_Bretta_Basement": {
+    "SceneName": "Room_Bretta_Basement",
+    "Width": 35,
+    "Height": 25
+  },
+  "Room_Fungus_Shaman": {
+    "SceneName": "Room_Fungus_Shaman",
+    "Width": 150,
+    "Height": 40
+  },
+  "Room_Ouiji": {
+    "SceneName": "Room_Ouiji",
+    "Width": 50,
+    "Height": 40
+  },
+  "Room_Jinn": {
+    "SceneName": "Room_Jinn",
+    "Width": 50,
+    "Height": 40
+  },
+  "Room_Colosseum_01": {
+    "SceneName": "Room_Colosseum_01",
+    "Width": 61,
+    "Height": 36
+  },
+  "Room_Colosseum_02": {
+    "SceneName": "Room_Colosseum_02",
+    "Width": 170,
+    "Height": 70
+  },
+  "Room_Colosseum_Bronze": {
+    "SceneName": "Room_Colosseum_Bronze",
+    "Width": 148,
+    "Height": 36
+  },
+  "Room_Colosseum_Silver": {
+    "SceneName": "Room_Colosseum_Silver",
+    "Width": 148,
+    "Height": 36
+  },
+  "Room_Colosseum_Gold": {
+    "SceneName": "Room_Colosseum_Gold",
+    "Width": 148,
+    "Height": 36
+  },
+  "Room_Colosseum_Spectate": {
+    "SceneName": "Room_Colosseum_Spectate",
+    "Width": 180,
+    "Height": 36
+  },
+  "Room_Slug_Shrine": {
+    "SceneName": "Room_Slug_Shrine",
+    "Width": 45,
+    "Height": 25
+  },
   "Crossroads_01": {
     "SceneName": "Crossroads_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 42
   },
   "Crossroads_02": {
     "SceneName": "Crossroads_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 35
   },
   "Crossroads_03": {
     "SceneName": "Crossroads_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 30,
     "Height": 72
   },
   "Crossroads_04": {
     "SceneName": "Crossroads_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 30
   },
   "Crossroads_05": {
     "SceneName": "Crossroads_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 25
   },
   "Crossroads_06": {
     "SceneName": "Crossroads_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 60
   },
   "Crossroads_07": {
     "SceneName": "Crossroads_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 43,
     "Height": 115
   },
   "Crossroads_08": {
     "SceneName": "Crossroads_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 52,
     "Height": 43
   },
   "Crossroads_09": {
     "SceneName": "Crossroads_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 86,
     "Height": 25
   },
   "Crossroads_10": {
     "SceneName": "Crossroads_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 75,
+    "Height": 68
+  },
+  "Crossroads_10_preload": {
+    "SceneName": "Crossroads_10_preload",
+    "Width": 75,
+    "Height": 68
+  },
+  "Crossroads_10_boss": {
+    "SceneName": "Crossroads_10_boss",
+    "Width": 75,
+    "Height": 68
+  },
+  "Crossroads_10_boss_defeated": {
+    "SceneName": "Crossroads_10_boss_defeated",
     "Width": 75,
     "Height": 68
   },
   "Crossroads_11_alt": {
     "SceneName": "Crossroads_11_alt",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 36
   },
   "Crossroads_12": {
     "SceneName": "Crossroads_12",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 24
   },
   "Crossroads_13": {
     "SceneName": "Crossroads_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 47
   },
   "Crossroads_14": {
     "SceneName": "Crossroads_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 33,
     "Height": 48
   },
   "Crossroads_15": {
     "SceneName": "Crossroads_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 18
   },
   "Crossroads_16": {
     "SceneName": "Crossroads_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 76,
     "Height": 27
   },
   "Crossroads_18": {
     "SceneName": "Crossroads_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 41,
     "Height": 50
   },
   "Crossroads_19": {
     "SceneName": "Crossroads_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 50,
     "Height": 45
   },
   "Crossroads_21": {
     "SceneName": "Crossroads_21",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 29
   },
   "Crossroads_22": {
     "SceneName": "Crossroads_22",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 105,
     "Height": 35
   },
   "Crossroads_25": {
     "SceneName": "Crossroads_25",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 27
   },
   "Crossroads_27": {
     "SceneName": "Crossroads_27",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 30,
     "Height": 72
   },
   "Crossroads_30": {
     "SceneName": "Crossroads_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 50,
     "Height": 23
   },
   "Crossroads_31": {
     "SceneName": "Crossroads_31",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 69,
     "Height": 23
   },
   "Crossroads_33": {
     "SceneName": "Crossroads_33",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 50
   },
   "Crossroads_35": {
     "SceneName": "Crossroads_35",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
-    "Height": 50
+    "Height": 75
   },
   "Crossroads_36": {
     "SceneName": "Crossroads_36",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 70,
-    "Height": 50
+    "Width": 60,
+    "Height": 58
   },
   "Crossroads_37": {
     "SceneName": "Crossroads_37",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 70,
-    "Height": 50
+    "Width": 110,
+    "Height": 30
   },
   "Crossroads_38": {
     "SceneName": "Crossroads_38",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
-    "Height": 50
+    "Height": 25
   },
   "Crossroads_39": {
     "SceneName": "Crossroads_39",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 70,
-    "Height": 50
+    "Width": 88,
+    "Height": 25
   },
   "Crossroads_40": {
     "SceneName": "Crossroads_40",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 88,
     "Height": 25
   },
   "Crossroads_42": {
     "SceneName": "Crossroads_42",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 25
   },
   "Crossroads_43": {
     "SceneName": "Crossroads_43",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 88,
     "Height": 25
   },
   "Crossroads_45": {
     "SceneName": "Crossroads_45",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 50
   },
   "Crossroads_46": {
     "SceneName": "Crossroads_46",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 110,
+    "Width": 55,
     "Height": 25
   },
   "Crossroads_46b": {
     "SceneName": "Crossroads_46b",
-    "OffsetX": 30,
-    "OffsetY": 0,
-    "Width": 79,
+    "Width": 55,
     "Height": 25
   },
   "Crossroads_48": {
     "SceneName": "Crossroads_48",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 57,
     "Height": 19
   },
   "Crossroads_49": {
     "SceneName": "Crossroads_49",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 30,
-    "Height": 180
+    "Height": 176
   },
   "Crossroads_49b": {
     "SceneName": "Crossroads_49b",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 30,
     "Height": 86
+  },
+  "Crossroads_50": {
+    "SceneName": "Crossroads_50",
+    "Width": 260,
+    "Height": 60
   },
   "Crossroads_52": {
     "SceneName": "Crossroads_52",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 30,
-    "Height": 86
+    "Width": 55,
+    "Height": 70
+  },
+  "Ruins_House_01": {
+    "SceneName": "Ruins_House_01",
+    "Width": 50,
+    "Height": 25
+  },
+  "Ruins_House_02": {
+    "SceneName": "Ruins_House_02",
+    "Width": 70,
+    "Height": 25
+  },
+  "Ruins_House_03": {
+    "SceneName": "Ruins_House_03",
+    "Width": 61,
+    "Height": 70
   },
   "Ruins_Elevator": {
     "SceneName": "Ruins_Elevator",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 95,
     "Height": 160
   },
   "Ruins_Bathhouse": {
     "SceneName": "Ruins_Bathhouse",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 50
   },
   "Ruins1_01": {
     "SceneName": "Ruins1_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 129,
     "Height": 35
   },
   "Ruins1_02": {
     "SceneName": "Ruins1_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 76
   },
   "Ruins1_03": {
     "SceneName": "Ruins1_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 60,
-    "Height": 76
+    "Width": 150,
+    "Height": 70
   },
   "Ruins1_04": {
     "SceneName": "Ruins1_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 60,
-    "Height": 76
+    "Width": 150,
+    "Height": 60
   },
   "Ruins1_05": {
     "SceneName": "Ruins1_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 65,
     "Height": 167
   },
-  "Ruins1_05b": {
-    "SceneName": "Ruins1_05b",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 65,
-    "Height": 35
-  },
   "Ruins1_05c": {
     "SceneName": "Ruins1_05c",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 65,
     "Height": 167
   },
   "Ruins1_06": {
     "SceneName": "Ruins1_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 40
   },
   "Ruins1_09": {
     "SceneName": "Ruins1_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 40,
+    "Width": 80,
     "Height": 30
   },
   "Ruins1_17": {
     "SceneName": "Ruins1_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 40,
-    "Height": 30
+    "Width": 90,
+    "Height": 70
   },
   "Ruins1_18": {
     "SceneName": "Ruins1_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 40
   },
   "Ruins1_23": {
     "SceneName": "Ruins1_23",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 50,
     "Height": 87
   },
   "Ruins1_30": {
     "SceneName": "Ruins1_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 65
   },
   "Ruins1_24": {
     "SceneName": "Ruins1_24",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 70,
+    "Height": 60
+  },
+  "Ruins1_24_boss": {
+    "SceneName": "Ruins1_24_boss",
+    "Width": 70,
+    "Height": 60
+  },
+  "Ruins1_24_boss_defeated": {
+    "SceneName": "Ruins1_24_boss_defeated",
     "Width": 70,
     "Height": 60
   },
   "Ruins1_25": {
     "SceneName": "Ruins1_25",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 40,
     "Height": 120
   },
   "Ruins1_27": {
     "SceneName": "Ruins1_27",
-    "OffsetX": 0,
-    "OffsetY": 8,
     "Width": 80,
-    "Height": 80
+    "Height": 47
   },
   "Ruins1_28": {
     "SceneName": "Ruins1_28",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 40
   },
   "Ruins1_29": {
     "SceneName": "Ruins1_29",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 80,
-    "Height": 80
+    "Width": 47,
+    "Height": 19
   },
   "Ruins1_31": {
     "SceneName": "Ruins1_31",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 80,
-    "Height": 80
+    "Width": 65,
+    "Height": 75
   },
   "Ruins1_31b": {
     "SceneName": "Ruins1_31b",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 80,
-    "Height": 80
+    "Width": 65,
+    "Height": 75
   },
   "Ruins2_01": {
     "SceneName": "Ruins2_01",
-    "OffsetX": 0,
-    "OffsetY": 8,
     "Width": 80,
-    "Height": 80
+    "Height": 90
   },
   "Ruins2_01_b": {
     "SceneName": "Ruins2_01_b",
-    "OffsetX": 0,
-    "OffsetY": 8,
     "Width": 80,
-    "Height": 80
+    "Height": 48
   },
   "Ruins2_03": {
     "SceneName": "Ruins2_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 124
   },
   "Ruins2_03b": {
     "SceneName": "Ruins2_03b",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 80,
+    "Height": 124
+  },
+  "Ruins2_03_boss": {
+    "SceneName": "Ruins2_03_boss",
     "Width": 80,
     "Height": 124
   },
   "Ruins2_04": {
     "SceneName": "Ruins2_04",
-    "OffsetX": 0,
-    "OffsetY": 8,
     "Width": 150,
-    "Height": 100
+    "Height": 70
+  },
+  "Ruins2_05": {
+    "SceneName": "Ruins2_05",
+    "Width": 55,
+    "Height": 84
   },
   "Ruins2_06": {
     "SceneName": "Ruins2_06",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 150,
-    "Height": 100
+    "Width": 55,
+    "Height": 52
   },
   "Ruins2_07": {
     "SceneName": "Ruins2_07",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 150,
-    "Height": 100
+    "Width": 130,
+    "Height": 20
   },
   "Ruins2_08": {
     "SceneName": "Ruins2_08",
-    "OffsetX": 0,
-    "OffsetY": 8,
-    "Width": 50,
-    "Height": 60
+    "Width": 47,
+    "Height": 34
   },
   "Ruins2_09": {
     "SceneName": "Ruins2_09",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 80,
-    "Height": 30
+    "Height": 25
   },
   "Ruins2_10": {
     "SceneName": "Ruins2_10",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 80,
-    "Height": 30
+    "Width": 30,
+    "Height": 176
   },
   "Ruins2_10b": {
     "SceneName": "Ruins2_10b",
-    "OffsetX": 0,
-    "OffsetY": -5,
     "Width": 30,
-    "Height": 205
+    "Height": 185
   },
   "Ruins2_11": {
     "SceneName": "Ruins2_11",
-    "OffsetX": 0,
-    "OffsetY": -5,
-    "Width": 30,
-    "Height": 205
+    "Width": 80,
+    "Height": 145
   },
   "Ruins2_11_b": {
     "SceneName": "Ruins2_11_b",
-    "OffsetX": 0,
-    "OffsetY": -5,
-    "Width": 30,
-    "Height": 205
+    "Width": 80,
+    "Height": 145
+  },
+  "Ruins2_11_boss": {
+    "SceneName": "Ruins2_11_boss",
+    "Width": 80,
+    "Height": 145
   },
   "Ruins2_Watcher_Room": {
     "SceneName": "Ruins2_Watcher_Room",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 80,
     "Height": 160
   },
   "Fungus1_01": {
     "SceneName": "Fungus1_01",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 80,
-    "Height": 160
+    "Width": 170,
+    "Height": 30
   },
   "Fungus1_01b": {
     "SceneName": "Fungus1_01b",
-    "OffsetX": 0,
-    "OffsetY": -63,
-    "Width": 140,
-    "Height": 90
+    "Width": 45,
+    "Height": 45
   },
   "Fungus1_02": {
     "SceneName": "Fungus1_02",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 80,
-    "Height": 160
+    "Width": 46,
+    "Height": 71
   },
   "Fungus1_03": {
     "SceneName": "Fungus1_03",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 80,
-    "Height": 160
+    "Height": 35
   },
   "Fungus1_04": {
     "SceneName": "Fungus1_04",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 80,
-    "Height": 160
+    "Width": 95,
+    "Height": 50
+  },
+  "Fungus1_04_boss": {
+    "SceneName": "Fungus1_04_boss",
+    "Width": 95,
+    "Height": 50
   },
   "Fungus1_05": {
     "SceneName": "Fungus1_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 31,
     "Height": 85
   },
   "Fungus1_06": {
     "SceneName": "Fungus1_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 170,
     "Height": 30
   },
   "Fungus1_07": {
     "SceneName": "Fungus1_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 58
   },
   "Fungus1_08": {
     "SceneName": "Fungus1_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 55
   },
   "Fungus1_09": {
     "SceneName": "Fungus1_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 250,
     "Height": 34
   },
   "Fungus1_10": {
     "SceneName": "Fungus1_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 180,
     "Height": 25
   },
   "Fungus1_11": {
     "SceneName": "Fungus1_11",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 55,
     "Height": 69
   },
   "Fungus1_13": {
     "SceneName": "Fungus1_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 220,
     "Height": 47
   },
   "Fungus1_14": {
     "SceneName": "Fungus1_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 25
   },
   "Fungus1_15": {
     "SceneName": "Fungus1_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 57,
     "Height": 50
   },
   "Fungus1_16_alt": {
     "SceneName": "Fungus1_16_alt",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 47,
     "Height": 19
   },
   "Fungus1_17": {
     "SceneName": "Fungus1_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
-    "Height": 20
+    "Height": 35
   },
   "Fungus1_19": {
     "SceneName": "Fungus1_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 80,
-    "Height": 20
+    "Width": 90,
+    "Height": 24
   },
   "Fungus1_20_v02": {
     "SceneName": "Fungus1_20_v02",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 80,
-    "Height": 20
+    "Width": 180,
+    "Height": 25
   },
   "Fungus1_21": {
     "SceneName": "Fungus1_21",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 80,
-    "Height": 20
+    "Width": 90,
+    "Height": 50
   },
   "Fungus1_22": {
     "SceneName": "Fungus1_22",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 80,
-    "Height": 20
+    "Width": 36,
+    "Height": 120
   },
   "Fungus1_23": {
     "SceneName": "Fungus1_23",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 80,
-    "Height": 20
+    "Width": 150,
+    "Height": 30
   },
   "Fungus1_24": {
     "SceneName": "Fungus1_24",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 95,
     "Height": 40
   },
   "Fungus1_25": {
     "SceneName": "Fungus1_25",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 25
   },
   "Fungus1_26": {
     "SceneName": "Fungus1_26",
-    "OffsetX": -10,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 65
   },
   "Fungus1_28": {
     "SceneName": "Fungus1_28",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 165,
-    "Height": 65
+    "Width": 150,
+    "Height": 70
   },
   "Fungus1_29": {
     "SceneName": "Fungus1_29",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 165,
-    "Height": 65
+    "Width": 85,
+    "Height": 34
   },
   "Fungus1_30": {
     "SceneName": "Fungus1_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 165,
-    "Height": 65
+    "Width": 100,
+    "Height": 32
   },
   "Fungus1_31": {
     "SceneName": "Fungus1_31",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 36,
     "Height": 133
   },
   "Fungus1_32": {
     "SceneName": "Fungus1_32",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 82,
     "Height": 40
   },
   "Fungus1_34": {
     "SceneName": "Fungus1_34",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 35
   },
+  "Fungus1_35": {
+    "SceneName": "Fungus1_35",
+    "Width": 120,
+    "Height": 37
+  },
+  "Fungus1_36": {
+    "SceneName": "Fungus1_36",
+    "Width": 30,
+    "Height": 25
+  },
   "Fungus1_37": {
     "SceneName": "Fungus1_37",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 25
   },
   "Fungus1_Slug": {
     "SceneName": "Fungus1_Slug",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 110
   },
   "Fungus2_01": {
     "SceneName": "Fungus2_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 50
   },
   "Fungus2_02": {
     "SceneName": "Fungus2_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 47,
     "Height": 19
   },
   "Fungus2_03": {
     "SceneName": "Fungus2_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 130,
     "Height": 80
   },
   "Fungus2_04": {
     "SceneName": "Fungus2_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 36,
     "Height": 76
   },
   "Fungus2_05": {
     "SceneName": "Fungus2_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 30
   },
   "Fungus2_06": {
     "SceneName": "Fungus2_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 36,
     "Height": 160
   },
   "Fungus2_07": {
     "SceneName": "Fungus2_07",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 70,
-    "Height": 30
+    "Height": 40
   },
   "Fungus2_08": {
     "SceneName": "Fungus2_08",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 70,
-    "Height": 30
+    "Width": 30,
+    "Height": 70
   },
   "Fungus2_09": {
     "SceneName": "Fungus2_09",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 70,
-    "Height": 30
+    "Height": 25
   },
   "Fungus2_10": {
     "SceneName": "Fungus2_10",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 70,
-    "Height": 30
+    "Height": 75
   },
   "Fungus2_12": {
     "SceneName": "Fungus2_12",
-    "OffsetX": 0,
-    "OffsetY": 5,
-    "Width": 70,
-    "Height": 30
+    "Width": 170,
+    "Height": 31
   },
   "Fungus2_13": {
     "SceneName": "Fungus2_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 41,
     "Height": 116
   },
   "Fungus2_14": {
     "SceneName": "Fungus2_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 41,
-    "Height": 116
+    "Width": 175,
+    "Height": 41
   },
   "Fungus2_15": {
     "SceneName": "Fungus2_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 41,
-    "Height": 116
+    "Width": 61,
+    "Height": 120
+  },
+  "Fungus2_15_boss": {
+    "SceneName": "Fungus2_15_boss",
+    "Width": 61,
+    "Height": 120
+  },
+  "Fungus2_15_boss_defeated": {
+    "SceneName": "Fungus2_15_boss_defeated",
+    "Width": 61,
+    "Height": 120
   },
   "Fungus2_17": {
     "SceneName": "Fungus2_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 41,
-    "Height": 116
+    "Width": 45,
+    "Height": 45
   },
   "Fungus2_18": {
     "SceneName": "Fungus2_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 60
   },
   "Fungus2_19": {
     "SceneName": "Fungus2_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 25
   },
   "Fungus2_20": {
     "SceneName": "Fungus2_20",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 63,
     "Height": 51
   },
   "Fungus2_21": {
     "SceneName": "Fungus2_21",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 55
   },
   "Fungus2_23": {
     "SceneName": "Fungus2_23",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 70
   },
   "Fungus2_25": {
     "SceneName": "Fungus2_25",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 170,
     "Height": 35
   },
   "Fungus2_26": {
     "SceneName": "Fungus2_26",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 24
   },
   "Fungus2_28": {
     "SceneName": "Fungus2_28",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 29
   },
   "Fungus2_29": {
     "SceneName": "Fungus2_29",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 94,
     "Height": 68
   },
   "Fungus2_30": {
     "SceneName": "Fungus2_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 140
   },
   "Fungus2_31": {
     "SceneName": "Fungus2_31",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 40
   },
   "Fungus2_32": {
     "SceneName": "Fungus2_32",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 71,
     "Height": 18
   },
   "Fungus2_33": {
     "SceneName": "Fungus2_33",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 80
   },
   "Fungus2_34": {
     "SceneName": "Fungus2_34",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 47,
     "Height": 25
   },
   "Fungus3_01": {
     "SceneName": "Fungus3_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 33,
     "Height": 80
   },
   "Fungus3_02": {
     "SceneName": "Fungus3_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 31,
     "Height": 105
   },
   "Fungus3_03": {
     "SceneName": "Fungus3_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 25
   },
   "Fungus3_04": {
     "SceneName": "Fungus3_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 40,
     "Height": 93
   },
   "Fungus3_05": {
     "SceneName": "Fungus3_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 73,
     "Height": 70
   },
   "Fungus3_08": {
     "SceneName": "Fungus3_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 25
   },
   "Fungus3_10": {
     "SceneName": "Fungus3_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 112,
     "Height": 44
   },
   "Fungus3_11": {
     "SceneName": "Fungus3_11",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 52,
     "Height": 75
   },
   "Fungus3_13": {
     "SceneName": "Fungus3_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 30,
     "Height": 70
   },
   "Fungus3_21": {
     "SceneName": "Fungus3_21",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 25
   },
   "Fungus3_22": {
     "SceneName": "Fungus3_22",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 31,
-    "Height": 128
+    "Height": 143
   },
   "Fungus3_23": {
     "SceneName": "Fungus3_23",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 31,
-    "Height": 128
+    "Width": 100,
+    "Height": 50
+  },
+  "Fungus3_23_boss": {
+    "SceneName": "Fungus3_23_boss",
+    "Width": 100,
+    "Height": 50
   },
   "Fungus3_24": {
     "SceneName": "Fungus3_24",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 31,
-    "Height": 128
+    "Width": 100,
+    "Height": 30
   },
   "Fungus3_25": {
     "SceneName": "Fungus3_25",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 31,
-    "Height": 128
+    "Width": 100,
+    "Height": 50
   },
   "Fungus3_25b": {
     "SceneName": "Fungus3_25b",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 31,
-    "Height": 128
+    "Width": 100,
+    "Height": 31
   },
   "Fungus3_26": {
     "SceneName": "Fungus3_26",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 31,
     "Height": 105
   },
   "Fungus3_27": {
     "SceneName": "Fungus3_27",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 25
   },
   "Fungus3_28": {
     "SceneName": "Fungus3_28",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 42
   },
   "Fungus3_30": {
     "SceneName": "Fungus3_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 40,
     "Height": 26
   },
   "Fungus3_34": {
     "SceneName": "Fungus3_34",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 27
   },
   "Fungus3_35": {
     "SceneName": "Fungus3_35",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 65,
     "Height": 25
   },
   "Fungus3_39": {
     "SceneName": "Fungus3_39",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 55
   },
   "Fungus3_40": {
     "SceneName": "Fungus3_40",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 187,
+    "Height": 35
+  },
+  "Fungus3_40_boss": {
+    "SceneName": "Fungus3_40_boss",
     "Width": 187,
     "Height": 35
   },
   "Fungus3_44": {
     "SceneName": "Fungus3_44",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 95,
     "Height": 60
   },
   "Fungus3_47": {
     "SceneName": "Fungus3_47",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 50
   },
   "Fungus3_48": {
     "SceneName": "Fungus3_48",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 95,
     "Height": 118
   },
   "Fungus3_49": {
     "SceneName": "Fungus3_49",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 87,
     "Height": 40
   },
   "Fungus3_50": {
     "SceneName": "Fungus3_50",
-    "OffsetX": -15,
-    "OffsetY": -65,
-    "Width": 20,
+    "Width": 40,
     "Height": 133
+  },
+  "Fungus3_archive": {
+    "SceneName": "Fungus3_archive",
+    "Width": 100,
+    "Height": 40
+  },
+  "Fungus3_archive_02": {
+    "SceneName": "Fungus3_archive_02",
+    "Width": 105,
+    "Height": 195
+  },
+  "Fungus3_archive_02_boss": {
+    "SceneName": "Fungus3_archive_02_boss",
+    "Width": 105,
+    "Height": 195
   },
   "Cliffs_01": {
     "SceneName": "Cliffs_01",
-    "OffsetX": 40,
-    "OffsetY": 0,
-    "Width": 170,
-    "Height": 185
+    "Width": 140,
+    "Height": 170
+  },
+  "Cliffs_02_boss": {
+    "SceneName": "Cliffs_02_boss",
+    "Width": 140,
+    "Height": 170
+  },
+  "Cliffs_03": {
+    "SceneName": "Cliffs_03",
+    "Width": 180,
+    "Height": 72
   },
   "Cliffs_04": {
     "SceneName": "Cliffs_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 85,
     "Height": 60
   },
   "Cliffs_05": {
     "SceneName": "Cliffs_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 82,
     "Height": 60
   },
   "Cliffs_06": {
     "SceneName": "Cliffs_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 25
   },
   "RestingGrounds_02": {
     "SceneName": "RestingGrounds_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 129,
+    "Height": 25
+  },
+  "RestingGrounds_02_boss": {
+    "SceneName": "RestingGrounds_02_boss",
     "Width": 129,
     "Height": 25
   },
   "RestingGrounds_04": {
     "SceneName": "RestingGrounds_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 35
   },
   "RestingGrounds_06": {
     "SceneName": "RestingGrounds_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 30
   },
+  "RestingGrounds_07": {
+    "SceneName": "RestingGrounds_07",
+    "Width": 47,
+    "Height": 27
+  },
   "RestingGrounds_08": {
     "SceneName": "RestingGrounds_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 145,
-    "Height": 70
+    "Width": 220,
+    "Height": 80
   },
   "RestingGrounds_09": {
     "SceneName": "RestingGrounds_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 47,
     "Height": 19
   },
   "RestingGrounds_12": {
     "SceneName": "RestingGrounds_12",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 95,
     "Height": 35
   },
   "RestingGrounds_17": {
     "SceneName": "RestingGrounds_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 25
   },
   "Mines_01": {
     "SceneName": "Mines_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 32,
     "Height": 60
   },
   "Mines_02": {
     "SceneName": "Mines_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 36
   },
   "Mines_03": {
     "SceneName": "Mines_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 80
   },
   "Mines_04": {
     "SceneName": "Mines_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 36,
     "Height": 85
   },
   "Mines_05": {
     "SceneName": "Mines_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 35,
     "Height": 74
   },
   "Mines_06": {
     "SceneName": "Mines_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 27
   },
   "Mines_07": {
     "SceneName": "Mines_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 19
   },
   "Mines_10": {
     "SceneName": "Mines_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 187,
     "Height": 25
   },
   "Mines_11": {
     "SceneName": "Mines_11",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 43,
     "Height": 65
   },
   "Mines_13": {
     "SceneName": "Mines_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 45
   },
   "Mines_16": {
     "SceneName": "Mines_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 100,
-    "Height": 45
+    "Width": 66,
+    "Height": 35
   },
   "Mines_17": {
     "SceneName": "Mines_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 100,
-    "Height": 45
+    "Width": 75,
+    "Height": 30
   },
   "Mines_18": {
     "SceneName": "Mines_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 100,
-    "Height": 45
+    "Width": 65,
+    "Height": 30
+  },
+  "Mines_18_boss": {
+    "SceneName": "Mines_18_boss",
+    "Width": 65,
+    "Height": 30
   },
   "Mines_19": {
     "SceneName": "Mines_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 35
   },
   "Mines_23": {
     "SceneName": "Mines_23",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 180,
     "Height": 40
   },
   "Mines_24": {
     "SceneName": "Mines_24",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 20
   },
   "Mines_25": {
     "SceneName": "Mines_25",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 60,
-    "Height": 20
+    "Width": 70,
+    "Height": 130
   },
   "Mines_28": {
     "SceneName": "Mines_28",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
-    "Height": 61
+    "Height": 70
   },
   "Mines_29": {
     "SceneName": "Mines_29",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 65
   },
   "Mines_30": {
     "SceneName": "Mines_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 180,
     "Height": 25
   },
   "Mines_31": {
     "SceneName": "Mines_31",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 257,
     "Height": 65
   },
   "Mines_32": {
     "SceneName": "Mines_32",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 65,
     "Height": 30
   },
   "Mines_33": {
     "SceneName": "Mines_33",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 25
   },
   "Mines_34": {
     "SceneName": "Mines_34",
-    "OffsetX": -10,
-    "OffsetY": 10,
-    "Width": 210,
-    "Height": 110
+    "Width": 193,
+    "Height": 80
+  },
+  "Mines_35": {
+    "SceneName": "Mines_35",
+    "Width": 114,
+    "Height": 80
   },
   "Mines_36": {
     "SceneName": "Mines_36",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 43,
     "Height": 40
   },
   "Mines_37": {
     "SceneName": "Mines_37",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 75,
     "Height": 65
   },
   "Deepnest_01": {
     "SceneName": "Deepnest_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 38
   },
   "Deepnest_01b": {
     "SceneName": "Deepnest_01b",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 84
   },
   "Deepnest_03": {
     "SceneName": "Deepnest_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 113
   },
   "Deepnest_09": {
     "SceneName": "Deepnest_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 47,
     "Height": 19
   },
   "Deepnest_14": {
     "SceneName": "Deepnest_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 60
   },
   "Deepnest_16": {
     "SceneName": "Deepnest_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 97,
     "Height": 60
   },
   "Deepnest_17": {
     "SceneName": "Deepnest_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 31,
     "Height": 62
   },
   "Deepnest_26": {
     "SceneName": "Deepnest_26",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 250,
     "Height": 50
   },
   "Deepnest_26b": {
     "SceneName": "Deepnest_26b",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 128,
     "Height": 50
   },
   "Deepnest_30": {
     "SceneName": "Deepnest_30",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 160
   },
   "Deepnest_31": {
     "SceneName": "Deepnest_31",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 125,
     "Height": 60
   },
   "Deepnest_32": {
     "SceneName": "Deepnest_32",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 180,
     "Height": 26
   },
   "Deepnest_33": {
     "SceneName": "Deepnest_33",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 85,
     "Height": 45
   },
   "Deepnest_34": {
     "SceneName": "Deepnest_34",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 50
   },
   "Deepnest_35": {
     "SceneName": "Deepnest_35",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 52,
     "Height": 110
   },
   "Deepnest_37": {
     "SceneName": "Deepnest_37",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 82,
     "Height": 32
   },
   "Deepnest_38": {
     "SceneName": "Deepnest_38",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 205,
     "Height": 42
   },
   "Deepnest_39": {
     "SceneName": "Deepnest_39",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 210,
     "Height": 70
   },
   "Deepnest_40": {
     "SceneName": "Deepnest_40",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 60
   },
   "Deepnest_41": {
     "SceneName": "Deepnest_41",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 115
   },
   "Deepnest_42": {
     "SceneName": "Deepnest_42",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 40,
     "Height": 146
   },
   "Deepnest_43": {
     "SceneName": "Deepnest_43",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 145,
-    "Height": 70
+    "Width": 40,
+    "Height": 133
   },
   "Deepnest_44": {
     "SceneName": "Deepnest_44",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 60
   },
+  "Deepnest_45_v02": {
+    "SceneName": "Deepnest_45_v02",
+    "Width": 150,
+    "Height": 60
+  },
+  "Deepnest_Spider_Town": {
+    "SceneName": "Deepnest_Spider_Town",
+    "Width": 120,
+    "Height": 170
+  },
+  "Room_spider_small": {
+    "SceneName": "Room_spider_small",
+    "Width": 50,
+    "Height": 40
+  },
   "Deepnest_East_01": {
     "SceneName": "Deepnest_East_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 49,
     "Height": 85
   },
   "Deepnest_East_02": {
     "SceneName": "Deepnest_East_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 32
   },
   "Deepnest_East_03": {
     "SceneName": "Deepnest_East_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 80,
     "Height": 150
   },
   "Deepnest_East_04": {
     "SceneName": "Deepnest_East_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 200
   },
   "Deepnest_East_06": {
     "SceneName": "Deepnest_East_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 351,
     "Height": 43
   },
   "Deepnest_East_07": {
     "SceneName": "Deepnest_East_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 90,
     "Height": 190
   },
   "Deepnest_East_08": {
     "SceneName": "Deepnest_East_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 40
   },
   "Deepnest_East_09": {
     "SceneName": "Deepnest_East_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 50
   },
   "Deepnest_East_10": {
     "SceneName": "Deepnest_East_10",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 46,
     "Height": 28
   },
   "Deepnest_East_11": {
     "SceneName": "Deepnest_East_11",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 130
   },
+  "Deepnest_East_12": {
+    "SceneName": "Deepnest_East_12",
+    "Width": 120,
+    "Height": 35
+  },
   "Deepnest_East_13": {
     "SceneName": "Deepnest_East_13",
-    "OffsetX": 0,
-    "OffsetY": 5,
     "Width": 60,
     "Height": 30
   },
   "Deepnest_East_14": {
     "SceneName": "Deepnest_East_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
-    "Height": 80
+    "Height": 70
   },
   "Deepnest_East_14b": {
     "SceneName": "Deepnest_East_14b",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 80
+    "Width": 90,
+    "Height": 70
   },
   "Deepnest_East_15": {
     "SceneName": "Deepnest_East_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 80
+    "Width": 42,
+    "Height": 28
   },
   "Deepnest_East_16": {
     "SceneName": "Deepnest_East_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 160,
-    "Height": 80
+    "Width": 65,
+    "Height": 28
   },
   "Deepnest_East_18": {
     "SceneName": "Deepnest_East_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 41
   },
   "Deepnest_East_Hornet": {
     "SceneName": "Deepnest_East_Hornet",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 68,
     "Height": 100
   },
+  "Deepnest_East_Hornet_boss": {
+    "SceneName": "Deepnest_East_Hornet_boss",
+    "Width": 68,
+    "Height": 100
+  },
+  "Room_Wyrm": {
+    "SceneName": "Room_Wyrm",
+    "Width": 108,
+    "Height": 40
+  },
   "Abyss_01": {
     "SceneName": "Abyss_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 45,
     "Height": 176
   },
   "Abyss_02": {
     "SceneName": "Abyss_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 170,
     "Height": 42
   },
   "Abyss_03": {
     "SceneName": "Abyss_03",
-    "OffsetX": 15,
-    "OffsetY": 0,
-    "Width": 220,
+    "Width": 130,
     "Height": 25
   },
   "Abyss_03_b": {
     "SceneName": "Abyss_03_b",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 350,
+    "Width": 75,
     "Height": 25
   },
   "Abyss_03_c": {
     "SceneName": "Abyss_03_c",
-    "OffsetX": 100,
-    "OffsetY": 0,
-    "Width": 260,
+    "Width": 150,
     "Height": 25
   },
   "Abyss_05": {
     "SceneName": "Abyss_05",
-    "OffsetX": 100,
-    "OffsetY": 0,
-    "Width": 260,
-    "Height": 25
+    "Width": 200,
+    "Height": 90
   },
   "Abyss_06_Core": {
     "SceneName": "Abyss_06_Core",
-    "OffsetX": 100,
-    "OffsetY": 0,
-    "Width": 260,
-    "Height": 25
+    "Width": 100,
+    "Height": 270
   },
   "Abyss_08": {
     "SceneName": "Abyss_08",
-    "OffsetX": 100,
-    "OffsetY": 0,
-    "Width": 260,
-    "Height": 25
+    "Width": 110,
+    "Height": 100
   },
   "Abyss_09": {
     "SceneName": "Abyss_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 260,
     "Height": 120
   },
+  "Abyss_10": {
+    "SceneName": "Abyss_10",
+    "Width": 121,
+    "Height": 55
+  },
+  "Abyss_12": {
+    "SceneName": "Abyss_12",
+    "Width": 180,
+    "Height": 30
+  },
+  "Abyss_15": {
+    "SceneName": "Abyss_15",
+    "Width": 165,
+    "Height": 110
+  },
   "Abyss_16": {
     "SceneName": "Abyss_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 30
   },
   "Abyss_17": {
     "SceneName": "Abyss_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 170,
     "Height": 60
   },
   "Abyss_18": {
     "SceneName": "Abyss_18",
-    "OffsetX": 0,
-    "OffsetY": 0,
-    "Width": 170,
-    "Height": 60
+    "Width": 200,
+    "Height": 30
   },
   "Abyss_20": {
     "SceneName": "Abyss_20",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 180,
+    "Height": 70
+  },
+  "Abyss_21": {
+    "SceneName": "Abyss_21",
     "Width": 170,
-    "Height": 60
+    "Height": 265
   },
   "Abyss_22": {
     "SceneName": "Abyss_22",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 85,
     "Height": 34
   },
+  "Abyss_Lighthouse_room": {
+    "SceneName": "Abyss_Lighthouse_room",
+    "Width": 50,
+    "Height": 35
+  },
+  "Room_Queen": {
+    "SceneName": "Room_Queen",
+    "Width": 94,
+    "Height": 55
+  },
   "Waterways_01": {
     "SceneName": "Waterways_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 152,
     "Height": 47
   },
   "Waterways_02": {
     "SceneName": "Waterways_02",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 240,
     "Height": 45
   },
   "Waterways_03": {
     "SceneName": "Waterways_03",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 25
   },
   "Waterways_04": {
     "SceneName": "Waterways_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 154,
     "Height": 43
   },
   "Waterways_04b": {
     "SceneName": "Waterways_04b",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 130,
     "Height": 50
   },
   "Waterways_05": {
     "SceneName": "Waterways_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 120,
+    "Height": 48
+  },
+  "Waterways_05_boss": {
+    "SceneName": "Waterways_05_boss",
     "Width": 120,
     "Height": 48
   },
   "Waterways_06": {
     "SceneName": "Waterways_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 140,
     "Height": 50
   },
   "Waterways_07": {
     "SceneName": "Waterways_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 110,
     "Height": 100
   },
   "Waterways_08": {
     "SceneName": "Waterways_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 140,
     "Height": 60
   },
   "Waterways_09": {
     "SceneName": "Waterways_09",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 50,
     "Height": 46
   },
   "Waterways_12": {
     "SceneName": "Waterways_12",
-    "OffsetX": 0,
-    "OffsetY": 0,
+    "Width": 80,
+    "Height": 35
+  },
+  "Waterways_12_boss": {
+    "SceneName": "Waterways_12_boss",
     "Width": 80,
     "Height": 35
   },
   "Waterways_13": {
     "SceneName": "Waterways_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 125,
     "Height": 105
   },
   "Waterways_14": {
     "SceneName": "Waterways_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 260,
     "Height": 50
   },
   "Waterways_15": {
     "SceneName": "Waterways_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 60,
     "Height": 25
   },
   "White_Palace_01": {
     "SceneName": "White_Palace_01",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 140
   },
   "White_Palace_03_hub": {
     "SceneName": "White_Palace_03_hub",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 100,
     "Height": 140
   },
   "White_Palace_04": {
     "SceneName": "White_Palace_04",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 78
   },
   "White_Palace_05": {
     "SceneName": "White_Palace_05",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 156,
     "Height": 160
   },
   "White_Palace_06": {
     "SceneName": "White_Palace_06",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 50,
     "Height": 75
   },
   "White_Palace_07": {
     "SceneName": "White_Palace_07",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 140
   },
   "White_Palace_08": {
     "SceneName": "White_Palace_08",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 45
   },
   "White_Palace_09": {
     "SceneName": "White_Palace_09",
-    "OffsetX": 0,
-    "OffsetY": -63,
-    "Width": 140,
+    "Width": 150,
+    "Height": 150
+  },
+  "White_Palace_11": {
+    "SceneName": "White_Palace_11",
+    "Width": 180,
     "Height": 90
   },
   "White_Palace_12": {
     "SceneName": "White_Palace_12",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 74,
     "Height": 220
   },
   "White_Palace_13": {
     "SceneName": "White_Palace_13",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 175,
     "Height": 250
   },
   "White_Palace_14": {
     "SceneName": "White_Palace_14",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 150
   },
   "White_Palace_15": {
     "SceneName": "White_Palace_15",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 70,
     "Height": 130
   },
   "White_Palace_16": {
     "SceneName": "White_Palace_16",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 160
   },
   "White_Palace_17": {
     "SceneName": "White_Palace_17",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 120,
     "Height": 115
   },
   "White_Palace_19": {
     "SceneName": "White_Palace_19",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 180,
     "Height": 168
   },
   "White_Palace_20": {
     "SceneName": "White_Palace_20",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 300,
     "Height": 182
   },
   "Hive_02": {
     "SceneName": "Hive_02",
-    "OffsetX": -103,
-    "OffsetY": 0,
-    "Width": 95,
-    "Height": 86
+    "Width": 206,
+    "Height": 87
   },
   "Hive_03": {
     "SceneName": "Hive_03",
-    "OffsetX": 0,
-    "OffsetY": -63,
     "Width": 140,
-    "Height": 90
+    "Height": 150
   },
   "Hive_03_c": {
     "SceneName": "Hive_03_c",
-    "OffsetX": 0,
-    "OffsetY": -63,
     "Width": 140,
-    "Height": 90
+    "Height": 110
   },
   "Hive_04": {
     "SceneName": "Hive_04",
-    "OffsetX": -105,
-    "OffsetY": -80,
-    "Width": 110,
-    "Height": 70
+    "Width": 220,
+    "Height": 152
   },
   "Hive_05": {
     "SceneName": "Hive_05",
-    "OffsetX": -105,
-    "OffsetY": -80,
+    "Width": 120,
+    "Height": 60
+  },
+  "Grimm_Divine": {
+    "SceneName": "Grimm_Divine",
+    "Width": 35,
+    "Height": 25
+  },
+  "Grimm_Main_Tent": {
+    "SceneName": "Grimm_Main_Tent",
+    "Width": 190,
+    "Height": 60
+  },
+  "Grimm_Main_Tent_boss": {
+    "SceneName": "Grimm_Main_Tent_boss",
+    "Width": 190,
+    "Height": 60
+  },
+  "Grimm_Nightmare": {
+    "SceneName": "Grimm_Nightmare",
+    "Width": 250,
+    "Height": 35
+  },
+  "Dream_Nailcollection": {
+    "SceneName": "Dream_Nailcollection",
+    "Width": 300,
+    "Height": 80
+  },
+  "Dream_01_False_Knight": {
+    "SceneName": "Dream_01_False_Knight",
+    "Width": 160,
+    "Height": 68
+  },
+  "Dream_02_Mage_Lord": {
+    "SceneName": "Dream_02_Mage_Lord",
     "Width": 110,
+    "Height": 60
+  },
+  "Dream_03_Infected_Knight": {
+    "SceneName": "Dream_03_Infected_Knight",
+    "Width": 80,
+    "Height": 110
+  },
+  "Dream_04_White_Defender": {
+    "SceneName": "Dream_04_White_Defender",
+    "Width": 120,
+    "Height": 48
+  },
+  "Dream_Mighty_Zote": {
+    "SceneName": "Dream_Mighty_Zote",
+    "Width": 55,
+    "Height": 150
+  },
+  "Dream_Guardian_Hegemol": {
+    "SceneName": "Dream_Guardian_Hegemol",
+    "Width": 90,
+    "Height": 60
+  },
+  "Dream_Guardian_Lurien": {
+    "SceneName": "Dream_Guardian_Lurien",
+    "Width": 90,
+    "Height": 60
+  },
+  "Dream_Guardian_Monomon": {
+    "SceneName": "Dream_Guardian_Monomon",
+    "Width": 90,
+    "Height": 60
+  },
+  "Cutscene_Boss_Door": {
+    "SceneName": "Cutscene_Boss_Door",
+    "Width": 32,
+    "Height": 32
+  },
+  "Dream_Backer_Shrine": {
+    "SceneName": "Dream_Backer_Shrine",
+    "Width": 118,
     "Height": 70
+  },
+  "Dream_Room_Believer_Shrine": {
+    "SceneName": "Dream_Room_Believer_Shrine",
+    "Width": 118,
+    "Height": 80
+  },
+  "Dream_Abyss": {
+    "SceneName": "Dream_Abyss",
+    "Width": 100,
+    "Height": 270
+  },
+  "Dream_Final_Boss": {
+    "SceneName": "Dream_Final_Boss",
+    "Width": 90,
+    "Height": 200
+  },
+  "Room_Final_Boss_Atrium": {
+    "SceneName": "Room_Final_Boss_Atrium",
+    "Width": 250,
+    "Height": 40
+  },
+  "Room_Final_Boss_Core": {
+    "SceneName": "Room_Final_Boss_Core",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_Ending_A": {
+    "SceneName": "Cinematic_Ending_A",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_Ending_B": {
+    "SceneName": "Cinematic_Ending_B",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_Ending_C": {
+    "SceneName": "Cinematic_Ending_C",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_Ending_D": {
+    "SceneName": "Cinematic_Ending_D",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_Ending_E": {
+    "SceneName": "Cinematic_Ending_E",
+    "Width": 85,
+    "Height": 40
+  },
+  "End_Credits": {
+    "SceneName": "End_Credits",
+    "Width": 85,
+    "Height": 40
+  },
+  "Cinematic_MrMushroom": {
+    "SceneName": "Cinematic_MrMushroom",
+    "Width": 85,
+    "Height": 40
+  },
+  "Menu_Credits": {
+    "SceneName": "Menu_Credits",
+    "Width": 85,
+    "Height": 40
+  },
+  "End_Game_Completion": {
+    "SceneName": "End_Game_Completion",
+    "Width": 85,
+    "Height": 40
+  },
+  "PermaDeath": {
+    "SceneName": "PermaDeath",
+    "Width": 85,
+    "Height": 40
+  },
+  "_test_cocoon_2": {
+    "SceneName": "_test_cocoon_2",
+    "Width": 32,
+    "Height": 32
+  },
+  "PermaDeath_Unlock": {
+    "SceneName": "PermaDeath_Unlock",
+    "Width": 32,
+    "Height": 32
+  },
+  "_test_cocoon_1": {
+    "SceneName": "_test_cocoon_1",
+    "Width": 32,
+    "Height": 32
   },
   "GG_Waterways": {
     "SceneName": "GG_Waterways",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 200,
     "Height": 97
   },
   "GG_Atrium": {
     "SceneName": "GG_Atrium",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 190,
     "Height": 90
   },
+  "GG_Broken_Vessel": {
+    "SceneName": "GG_Broken_Vessel",
+    "Width": 160,
+    "Height": 94
+  },
+  "GG_Brooding_Mawlek": {
+    "SceneName": "GG_Brooding_Mawlek",
+    "Width": 86,
+    "Height": 26
+  },
+  "GG_Collector": {
+    "SceneName": "GG_Collector",
+    "Width": 80,
+    "Height": 145
+  },
+  "GG_Crystal_Guardian": {
+    "SceneName": "GG_Crystal_Guardian",
+    "Width": 65,
+    "Height": 30
+  },
+  "GG_Crystal_Guardian_2": {
+    "SceneName": "GG_Crystal_Guardian_2",
+    "Width": 65,
+    "Height": 30
+  },
+  "GG_Dung_Defender": {
+    "SceneName": "GG_Dung_Defender",
+    "Width": 120,
+    "Height": 48
+  },
+  "GG_Failed_Champion": {
+    "SceneName": "GG_Failed_Champion",
+    "Width": 160,
+    "Height": 68
+  },
+  "GG_False_Knight": {
+    "SceneName": "GG_False_Knight",
+    "Width": 75,
+    "Height": 68
+  },
+  "GG_Flukemarm": {
+    "SceneName": "GG_Flukemarm",
+    "Width": 80,
+    "Height": 35
+  },
+  "GG_Ghost_Galien": {
+    "SceneName": "GG_Ghost_Galien",
+    "Width": 150,
+    "Height": 60
+  },
+  "GG_Ghost_Gorb": {
+    "SceneName": "GG_Ghost_Gorb",
+    "Width": 240,
+    "Height": 85
+  },
+  "GG_Ghost_Hu": {
+    "SceneName": "GG_Ghost_Hu",
+    "Width": 71,
+    "Height": 18
+  },
+  "GG_Ghost_Markoth": {
+    "SceneName": "GG_Ghost_Markoth",
+    "Width": 46,
+    "Height": 28
+  },
+  "GG_Ghost_Marmu": {
+    "SceneName": "GG_Ghost_Marmu",
+    "Width": 187,
+    "Height": 35
+  },
+  "GG_Ghost_No_Eyes": {
+    "SceneName": "GG_Ghost_No_Eyes",
+    "Width": 120,
+    "Height": 37
+  },
+  "GG_Ghost_Xero": {
+    "SceneName": "GG_Ghost_Xero",
+    "Width": 129,
+    "Height": 25
+  },
+  "GG_God_Tamer": {
+    "SceneName": "GG_God_Tamer",
+    "Width": 148,
+    "Height": 36
+  },
+  "GG_Grey_Prince_Zote": {
+    "SceneName": "GG_Grey_Prince_Zote",
+    "Width": 55,
+    "Height": 150
+  },
+  "GG_Grimm": {
+    "SceneName": "GG_Grimm",
+    "Width": 190,
+    "Height": 60
+  },
+  "GG_Grimm_Nightmare": {
+    "SceneName": "GG_Grimm_Nightmare",
+    "Width": 250,
+    "Height": 35
+  },
+  "GG_Gruz_Mother": {
+    "SceneName": "GG_Gruz_Mother",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Hive_Knight": {
+    "SceneName": "GG_Hive_Knight",
+    "Width": 120,
+    "Height": 60
+  },
+  "GG_Hollow_Knight": {
+    "SceneName": "GG_Hollow_Knight",
+    "Width": 85,
+    "Height": 40
+  },
+  "GG_Hornet_1": {
+    "SceneName": "GG_Hornet_1",
+    "Width": 95,
+    "Height": 50
+  },
+  "GG_Hornet_2": {
+    "SceneName": "GG_Hornet_2",
+    "Width": 68,
+    "Height": 100
+  },
+  "GG_Lost_Kin": {
+    "SceneName": "GG_Lost_Kin",
+    "Width": 80,
+    "Height": 110
+  },
   "GG_Lurker": {
     "SceneName": "GG_Lurker",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 250,
     "Height": 140
   },
+  "GG_Mantis_Lords": {
+    "SceneName": "GG_Mantis_Lords",
+    "Width": 61,
+    "Height": 120
+  },
+  "GG_Mega_Moss_Charger": {
+    "SceneName": "GG_Mega_Moss_Charger",
+    "Width": 85,
+    "Height": 34
+  },
+  "GG_Nailmasters": {
+    "SceneName": "GG_Nailmasters",
+    "Width": 90,
+    "Height": 80
+  },
+  "GG_Nosk": {
+    "SceneName": "GG_Nosk",
+    "Width": 180,
+    "Height": 26
+  },
+  "GG_Oblobbles": {
+    "SceneName": "GG_Oblobbles",
+    "Width": 148,
+    "Height": 36
+  },
+  "GG_Painter": {
+    "SceneName": "GG_Painter",
+    "Width": 90,
+    "Height": 80
+  },
   "GG_Pipeway": {
     "SceneName": "GG_Pipeway",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 150,
     "Height": 51
   },
+  "GG_Radiance": {
+    "SceneName": "GG_Radiance",
+    "Width": 90,
+    "Height": 200
+  },
+  "GG_Sly": {
+    "SceneName": "GG_Sly",
+    "Width": 90,
+    "Height": 80
+  },
+  "GG_Soul_Master": {
+    "SceneName": "GG_Soul_Master",
+    "Width": 70,
+    "Height": 60
+  },
+  "GG_Soul_Tyrant": {
+    "SceneName": "GG_Soul_Tyrant",
+    "Width": 110,
+    "Height": 60
+  },
+  "GG_Spa": {
+    "SceneName": "GG_Spa",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Traitor_Lord": {
+    "SceneName": "GG_Traitor_Lord",
+    "Width": 100,
+    "Height": 50
+  },
+  "GG_Unlock": {
+    "SceneName": "GG_Unlock",
+    "Width": 100,
+    "Height": 50
+  },
+  "GG_Uumuu": {
+    "SceneName": "GG_Uumuu",
+    "Width": 105,
+    "Height": 195
+  },
+  "GG_Vengefly": {
+    "SceneName": "GG_Vengefly",
+    "Width": 180,
+    "Height": 25
+  },
+  "GG_Watcher_Knights": {
+    "SceneName": "GG_Watcher_Knights",
+    "Width": 80,
+    "Height": 124
+  },
+  "GG_White_Defender": {
+    "SceneName": "GG_White_Defender",
+    "Width": 120,
+    "Height": 48
+  },
+  "GG_Workshop": {
+    "SceneName": "GG_Workshop",
+    "Width": 280,
+    "Height": 80
+  },
+  "Room_GG_Shortcut": {
+    "SceneName": "Room_GG_Shortcut",
+    "Width": 120,
+    "Height": 108
+  },
+  "GG_End_Sequence": {
+    "SceneName": "GG_End_Sequence",
+    "Width": 32,
+    "Height": 32
+  },
   "GG_Atrium_Roof": {
     "SceneName": "GG_Atrium_Roof",
-    "OffsetX": 0,
-    "OffsetY": 0,
     "Width": 160,
     "Height": 110
+  },
+  "GG_Blue_Room": {
+    "SceneName": "GG_Blue_Room",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Engine": {
+    "SceneName": "GG_Engine",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Engine_Prime": {
+    "SceneName": "GG_Engine_Prime",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Engine_Root": {
+    "SceneName": "GG_Engine_Root",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Mage_Knight": {
+    "SceneName": "GG_Mage_Knight",
+    "Width": 90,
+    "Height": 80
+  },
+  "GG_Vengefly_V": {
+    "SceneName": "GG_Vengefly_V",
+    "Width": 180,
+    "Height": 25
+  },
+  "GG_Entrance_Cutscene": {
+    "SceneName": "GG_Entrance_Cutscene",
+    "Width": 180,
+    "Height": 25
+  },
+  "GG_Mighty_Zote": {
+    "SceneName": "GG_Mighty_Zote",
+    "Width": 148,
+    "Height": 36
+  },
+  "GG_Land_of_Storms": {
+    "SceneName": "GG_Land_of_Storms",
+    "Width": 345,
+    "Height": 60
+  },
+  "GG_Boss_Door_Entrance": {
+    "SceneName": "GG_Boss_Door_Entrance",
+    "Width": 345,
+    "Height": 60
+  },
+  "GG_Gruz_Mother_V": {
+    "SceneName": "GG_Gruz_Mother_V",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Brooding_Mawlek_V": {
+    "SceneName": "GG_Brooding_Mawlek_V",
+    "Width": 86,
+    "Height": 26
+  },
+  "GG_Mantis_Lords_V": {
+    "SceneName": "GG_Mantis_Lords_V",
+    "Width": 61,
+    "Height": 120
+  },
+  "GG_Nosk_Hornet": {
+    "SceneName": "GG_Nosk_Hornet",
+    "Width": 180,
+    "Height": 25
+  },
+  "GG_Uumuu_V": {
+    "SceneName": "GG_Uumuu_V",
+    "Width": 105,
+    "Height": 195
+  },
+  "GG_Ghost_Gorb_V": {
+    "SceneName": "GG_Ghost_Gorb_V",
+    "Width": 240,
+    "Height": 85
+  },
+  "GG_Ghost_Markoth_V": {
+    "SceneName": "GG_Ghost_Markoth_V",
+    "Width": 46,
+    "Height": 28
+  },
+  "GG_Ghost_Marmu_V": {
+    "SceneName": "GG_Ghost_Marmu_V",
+    "Width": 187,
+    "Height": 35
+  },
+  "GG_Ghost_No_Eyes_V": {
+    "SceneName": "GG_Ghost_No_Eyes_V",
+    "Width": 120,
+    "Height": 37
+  },
+  "GG_Ghost_Xero_V": {
+    "SceneName": "GG_Ghost_Xero_V",
+    "Width": 129,
+    "Height": 25
+  },
+  "GG_Mage_Knight_V": {
+    "SceneName": "GG_Mage_Knight_V",
+    "Width": 90,
+    "Height": 80
+  },
+  "GG_Collector_V": {
+    "SceneName": "GG_Collector_V",
+    "Width": 80,
+    "Height": 145
+  },
+  "GG_Nosk_V": {
+    "SceneName": "GG_Nosk_V",
+    "Width": 180,
+    "Height": 26
+  },
+  "GG_Wyrm": {
+    "SceneName": "GG_Wyrm",
+    "Width": 160,
+    "Height": 30
+  },
+  "GG_Unn": {
+    "SceneName": "GG_Unn",
+    "Width": 160,
+    "Height": 30
+  },
+  "Quit_To_Menu": {
+    "SceneName": "Quit_To_Menu",
+    "Width": 160,
+    "Height": 30
   }
 }

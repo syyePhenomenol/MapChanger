@@ -10,10 +10,6 @@ namespace MapChanger.Defs
         [JsonProperty]
         public string SceneName { get; init; }
         [JsonProperty]
-        public int OffsetX { get; init; }
-        [JsonProperty]
-        public int OffsetY { get; init; }
-        [JsonProperty]
         public int Width { get; init; }
         [JsonProperty]
         public int Height { get; init; }
