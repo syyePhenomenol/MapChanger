@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using HutongGames.PlayMaker;
-using MapChanger.Defs;
-using Newtonsoft.Json;
+using MapChanger.Tracking;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Vasi;
@@ -11,24 +10,6 @@ namespace MapChanger
 {
     public class Tracker : HookModule
     {
-        internal record TrackingDef
-        {
-            [JsonProperty]
-            internal string SceneName { get; init; }
-            [JsonProperty]
-            internal string ObjectName { get; init; }
-            [JsonProperty]
-            internal string PdBoolName { get; init; }
-            [JsonProperty]
-            internal string[] PdBoolNames { get; init; }
-            [JsonProperty]
-            internal string PdIntName { get; init; }
-            [JsonProperty]
-            internal int PdIntValue { get; init; }
-            [JsonProperty]
-            internal string PdListName { get; init; }
-        }
-
         private class TrackGeoRock : FsmStateAction
         {
             private readonly GameObject go;
@@ -43,7 +24,7 @@ namespace MapChanger
             public override void OnEnter()
             {
                 if (grd.id.Contains("-")) return;
-                AddVanillaItem(grd.id, grd.sceneName);
+                ObtainedSceneData.Add((grd.id, grd.sceneName));
                 MapChangerMod.Instance.LogDebug("Geo Rock broken");
                 MapChangerMod.Instance.LogDebug(" ID: " + grd.id);
                 MapChangerMod.Instance.LogDebug(" Scene: " + grd.sceneName);
@@ -65,7 +46,9 @@ namespace MapChanger
             {
                 if (name.Contains("-")) return;
                 string scene = Utils.CurrentScene() ?? "";
-                AddVanillaItem(name, scene);
+
+                ObtainedSceneData.Add((name, scene));
+
                 MapChangerMod.Instance.LogDebug("Item picked up");
                 MapChangerMod.Instance.LogDebug(" Name: " + name);
                 MapChangerMod.Instance.LogDebug(" Scene: " + scene);
@@ -74,20 +57,20 @@ namespace MapChanger
             }
         }
 
-        private static Dictionary<string, TrackingDef> trackingDefs = new();
+        private static Dictionary<string, TrackingItem> trackingItems = new();
 
-        private static HashSet<string> clearedLocations;
+        internal static HashSet<(string, string)> ObtainedSceneData = new();
 
         public static HashSet<string> ScenesVisited = new();
 
         internal static void Load()
         {
-            trackingDefs = JsonUtil.Deserialize<Dictionary<string, TrackingDef>>("MapChanger.Resources.tracking.json");
+            trackingItems = JsonUtil.Deserialize<Dictionary<string, TrackingItem>>("MapChanger.Resources.trackingItems.json");
         }
 
         internal static void VerifyTrackingDefs()
         {
-            foreach (string name in trackingDefs.Keys)
+            foreach (string name in trackingItems.Keys)
             {
                 MapChangerMod.Instance.LogDebug($"Has {name}: {HasClearedLocation(name)}");
             }
@@ -116,43 +99,14 @@ namespace MapChanger
 
         public static bool HasClearedLocation(string name)
         {
-            if (trackingDefs.TryGetValue(name, out TrackingDef td))
-            {
-                if (td.PdBoolName is not null)
-                {
-                    return PlayerData.instance.GetBool(td.PdBoolName);
-                }
-                if (td.PdBoolNames is not null)
-                {
-                    return td.PdBoolNames.All(boolName => PlayerData.instance.GetBool(boolName));
-                }
-                if (td.PdIntName is not null)
-                {
-                    return PlayerData.instance.GetInt(td.PdIntName) >= td.PdIntValue;
-                }
-                if (Finder.TryGetLocation(name, out MapLocationDef mld))
-                {
-                    if (td.ObjectName is not null)
-                    {
-                        if (td.SceneName is not null)
-                        {
-                            return HasObtainedItem(td.ObjectName, td.SceneName);
-                        }
-                        return HasObtainedItem(td.ObjectName, mld.SceneName);
-                    }
-                    if (td.PdListName is not null)
-                    {
-                        return PlayerData.instance.GetVariable<List<string>>(td.PdListName).Contains(mld.SceneName);
-                    }
-                }
-                MapChangerMod.Instance.LogWarn($"All members of TrackingDef are null! {name}");
-            }
-            return false;
-        }
+            // Hotfix for handling Level 3 Flames when Brumm flame is taken
 
-        public static bool HasObtainedItem(string objectName, string scene)
-        {
-            return clearedLocations.Contains($"{objectName}-{scene}");
+            if (trackingItems.TryGetValue(name, out TrackingItem ti))
+            {
+                return ti.Has();
+            }
+
+            return false;
         }
 
         public static bool HasVisitedScene(string scene)
@@ -162,46 +116,28 @@ namespace MapChanger
 
         private static void GetPreviouslyObtainedItems()
         {
-            clearedLocations = new();
+            ObtainedSceneData = new();
 
             foreach (GeoRockData grd in GameManager.instance.sceneData.geoRocks)
             {
-                if (grd.hitsLeft > 0) continue;
-                AddVanillaItem(grd.id, grd.sceneName);
+                if (grd.hitsLeft <= 0)
+                {
+                    ObtainedSceneData.Add((grd.id, grd.sceneName));
+                }
             }
-            foreach (PersistentBoolData pbd in GameManager.instance.sceneData.persistentBoolItems)
-            {
-                // Ignore SceneData added by ItemChanger
-                if (!pbd.activated || pbd.id.Contains("-")) continue;
 
-                if ((pbd.id.Contains("Shiny Item")
-                    || pbd.id is "Heart Piece"
-                    || pbd.id is "Vessel Fragment"
-                    || pbd.id.Contains("Chest")
-                    || pbd.id is "Grub Mimic"
-                    || pbd.id is "Grub Mimic 1"
-                    || pbd.id is "Grub Mimic 2"
-                    || pbd.id is "Grub Mimic 3"
-                    // Crystal/Enraged Guardian Boss Geo
-                    || pbd.id is "Mega Zombie Beam Miner (1)"
-                    || pbd.id is "Zombie Beam Miner Rematch"))
+            HashSet<(string, string)> persistentBoolItems = new(trackingItems.Values.Where(i => i is SdTrackingItem)
+                .Select(i => ((SdTrackingItem)i).SceneDataPair));
+
+            persistentBoolItems.UnionWith(trackingItems.Values.Where(i => i is MultiTrackingItem)
+                .SelectMany(i => ((MultiTrackingItem)i).GetSdTrackingItemPairs()));
+
+            foreach (var pbd in GameManager.instance.sceneData.persistentBoolItems)
+            {
+                var pair = (pbd.id, pbd.sceneName);
+                if (persistentBoolItems.Contains(pair) && pbd.activated)
                 {
-                    AddVanillaItem(pbd.id, pbd.sceneName);
-                }
-                // Soul Warrior Sanctum Boss Geo
-                else if (pbd.id is "Battle Scene v2" && pbd.sceneName is "Ruins1_23")
-                {
-                    AddVanillaItem("Mage Knight", pbd.sceneName);
-                }
-                // Soul Warrior Elegant Key Boss Geo
-                else if (pbd.id is "Battle Scene v2" && pbd.sceneName is "Ruins1_31")
-                {
-                    AddVanillaItem("Mage Knight", $"{pbd.sceneName}b");
-                }
-                // Gruz Mother Boss Geo
-                else if (pbd.id is "Battle Scene" && pbd.sceneName is "Crossroads_04")
-                {
-                    AddVanillaItem("Giant Fly", pbd.sceneName);
+                    ObtainedSceneData.Add(pair);
                 }
             }
         }
@@ -210,17 +146,33 @@ namespace MapChanger
         {
             orig(self);
 
+            var scene = Utils.CurrentScene();
+
             switch (self.gameObject.name)
             {
                 case "Grub Mimic":
                 case "Grub Mimic 1":
                 case "Grub Mimic 2":
                 case "Grub Mimic 3":
-                case "Mage Knight":
                 case "Mega Zombie Beam Miner (1)":
                 case "Zombie Beam Miner Rematch":
+                    ObtainedSceneData.Add((self.gameObject.name, scene??""));
+                    break;
+                case "Mage Knight":
+                    if (scene is "Ruins1_23")
+                    {
+                        ObtainedSceneData.Add(("Battle Scene v2", scene));
+                    }
+                    else if (scene is "Ruins1_31b")
+                    {
+                        ObtainedSceneData.Add(("Battle Scene v2", scene));
+                    }
+                    break;
                 case "Giant Fly":
-                    AddVanillaItem(self.gameObject.name, Utils.CurrentScene()??"");
+                    if (scene is "Crossroads_04")
+                    {
+                        ObtainedSceneData.Add(("Battle Scene", scene));
+                    }
                     break;
                 default:
                     break;
@@ -280,11 +232,6 @@ namespace MapChanger
             {
                 self.geoRockData.id = "_Props/Geo Rock Abyss";
             }
-        }
-
-        private static void AddVanillaItem(string objectName, string scene)
-        {
-            clearedLocations.Add($"{objectName}-{scene}");
         }
 
         private static void AddSceneVisited(Scene from, Scene to)

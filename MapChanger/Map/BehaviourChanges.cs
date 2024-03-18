@@ -2,6 +2,7 @@
 using System.Linq;
 using GlobalEnums;
 using HutongGames.PlayMaker;
+using MapChanger.MonoBehaviours;
 using Modding;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -68,6 +69,7 @@ namespace MapChanger.Map
             On.GameMap.PositionCompass += HideCompassInNonMappedScene;
 
             On.GameMap.Update += ZoomFasterOnKeyboard;
+            On.GameMap.Update += OverridePanning;
             On.GameManager.UpdateGameMap += DisableUpdatedMapPrompt;
 
             Events.OnWorldMapInternal += IncreasePanningRange;
@@ -91,6 +93,7 @@ namespace MapChanger.Map
             On.GameMap.PositionCompass -= HideCompassInNonMappedScene;
 
             On.GameMap.Update -= ZoomFasterOnKeyboard;
+            On.GameMap.Update -= OverridePanning;
             On.GameManager.UpdateGameMap -= DisableUpdatedMapPrompt;
 
             Events.OnWorldMapInternal -= IncreasePanningRange;
@@ -252,8 +255,23 @@ namespace MapChanger.Map
             orig(self);
         }
 
+        private static void OverridePanning(On.GameMap.orig_Update orig, GameMap self)
+        {
+            bool canPanOrig = self.canPan;
+
+            if (MapPanner.IsPanning)
+            {
+                self.canPan = false;
+            }
+
+            orig(self);
+
+            self.canPan = canPanOrig;
+        }
+
         /// <summary>
         /// QoL improvement which prevents the "Map Updated" prompt from occurring in most cases.
+        /// If the game is saved while the mod is enabled, scenesMapped doesn't get updated. This is intentional.
         /// </summary>
         private static bool DisableUpdatedMapPrompt(On.GameManager.orig_UpdateGameMap orig, GameManager self)
         {

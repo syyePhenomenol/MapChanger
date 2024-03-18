@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using GlobalEnums;
 using MapChanger.MonoBehaviours;
+using UnityEngine;
 
 namespace MapChanger
 {
@@ -15,6 +16,7 @@ namespace MapChanger
 
         public override void OnEnterGame()
         {
+            Events.OnSetGameMap += AddMapPanner;
             Events.OnWorldMap += BeforeOpenWorldMap;
             Events.OnQuickMap += BeforeOpenQuickMap;
             Events.OnCloseMap += BeforeCloseMap;
@@ -32,6 +34,7 @@ namespace MapChanger
 
             mapObjects.Clear();
 
+            Events.OnSetGameMap -= AddMapPanner;
             Events.OnWorldMap -= BeforeOpenWorldMap;
             Events.OnQuickMap -= BeforeOpenQuickMap;
             Events.OnCloseMap -= BeforeCloseMap;
@@ -40,6 +43,13 @@ namespace MapChanger
         public static void Add(MapObject mapObject)
         {
             mapObjects.Add(mapObject);
+        }
+
+        private static void AddMapPanner(GameObject goMap)
+        {
+            var panner = Utils.MakeMonoBehaviour<MapPanner>(goMap, "Map Panner");
+            panner.Initialize();
+            Add(panner);
         }
 
         private void BeforeOpenWorldMap(GameMap obj)
