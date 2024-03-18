@@ -12,7 +12,7 @@ namespace MapChanger.Map
 {
     /// <summary>
     /// Replaces the name of variables, so we can override their values
-    /// to enable enable full map or disable vanilla pins with the mod enabled.
+    /// to e.g. enable full map or disable vanilla pins with the mod enabled.
     /// </summary>
     internal class VariableOverrides : HookModule
     {

@@ -78,9 +78,19 @@
 		<EmbeddedResource Include="Resources\Sprites\GUI\PanelLeft.png" />
 		<EmbeddedResource Include="Resources\Sprites\GUI\PanelRight.png" />
 		<EmbeddedResource Include="Resources\Sprites\GUI\Selector.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BackgroundCircle.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BackgroundDiamond.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BackgroundHexagon.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BackgroundPentagon.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BackgroundSquare.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Bench.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Blank.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Border.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BorderCircle.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BorderDiamond.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BorderHexagon.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BorderPentagon.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\BorderSquare.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Charm.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Cocoon.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Dreamer.png" />
@@ -119,6 +129,7 @@
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\LegEater.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\Lemm.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\Millibelle.png" />
+		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\Mushroom.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\Nailsmith.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\PillMarker1.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Extra\PillMarker2.png" />
@@ -162,16 +173,12 @@
 		<EmbeddedResource Include="Resources\Sprites\Pins\Totem.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Unknown.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownGeoRock.png" />
-		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownGeoRockInv.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownGrub.png" />
-		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownGrubInv.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownLifeblood.png" />
-		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownLifebloodInv.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownTotem.png" />
-		<EmbeddedResource Include="Resources\Sprites\Pins\UnknownTotemInv.png" />
 		<EmbeddedResource Include="Resources\Sprites\Pins\Vessel.png" />
 		<EmbeddedResource Include="Resources\tileMaps.json" />
-		<EmbeddedResource Include="Resources\tracking.json" />
+		<EmbeddedResource Include="Resources\trackingItems.json" />
 	</ItemGroup>
 
 	<ItemGroup>
