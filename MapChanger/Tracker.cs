@@ -99,8 +99,6 @@ namespace MapChanger
 
         public static bool HasClearedLocation(string name)
         {
-            // Hotfix for handling Level 3 Flames when Brumm flame is taken
-
             if (trackingItems.TryGetValue(name, out TrackingItem ti))
             {
                 return ti.Has();

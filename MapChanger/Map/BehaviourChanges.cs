@@ -79,7 +79,8 @@ namespace MapChanger.Map
         {
             On.PlayMakerFSM.Start -= ModifyFsms;
 
-            On.HutongGames.PlayMaker.FsmState.OnEnter += SetQuickMapZone;
+            On.HutongGames.PlayMaker.FsmState.OnEnter -= SetQuickMapZone;
+            On.GameManager.GetCurrentMapZone -= OverrideGetCurrentMapZone;
 
             On.RoughMapRoom.OnEnable -= StoreRoughMapCopy;
 
@@ -181,6 +182,7 @@ namespace MapChanger.Map
         private static void UpdateSceneMapZone(Scene from, Scene to)
         {
             sceneMapZone = Finder.GetMapZone(GameManager.GetBaseSceneName(to.name));
+            // MapChangerMod.Instance.LogDebug($"Updated sceneMapZone to {sceneMapZone} in scene {to.name}");
         }
 
         // currentMapZone is a local variable assigned during orig, so this is the most convenient way to override it
@@ -188,10 +190,13 @@ namespace MapChanger.Map
 
         private static void HideCompassInNonMappedScene(On.GameMap.orig_PositionCompass orig, GameMap self, bool posShade)
         {
+            // MapChangerMod.Instance.LogDebug($"HideCompassInNonMappedScene");
+
             if (Settings.MapModEnabled() && sceneMapZone is not MapZone.NONE)
             {
                 self.doorMapZone = sceneMapZone.ToString();
                 overrideMapZone = true;
+                // MapChangerMod.Instance.LogDebug($"Set map zone override to TRUE as {sceneMapZone}. Also set door map zone override");
             }
 
             orig(self, posShade);
@@ -200,17 +205,24 @@ namespace MapChanger.Map
 
             if (!Finder.IsMappedScene(Utils.CurrentScene()))
             {
+                // MapChangerMod.Instance.LogDebug($"Disabled compass");
                 self.compassIcon.SetActive(false);
                 ReflectionHelper.SetField(self, "displayingCompass", false);
             }
+
+            // MapChangerMod.Instance.LogDebug($"~HideCompassInNonMappedScene");
         }
 
         private static string OverrideGetCurrentMapZone(On.GameManager.orig_GetCurrentMapZone orig, GameManager self)
         {
             if (overrideMapZone)
             {
+                // MapChangerMod.Instance.LogDebug($"Overwrote GetCurrentMapZone as {sceneMapZone}");
+
                 return sceneMapZone.ToString();
             }
+
+            // MapChangerMod.Instance.LogDebug($"Did NOT override GetCurrentMapZone as {sceneMapZone}");
 
             return orig(self);
         }
@@ -219,9 +231,11 @@ namespace MapChanger.Map
         {
             if (Settings.MapModEnabled()
                 && self.Name is "Check Area"
+                && self.Fsm.GameObjectName is "Quick Map"
                 && (self.Fsm.Variables.StringVariables.Where(var => var.Name is "Map Zone").FirstOrDefault() is FsmString mapZoneString)
                 && sceneMapZone is not MapZone.NONE)
             {
+                // MapChangerMod.Instance.LogDebug($"Overwrote Map Zone as {sceneMapZone}");
                 mapZoneString.Value = sceneMapZone.ToString();
             }
 

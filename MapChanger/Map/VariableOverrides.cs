@@ -117,11 +117,13 @@ namespace MapChanger.Map
                         {
                             foreach (FsmActionBoolOverride boolOverride in overrides)
                             {
+                                // MapChangerMod.Instance.LogDebug($"Replacing bool in {state.Name} at index {boolOverride.Index} of type {boolOverride.Type}");
                                 ReplaceBool(state, boolOverride.Index, boolOverride.Type);
                             }
                         }
                         if (fod.BoolsRange.TryGetValue(state.Name, out FsmActionBoolRangeOverride overrideRange))
                         {
+                            // MapChangerMod.Instance.LogDebug($"Replacing bools in {state.Name} over range {overrideRange.Range} of type {overrideRange.Type}");
                             for (int i = 0; i < overrideRange.Range; i++)
                             {
                                 ReplaceBool(state, i, overrideRange.Type);
