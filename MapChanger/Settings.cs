@@ -24,7 +24,7 @@ namespace MapChanger
 
         public static event Action OnSettingChanged;
 
-        private static List<MapMode> modes = new();
+        private static List<MapMode> modes = [];
 
         private static int modeIndex = 0;
 
@@ -61,7 +61,7 @@ namespace MapChanger
 
         public override void OnQuitToMenu()
         {
-            modes = new();
+            modes = [];
             MapModWasEnabled = false;
         }
 

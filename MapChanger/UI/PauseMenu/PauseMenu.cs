@@ -9,10 +9,10 @@ namespace MapChanger.UI
         internal static LayoutRoot Root { get; private set; }
         internal static GridLayout MainButtonsGrid { get; private set; }
 
-        internal static List<Title> Titles { get; private set; } = new();
+        internal static List<Title> Titles { get; private set; } = [];
 
-        internal static List<MainButton> MainButtons { get; private set; } = new();
-        internal static List<ExtraButtonPanel> ExtraButtonPanels { get; private set; } = new();
+        internal static List<MainButton> MainButtons { get; private set; } = [];
+        internal static List<ExtraButtonPanel> ExtraButtonPanels { get; private set; } = [];
 
         public override void OnEnterGame()
         {
@@ -25,9 +25,9 @@ namespace MapChanger.UI
         {
             Root?.Destroy();
             Root = null;
-            Titles = new();
-            MainButtons = new();
-            ExtraButtonPanels = new();
+            Titles = [];
+            MainButtons = [];
+            ExtraButtonPanels = [];
 
             On.HeroController.Pause -= OnPause;
         }
@@ -41,8 +41,10 @@ namespace MapChanger.UI
         {
             if (Root == null)
             {
-                Root = new(true, $"{GetType().Name} Root");
-                Root.VisibilityCondition = Condition;
+                Root = new(true, $"{GetType().Name} Root")
+                {
+                    VisibilityCondition = Condition
+                };
             }
 
             MainButtonsGrid = new(Root, "Main Buttons")

@@ -12,15 +12,9 @@ namespace MapChanger.UI
 
         public override void BuildLayout()
         {
-            Root.ListenForHotkey(KeyCode.M, () =>
-            {
-                Settings.ToggleModEnabled();
-            }, ModifierKeys.Ctrl);
+            Root.ListenForHotkey(KeyCode.M, Settings.ToggleModEnabled, ModifierKeys.Ctrl);
 
-            Root.ListenForHotkey(KeyCode.T, () =>
-            {
-                Settings.ToggleMode();
-            }, ModifierKeys.Ctrl);
+            Root.ListenForHotkey(KeyCode.T, Settings.ToggleMode, ModifierKeys.Ctrl);
         }
     }
 }

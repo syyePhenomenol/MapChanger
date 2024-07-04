@@ -26,7 +26,7 @@ namespace MapChanger.Defs
 
         public WorldMapPosition(MapLocation[] mapLocations) : base(mapLocations) { }
 
-        protected private override bool TrySetPosition(MapLocation mapLocation)
+        private protected override bool TrySetPosition(MapLocation mapLocation)
         {
             if (!BuiltInObjects.TryGetMapRoomPosition(mapLocation.MappedScene, out float baseX, out float baseY)
                 || !BuiltInObjects.MappedRooms.TryGetValue(mapLocation.MappedScene, out RoomSprite roomSprite)

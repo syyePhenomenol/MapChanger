@@ -39,8 +39,8 @@ namespace MapChanger
             }
         }
 
-        internal static readonly List<HookModule> HookModules = new()
-        {
+        internal static readonly List<HookModule> HookModules =
+        [
             new Settings(),
             new Tracker(),
             new VariableOverrides(),
@@ -49,13 +49,13 @@ namespace MapChanger
             new PauseMenu(),
             new MapUILayerUpdater(),
             new MapObjectUpdater()
-        };
+        ];
 
         private static readonly MapZone[] customMapZones =
-        {
+        [
             MapZone.WHITE_PALACE,
             MapZone.GODS_GLORY
-        };
+        ];
 
         internal static void Initialize()
         {

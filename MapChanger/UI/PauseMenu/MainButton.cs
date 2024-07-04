@@ -6,18 +6,11 @@ namespace MapChanger.UI
     /// <summary>
     /// A button that is persistently displayed in the main buttons grid on the pause menu.
     /// </summary>
-    public abstract class MainButton : ButtonWrapper
+    public abstract class MainButton(string name, string mod, int row, int column) : ButtonWrapper($"{mod} {name}")
     {
-        public readonly string Mod;
-        public readonly int Row;
-        public readonly int Column;
-
-        public MainButton(string name, string mod, int row, int column) : base($"{mod} {name}")
-        {
-            Mod = mod;
-            Row = row;
-            Column = column;
-        }
+        public readonly string Mod = mod;
+        public readonly int Row = row;
+        public readonly int Column = column;
 
         public override void Make()
         {

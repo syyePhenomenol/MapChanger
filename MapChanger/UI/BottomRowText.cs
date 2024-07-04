@@ -7,7 +7,7 @@ namespace MapChanger.UI
     public abstract class BottomRowText : MapUILayer
     {
         protected virtual float MinSpacing { get; } = 200f;
-        protected virtual string[] TextNames { get; } = { };
+        protected virtual string[] TextNames { get; } = [];
         protected Dictionary<string, TextObject> MapTexts { get; private set; }
 
         protected override bool Condition()
@@ -17,7 +17,7 @@ namespace MapChanger.UI
 
         public override void BuildLayout()
         {
-            MapTexts = new();
+            MapTexts = [];
 
             GridLayout grid = new(Root, $"{GetType().Name} + Grid")
             {

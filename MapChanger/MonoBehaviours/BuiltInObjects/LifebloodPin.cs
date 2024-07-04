@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace MapChanger.MonoBehaviours
+﻿namespace MapChanger.MonoBehaviours
 {
     internal class LifebloodPin : VanillaPin
     {

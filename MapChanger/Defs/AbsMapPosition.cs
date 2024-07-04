@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace MapChanger.Defs
+﻿namespace MapChanger.Defs
 {
     /// <summary>
     /// Interprets the x and y values of the input tuple

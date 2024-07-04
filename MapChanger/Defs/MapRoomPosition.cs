@@ -10,8 +10,8 @@ namespace MapChanger.Defs
     /// </summary>
     public record MapRoomPosition : IMapPosition
     {
-        public float X { get; protected private set; }
-        public float Y { get; protected private set; }
+        public float X { get; private protected set; }
+        public float Y { get; private protected set; }
         public string MappedScene { get; private set; }
         public MapZone MapZone { get; private set; }
 
@@ -39,7 +39,7 @@ namespace MapChanger.Defs
             }
         }
 
-        protected private virtual bool TrySetPosition(MapLocation mapLocation)
+        private protected virtual bool TrySetPosition(MapLocation mapLocation)
         {
             if (!BuiltInObjects.TryGetMapRoomPosition(mapLocation.MappedScene, out float baseX, out float baseY)) return false;
             X = baseX + mapLocation.X;

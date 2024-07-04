@@ -10,8 +10,10 @@ namespace MapChanger.UI
         {
             if (Root == null)
             {
-                Root = new(true, $"{GetType().Name} Root");
-                Root.VisibilityCondition = Condition;
+                Root = new(true, $"{GetType().Name} Root")
+                {
+                    VisibilityCondition = Condition
+                };
 
                 BuildLayout();
             }

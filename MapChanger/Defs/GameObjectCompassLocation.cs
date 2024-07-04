@@ -2,13 +2,9 @@ using UnityEngine;
 
 namespace MapChanger.Defs
 {
-    public abstract class GameObjectCompassLocation : CompassLocation
+    public abstract class GameObjectCompassLocation(GameObject go) : CompassLocation
     {
-        private readonly GameObject go;
-        public override Vector2 Position => go.transform.position;
-        public GameObjectCompassLocation(GameObject go)
-        {
-            this.go = go;
-        }
+        public GameObject GameObject { get; } = go;
+        public override Vector2 Position => GameObject.transform.position;
     }
 }

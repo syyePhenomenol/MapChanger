@@ -12,18 +12,21 @@ namespace MapChanger
     /// I have also added a method for getting the Texture2D.
     /// https://github.com/homothetyhk/HollowKnight.ItemChanger/blob/master/ItemChanger/Internal/SpriteManager.cs
     /// </summary>
-    public class SpriteManager
+    /// <remarks>
+    /// Creates a SpriteManager to lazily load and cache Sprites from the embedded png files in the specified assembly.
+    /// <br/>Only filepaths with the matching prefix are considered, and the prefix is removed to determine sprite names (e.g. "ItemChangerMod.Resources." is the prefix for Instance).
+    /// </remarks>
+    public class SpriteManager(Assembly assembly, string resourcePrefix, SpriteManager.Info info)
     {
         /// <summary>
         /// Effective length/height in pixels of the built in pins, not including shadow.
         /// </summary>
         public static readonly int DEFAULT_PIN_SPRITE_SIZE = 59;
-
-        private readonly Assembly _assembly;
-        private readonly Dictionary<string, string> _resourcePaths;
-        private readonly Dictionary<string, Sprite> _cachedSprites = new();
-        private readonly Dictionary<string, Texture2D> _cachedTextures = new();
-        private readonly Info _info;
+        private readonly Dictionary<string, string> _resourcePaths = assembly.GetManifestResourceNames()
+                .Where(n => n.EndsWith(".png") && n.StartsWith(resourcePrefix))
+                .ToDictionary(n => n.Substring(resourcePrefix.Length, n.Length - resourcePrefix.Length - ".png".Length));
+        private readonly Dictionary<string, Sprite> _cachedSprites = [];
+        private readonly Dictionary<string, Texture2D> _cachedTextures = [];
 
         public class Info
         {
@@ -65,19 +68,6 @@ namespace MapChanger
         public SpriteManager(Assembly a, string resourcePrefix) : this(a, resourcePrefix, new()) { }
 
         /// <summary>
-        /// Creates a SpriteManager to lazily load and cache Sprites from the embedded png files in the specified assembly.
-        /// <br/>Only filepaths with the matching prefix are considered, and the prefix is removed to determine sprite names (e.g. "ItemChangerMod.Resources." is the prefix for Instance).
-        /// </summary>
-        public SpriteManager(Assembly a, string resourcePrefix, Info info)
-        {
-            _assembly = a;
-            _resourcePaths = a.GetManifestResourceNames()
-                .Where(n => n.EndsWith(".png") && n.StartsWith(resourcePrefix))
-                .ToDictionary(n => n.Substring(resourcePrefix.Length, n.Length - resourcePrefix.Length - ".png".Length));
-            _info = info;
-        }
-
-        /// <summary>
         /// Fetches the Sprite with the specified name. If it has not yet been loaded, loads it from embedded resources and caches the result.
         /// <br/>The name is the path of the image as an embedded resource, with the SpriteManager prefix and file extension removed.
         /// <br/>For example, the image at "ItemChanger.Resources.ShopIcons.Geo.png" has key "ShopIcons.Geo" in SpriteManager.Instance.
@@ -87,8 +77,8 @@ namespace MapChanger
             if (_cachedSprites.TryGetValue(name, out Sprite sprite)) return sprite;
             else if (_resourcePaths.TryGetValue(name, out string path))
             {
-                using Stream s = _assembly.GetManifestResourceStream(path);
-                return _cachedSprites[name] = Load(ToArray(s), _info.GetFilterMode(name), _info.GetPixelsPerUnit(name));
+                using Stream s = assembly.GetManifestResourceStream(path);
+                return _cachedSprites[name] = Load(ToArray(s), info.GetFilterMode(name), info.GetPixelsPerUnit(name));
             }
             else
             {
@@ -102,10 +92,10 @@ namespace MapChanger
             if (_cachedTextures.TryGetValue(name, out Texture2D tex)) return tex;
             else if (_resourcePaths.TryGetValue(name, out string path))
             {
-                byte[] data = ToArray(_assembly.GetManifestResourceStream(path));
+                byte[] data = ToArray(assembly.GetManifestResourceStream(path));
                 tex = new(1, 1, TextureFormat.RGBA32, true);
                 tex.LoadImage(data, markNonReadable: true);
-                tex.filterMode = _info.GetFilterMode(name);
+                tex.filterMode = info.GetFilterMode(name);
 
                 return _cachedTextures[name] = tex;
             }

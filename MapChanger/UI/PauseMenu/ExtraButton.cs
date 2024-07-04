@@ -6,14 +6,9 @@ namespace MapChanger.UI
     /// <summary>
     /// Buttons that belong in a toggleable panel in the pause menu.
     /// </summary>
-    public abstract class ExtraButton : ButtonWrapper
+    public abstract class ExtraButton(string name, string mod) : ButtonWrapper($"{mod} {name}")
     {
-        public readonly string Mod;
-
-        public ExtraButton(string name, string mod) : base($"{mod} {name}")
-        {
-            Mod = mod;
-        }
+        public readonly string Mod = mod;
 
         public override void Make()
         {

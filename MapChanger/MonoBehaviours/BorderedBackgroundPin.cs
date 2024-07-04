@@ -20,9 +20,10 @@ namespace MapChanger.MonoBehaviours
 
             BorderPlacement = BorderPlacement.InFront;
 
-            GameObject goBackground = new($"{transform.name} Background");
-
-            goBackground.layer = UI_LAYER;
+            GameObject goBackground = new($"{transform.name} Background")
+            {
+                layer = UI_LAYER
+            };
             goBackground.transform.SetParent(transform, false);
 
             backgroundSr = goBackground.AddComponent<SpriteRenderer>();

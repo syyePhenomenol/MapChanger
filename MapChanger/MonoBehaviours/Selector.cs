@@ -18,7 +18,7 @@ namespace MapChanger.MonoBehaviours
         protected static readonly Vector4 DEFAULT_COLOR = new(1f, 1f, 1f, 0.6f);
         protected const string SELECTOR_SPRITE = "GUI.Selector";
 
-        public Dictionary<string, List<ISelectable>> Objects { get; } = new();
+        public Dictionary<string, List<ISelectable>> Objects { get; } = [];
         public virtual Vector2 TargetPosition { get; } = Vector2.zero;
         public virtual float UpdateWaitSeconds { get; } = 0.02f;
         public virtual float SelectionRadius { get; } = DEFAULT_SELECTION_RADIUS;

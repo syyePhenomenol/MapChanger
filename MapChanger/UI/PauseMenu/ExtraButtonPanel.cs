@@ -7,24 +7,14 @@ namespace MapChanger.UI
     /// <summary>
     /// A toggleable panel of buttons in the pause menu.
     /// </summary>
-    public abstract class ExtraButtonPanel
+    public abstract class ExtraButtonPanel(string name, string mod, float leftPadding, int rowSize)
     {
-        public readonly string Name;
-        public readonly string Mod;
-        private readonly float leftPadding;
-        private readonly int rowSize;
+        public readonly string Name = name;
+        public readonly string Mod = mod;
 
         protected List<ExtraButton> ExtraButtons { get; private set; }
 
         public DynamicUniformGrid ExtraButtonsGrid { get; private set; }
-
-        public ExtraButtonPanel(string name, string mod, float leftPadding, int rowSize)
-        {
-            Name = name;
-            Mod = mod;
-            this.leftPadding = leftPadding;
-            this.rowSize = rowSize;
-        }
 
         public void Make()
         {
@@ -35,12 +25,11 @@ namespace MapChanger.UI
                 Orientation = Orientation.Vertical,
                 Padding = new(leftPadding, 865f, 10f, 10f),
                 HorizontalSpacing = 0f,
-                VerticalSpacing = 0f
+                VerticalSpacing = 0f,
+                ChildrenBeforeRollover = rowSize
             };
 
-            ExtraButtonsGrid.ChildrenBeforeRollover = rowSize;
-
-            ExtraButtons = new();
+            ExtraButtons = [];
             MakeButtons();
 
             PauseMenu.ExtraButtonPanels.Add(this);

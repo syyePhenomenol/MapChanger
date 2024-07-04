@@ -11,7 +11,7 @@ namespace MapChanger
         private static Dictionary<string, TileMapDef> tileMaps;
         private static HashSet<string> minimalMapScenes;
         private static Dictionary<string, MapLocationDef> locations;
-        private static readonly Dictionary<string, MapLocationDef> injectedLocations = new();
+        private static readonly Dictionary<string, MapLocationDef> injectedLocations = [];
 
         internal static void Load()
         {

@@ -11,7 +11,7 @@ namespace MapChanger
     /// </summary>
     public class MapObjectUpdater : HookModule
     {
-        private static readonly List<MapObject> mapObjects = new();
+        private static readonly List<MapObject> mapObjects = [];
         public static ReadOnlyCollection<MapObject> MapObjects => mapObjects.AsReadOnly();
 
         public override void OnEnterGame()

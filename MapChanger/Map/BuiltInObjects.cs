@@ -32,7 +32,7 @@ namespace MapChanger.Map
         {
             MapChangerMod.Instance.LogDebug("AttachMapModifiers");
 
-            MappedRooms = new();
+            MappedRooms = [];
 
             // Destroy empty Ruins1_31b object and rename the actual one to it
             if (goMap.transform.FindChildInHierarchy("City of Tears/Ruins1_31b") is Transform emptyRoom)

@@ -31,7 +31,7 @@ namespace MapChanger.MonoBehaviours
         private Vector2 currentDir;
         private float currentAngle;
 
-        public Dictionary<string, CompassLocation> Locations = new();
+        public Dictionary<string, CompassLocation> Locations = [];
 
         public static GameObject Create(string name, Func<GameObject> getEntity, float radius, float scale, Func<bool> condition, bool rotateSprite, bool lerp, float lerpDuration)
         {

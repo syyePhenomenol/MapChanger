@@ -4,15 +4,10 @@ using UnityEngine;
 
 namespace MapChanger.UI
 {
-    public class Title
+    public class Title(string mod)
     {
-        public readonly string Mod;
+        public readonly string Mod = mod;
         public TextObject TitleText { get; private set; }
-
-        public Title(string mod)
-        {
-            Mod = mod;
-        }
 
         public void Make()
         {

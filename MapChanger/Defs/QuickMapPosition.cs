@@ -14,8 +14,8 @@ namespace MapChanger.Defs
     {
         private const float QUICK_MAP_SCALE = 1.55f;
 
-        public float X { get; protected private set; }
-        public float Y { get; protected private set; }
+        public float X { get; private protected set; }
+        public float Y { get; private protected set; }
 
         public QuickMapPosition((float x, float y) offset)
         {

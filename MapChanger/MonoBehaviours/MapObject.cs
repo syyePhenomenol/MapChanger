@@ -17,12 +17,12 @@ namespace MapChanger.MonoBehaviours
         /// A list of conditions to determine whether or not the GameObject should be set active or inactive.
         /// Short circuits on first false.
         /// </summary>
-        public readonly List<Func<bool>> ActiveModifiers = new();
+        public readonly List<Func<bool>> ActiveModifiers = [];
 
         private protected const int UI_LAYER = 5;
         private protected const string HUD = "HUD";
 
-        private readonly List<MapObject> children = new();
+        private readonly List<MapObject> children = [];
         /// <summary>
         /// When MainUpdate is called on this MapObject, MainUpdate is also called on its children.
         /// Children are necessarily transform children on the parent MapObject.

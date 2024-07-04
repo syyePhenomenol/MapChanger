@@ -57,11 +57,11 @@ namespace MapChanger
             }
         }
 
-        private static Dictionary<string, TrackingItem> trackingItems = new();
+        private static Dictionary<string, TrackingItem> trackingItems = [];
 
-        internal static HashSet<(string, string)> ObtainedSceneData = new();
+        internal static HashSet<(string, string)> ObtainedSceneData = [];
 
-        public static HashSet<string> ScenesVisited = new();
+        public static HashSet<string> ScenesVisited = [];
 
         internal static void Load()
         {
@@ -114,7 +114,7 @@ namespace MapChanger
 
         private static void GetPreviouslyObtainedItems()
         {
-            ObtainedSceneData = new();
+            ObtainedSceneData = [];
 
             foreach (GeoRockData grd in GameManager.instance.sceneData.geoRocks)
             {

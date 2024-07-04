@@ -8,7 +8,7 @@ namespace MapChanger.UI
     /// </summary>
     public class MapUILayerUpdater : HookModule
     {
-        private static readonly List<MapUILayer> mapLayers = new();
+        private static readonly List<MapUILayer> mapLayers = [];
 
         public override void OnEnterGame()
         {

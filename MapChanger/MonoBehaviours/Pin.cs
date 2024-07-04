@@ -67,9 +67,10 @@ namespace MapChanger.MonoBehaviours
         {
             base.Initialize();
 
-            GameObject goPinSprite = new($"{transform.name} Pin Sprite");
-
-            goPinSprite.layer = UI_LAYER;
+            GameObject goPinSprite = new($"{transform.name} Pin Sprite")
+            {
+                layer = UI_LAYER
+            };
             goPinSprite.transform.SetParent(transform, false);
 
             Sr = goPinSprite.AddComponent<SpriteRenderer>();

@@ -7,7 +7,7 @@ namespace MapChanger.MonoBehaviours
     /// </summary>
     public abstract class ColoredMapObject : MapObject
     {
-        public Vector4 OrigColor { get; protected private set; }
+        public Vector4 OrigColor { get; private protected set; }
         public abstract Vector4 Color { get; set; }
 
         public override void OnMainUpdate(bool active)

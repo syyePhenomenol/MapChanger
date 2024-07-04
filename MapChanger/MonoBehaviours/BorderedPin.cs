@@ -54,9 +54,10 @@ namespace MapChanger.MonoBehaviours
         {
             base.Initialize();
 
-            GameObject goBorder = new($"{transform.name} Border");
-
-            goBorder.layer = UI_LAYER;
+            GameObject goBorder = new($"{transform.name} Border")
+            {
+                layer = UI_LAYER
+            };
             goBorder.transform.SetParent(transform, false);
 
             borderSr = goBorder.AddComponent<SpriteRenderer>();
