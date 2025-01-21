@@ -1491,6 +1491,10 @@
     "MappedScene": "GG_Waterways",
     "MapZone": "WATERWAYS"
   },
+  "GG_Blue_Room": {
+    "MappedScene": "GG_Waterways",
+    "MapZone": "WATERWAYS"
+  },
   "GG_Atrium_Roof": {
     "MappedScene": "GG_Waterways",
     "MapZone": "WATERWAYS"
