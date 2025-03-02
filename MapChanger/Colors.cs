@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace MapChanger
 {
@@ -48,25 +47,17 @@ namespace MapChanger
         /// <summary>
         /// For the default colors of the map rooms, use RoomSprite.OrigColor.
         /// </summary>
-        private static readonly Dictionary<ColorSetting, Vector4> defaultColors = new()
-        {
-            { ColorSetting.None, Color.white },
-            { ColorSetting.UI_On, Color.green},
-            { ColorSetting.UI_Neutral, Color.white },
-            { ColorSetting.UI_Custom, Color.yellow },
-            { ColorSetting.UI_Disabled, Color.red },
-            { ColorSetting.UI_Special, Color.cyan },
-            { ColorSetting.UI_Borders, Color.white }
-        };
-
         public static Vector4 GetColor(ColorSetting colorSetting)
         {
-            if (defaultColors.ContainsKey(colorSetting))
+            return colorSetting switch
             {
-                return defaultColors[colorSetting];
-            }
-
-            return Vector4.negativeInfinity;
+                ColorSetting.None or ColorSetting.UI_Neutral or ColorSetting.UI_Borders => Color.white,
+                ColorSetting.UI_On => Color.green,
+                ColorSetting.UI_Custom => Color.yellow,
+                ColorSetting.UI_Disabled => Color.red,
+                ColorSetting.UI_Special => Color.cyan,
+                _ => Vector4.negativeInfinity
+            };
         }
     }
 }

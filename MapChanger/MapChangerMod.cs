@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Reflection;
 using MapChanger.Map;
 using Modding;
@@ -17,14 +17,15 @@ namespace MapChanger
             Instance = this;
 
             Dependencies.GetDependencies();
-
-            foreach (KeyValuePair<string, Assembly> pair in Dependencies.strictDependencies)
+            if (!Dependencies.HasMagicUI)
             {
-                if (pair.Value == null)
-                {
-                    Log($"{pair.Key} is not installed. MapChangerMod disabled");
-                    return;
-                }
+                Log($"MagicUI is not installed. MapChangerMod disabled");
+                return;
+            }
+            if (!Dependencies.HasVasi)
+            {
+                Log($"Vasi is not installed. MapChangerMod disabled");
+                return;
             }
 
             Finder.Load();

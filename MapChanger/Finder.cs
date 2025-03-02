@@ -20,7 +20,7 @@ namespace MapChanger
             minimalMapScenes = JsonUtil.Deserialize<HashSet<string>>("MapChanger.Resources.minimalMap.json");
             locations = JsonUtil.Deserialize<Dictionary<string, MapLocationDef>>("MapChanger.Resources.locations.json");
 
-            if (Dependencies.HasAdditionalMaps())
+            if (Dependencies.HasAdditionalMaps)
             {
                 Dictionary<string, MappedSceneDef> mappedSceneLookupAM = JsonUtil.Deserialize<Dictionary<string, MappedSceneDef>>("MapChanger.Resources.mappedScenesAM.json");
                 foreach ((string scene, MappedSceneDef msd) in mappedSceneLookupAM.Select(kvp => (kvp.Key, kvp.Value)))
