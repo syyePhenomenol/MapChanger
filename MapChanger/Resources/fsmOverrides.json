@@ -127,13 +127,15 @@
           "Type": "Map"
         }
       ],
-      "WHITE_PALACE": [
+      // AdditionalMaps
+      "White_Palace State": [
         {
           "Index": 0,
           "Type": "Map"
         }
       ],
-      "GODS_GLORY": [
+      // AdditionalMaps
+      "Godhome State": [
         {
           "Index": 0,
           "Type": "Map"
@@ -243,6 +245,11 @@
         "Range": 5,
         "Type": "Map"
       },
+      // AdditionalMaps
+      "Cl Up": {
+        "Range": 1,
+        "Type": "Map"
+      },
       "D Right": {
         "Range": 8,
         "Type": "Map"
@@ -307,6 +314,11 @@
         "Range": 1,
         "Type": "Map"
       },
+      // AdditionalMaps
+      "Mi Up": {
+        "Range": 2,
+        "Type": "Map"
+      },
       "Out Down": {
         "Range": 2,
         "Type": "Map"
@@ -363,6 +375,11 @@
         "Range": 5,
         "Type": "Map"
       },
+      // AdditionalMaps
+      "T Up": {
+        "Range": 1,
+        "Type": "Map"
+      },
       "Wat Down": {
         "Range": 2,
         "Type": "Map"
@@ -377,6 +394,31 @@
       },
       "Wat Up": {
         "Range": 4,
+        "Type": "Map"
+      },
+      // AdditionalMaps
+      "White_Palace State Left": {
+        "Range": 5,
+        "Type": "Map"
+      },
+      // AdditionalMaps
+      "White_Palace State Right": {
+        "Range": 6,
+        "Type": "Map"
+      },
+      // AdditionalMaps
+      "Godhome State Left": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      // AdditionalMaps
+      "Godhome State Right": {
+        "Range": 1,
+        "Type": "Map"
+      },
+      // AdditionalMaps
+      "Godhome State Down": {
+        "Range": 5,
         "Type": "Map"
       }
     }

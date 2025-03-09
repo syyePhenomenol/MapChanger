@@ -106,24 +106,27 @@ namespace MapChanger.Map
 
         private static void ReplaceVariablesFSM(On.PlayMakerFSM.orig_Start orig, PlayMakerFSM self)
         {
+            orig(self);
+
             try
             {
                 if (fsmOverrideDefs.TryGetValue(self.FsmName, out FsmBoolOverrideDef fod)
-                || fsmOverrideDefs.TryGetValue(self.name + "-" + self.FsmName, out fod))
+                    || fsmOverrideDefs.TryGetValue(self.name + "-" + self.FsmName, out fod))
                 {
+                    // MapChangerMod.Instance.LogFine($"Applying Fsm bool overrides to {self.name}-{self.FsmName}");
                     foreach (FsmState state in self.FsmStates)
                     {
                         if (fod.BoolsIndex.TryGetValue(state.Name, out FsmActionBoolOverride[] overrides))
                         {
                             foreach (FsmActionBoolOverride boolOverride in overrides)
                             {
-                                // MapChangerMod.Instance.LogDebug($"Replacing bool in {state.Name} at index {boolOverride.Index} of type {boolOverride.Type}");
+                                // MapChangerMod.Instance.LogFine($"    Replacing bool in {state.Name} at index {boolOverride.Index} of type {boolOverride.Type}");
                                 ReplaceBool(state, boolOverride.Index, boolOverride.Type);
                             }
                         }
                         if (fod.BoolsRange.TryGetValue(state.Name, out FsmActionBoolRangeOverride overrideRange))
                         {
-                            // MapChangerMod.Instance.LogDebug($"Replacing bools in {state.Name} over range {overrideRange.Range} of type {overrideRange.Type}");
+                            // MapChangerMod.Instance.LogFine($"    Replacing bools in {state.Name} over range {overrideRange.Range} of type {overrideRange.Type}");
                             for (int i = 0; i < overrideRange.Range; i++)
                             {
                                 ReplaceBool(state, i, overrideRange.Type);
@@ -136,8 +139,6 @@ namespace MapChanger.Map
             {
                 MapChangerMod.Instance.LogError(e);
             }
-
-            orig(self);
 
             static void ReplaceBool(FsmState state, int index, OverrideType type)
             {
