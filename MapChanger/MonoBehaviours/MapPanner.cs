@@ -19,8 +19,9 @@ namespace MapChanger.MonoBehaviours
 
         public float UpdateWaitSeconds => DELTA_TIME;
 
+        private static Vector2 startPosition;
         private static Vector2 targetPosition;
-        private static Vector2 deltaPosition;
+
         private static int cycle;
 
         public override void Initialize()
@@ -40,8 +41,9 @@ namespace MapChanger.MonoBehaviours
             Instance.StopPeriodicUpdate();
 
             // We want to pan such that the room's position becomes (0, 0)
-            targetPosition = position - (Vector2)goMap.transform.position;
-            deltaPosition = position / NUMBER_OF_CYCLES;
+            // In other words, subtract the position from the map's current position
+            startPosition = (Vector2)goMap.transform.position;
+            targetPosition = startPosition - position;
 
             Instance.StartPeriodicUpdate();
         }
@@ -57,18 +59,18 @@ namespace MapChanger.MonoBehaviours
 
         public IEnumerator PeriodicUpdate()
         {
-            cycle = 0;
+            cycle = 1;
 
             while (true)
             {
                 if (cycle > NUMBER_OF_CYCLES)
                 {
-                    goMap.transform.position = new Vector3(-targetPosition.x, -targetPosition.y, 0);
+                    goMap.transform.position = new Vector3(targetPosition.x, targetPosition.y, 0);
                     periodicUpdate = null;
                     yield break;
                 }
 
-                goMap.transform.position += new Vector3(-deltaPosition.x, -deltaPosition.y, 0);
+                goMap.transform.position = startPosition + (targetPosition - startPosition) * (cycle / NUMBER_OF_CYCLES);
 
                 yield return new WaitForSecondsRealtime(UpdateWaitSeconds);
 
