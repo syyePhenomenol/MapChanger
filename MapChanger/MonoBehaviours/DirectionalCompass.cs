@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MapChanger.Defs;
 using UnityEngine;
@@ -11,47 +10,29 @@ namespace MapChanger.MonoBehaviours
     /// </summary>
     public class DirectionalCompass : MonoBehaviour
     {
-        private GameObject entity;
-        private Func<GameObject> GetEntity;
+        public CompassTarget CurrentTarget { get; private set; }
 
         private GameObject compassInternal;
         private SpriteRenderer sr;
-
-        private Func<bool> Condition;
-
-        public CompassLocation CurrentTarget { get; private set; }
-
-        private float scale;
-        private float radius;
-        private bool rotateSprite;
-        private bool lerp;
-        private float lerpDuration;
-
+        private CompassInfo info;
+        private GameObject entity;
         private float lerpStartTime;
         private Vector2 currentDir;
         private float currentAngle;
 
-        public Dictionary<string, CompassLocation> Locations = [];
-
-        public static GameObject Create(string name, Func<GameObject> getEntity, float radius, float scale, Func<bool> condition, bool rotateSprite, bool lerp, float lerpDuration)
+        public static GameObject Make(CompassInfo ci)
         {
             // This object is a container for the script. Can be set active/inactive externally to control script
-            GameObject compass = new(name);
+            GameObject compass = new(ci.Name);
             DontDestroyOnLoad(compass);
 
             DirectionalCompass dc = compass.AddComponent<DirectionalCompass>();
 
-            dc.compassInternal = new($"{name} Internal", typeof(SpriteRenderer));
+            dc.compassInternal = new($"{ci.Name} Internal", typeof(SpriteRenderer));
             dc.sr = dc.compassInternal.GetComponent<SpriteRenderer>();
             dc.compassInternal.transform.parent = compass.transform;
 
-            dc.GetEntity = getEntity;
-            dc.radius = radius;
-            dc.scale = scale;
-            dc.Condition = condition;
-            dc.rotateSprite = rotateSprite;
-            dc.lerp = lerp;
-            dc.lerpDuration = lerpDuration;
+            dc.info = ci;
 
             return compass;
         }
@@ -62,24 +43,34 @@ namespace MapChanger.MonoBehaviours
             Destroy(gameObject);
         }
 
+        public void FixedUpdate()
+        {
+            foreach (CompassTarget compassTarget in info.CompassTargets.Where(ct => ct.IsActive()))
+            {
+                compassTarget.Position.UpdateEveryFrame();
+            }
+        }
+
         public void Update()
         {
-            if (Condition() && UpdateClosestObject())
+            if (info.ActiveCondition() && info.CompassTargets.Any() && TryUpdateClosestLocation())
             {
-                Vector2 dir = CurrentTarget.Position - (Vector2)entity.transform.position;
+                sr.sprite = CurrentTarget.GetSprite();
+                
+                Vector2 dir = (Vector2)CurrentTarget.Position.Value - (Vector2)entity.transform.position;
 
                 dir.Scale(Vector2.one * 0.5f);
 
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
 
                 // Clamp to radius
-                dir = Vector2.ClampMagnitude(dir, radius);
+                dir = Vector2.ClampMagnitude(dir, info.Radius);
 
                 // Do lerp stuff
-                if (lerp && Time.time - lerpStartTime < lerpDuration)
+                if (info.Lerp && Time.time - lerpStartTime < info.LerpDuration)
                 {
-                    dir = Vector2.Lerp(currentDir, dir, (Time.time - lerpStartTime) / lerpDuration);
-                    angle = Mathf.LerpAngle(currentAngle, angle, (Time.time - lerpStartTime) / lerpDuration);
+                    dir = Vector2.Lerp(currentDir, dir, (Time.time - lerpStartTime) / info.LerpDuration);
+                    angle = Mathf.LerpAngle(currentAngle, angle, (Time.time - lerpStartTime) / info.LerpDuration);
                 }
 
                 currentDir = dir;
@@ -87,13 +78,14 @@ namespace MapChanger.MonoBehaviours
 
                 compassInternal.transform.position = new Vector3(entity.transform.position.x + dir.x, entity.transform.position.y + dir.y, 0f);
                 
-                if (rotateSprite)
+                if (info.RotateSprite)
                 {
                     compassInternal.transform.eulerAngles = new(0, 0, angle);
                 }
                 
-                compassInternal.transform.localScale = new Vector3(dir.magnitude / radius * scale, dir.magnitude / radius * scale, 1f);
-                sr.color = dir.magnitude / radius * CurrentTarget.Color;
+                float inverseRadius = dir.magnitude / info.Radius;
+                compassInternal.transform.localScale = new Vector3(inverseRadius * info.Scale, inverseRadius * info.Scale, 1f);
+                sr.color = inverseRadius * CurrentTarget.GetColor();
 
                 compassInternal.SetActive(true);
             }
@@ -103,45 +95,42 @@ namespace MapChanger.MonoBehaviours
             }
         }
 
-        private bool UpdateClosestObject()
+        private bool TryUpdateClosestLocation()
         {
-            entity = GetEntity.Invoke();
+            entity = info.GetEntity();
 
-            CompassLocation newTarget;
+            CompassTarget newTarget = null;
 
-            if (entity == null || Locations is null || !Locations.Any())
+            if (entity != null && info.CompassTargets.Where(ct => ct.IsActive() && ct.Position.Value is not null) is IEnumerable<CompassTarget> activeTargets && activeTargets.Any())
             {
-                newTarget = null;
-            }
-            else
-            {
-                var activeLocations = Locations.Values.Where(l => l.IsActive);
-
-                newTarget = activeLocations.Any() ? activeLocations.Aggregate((i1, i2) => SqrDistanceFromEntity(i1) < SqrDistanceFromEntity(i2) ? i1 : i2) : null;
+                newTarget = activeTargets.Aggregate((i1, i2) => SqrDistance(entity, i1) < SqrDistance(entity, i2) ? i1 : i2);
             }
 
             if (newTarget != CurrentTarget)
             {
                 CurrentTarget = newTarget;
-                UpdateSprite();
                 lerpStartTime = Time.time;
             }
 
-            return CurrentTarget != null;
+            return CurrentTarget is not null;
         }
 
-        private float SqrDistanceFromEntity(CompassLocation location)
+        private float SqrDistance(GameObject entity, CompassTarget location)
         {
-            if (location == null || entity == null) return float.PositiveInfinity;
-
-            return (location.Position - (Vector2)entity.transform.position).sqrMagnitude;
+            return ((Vector2)location.Position.Value - (Vector2)entity.transform.position).sqrMagnitude;
         }
+    }
 
-        public void UpdateSprite()
-        {
-            if (CurrentTarget is null || CurrentTarget.Sprite is null) return;
-
-            sr.sprite = CurrentTarget.Sprite;
-        }
+    public abstract class CompassInfo
+    {
+        public abstract string Name { get; }
+        public abstract float Radius { get; }
+        public abstract float Scale { get; }
+        public abstract bool RotateSprite { get; }
+        public abstract bool Lerp { get; }
+        public abstract float LerpDuration { get; }
+        public List<CompassTarget> CompassTargets { get; } = [];
+        public abstract bool ActiveCondition();
+        public abstract GameObject GetEntity();
     }
 }
