@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using MapChanger.Defs;
 using MapChanger.MonoBehaviours;
@@ -8,13 +9,14 @@ namespace MapChanger.Map
 {
     public class BuiltInObjects : HookModule
     {
-        private static Dictionary<string, RoomSpriteDef> roomSpriteDefs;
+        private static Dictionary<string, RoomSpriteGroupDef> roomSpriteGroupDefs;
         private static Dictionary<string, MiscObjectDef> miscObjectDefs;
-        public static Dictionary<string, RoomSprite> MappedRooms { get; private set; }
+        public static ReadOnlyDictionary<string, RoomSprite> MappedRooms { get; private set; }
+        public static ReadOnlyDictionary<string, SelectableGroup<RoomSprite>> SelectableRooms { get; private set; }
 
         internal static void Load()
         {
-            roomSpriteDefs = JsonUtil.Deserialize<Dictionary<string, RoomSpriteDef>>("MapChanger.Resources.roomSprites.json");
+            roomSpriteGroupDefs = JsonUtil.Deserialize<Dictionary<string, RoomSpriteGroupDef>>("MapChanger.Resources.roomSprites.json");
             miscObjectDefs = JsonUtil.Deserialize<Dictionary<string, MiscObjectDef>>("MapChanger.Resources.miscObjects.json");
         }
 
@@ -25,14 +27,15 @@ namespace MapChanger.Map
 
         public override void OnQuitToMenu()
         {
+            MappedRooms = null;
+            SelectableRooms = null;
+
             Events.OnSetGameMapInternal -= Make;
         }
 
         private static void Make(GameObject goMap)
         {
             MapChangerMod.Instance.LogDebug("AttachMapModifiers");
-
-            MappedRooms = [];
 
             // Destroy empty Ruins1_31b object and rename the actual one to it
             if (goMap.transform.FindChildInHierarchy("City of Tears/Ruins1_31b") is Transform emptyRoom)
@@ -65,18 +68,40 @@ namespace MapChanger.Map
                     }
                 }
             }
+            
+            Dictionary<string, RoomSprite> mappedRooms = [];
+            Dictionary<string, SelectableGroup<RoomSprite>> selectableRooms = [];
 
-            foreach ((string pathName, RoomSpriteDef rsd) in roomSpriteDefs.Select(kvp => (kvp.Key, kvp.Value)))
+            foreach ((string sceneName, RoomSpriteGroupDef rsgd) in roomSpriteGroupDefs.Select(kvp => (kvp.Key, kvp.Value)))
             {
-                Transform child = goMap.transform.FindChildInHierarchy(pathName);
-                if (child == null) continue;
+                RoomSpriteDef rsd = new()
+                {
+                    ColorSetting = rsgd.ColorSetting,
+                    SceneName = sceneName
+                };
 
-                child.gameObject.SetActive(false);
-                RoomSprite roomSprite = child.gameObject.AddComponent<RoomSprite>();
-                roomSprite.Initialize(rsd);
+                List<RoomSprite> roomSprites = [];
+                foreach (string objName in rsgd.RoomSprites)
+                {
+                    Transform child = goMap.transform.FindChildInHierarchy(objName);
+                    if (child == null) continue;
 
-                MappedRooms[roomSprite.name] = roomSprite;
+                    child.gameObject.SetActive(false);
+                    RoomSprite roomSprite = child.gameObject.AddComponent<RoomSprite>();
+                    roomSprite.Initialize(rsd);
+
+                    mappedRooms[roomSprite.name] = roomSprite;
+                    roomSprites.Add(roomSprite);
+                }
+
+                if (!roomSprites.Any()) continue;
+
+                SelectableGroup<RoomSprite> roomSpriteGroup = new(roomSprites);
+                selectableRooms[sceneName] = roomSpriteGroup;
             }
+
+            MappedRooms = new(mappedRooms);
+            SelectableRooms = new(selectableRooms);
 
             // Disable extra map arrow
             goMap.transform.FindChildInHierarchy("Deepnest/Fungus2_25/Next Area (3)")?.gameObject.SetActive(false);

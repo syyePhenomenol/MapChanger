@@ -33,6 +33,9 @@ namespace MapChanger.MonoBehaviours
             }
         }
 
+        public string Key => Rsd.SceneName;
+        public Vector2 Position => transform.position;
+
         internal void Initialize(RoomSpriteDef rsd)
         {
             Rsd = rsd;
@@ -99,11 +102,6 @@ namespace MapChanger.MonoBehaviours
             }
 
             return gameObject.activeInHierarchy;
-        }
-
-        public (string, Vector2) GetKeyAndPosition()
-        {
-            return (Rsd.SceneName, transform.position);
         }
     }
 }

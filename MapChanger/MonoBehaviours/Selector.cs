@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using UnityEngine;
 
 namespace MapChanger.MonoBehaviours
@@ -10,15 +12,14 @@ namespace MapChanger.MonoBehaviours
     /// </summary>
     public abstract class Selector : MapObject, IPeriodicUpdater
     {
-        public const string NONE_SELECTED = "None selected";
-
         protected const float MAP_FRONT_Z = -30f;
         protected const float DEFAULT_SIZE = 0.3f;
         protected const float DEFAULT_SELECTION_RADIUS = 0.7f;
         protected static readonly Vector4 DEFAULT_COLOR = new(1f, 1f, 1f, 0.6f);
         protected const string SELECTOR_SPRITE = "GUI.Selector";
 
-        public Dictionary<string, List<ISelectable>> Objects { get; } = [];
+        public ReadOnlyDictionary<string, ISelectable> Objects { get; private set; }
+
         public virtual Vector2 TargetPosition { get; } = Vector2.zero;
         public virtual float UpdateWaitSeconds { get; } = 0.02f;
         public virtual float SelectionRadius { get; } = DEFAULT_SELECTION_RADIUS;
@@ -27,25 +28,26 @@ namespace MapChanger.MonoBehaviours
         protected GameObject SpriteObject { get; private set; }
         protected SpriteRenderer Sr { get; private set; }
 
-        private string selectedObjectKey = NONE_SELECTED;
-        public string SelectedObjectKey
+        private ISelectable _selectedObject;
+
+        public ISelectable SelectedObject
         {
-            get => selectedObjectKey;
+            get => _selectedObject;
             private set
             {
-                if (selectedObjectKey != value)
+                if (_selectedObject != value)
                 {
-                    if (selectedObjectKey is not NONE_SELECTED)
+                    if (_selectedObject is not null)
                     {
-                        DeselectInternal(selectedObjectKey);
+                        Deselect(_selectedObject);
                     }
 
-                    if (value is not NONE_SELECTED)
+                    if (value is not null)
                     {
-                        SelectInternal(value);
+                        Select(value);
                     }
 
-                    selectedObjectKey = value;
+                    _selectedObject = value;
                     OnSelectionChanged();
                 }
             }
@@ -63,7 +65,7 @@ namespace MapChanger.MonoBehaviours
             {
                 if (lockSelection != value)
                 {
-                    if (value && selectedObjectKey is not NONE_SELECTED)
+                    if (value && _selectedObject is not null)
                     {
                         lockSelection = true;
                         StopPeriodicUpdate();
@@ -82,28 +84,6 @@ namespace MapChanger.MonoBehaviours
             LockSelection = !LockSelection;
         }
 
-        private void SelectInternal(string objectKey)
-        {
-            if (Objects.ContainsKey(objectKey))
-            {
-                foreach (ISelectable selectable in Objects[objectKey])
-                {
-                    Select(selectable);
-                }
-            }
-        }
-
-        private void DeselectInternal(string objectKey)
-        {
-            if (Objects.ContainsKey(objectKey))
-            {
-                foreach (ISelectable selectable in Objects[objectKey])
-                {
-                    Deselect(selectable);
-                }
-            }
-        }
-
         private Coroutine periodicUpdate;
         public IEnumerator PeriodicUpdate()
         {
@@ -112,33 +92,28 @@ namespace MapChanger.MonoBehaviours
                 yield return new WaitForSecondsRealtime(UpdateWaitSeconds);
 
                 double minDistance = SelectionRadius;
-                string newKey = NONE_SELECTED;
+                ISelectable closestObj = null;
 
-                foreach (List<ISelectable> selectables in Objects.Values)
+                foreach (ISelectable selectable in Objects.Values)
                 {
-                    foreach (ISelectable selectable in selectables)
+                    if (!selectable.CanSelect()) continue;
+                    
+                    double distanceX = Math.Abs(selectable.Position.x - TargetPosition.x);
+                    if (distanceX > minDistance) continue;
+
+                    double distanceY = Math.Abs(selectable.Position.y - TargetPosition.y);
+                    if (distanceY > minDistance) continue;
+
+                    double euclidDistance = Math.Pow(Math.Pow(distanceX, 2) + Math.Pow(distanceY, 2), 0.5f);
+
+                    if (euclidDistance < minDistance)
                     {
-                        if (!selectable.CanSelect()) continue;
-
-                        (string key, Vector2 position) = selectable.GetKeyAndPosition();
-
-                        double distanceX = Math.Abs(position.x - TargetPosition.x);
-                        if (distanceX > minDistance) continue;
-
-                        double distanceY = Math.Abs(position.y - TargetPosition.y);
-                        if (distanceY > minDistance) continue;
-
-                        double euclidDistance = Math.Pow(Math.Pow(distanceX, 2) + Math.Pow(distanceY, 2), 0.5f);
-
-                        if (euclidDistance < minDistance)
-                        {
-                            newKey = key;
-                            minDistance = euclidDistance;
-                        }
+                        closestObj = selectable;
+                        minDistance = euclidDistance;
                     }
                 }
 
-                SelectedObjectKey = newKey;
+                SelectedObject = closestObj;
             }
         }
 
@@ -159,9 +134,11 @@ namespace MapChanger.MonoBehaviours
             }
         }
 
-        public override void Initialize()
+        public virtual void Initialize(IEnumerable<ISelectable> objects)
         {
             base.Initialize();
+
+            Objects = new(objects.ToDictionary(o => o.Key, o => o));
 
             DontDestroyOnLoad(this);
 
@@ -198,13 +175,19 @@ namespace MapChanger.MonoBehaviours
             else
             {
                 StopPeriodicUpdate();
-                SelectedObjectKey = NONE_SELECTED;
+                SelectedObject = null;
             }
         }
 
-        protected abstract void Select(ISelectable selectable);
+        protected virtual void Select(ISelectable selectable)
+        {
+            selectable.Selected = true;
+        }
 
-        protected abstract void Deselect(ISelectable selectable);
+        protected virtual void Deselect(ISelectable selectable)
+        {
+            selectable.Selected = false;
+        }
 
         protected virtual void OnSelectionChanged() { }
     }
