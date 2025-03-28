@@ -1,4 +1,5 @@
-﻿using GlobalEnums;
+﻿using System.Collections.Generic;
+using GlobalEnums;
 using MapChanger.Map;
 
 namespace MapChanger.Defs
@@ -15,7 +16,7 @@ namespace MapChanger.Defs
         public string MappedScene { get; private set; }
         public MapZone MapZone { get; private set; }
 
-        public MapRoomPosition((string, float, float)[] mapLocations)
+        public MapRoomPosition(IEnumerable<MapLocation> mapLocations)
         {
             foreach (MapLocation mapLocation in mapLocations)
             {
@@ -27,16 +28,11 @@ namespace MapChanger.Defs
             }
         }
 
-        public MapRoomPosition(MapLocation[] mapLocations)
+        // Assumes the MapLocation provided has a valid MappedScene.
+        public MapRoomPosition(MapLocation mapLocation)
         {
-            foreach (MapLocation mapLocation in mapLocations)
-            {
-                if (TrySetPosition(mapLocation))
-                {
-                    SetMappedScene(mapLocation);
-                    break;
-                }
-            }
+            TrySetPosition(mapLocation);
+            SetMappedScene(mapLocation);
         }
 
         private protected virtual bool TrySetPosition(MapLocation mapLocation)

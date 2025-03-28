@@ -13,30 +13,8 @@ namespace MapChanger.Defs
     public record QuickMapPosition : IMapPosition
     {
         private const float QUICK_MAP_SCALE = 1.55f;
-
-        public float X { get; private protected set; }
-        public float Y { get; private protected set; }
-
-        public QuickMapPosition((float x, float y) offset)
-        {
-            SetPosition(new(offset.x, offset.y));
-        }
-
-        public QuickMapPosition(Vector2 offset)
-        {
-            SetPosition(offset);
-        }
-
-        private void SetPosition(Vector2 offset)
-        {
-            //float scaleCorrection = States.CurrentMapZone is MapZone.OUTSKIRTS ? 0.935f : 1.0f;
-
-            if (mapZoneOffsets.TryGetValue(States.CurrentMapZone, out Vector2 mapZoneOffset))
-            {
-                X = offset.x - mapZoneOffset.x / QUICK_MAP_SCALE;
-                Y = offset.y - mapZoneOffset.y / QUICK_MAP_SCALE;
-            }
-        }
+        
+        public static readonly QuickMapPosition HiddenPosition = new((-100f, -100f), MapZone.NONE);
 
         private static readonly Dictionary<MapZone, Vector2> mapZoneOffsets = new()
         {
@@ -57,5 +35,32 @@ namespace MapChanger.Defs
             { MapZone.WHITE_PALACE, new(3.07f, -23.0f) },
             { MapZone.GODS_GLORY, new(-8.5f, -22.0f) }
         };
+
+        public float X { get; }
+        public float Y { get; }
+        public MapZone MapZone { get; }
+
+        public QuickMapPosition((float x, float y) offset, MapZone mapZone)
+        {
+            MapZone = mapZone;
+
+            if (mapZone is MapZone.NONE)
+            {
+                X = offset.x;
+                Y = offset.y;
+                return;
+            }
+
+            if (mapZoneOffsets.TryGetValue(mapZone, out Vector2 mapZoneOffset))
+            {
+                X = offset.x - mapZoneOffset.x / QUICK_MAP_SCALE;
+                Y = offset.y - mapZoneOffset.y / QUICK_MAP_SCALE;
+            }
+        }
+
+        public QuickMapPosition(Vector2 offset, MapZone mapZone) : this((offset.x, offset.y), mapZone)
+        {
+
+        }
     }
 }

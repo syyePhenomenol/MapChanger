@@ -1,4 +1,5 @@
-﻿using GlobalEnums;
+﻿using System;
+using System.Collections.Generic;
 using MapChanger.Map;
 using MapChanger.MonoBehaviours;
 using UnityEngine;
@@ -22,9 +23,13 @@ namespace MapChanger.Defs
         /// </summary>
         public float RelativeY { get; private set; }
 
-        public WorldMapPosition((string, float, float)[] mapLocations) : base(mapLocations) { }
+        public WorldMapPosition(MapLocation mapLocation) : base(mapLocation) { }
 
-        public WorldMapPosition(MapLocation[] mapLocations) : base(mapLocations) { }
+        [Obsolete("Please use the constructor that provides only one MapLocation.")]
+        public WorldMapPosition(IEnumerable<(string, float, float)> mapLocations) : base([..mapLocations]) { }
+        
+        [Obsolete("Please use the constructor that provides only one MapLocation.")]
+        public WorldMapPosition(IEnumerable<MapLocation> mapLocations) : base(mapLocations) { }
 
         private protected override bool TrySetPosition(MapLocation mapLocation)
         {
