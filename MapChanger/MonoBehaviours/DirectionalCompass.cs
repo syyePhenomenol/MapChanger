@@ -84,7 +84,7 @@ namespace MapChanger.MonoBehaviours
                 }
                 
                 float inverseRadius = dir.magnitude / info.Radius;
-                compassInternal.transform.localScale = new Vector3(inverseRadius * info.Scale, inverseRadius * info.Scale, 1f);
+                compassInternal.transform.localScale = Vector3.Scale(new Vector3(inverseRadius * info.Scale, inverseRadius * info.Scale, 1f), CurrentTarget.GetScale());
                 sr.color = inverseRadius * CurrentTarget.GetColor();
 
                 compassInternal.SetActive(true);

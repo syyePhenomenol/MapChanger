@@ -6,8 +6,12 @@ namespace MapChanger.Defs
     {
         public CompassPosition Position { get; init; }
 
-        public abstract bool IsActive();
-        public abstract Sprite GetSprite();
         public abstract Color GetColor();
+
+        public abstract Vector3 GetScale();
+
+        public abstract Sprite GetSprite();
+
+        public abstract bool IsActive();
     }
 }
