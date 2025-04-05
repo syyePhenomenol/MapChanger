@@ -1,19 +1,18 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace MapChanger.Tracking
+namespace MapChanger.Tracking;
+
+public class PdListTrackingItem : TrackingItem
 {
-    public class PdListTrackingItem : TrackingItem
+    [JsonProperty]
+    public string PdListName { get; init; }
+
+    [JsonProperty]
+    public string SceneName { get; init; }
+
+    public override bool Has()
     {
-        [JsonProperty]
-        public string PdListName { get; init; }
-
-        [JsonProperty]
-        public string SceneName { get; init; }
-
-        public override bool Has()
-        {
-            return PlayerData.instance.GetVariable<List<string>>(PdListName).Contains(SceneName);
-        }
+        return PlayerData.instance.GetVariable<List<string>>(PdListName).Contains(SceneName);
     }
 }

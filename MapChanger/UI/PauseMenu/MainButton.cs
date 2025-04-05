@@ -1,48 +1,46 @@
 ﻿using MagicUI.Core;
 using MagicUI.Elements;
 
-namespace MapChanger.UI
+namespace MapChanger.UI;
+
+/// <summary>
+/// A button that is persistently displayed in the main buttons grid on the pause menu.
+/// </summary>
+/// <param name="name"></param>
+/// <param name="mod"></param>
+/// <param name="row"></param>
+/// <param name="column"></param>
+public abstract class MainButton(string name, string mod, int row, int column) : ButtonWrapper(name, mod)
 {
-    /// <summary>
-    /// A button that is persistently displayed in the main buttons grid on the pause menu.
-    /// </summary>
-    public abstract class MainButton(string name, string mod, int row, int column) : ButtonWrapper($"{mod} {name}")
+    public int Row { get; } = row;
+    public int Column { get; } = column;
+
+    protected override Button MakeButton(LayoutRoot root)
     {
-        public readonly string Mod = mod;
-        public readonly int Row = row;
-        public readonly int Column = column;
-
-        public override void Make()
+        return new Button(root, Name)
         {
-            Button = new Button(PauseMenu.Root, Name)
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                BorderColor = Colors.GetColor(ColorSetting.UI_Borders),
-                MinHeight = 28f,
-                MinWidth = 95f,
-                Font = MagicUI.Core.UI.TrajanBold,
-                FontSize = 11,
-                Margin = 0f
-            }.WithProp(GridLayout.Row, Row).WithProp(GridLayout.Column, Column);
-
-            Button.Click += OnClickInternal;
-            Button.OnHover += OnHover;
-            Button.OnUnhover += OnUnhover;
-            PauseMenu.MainButtonsGrid.Children.Add(Button);
-            PauseMenu.MainButtons.Add(this);
+            HorizontalAlignment = HorizontalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Center,
+            BorderColor = Colors.GetColor(ColorSetting.UI_Borders),
+            MinHeight = 28f,
+            MinWidth = 95f,
+            Font = MagicUI.Core.UI.TrajanBold,
+            FontSize = 11,
+            Margin = 0f,
         }
+            .WithProp(GridLayout.Row, Row)
+            .WithProp(GridLayout.Column, Column);
+    }
 
-        public override void Update()
+    public override void Update()
+    {
+        if (Settings.MapModEnabled() && Settings.CurrentMode().Mod == Mod)
         {
-            if (Settings.MapModEnabled() && Settings.CurrentMode().Mod == Mod)
-            {
-                Button.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                Button.Visibility = Visibility.Hidden;
-            }
+            Button.Visibility = Visibility.Visible;
+        }
+        else
+        {
+            Button.Visibility = Visibility.Hidden;
         }
     }
 }

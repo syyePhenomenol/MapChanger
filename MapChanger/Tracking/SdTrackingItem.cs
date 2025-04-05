@@ -1,20 +1,19 @@
 using Newtonsoft.Json;
 
-namespace MapChanger.Tracking
+namespace MapChanger.Tracking;
+
+public class SdTrackingItem : TrackingItem
 {
-    public class SdTrackingItem : TrackingItem
+    [JsonProperty]
+    public string Id { get; init; }
+
+    [JsonProperty]
+    public string SceneName { get; init; }
+
+    public (string, string) SceneDataPair => (Id, SceneName);
+
+    public override bool Has()
     {
-        [JsonProperty]
-        public string Id { get; init; }
-
-        [JsonProperty]
-        public string SceneName { get; init; }
-
-        public (string, string) SceneDataPair => (Id, SceneName);
-
-        public override bool Has()
-        {
-            return Tracker.ObtainedSceneData.Contains((Id, SceneName));
-        }
+        return Tracker.HasSceneData(Id, SceneName);
     }
 }

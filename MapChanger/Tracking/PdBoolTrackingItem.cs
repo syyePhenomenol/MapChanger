@@ -1,15 +1,14 @@
 using Newtonsoft.Json;
 
-namespace MapChanger.Tracking
-{
-    public class PdBoolTrackingItem : TrackingItem
-    {
-        [JsonProperty]
-        public string PdBoolName { get; init; }
+namespace MapChanger.Tracking;
 
-        public override bool Has()
-        {
-            return PlayerData.instance.GetBool(PdBoolName);
-        }
+public class PdBoolTrackingItem : TrackingItem
+{
+    [JsonProperty]
+    public string PdBoolName { get; init; }
+
+    public override bool Has()
+    {
+        return PlayerData.instance.GetBool(PdBoolName);
     }
 }

@@ -6,235 +6,263 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Vasi;
 
-namespace MapChanger
+namespace MapChanger;
+
+public class Tracker : HookModule
 {
-    public class Tracker : HookModule
+    private static Dictionary<string, TrackingItem> _trackingItems;
+    private static HashSet<(string, string)> _obtainedSceneData;
+    private static HashSet<string> _scenesVisited;
+
+    internal static List<string> ScenesVisited => [.. _scenesVisited];
+
+    public override void OnEnterGame()
     {
-        private class TrackGeoRock : FsmStateAction
-        {
-            private readonly GameObject go;
-            private readonly GeoRockData grd;
+        GetPreviouslyObtainedItems();
 
-            internal TrackGeoRock(GameObject go)
+        On.PlayMakerFSM.OnEnable += AddItemTrackers;
+        On.HealthManager.SendDeathEvent += TrackEnemy;
+        On.GeoRock.SetMyID += RenameDupeGeoRockIds;
+
+        UnityEngine.SceneManagement.SceneManager.activeSceneChanged += AddSceneVisited;
+    }
+
+    public override void OnQuitToMenu()
+    {
+        _trackingItems = null;
+        _scenesVisited = null;
+        _obtainedSceneData = null;
+
+        On.PlayMakerFSM.OnEnable -= AddItemTrackers;
+        On.HealthManager.SendDeathEvent -= TrackEnemy;
+        On.GeoRock.SetMyID -= RenameDupeGeoRockIds;
+
+        UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= AddSceneVisited;
+    }
+
+    public static bool HasClearedLocation(string name)
+    {
+        if (_trackingItems.TryGetValue(name, out var ti))
+        {
+            return ti.Has();
+        }
+
+        return false;
+    }
+
+    public static bool HasVisitedScene(string scene)
+    {
+        return _scenesVisited.Contains(scene);
+    }
+
+    public static bool HasSceneData(string id, string sceneName)
+    {
+        return _obtainedSceneData.Contains((id, sceneName));
+    }
+
+    internal static void VerifyTrackingDefs()
+    {
+        foreach (var name in _trackingItems.Keys)
+        {
+            MapChangerMod.Instance.LogDebug($"Has {name}: {HasClearedLocation(name)}");
+        }
+    }
+
+    private static void GetPreviouslyObtainedItems()
+    {
+        _trackingItems = JsonUtil.Deserialize<Dictionary<string, TrackingItem>>(
+            "MapChanger.Resources.trackingItems.json"
+        );
+
+        _scenesVisited = new(PlayerData.instance.scenesVisited);
+        _obtainedSceneData = [];
+
+        foreach (var grd in GameManager.instance.sceneData.geoRocks)
+        {
+            if (grd.hitsLeft <= 0)
             {
-                this.go = go;
-                grd = this.go.GetComponent<GeoRock>().geoRockData;
+                _ = _obtainedSceneData.Add((grd.id, grd.sceneName));
             }
+        }
 
-            public override void OnEnter()
+        HashSet<(string, string)> persistentBoolItems =
+            new(_trackingItems.Values.Where(i => i is SdTrackingItem).Select(i => ((SdTrackingItem)i).SceneDataPair));
+
+        persistentBoolItems.UnionWith(
+            _trackingItems
+                .Values.Where(i => i is MultiTrackingItem)
+                .SelectMany(i => ((MultiTrackingItem)i).GetSdTrackingItemPairs())
+        );
+
+        foreach (var pbd in GameManager.instance.sceneData.persistentBoolItems)
+        {
+            var pair = (pbd.id, pbd.sceneName);
+            if (persistentBoolItems.Contains(pair) && pbd.activated)
             {
-                if (grd.id.Contains("-")) return;
-                ObtainedSceneData.Add((grd.id, grd.sceneName));
-                MapChangerMod.Instance.LogDebug("Geo Rock broken");
-                MapChangerMod.Instance.LogDebug(" ID: " + grd.id);
-                MapChangerMod.Instance.LogDebug(" Scene: " + grd.sceneName);
-
-                Finish();
+                _ = _obtainedSceneData.Add(pair);
             }
         }
+    }
 
-        private class TrackItem : FsmStateAction
+    private static void TrackEnemy(On.HealthManager.orig_SendDeathEvent orig, HealthManager self)
+    {
+        orig(self);
+
+        var scene = Utils.CurrentScene();
+
+        switch (self.gameObject.name)
         {
-            private readonly string name;
-
-            internal TrackItem(string name)
-            {
-                this.name = name;
-            }
-
-            public override void OnEnter()
-            {
-                if (name.Contains("-")) return;
-                string scene = Utils.CurrentScene() ?? "";
-
-                ObtainedSceneData.Add((name, scene));
-
-                MapChangerMod.Instance.LogDebug("Item picked up");
-                MapChangerMod.Instance.LogDebug(" Name: " + name);
-                MapChangerMod.Instance.LogDebug(" Scene: " + scene);
-
-                Finish();
-            }
-        }
-
-        private static Dictionary<string, TrackingItem> trackingItems = [];
-
-        internal static HashSet<(string, string)> ObtainedSceneData = [];
-
-        public static HashSet<string> ScenesVisited = [];
-
-        internal static void Load()
-        {
-            trackingItems = JsonUtil.Deserialize<Dictionary<string, TrackingItem>>("MapChanger.Resources.trackingItems.json");
-        }
-
-        internal static void VerifyTrackingDefs()
-        {
-            foreach (string name in trackingItems.Keys)
-            {
-                MapChangerMod.Instance.LogDebug($"Has {name}: {HasClearedLocation(name)}");
-            }
-        }
-
-        public override void OnEnterGame()
-        {
-            ScenesVisited = new(PlayerData.instance.scenesVisited);
-            GetPreviouslyObtainedItems();
-
-            On.PlayMakerFSM.OnEnable += AddItemTrackers;
-            On.HealthManager.SendDeathEvent += TrackEnemy;
-            On.GeoRock.SetMyID += RenameDupeGeoRockIds;
-
-            UnityEngine.SceneManagement.SceneManager.activeSceneChanged += AddSceneVisited;
-        }
-
-        public override void OnQuitToMenu()
-        {
-            On.PlayMakerFSM.OnEnable -= AddItemTrackers;
-            On.HealthManager.SendDeathEvent -= TrackEnemy;
-            On.GeoRock.SetMyID -= RenameDupeGeoRockIds;
-
-            UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= AddSceneVisited;
-        }
-
-        public static bool HasClearedLocation(string name)
-        {
-            if (trackingItems.TryGetValue(name, out TrackingItem ti))
-            {
-                return ti.Has();
-            }
-
-            return false;
-        }
-
-        public static bool HasVisitedScene(string scene)
-        {
-            return ScenesVisited.Contains(scene);
-        }
-
-        private static void GetPreviouslyObtainedItems()
-        {
-            ObtainedSceneData = [];
-
-            foreach (GeoRockData grd in GameManager.instance.sceneData.geoRocks)
-            {
-                if (grd.hitsLeft <= 0)
+            case "Grub Mimic":
+            case "Grub Mimic 1":
+            case "Grub Mimic 2":
+            case "Grub Mimic 3":
+            case "Mega Zombie Beam Miner (1)":
+            case "Zombie Beam Miner Rematch":
+                _ = _obtainedSceneData.Add((self.gameObject.name, scene ?? ""));
+                break;
+            case "Mage Knight":
+                if (scene is "Ruins1_23")
                 {
-                    ObtainedSceneData.Add((grd.id, grd.sceneName));
+                    _ = _obtainedSceneData.Add(("Battle Scene v2", scene));
                 }
-            }
-
-            HashSet<(string, string)> persistentBoolItems = new(trackingItems.Values.Where(i => i is SdTrackingItem)
-                .Select(i => ((SdTrackingItem)i).SceneDataPair));
-
-            persistentBoolItems.UnionWith(trackingItems.Values.Where(i => i is MultiTrackingItem)
-                .SelectMany(i => ((MultiTrackingItem)i).GetSdTrackingItemPairs()));
-
-            foreach (var pbd in GameManager.instance.sceneData.persistentBoolItems)
-            {
-                var pair = (pbd.id, pbd.sceneName);
-                if (persistentBoolItems.Contains(pair) && pbd.activated)
+                else if (scene is "Ruins1_31b")
                 {
-                    ObtainedSceneData.Add(pair);
+                    _ = _obtainedSceneData.Add(("Battle Scene v2", scene));
                 }
-            }
-        }
 
-        private static void TrackEnemy(On.HealthManager.orig_SendDeathEvent orig, HealthManager self)
-        {
-            orig(self);
-
-            var scene = Utils.CurrentScene();
-
-            switch (self.gameObject.name)
-            {
-                case "Grub Mimic":
-                case "Grub Mimic 1":
-                case "Grub Mimic 2":
-                case "Grub Mimic 3":
-                case "Mega Zombie Beam Miner (1)":
-                case "Zombie Beam Miner Rematch":
-                    ObtainedSceneData.Add((self.gameObject.name, scene??""));
-                    break;
-                case "Mage Knight":
-                    if (scene is "Ruins1_23")
-                    {
-                        ObtainedSceneData.Add(("Battle Scene v2", scene));
-                    }
-                    else if (scene is "Ruins1_31b")
-                    {
-                        ObtainedSceneData.Add(("Battle Scene v2", scene));
-                    }
-                    break;
-                case "Giant Fly":
-                    if (scene is "Crossroads_04")
-                    {
-                        ObtainedSceneData.Add(("Battle Scene", scene));
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        private static void AddItemTrackers(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
-        {
-            orig(self);
-
-            string name = self.gameObject.name;
-            FsmState state;
-
-            if (self.FsmName is "Shiny Control")
-            {
-                if (!FsmUtil.TryGetState(self, "Finish", out state)) return;
-            }
-            else if (name is "Heart Piece" || name is "Vessel Fragment")
-            {
-                if (!FsmUtil.TryGetState(self, "Get", out state)) return;
-            }
-            else if (self.FsmName is "Chest Control")
-            {
-                if (!FsmUtil.TryGetState(self, "Open", out state)) return;
-            }
-            else if (self.FsmName is "Geo Rock")
-            {
-                if (FsmUtil.TryGetState(self, "Destroy", out state))
+                break;
+            case "Giant Fly":
+                if (scene is "Crossroads_04")
                 {
-                    FsmUtil.AddAction(state, new TrackGeoRock(self.gameObject));
-                    return;
+                    _ = _obtainedSceneData.Add(("Battle Scene", scene));
                 }
+
+                break;
+            default:
+                break;
+        }
+    }
+
+    private static void AddItemTrackers(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
+    {
+        orig(self);
+
+        var name = self.gameObject.name;
+        FsmState state;
+
+        if (self.FsmName is "Shiny Control")
+        {
+            if (!FsmUtil.TryGetState(self, "Finish", out state))
                 return;
-            }
-            else
+        }
+        else if (name is "Heart Piece" or "Vessel Fragment")
+        {
+            if (!FsmUtil.TryGetState(self, "Get", out state))
+                return;
+        }
+        else if (self.FsmName is "Chest Control")
+        {
+            if (!FsmUtil.TryGetState(self, "Open", out state))
+                return;
+        }
+        else if (self.FsmName is "Geo Rock")
+        {
+            if (FsmUtil.TryGetState(self, "Destroy", out state))
             {
+                FsmUtil.AddAction(state, new TrackGeoRock(self.gameObject));
                 return;
             }
 
-            FsmUtil.AddAction(state, new TrackItem(name));
+            return;
+        }
+        else
+        {
+            return;
         }
 
-        private static void RenameDupeGeoRockIds(On.GeoRock.orig_SetMyID orig, GeoRock self)
+        FsmUtil.AddAction(state, new TrackItem(name));
+    }
+
+    private static void RenameDupeGeoRockIds(On.GeoRock.orig_SetMyID orig, GeoRock self)
+    {
+        orig(self);
+
+        if (
+            self.gameObject.scene.name is "Crossroads_ShamanTemple"
+            && self.gameObject.name is "Geo Rock 2"
+            && self.transform.parent != null
+        )
         {
-            orig(self);
-
-            if (self.gameObject.scene.name is "Crossroads_ShamanTemple"
-                && self.gameObject.name is "Geo Rock 2"
-                && self.transform.parent != null)
-            {
-                self.geoRockData.id = "_Items/Geo Rock 2";
-            }
-
-            if (self.gameObject.scene.name is "Abyss_06_Core"
-                && self.gameObject.name is "Geo Rock Abyss"
-                && self.transform.parent != null)
-            {
-                self.geoRockData.id = "_Props/Geo Rock Abyss";
-            }
+            self.geoRockData.id = "_Items/Geo Rock 2";
         }
 
-        private static void AddSceneVisited(Scene from, Scene to)
+        if (
+            self.gameObject.scene.name is "Abyss_06_Core"
+            && self.gameObject.name is "Geo Rock Abyss"
+            && self.transform.parent != null
+        )
         {
-            ScenesVisited.Add(to.name);
+            self.geoRockData.id = "_Props/Geo Rock Abyss";
+        }
+    }
+
+    private static void AddSceneVisited(Scene from, Scene to)
+    {
+        _ = _scenesVisited.Add(to.name);
+    }
+
+    private class TrackGeoRock : FsmStateAction
+    {
+        private readonly GameObject _go;
+        private readonly GeoRockData _grd;
+
+        internal TrackGeoRock(GameObject go)
+        {
+            _go = go;
+            _grd = _go.GetComponent<GeoRock>().geoRockData;
+        }
+
+        public override void OnEnter()
+        {
+            if (_grd.id.Contains("-"))
+            {
+                return;
+            }
+
+            _ = _obtainedSceneData.Add((_grd.id, _grd.sceneName));
+            MapChangerMod.Instance.LogDebug("Geo Rock broken");
+            MapChangerMod.Instance.LogDebug(" ID: " + _grd.id);
+            MapChangerMod.Instance.LogDebug(" Scene: " + _grd.sceneName);
+
+            Finish();
+        }
+    }
+
+    private class TrackItem : FsmStateAction
+    {
+        private readonly string _name;
+
+        internal TrackItem(string name)
+        {
+            this._name = name;
+        }
+
+        public override void OnEnter()
+        {
+            if (_name.Contains("-"))
+            {
+                return;
+            }
+
+            var scene = Utils.CurrentScene() ?? "";
+
+            _ = _obtainedSceneData.Add((_name, scene));
+
+            MapChangerMod.Instance.LogDebug("Item picked up");
+            MapChangerMod.Instance.LogDebug(" Name: " + _name);
+            MapChangerMod.Instance.LogDebug(" Scene: " + scene);
+
+            Finish();
         }
     }
 }

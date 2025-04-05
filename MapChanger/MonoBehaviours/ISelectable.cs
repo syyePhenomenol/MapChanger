@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public interface ISelectable
 {
-    public interface ISelectable
-    {
-        bool Selected { get; set; }
-        string Key { get; }
-        Vector2 Position { get; }
-        bool CanSelect();
-    }
+    bool Selected { get; set; }
+    string Key { get; }
+    Vector2 Position { get; }
+
+    bool CanSelect();
 }

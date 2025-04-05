@@ -2,117 +2,128 @@
 using MagicUI.Core;
 using MagicUI.Elements;
 
-namespace MapChanger.UI
+namespace MapChanger.UI;
+
+public class PauseMenu : HookModule
 {
-    public class PauseMenu : HookModule
+    private static LayoutRoot _root;
+    private static GridLayout _mainButtonsGrid;
+    private static List<Title> _titles;
+    private static List<MainButton> _mainButtons;
+    private static List<ExtraButtonPanel> _extraButtonPanels;
+
+    public override void OnEnterGame()
     {
-        internal static LayoutRoot Root { get; private set; }
-        internal static GridLayout MainButtonsGrid { get; private set; }
+        Build();
 
-        internal static List<Title> Titles { get; private set; } = [];
+        On.HeroController.Pause += OnPause;
+    }
 
-        internal static List<MainButton> MainButtons { get; private set; } = [];
-        internal static List<ExtraButtonPanel> ExtraButtonPanels { get; private set; } = [];
+    public override void OnQuitToMenu()
+    {
+        _root?.Destroy();
+        _root = null;
+        _mainButtonsGrid = null;
+        _titles = null;
+        _mainButtons = null;
+        _extraButtonPanels = null;
 
-        public override void OnEnterGame()
+        On.HeroController.Pause -= OnPause;
+    }
+
+    public static void Add(Title title)
+    {
+        title.Initialize(_root);
+        _titles.Add(title);
+    }
+
+    public static void Add(MainButton mb)
+    {
+        mb.Initialize(_root);
+        _mainButtonsGrid.Children.Add(mb.Button);
+        _mainButtons.Add(mb);
+    }
+
+    public static void Add(ExtraButtonPanel ebp)
+    {
+        ebp.Initialize(_root);
+        _extraButtonPanels.Add(ebp);
+    }
+
+    public static void Update()
+    {
+        foreach (var title in _titles)
         {
-            Build();
-
-            On.HeroController.Pause += OnPause;
+            title.Update();
         }
 
-        public override void OnQuitToMenu()
+        foreach (var mainButton in _mainButtons)
         {
-            Root?.Destroy();
-            Root = null;
-            Titles = [];
-            MainButtons = [];
-            ExtraButtonPanels = [];
-
-            On.HeroController.Pause -= OnPause;
+            mainButton.Update();
         }
 
-        public bool Condition()
+        foreach (var ebp in _extraButtonPanels)
         {
-            return GameManager.instance.IsGamePaused();
+            ebp.Update();
+        }
+    }
+
+    private void Build()
+    {
+        _root ??= new(true, $"{GetType().Name} Root") { VisibilityCondition = GameManager.instance.IsGamePaused };
+
+        _mainButtonsGrid = new(_root, "Main Buttons")
+        {
+            RowDefinitions =
+            {
+                new GridDimension(1, GridUnit.AbsoluteMin),
+                new GridDimension(1, GridUnit.AbsoluteMin),
+                new GridDimension(1, GridUnit.AbsoluteMin),
+            },
+            ColumnDefinitions =
+            {
+                new GridDimension(1, GridUnit.AbsoluteMin),
+                new GridDimension(1, GridUnit.AbsoluteMin),
+                new GridDimension(1, GridUnit.AbsoluteMin),
+                new GridDimension(1, GridUnit.AbsoluteMin),
+            },
+            MinHeight = 33f,
+            MinWidth = 100f,
+            HorizontalAlignment = HorizontalAlignment.Left,
+            VerticalAlignment = VerticalAlignment.Top,
+            Padding = new(10f, 865f, 10f, 10f),
+        };
+
+        _titles = [];
+        _mainButtons = [];
+        _extraButtonPanels = [];
+
+        ModToggleText mapToggleText = new();
+        mapToggleText.Initialize(_root);
+        _titles.Add(mapToggleText);
+
+        Update();
+    }
+
+    private static void OnPause(On.HeroController.orig_Pause orig, HeroController self)
+    {
+        orig(self);
+
+        foreach (var ebp in _extraButtonPanels)
+        {
+            ebp.Hide();
         }
 
-        public void Build()
+        Update();
+    }
+
+    internal static void HideOtherPanels(ExtraButtonPanel visiblePanel)
+    {
+        foreach (var ebp in _extraButtonPanels)
         {
-            if (Root == null)
+            if (ebp != visiblePanel)
             {
-                Root = new(true, $"{GetType().Name} Root")
-                {
-                    VisibilityCondition = Condition
-                };
-            }
-
-            MainButtonsGrid = new(Root, "Main Buttons")
-            {
-                RowDefinitions =
-                {
-                    new GridDimension(1, GridUnit.AbsoluteMin),
-                    new GridDimension(1, GridUnit.AbsoluteMin),
-                    new GridDimension(1, GridUnit.AbsoluteMin)
-                },
-                ColumnDefinitions =
-                {
-                    new GridDimension(1, GridUnit.AbsoluteMin),
-                    new GridDimension(1, GridUnit.AbsoluteMin),
-                    new GridDimension(1, GridUnit.AbsoluteMin),
-                    new GridDimension(1, GridUnit.AbsoluteMin)
-                },
-                MinHeight = 33f,
-                MinWidth = 100f,
-                HorizontalAlignment = HorizontalAlignment.Left,
-                VerticalAlignment = VerticalAlignment.Top,
-                Padding = new(10f, 865f, 10f, 10f)
-            };
-
-            ModToggleText mapToggleText = new();
-            mapToggleText.Make();
-
-            Update();
-        }
-
-        public static void Update()
-        {
-            foreach (Title title in Titles)
-            {
-                title.Update();
-            }
-
-            foreach (MainButton mainButton in MainButtons)
-            {
-                mainButton.Update();
-            }
-
-            foreach (ExtraButtonPanel ebp in ExtraButtonPanels)
-            {
-                ebp.Update();
-            }
-        }
-
-        private static void OnPause(On.HeroController.orig_Pause orig, HeroController self)
-        {
-            orig(self);
-
-            foreach (ExtraButtonPanel ebp in ExtraButtonPanels)
-            {
-                ebp.Hide();
-            }
-
-            Update();
-        }
-
-        internal static void HideOtherPanels(ExtraButtonPanel visiblePanel)
-        {
-            foreach (ExtraButtonPanel ebp in ExtraButtonPanels)
-            {
-                if (ebp != visiblePanel)
-                {
-                    ebp?.Hide();
-                }
+                ebp?.Hide();
             }
         }
     }

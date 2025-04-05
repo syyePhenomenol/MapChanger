@@ -1,73 +1,60 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public enum BorderPlacement
 {
-    public enum BorderPlacement
+    Behind,
+    InFront,
+}
+
+public class BorderedPin : Pin
+{
+    private static readonly Dictionary<BorderPlacement, float> _borderOffset =
+        new() { { BorderPlacement.Behind, 0.00001f }, { BorderPlacement.InFront, -0.00001f } };
+
+    private SpriteRenderer _borderSr;
+    private BorderPlacement _borderPlacement = BorderPlacement.InFront;
+
+    public Sprite BorderSprite
     {
-        Behind,
-        InFront
+        get => _borderSr.sprite;
+        set => _borderSr.sprite = value;
     }
 
-    public class BorderedPin : Pin
+    public Vector4 BorderColor
     {
-        private static readonly Dictionary<BorderPlacement, float> borderOffset = new()
+        get => _borderSr.color;
+        set => _borderSr.color = value;
+    }
+    public BorderPlacement BorderPlacement
+    {
+        get => _borderPlacement;
+        set
         {
-            { BorderPlacement.Behind, 0.00001f },
-            { BorderPlacement.InFront, -0.00001f }
-        };
-
-        private SpriteRenderer borderSr;
-        public Sprite BorderSprite
-        {
-            get => borderSr.sprite;
-            set
+            if (_borderPlacement != value)
             {
-                borderSr.sprite = value;
+                _borderPlacement = value;
+                UpdateBorder();
             }
         }
+    }
 
-        public Vector4 BorderColor
-        {
-            get => borderSr.color;
-            set
-            {
-                borderSr.color = value;
-            }
-        }
+    public override void Initialize()
+    {
+        base.Initialize();
 
-        private BorderPlacement borderPlacement = BorderPlacement.InFront;
-        public BorderPlacement BorderPlacement
-        {
-            get => borderPlacement;
-            set
-            {
-                if (borderPlacement != value)
-                {
-                    borderPlacement = value;
-                    UpdateBorder();
-                }
-            }
-        }
+        GameObject goBorder = new($"{transform.name} Border") { layer = UI_LAYER };
+        goBorder.transform.SetParent(transform, false);
 
-        public override void Initialize()
-        {
-            base.Initialize();
+        _borderSr = goBorder.AddComponent<SpriteRenderer>();
+        _borderSr.sortingLayerName = HUD;
+        UpdateBorder();
+    }
 
-            GameObject goBorder = new($"{transform.name} Border")
-            {
-                layer = UI_LAYER
-            };
-            goBorder.transform.SetParent(transform, false);
-
-            borderSr = goBorder.AddComponent<SpriteRenderer>();
-            borderSr.sortingLayerName = HUD;
-            UpdateBorder();
-        }
-
-        private void UpdateBorder()
-        {
-            borderSr.transform.localPosition = new Vector3(0f, 0f, borderOffset[borderPlacement]);
-        }
+    private void UpdateBorder()
+    {
+        _borderSr.transform.localPosition = new Vector3(0f, 0f, _borderOffset[_borderPlacement]);
     }
 }

@@ -3,105 +3,121 @@ using System.Collections.Generic;
 using MapChanger.Defs;
 using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public class RoomSprite : ColoredMapObject, ISelectable
 {
-    public class RoomSprite : ColoredMapObject, ISelectable
+    private SpriteRenderer _sr;
+
+    private bool _selected;
+
+    public RoomSpriteDef Rsd { get; private set; }
+
+    public override Vector4 Color
     {
-        public RoomSpriteDef Rsd { get; private set; }
+        get => _sr.color;
+        set => _sr.color = value;
+    }
 
-        private SpriteRenderer sr;
-        public override Vector4 Color
+    public bool Selected
+    {
+        get => _selected;
+        set
         {
-            get => sr.color;
-            set
+            if (_selected != value)
             {
-                sr.color = value;
+                _selected = value;
+                UpdateColor();
+            }
+        }
+    }
+
+    public string Key => Rsd.SceneName;
+    public Vector2 Position => transform.position;
+
+    internal void Initialize(RoomSpriteDef rsd)
+    {
+        Rsd = rsd;
+
+        ActiveModifiers.Add(IsActive);
+
+        // Hotfix for AdditionalMaps with different GameObject hierarchy
+        if (transform.parent.name is "WHITE_PALACE" or "GODS_GLORY")
+        {
+            _sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        }
+        else
+        {
+            _sr = GetComponentInChildren<SpriteRenderer>();
+        }
+
+        OrigColor = _sr.color;
+
+        if (!Finder.IsScene(Rsd.SceneName))
+        {
+            MapChangerMod.Instance.LogDebug($"Not a scene: {Rsd.SceneName}");
+        }
+
+        MapObjectUpdater.Add(this);
+    }
+
+    private bool IsActive()
+    {
+        if (Settings.MapModEnabled())
+        {
+            try
+            {
+                return Settings.CurrentMode().RoomActiveOverride(this) ?? DefaultActive();
+            }
+            catch (Exception e)
+            {
+                MapChangerMod.Instance.LogError(e);
             }
         }
 
-        private bool selected = false;
-        public bool Selected
+        return DefaultActive();
+
+        bool DefaultActive()
         {
-            get => selected;
-            set
-            {
-                if (selected != value)
-                {
-                    selected = value;
-                    UpdateColor();
-                }
-            }
-        }
-
-        public string Key => Rsd.SceneName;
-        public Vector2 Position => transform.position;
-
-        internal void Initialize(RoomSpriteDef rsd)
-        {
-            Rsd = rsd;
-
-            ActiveModifiers.Add(IsActive);
-            
-            // Hotfix for AdditionalMaps with different GameObject hierarchy
-            if (transform.parent.name is "WHITE_PALACE" or "GODS_GLORY")
-            {
-                sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
-            }
-            else
-            {
-                sr = GetComponentInChildren<SpriteRenderer>();
-            }
-            
-            OrigColor = sr.color;
-
-            if (!Finder.IsScene(Rsd.SceneName))
-            {
-                MapChangerMod.Instance.LogDebug($"Not a scene: {Rsd.SceneName}");
-            }
-
-            MapObjectUpdater.Add(this);
-        }
-
-        private bool IsActive()
-        {
-            if (Settings.MapModEnabled())
-            {
-                try { return Settings.CurrentMode().RoomActiveOverride(this) ?? DefaultActive(); }
-                catch (Exception e) { MapChangerMod.Instance.LogError(e); }
-            }
-
-            return DefaultActive();
-
-            bool DefaultActive()
-            {
-                return (Settings.MapModEnabled() && Settings.CurrentMode().FullMap)
+            return (Settings.MapModEnabled() && Settings.CurrentMode().FullMap)
                 || PlayerData.instance.GetVariable<List<string>>("scenesMapped").Contains(Rsd.SceneName)
                 || Finder.IsMinimalMapScene(transform.name);
-            }
         }
+    }
 
-        public override void UpdateColor()
+    public override void UpdateColor()
+    {
+        if (Settings.MapModEnabled())
         {
-            if (Settings.MapModEnabled())
+            try
             {
-                try { Color = Settings.CurrentMode().RoomColorOverride(this) ?? OrigColor; }
-                catch (Exception e) { MapChangerMod.Instance.LogError(e); }
+                Color = Settings.CurrentMode().RoomColorOverride(this) ?? OrigColor;
             }
-            else
+            catch (Exception e)
             {
-                ResetColor();
+                MapChangerMod.Instance.LogError(e);
             }
         }
-
-        public bool CanSelect()
+        else
         {
-            if (Settings.MapModEnabled())
-            {
-                try { return Settings.CurrentMode().RoomCanSelectOverride(this) ?? gameObject.activeInHierarchy; }
-                catch (Exception e) { MapChangerMod.Instance.LogError(e); }
-            }
-
-            return gameObject.activeInHierarchy;
+            ResetColor();
         }
+    }
+
+    public bool CanSelect()
+    {
+        if (Settings.MapModEnabled())
+        {
+            try
+            {
+                return Settings.CurrentMode().RoomCanSelectOverride(this) ?? gameObject.activeInHierarchy;
+            }
+            catch (Exception e)
+            {
+                MapChangerMod.Instance.LogError(e);
+            }
+        }
+
+        return gameObject.activeInHierarchy;
     }
 }

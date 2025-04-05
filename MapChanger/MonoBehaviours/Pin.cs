@@ -1,94 +1,95 @@
 ﻿using MapChanger.Defs;
 using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public class Pin : MapObject
 {
-    public class Pin : MapObject
+    private bool _snapPosition = true;
+
+    private IMapPosition _mapPosition;
+
+    private float _size = 1f;
+
+    public bool SnapPosition
     {
-        private bool snapPosition = true;
-        public bool SnapPosition
+        get => _snapPosition;
+        set
         {
-            get => snapPosition;
-            set
+            if (_snapPosition != value)
             {
-                if (snapPosition != value)
-                {
-                    snapPosition = value;
-                    UpdatePosition();
-                }
+                _snapPosition = value;
+                UpdatePosition();
             }
         }
+    }
 
-        private IMapPosition mapPosition;
-        public IMapPosition MapPosition
+    public IMapPosition MapPosition
+    {
+        get => _mapPosition;
+        set
         {
-            get => mapPosition;
-            set
+            if (_mapPosition != value)
             {
-                if (mapPosition != value)
-                {
-                    mapPosition = value;
-                    UpdatePosition();
-                }
+                _mapPosition = value;
+                UpdatePosition();
             }
         }
+    }
 
-        protected SpriteRenderer Sr { get; private set; }
-        public Sprite Sprite
+    protected SpriteRenderer Sr { get; private set; }
+
+    public Sprite Sprite
+    {
+        get => Sr.sprite;
+        set => Sr.sprite = value;
+    }
+
+    public Vector4 Color
+    {
+        get => Sr.color;
+        set => Sr.color = value;
+    }
+
+    public float Size
+    {
+        get => _size;
+        set
         {
-            get => Sr.sprite;
-            set
-            {
-                Sr.sprite = value;
-            }
+            _size = value;
+            transform.localScale = new(_size, _size, transform.localScale.z);
+        }
+    }
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        GameObject goPinSprite = new($"{transform.name} Pin Sprite") { layer = UI_LAYER };
+        goPinSprite.transform.SetParent(transform, false);
+
+        Sr = goPinSprite.AddComponent<SpriteRenderer>();
+        Sr.sortingLayerName = HUD;
+    }
+
+    private void UpdatePosition()
+    {
+        if (_mapPosition is null)
+        {
+            return;
         }
 
-        public Vector4 Color
+        if (_snapPosition)
         {
-            get => Sr.color;
-            set
-            {
-                Sr.color = value;
-            }
+            transform.localPosition = new Vector3(
+                _mapPosition.X.Snap(),
+                _mapPosition.Y.Snap(),
+                transform.localPosition.z
+            );
         }
-
-        private float size = 1f;
-        public float Size
+        else
         {
-            get => size;
-            set
-            {
-                size = value;
-                transform.localScale = new(size, size, transform.localScale.z);
-            }
-        }
-
-        public override void Initialize()
-        {
-            base.Initialize();
-
-            GameObject goPinSprite = new($"{transform.name} Pin Sprite")
-            {
-                layer = UI_LAYER
-            };
-            goPinSprite.transform.SetParent(transform, false);
-
-            Sr = goPinSprite.AddComponent<SpriteRenderer>();
-            Sr.sortingLayerName = HUD;
-        }
-
-        private void UpdatePosition()
-        {
-            if (mapPosition is null) return;
-
-            if (snapPosition)
-            {
-                transform.localPosition = new Vector3(mapPosition.X.Snap(), mapPosition.Y.Snap(), transform.localPosition.z);
-            }
-            else
-            {
-                transform.localPosition = new Vector3(mapPosition.X, mapPosition.Y, transform.localPosition.z);
-            }
+            transform.localPosition = new Vector3(_mapPosition.X, _mapPosition.Y, transform.localPosition.z);
         }
     }
 }

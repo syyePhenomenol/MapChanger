@@ -3,58 +3,60 @@ using MapChanger.Defs;
 using TMPro;
 using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public class AreaName : ColoredMapObject
 {
-    public class AreaName : ColoredMapObject
+    private TextMeshPro _tmp;
+
+    public MiscObjectDef MiscObjectDef { get; private set; }
+    public override Vector4 Color
     {
-        public MiscObjectDef MiscObjectDef { get; private set; }
+        get => _tmp.color;
+        set => _tmp.color = value;
+    }
 
-        private TextMeshPro tmp;
-        public override Vector4 Color
+    internal void Initialize(MiscObjectDef miscObjectDef)
+    {
+        ActiveModifiers.Add(AreaNamesEnabled);
+
+        MiscObjectDef = miscObjectDef;
+
+        _tmp = GetComponent<TextMeshPro>();
+
+        if (_tmp == null)
         {
-            get => tmp.color;
-            set
-            {
-                tmp.color = value;
-            }
+            MapChangerMod.Instance.LogWarn($"Missing component references! {transform.name}");
+            Destroy(this);
+            return;
         }
 
-        internal void Initialize(MiscObjectDef miscObjectDef)
+        OrigColor = _tmp.color;
+
+        MapObjectUpdater.Add(this);
+    }
+
+    private bool AreaNamesEnabled()
+    {
+        return !(Settings.MapModEnabled() && Settings.CurrentMode().DisableAreaNames);
+    }
+
+    public override void UpdateColor()
+    {
+        if (Settings.MapModEnabled())
         {
-            ActiveModifiers.Add(AreaNamesEnabled);
-
-            MiscObjectDef = miscObjectDef;
-
-            tmp = GetComponent<TextMeshPro>();
-
-            if (tmp == null)
+            try
             {
-                MapChangerMod.Instance.LogWarn($"Missing component references! {transform.name}");
-                Destroy(this);
-                return;
+                Color = Settings.CurrentMode().AreaNameColorOverride(this) ?? OrigColor;
             }
-
-            OrigColor = tmp.color;
-
-            MapObjectUpdater.Add(this);
+            catch (Exception e)
+            {
+                MapChangerMod.Instance.LogError(e);
+            }
         }
-
-        private bool AreaNamesEnabled()
+        else
         {
-            return !(Settings.MapModEnabled() && Settings.CurrentMode().DisableAreaNames);
-        }
-
-        public override void UpdateColor()
-        {
-            if (Settings.MapModEnabled())
-            {
-                try { Color = Settings.CurrentMode().AreaNameColorOverride(this) ?? OrigColor; }
-                catch (Exception e) { MapChangerMod.Instance.LogError(e); }
-            }
-            else
-            {
-                ResetColor();
-            }
+            ResetColor();
         }
     }
 }

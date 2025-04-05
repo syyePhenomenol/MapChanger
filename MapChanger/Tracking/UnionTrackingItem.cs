@@ -1,12 +1,11 @@
 using System.Linq;
 
-namespace MapChanger.Tracking
+namespace MapChanger.Tracking;
+
+public class UnionTrackingItem : MultiTrackingItem
 {
-    public class UnionTrackingItem : MultiTrackingItem
+    public override bool Has()
     {
-        public override bool Has()
-        {
-            return TrackingItems.Any(i => i.Has());
-        }
+        return TrackingItems.Any(i => i.Has());
     }
 }

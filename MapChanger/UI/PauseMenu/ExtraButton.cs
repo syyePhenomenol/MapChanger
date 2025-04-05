@@ -1,33 +1,28 @@
 ﻿using MagicUI.Core;
 using MagicUI.Elements;
 
-namespace MapChanger.UI
+namespace MapChanger.UI;
+
+/// <summary>
+/// Buttons that belong in a toggleable panel in the pause menu.
+/// </summary>
+/// <param name="name"></param>
+/// <param name="mod"></param>
+public abstract class ExtraButton(string name, string mod) : ButtonWrapper(name, mod)
 {
-    /// <summary>
-    /// Buttons that belong in a toggleable panel in the pause menu.
-    /// </summary>
-    public abstract class ExtraButton(string name, string mod) : ButtonWrapper($"{mod} {name}")
+    protected override Button MakeButton(LayoutRoot root)
     {
-        public readonly string Mod = mod;
-
-        public override void Make()
+        return new Button(root, FullName)
         {
-            Button = new(PauseMenu.Root, Name)
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                Borderless = true,
-                MinHeight = 28f,
-                MinWidth = 85f,
-                Content = Name,
-                Font = MagicUI.Core.UI.TrajanNormal,
-                FontSize = 11,
-                Margin = 0f
-            };
-
-            Button.Click += OnClickInternal;
-            Button.OnHover += OnHover;
-            Button.OnUnhover += OnUnhover;
-        }
+            HorizontalAlignment = HorizontalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Center,
+            Borderless = true,
+            MinHeight = 28f,
+            MinWidth = 85f,
+            Content = Name,
+            Font = MagicUI.Core.UI.TrajanNormal,
+            FontSize = 11,
+            Margin = 0f,
+        };
     }
 }

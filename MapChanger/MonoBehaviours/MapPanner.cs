@@ -2,98 +2,96 @@ using System.Collections;
 using MapChanger.Map;
 using UnityEngine;
 
-namespace MapChanger.MonoBehaviours
+namespace MapChanger.MonoBehaviours;
+
+public class MapPanner : MapObject, IPeriodicUpdater
 {
-    public class MapPanner : MapObject, IPeriodicUpdater
+    private const float PAN_TIME = 0.5f;
+    private const float DELTA_TIME = 0.01f;
+    private const float NUMBER_OF_CYCLES = PAN_TIME / DELTA_TIME;
+
+    private static Coroutine _periodicUpdate;
+    private static Vector2 _startPosition;
+    private static Vector2 _targetPosition;
+    private static int _cycle;
+    private static GameObject _goMap;
+
+    public static MapPanner Instance { get; private set; }
+    public static bool IsPanning => _periodicUpdate is not null;
+    public float UpdateWaitSeconds => DELTA_TIME;
+
+    public void Initialize(GameObject goMap)
     {
-        private const float PAN_TIME = 0.5f;
-        private const float DELTA_TIME = 0.01f;
-        private const float NUMBER_OF_CYCLES = PAN_TIME / DELTA_TIME;
+        base.Initialize();
 
-        public static MapPanner Instance { get; private set; }
+        _goMap = goMap;
+        Instance = this;
+    }
 
-        public static bool IsPanning => periodicUpdate is not null;
-        private static Coroutine periodicUpdate;
+    public override void OnMainUpdate(bool active)
+    {
+        StopPeriodicUpdate();
+    }
 
-        private static GameObject goMap => GameManager.instance?.gameMap?.gameObject;
-
-        public float UpdateWaitSeconds => DELTA_TIME;
-
-        private static Vector2 startPosition;
-        private static Vector2 targetPosition;
-
-        private static int cycle;
-
-        public override void Initialize()
+    public static void PanToMappedScene(string scene)
+    {
+        if (
+            !(Finder.GetMappedScene(scene) is var mappedScene)
+            || !BuiltInObjects.MappedRooms.TryGetValue(mappedScene, out var room)
+            || !room.CanSelect()
+        )
         {
-            base.Initialize();
-
-            Instance = this;
+            return;
         }
 
-        public override void OnMainUpdate(bool active)
+        PanTo(room.transform.position);
+    }
+
+    public static void PanTo(Vector2 position)
+    {
+        Instance.StopPeriodicUpdate();
+
+        // We want to pan such that the room's position becomes (0, 0)
+        // In other words, subtract the position from the map's current position
+        _startPosition = (Vector2)_goMap.transform.position;
+        _targetPosition = _startPosition - position;
+
+        Instance.StartPeriodicUpdate();
+    }
+
+    public IEnumerator PeriodicUpdate()
+    {
+        _cycle = 1;
+
+        while (true)
         {
-            StopPeriodicUpdate();
-        }
-
-        public static void PanTo(Vector2 position)
-        {
-            Instance.StopPeriodicUpdate();
-
-            // We want to pan such that the room's position becomes (0, 0)
-            // In other words, subtract the position from the map's current position
-            startPosition = (Vector2)goMap.transform.position;
-            targetPosition = startPosition - position;
-
-            Instance.StartPeriodicUpdate();
-        }
-
-        public static void PanTo(string scene)
-        {
-            if (!(Finder.GetMappedScene(scene) is var mappedScene)
-                || !BuiltInObjects.MappedRooms.TryGetValue(mappedScene, out RoomSprite room)
-                || !room.CanSelect()) return;
-
-            PanTo(room.transform.position);
-        }
-
-        public IEnumerator PeriodicUpdate()
-        {
-            cycle = 1;
-
-            while (true)
+            if (_cycle > NUMBER_OF_CYCLES)
             {
-                if (cycle > NUMBER_OF_CYCLES)
-                {
-                    goMap.transform.position = new Vector3(targetPosition.x, targetPosition.y, 0);
-                    periodicUpdate = null;
-                    yield break;
-                }
-
-                goMap.transform.position = startPosition + (targetPosition - startPosition) * (cycle / NUMBER_OF_CYCLES);
-
-                yield return new WaitForSecondsRealtime(UpdateWaitSeconds);
-
-                cycle++;
+                _goMap.transform.position = new Vector3(_targetPosition.x, _targetPosition.y, 0);
+                _periodicUpdate = null;
+                yield break;
             }
-        }
 
-        private void StartPeriodicUpdate()
+            _goMap.transform.position =
+                _startPosition + ((_targetPosition - _startPosition) * (_cycle / NUMBER_OF_CYCLES));
+
+            yield return new WaitForSecondsRealtime(UpdateWaitSeconds);
+
+            _cycle++;
+        }
+    }
+
+    private void StartPeriodicUpdate()
+    {
+        _periodicUpdate ??= StartCoroutine(PeriodicUpdate());
+    }
+
+    private void StopPeriodicUpdate()
+    {
+        if (_periodicUpdate is not null)
         {
-            if (periodicUpdate is null)
-            {
-                periodicUpdate = StartCoroutine(PeriodicUpdate());
-            }
+            StopCoroutine(_periodicUpdate);
+            _periodicUpdate = null;
         }
-
-        private void StopPeriodicUpdate()
-        {
-            if (periodicUpdate is not null)
-            {
-                StopCoroutine(periodicUpdate);
-                periodicUpdate = null;
-            }
-        }
-
     }
 }

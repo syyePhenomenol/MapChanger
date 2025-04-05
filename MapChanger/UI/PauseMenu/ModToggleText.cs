@@ -1,26 +1,21 @@
 ﻿using MagicUI.Core;
-using MagicUI.Elements;
-using UnityEngine;
 
-namespace MapChanger.UI
+namespace MapChanger.UI;
+
+internal class ModToggleText : Title
 {
-    internal class ModToggleText : Title
+    public ModToggleText()
+        : base("Press Ctrl-M to enable map mod", nameof(MapChangerMod)) { }
+
+    public override void Update()
     {
-        public ModToggleText() : base("Press Ctrl-M to enable map mod")
+        if (!Settings.MapModEnabled())
         {
-
+            TitleText.Visibility = Visibility.Visible;
         }
-
-        public override void Update()
+        else
         {
-            if (!Settings.MapModWasEnabled)
-            {
-                TitleText.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                TitleText.Visibility = Visibility.Hidden;
-            }
+            TitleText.Visibility = Visibility.Hidden;
         }
     }
 }

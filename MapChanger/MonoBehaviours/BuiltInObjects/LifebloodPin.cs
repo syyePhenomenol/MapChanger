@@ -1,9 +1,7 @@
-﻿namespace MapChanger.MonoBehaviours
-{
-    internal class LifebloodPin : VanillaPin
-    {
-        private protected override string HasPinBoolName => "hasPinCocoon";
+﻿namespace MapChanger.MonoBehaviours;
 
-        private protected override string SceneListName => "scenesEncounteredCocoon";
-    }
+internal class LifebloodPin : VanillaPin
+{
+    private protected override string HasPinBoolName => "hasPinCocoon";
+    private protected override string SceneListName => "scenesEncounteredCocoon";
 }

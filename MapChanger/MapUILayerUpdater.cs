@@ -1,70 +1,69 @@
 ﻿using System.Collections.Generic;
 using GlobalEnums;
 
-namespace MapChanger.UI
+namespace MapChanger.UI;
+
+/// <summary>
+/// Updates MapUILayers when a map is opened or closed.
+/// </summary>
+public class MapUILayerUpdater : HookModule
 {
-    /// <summary>
-    /// Updates MapUILayers when a map is opened or closed.
-    /// </summary>
-    public class MapUILayerUpdater : HookModule
+    private static readonly List<MapUILayer> _mapLayers = [];
+
+    public override void OnEnterGame()
     {
-        private static readonly List<MapUILayer> mapLayers = [];
+        Add(new GlobalHotkeys());
 
-        public override void OnEnterGame()
+        Events.OnWorldMap += OnOpenWorldMap;
+        Events.OnQuickMap += OnOpenQuickMap;
+        Events.OnCloseMap += OnCloseMap;
+    }
+
+    public override void OnQuitToMenu()
+    {
+        Events.OnWorldMap += OnOpenWorldMap;
+        Events.OnQuickMap += OnOpenQuickMap;
+        Events.OnCloseMap += OnCloseMap;
+
+        RemoveMapLayers();
+    }
+
+    public static void Add(MapUILayer layer)
+    {
+        _mapLayers.Add(layer);
+        layer.Build();
+    }
+
+    internal static void RemoveMapLayers()
+    {
+        foreach (var layer in _mapLayers)
         {
-            Add(new GlobalHotkeys());
-
-            Events.OnWorldMap += OnOpenWorldMap;
-            Events.OnQuickMap += OnOpenQuickMap;
-            Events.OnCloseMap += OnCloseMap;
+            layer.Destroy();
         }
 
-        public override void OnQuitToMenu()
+        _mapLayers.Clear();
+    }
+
+    private static void OnOpenWorldMap(GameMap obj)
+    {
+        Update();
+    }
+
+    private static void OnOpenQuickMap(GameMap gameMap, MapZone mapZone)
+    {
+        Update();
+    }
+
+    private static void OnCloseMap(GameMap obj)
+    {
+        Update();
+    }
+
+    public static void Update()
+    {
+        foreach (var layer in _mapLayers)
         {
-            Events.OnWorldMap += OnOpenWorldMap;
-            Events.OnQuickMap += OnOpenQuickMap;
-            Events.OnCloseMap += OnCloseMap;
-
-            RemoveMapLayers();
-        }
-
-        public static void Add(MapUILayer layer)
-        {
-            mapLayers.Add(layer);
-            layer.Build();
-        }
-
-        internal static void RemoveMapLayers()
-        {
-            foreach (MapUILayer layer in mapLayers)
-            {
-                layer.Destroy();
-            }
-
-            mapLayers.Clear();
-        }
-
-        private static void OnOpenWorldMap(GameMap obj)
-        {
-            Update();
-        }
-
-        private static void OnOpenQuickMap(GameMap gameMap, MapZone mapZone)
-        {
-            Update();
-        }
-
-        private static void OnCloseMap(GameMap obj)
-        {
-            Update();
-        }
-
-        public static void Update()
-        {
-            foreach (MapUILayer layer in mapLayers)
-            {
-                layer.Update();
-            }
+            layer.Update();
         }
     }
 }
