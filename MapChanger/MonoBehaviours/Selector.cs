@@ -10,7 +10,7 @@ namespace MapChanger.MonoBehaviours;
 /// <summary>
 /// A MapObject with a reticle for selecting MapObjects on the world map.
 /// </summary>
-public abstract class Selector : MapObject, IPeriodicUpdater
+public abstract class Selector : MapInputListener, IPeriodicUpdater
 {
     protected const float MAP_FRONT_Z = -30f;
     protected const float DEFAULT_SIZE = 0.3f;
@@ -61,6 +61,7 @@ public abstract class Selector : MapObject, IPeriodicUpdater
             }
         }
     }
+
     public bool LockSelection
     {
         get => _lockSelection;
@@ -136,15 +137,11 @@ public abstract class Selector : MapObject, IPeriodicUpdater
         }
     }
 
-    public virtual void Initialize(IEnumerable<ISelectable> objects)
+    public virtual void Initialize(IEnumerable<MapInput> inputs, IEnumerable<ISelectable> objects)
     {
-        base.Initialize();
+        Initialize(inputs);
 
         Objects = new(objects.ToDictionary(o => o.Key, o => o));
-
-        DontDestroyOnLoad(this);
-
-        ActiveModifiers.Add(WorldMapOpen);
 
         SpriteObject = new("Selector Sprite");
         SpriteObject.transform.SetParent(transform, false);
@@ -157,13 +154,6 @@ public abstract class Selector : MapObject, IPeriodicUpdater
 
         transform.localScale = Vector3.one * SpriteSize;
         transform.localPosition = new Vector3(0, 0, MAP_FRONT_Z);
-
-        MapObjectUpdater.Add(this);
-    }
-
-    private bool WorldMapOpen()
-    {
-        return States.WorldMapOpen;
     }
 
     public override void OnMainUpdate(bool active)

@@ -191,18 +191,4 @@ public static class Utils
     {
         return GameManager.GetBaseSceneName(GameManager.instance.sceneName);
     }
-
-    public static string GetBindingsText(List<InControl.BindingSource> bindings)
-    {
-        var text = "";
-
-        text += $"[{bindings.First().Name}]";
-
-        if (bindings.Count > 1 && bindings[1].BindingSourceType == InControl.BindingSourceType.DeviceBindingSource)
-        {
-            text += $" or ({bindings[1].Name})";
-        }
-
-        return text;
-    }
 }

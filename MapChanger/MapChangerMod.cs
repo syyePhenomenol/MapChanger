@@ -25,7 +25,7 @@ public class MapChangerMod : Mod, ILocalSettings<Settings>
     {
         Instance = this;
 
-        Dependencies.GetDependencies();
+        Dependencies.FindDependencies();
 
         if (!Dependencies.HasMagicUI)
         {
