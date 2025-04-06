@@ -10,7 +10,7 @@ namespace MapChanger.MonoBehaviours;
 /// <summary>
 /// A MapObject with a reticle for selecting MapObjects on the world map.
 /// </summary>
-public abstract class Selector : MapInputListener, IPeriodicUpdater
+public abstract class Selector : MapObject, IPeriodicUpdater
 {
     protected const float MAP_FRONT_Z = -30f;
     protected const float DEFAULT_SIZE = 0.3f;
@@ -137,9 +137,12 @@ public abstract class Selector : MapInputListener, IPeriodicUpdater
         }
     }
 
-    public virtual void Initialize(IEnumerable<MapInput> inputs, IEnumerable<ISelectable> objects)
+    public virtual void Initialize(IEnumerable<ISelectable> objects)
     {
-        Initialize(inputs);
+        base.Initialize();
+        DontDestroyOnLoad(this);
+        ActiveModifiers.Add(() => States.WorldMapOpen);
+        MapObjectUpdater.Add(this);
 
         Objects = new(objects.ToDictionary(o => o.Key, o => o));
 

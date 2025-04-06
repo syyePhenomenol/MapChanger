@@ -1,3 +1,4 @@
+using MapChanger.Input;
 using Modding;
 
 namespace MapChanger;
@@ -40,6 +41,9 @@ public class MapChangerMod : Mod, ILocalSettings<Settings>
         }
 
         Finder.Load();
+
+        InputManager.Add(new ModEnabledInput());
+        InputManager.Add(new ToggleModeInput());
 
         Events.Initialize();
     }

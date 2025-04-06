@@ -232,7 +232,7 @@ internal class BehaviourChanges : HookModule
         if (
             Settings.MapModEnabled()
             && self.canPan
-            && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            && (UnityEngine.Input.GetKey(KeyCode.LeftShift) || UnityEngine.Input.GetKey(KeyCode.RightShift))
         )
         {
             if (InputHandler.Instance.inputActions.down.IsPressed)

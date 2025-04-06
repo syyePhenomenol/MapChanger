@@ -12,8 +12,6 @@ public class MapUILayerUpdater : HookModule
 
     public override void OnEnterGame()
     {
-        Add(new GlobalHotkeys());
-
         Events.OnWorldMap += OnOpenWorldMap;
         Events.OnQuickMap += OnOpenQuickMap;
         Events.OnCloseMap += OnCloseMap;

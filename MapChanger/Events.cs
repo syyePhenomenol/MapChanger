@@ -12,19 +12,20 @@ namespace MapChanger;
 
 public static class Events
 {
-    internal static readonly List<HookModule> HookModules =
+    internal static readonly IEnumerable<HookModule> HookModules =
     [
         new Settings(),
         new Tracker(),
         new VariableOverrides(),
         new BehaviourChanges(),
         new BuiltInObjects(),
+        new InputManager(),
         new PauseMenu(),
         new MapUILayerUpdater(),
         new MapObjectUpdater(),
     ];
 
-    private static readonly MapZone[] _customMapZones = [MapZone.WHITE_PALACE, MapZone.GODS_GLORY];
+    private static readonly IEnumerable<MapZone> _customMapZones = [MapZone.WHITE_PALACE, MapZone.GODS_GLORY];
 
     public static event Action OnEnterGame;
     public static event Action OnQuitToMenu;

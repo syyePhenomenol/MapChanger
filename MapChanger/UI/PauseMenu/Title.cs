@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MapChanger.UI;
 
-public class Title(string name, string mod) : MagicUIWrapper(name, mod)
+public abstract class Title(string name, string mod) : MagicUIWrapper(name, mod)
 {
     public TextObject TitleText { get; private set; }
 
@@ -17,7 +17,7 @@ public class Title(string name, string mod) : MagicUIWrapper(name, mod)
             FontSize = 20,
             Font = MagicUI.Core.UI.TrajanBold,
             Padding = new(10f, 840f, 10f, 10f),
-            Text = Name,
+            Text = Mod,
         };
     }
 
@@ -32,11 +32,6 @@ public class Title(string name, string mod) : MagicUIWrapper(name, mod)
             TitleText.Visibility = Visibility.Hidden;
         }
 
-        UpdateText();
-    }
-
-    public virtual void UpdateText()
-    {
-        TitleText.Text = Name;
+        TitleText.Text = Mod;
     }
 }

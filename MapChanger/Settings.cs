@@ -68,7 +68,7 @@ public class Settings : HookModule
         return _modes.Any();
     }
 
-    public static void AddModes(MapMode[] modes)
+    public static void AddModes(IEnumerable<MapMode> modes)
     {
         foreach (var mode in modes)
         {
