@@ -13,7 +13,7 @@ public class DirectionalCompass : MonoBehaviour
     private GameObject _compassInternal;
     private SpriteRenderer _sr;
     private CompassInfo _info;
-    private GameObject _entity;
+    private Vector2 _compassCenter;
     private float _lerpStartTime;
     private Vector2 _currentDir;
     private float _currentAngle;
@@ -30,6 +30,7 @@ public class DirectionalCompass : MonoBehaviour
 
         dc._compassInternal = new($"{ci.Name} Internal", typeof(SpriteRenderer));
         dc._sr = dc._compassInternal.GetComponent<SpriteRenderer>();
+        dc._sr.sortingLayerName = "HUD";
         dc._compassInternal.transform.parent = compass.transform;
 
         dc._info = ci;
@@ -57,7 +58,7 @@ public class DirectionalCompass : MonoBehaviour
         {
             _sr.sprite = CurrentTarget.GetSprite();
 
-            var dir = (Vector2)CurrentTarget.Position.Value - (Vector2)_entity.transform.position;
+            var dir = (Vector2)CurrentTarget.Position.Value - _compassCenter;
 
             dir.Scale(Vector2.one * 0.5f);
 
@@ -76,18 +77,15 @@ public class DirectionalCompass : MonoBehaviour
             _currentDir = dir;
             _currentAngle = angle;
 
-            _compassInternal.transform.position = new Vector3(
-                _entity.transform.position.x + dir.x,
-                _entity.transform.position.y + dir.y,
-                0f
-            );
+            _compassInternal.transform.position = new Vector3(_compassCenter.x + dir.x, _compassCenter.y + dir.y, 0f);
 
             if (_info.RotateSprite)
             {
                 _compassInternal.transform.eulerAngles = new(0, 0, angle);
             }
 
-            var inverseRadius = dir.magnitude / _info.Radius;
+            var inverseRadius = _info.Radius is not 0f ? dir.magnitude / _info.Radius : 1f;
+
             _compassInternal.transform.localScale = Vector3.Scale(
                 new Vector3(inverseRadius * _info.Scale, inverseRadius * _info.Scale, 1f),
                 CurrentTarget.GetScale()
@@ -104,20 +102,17 @@ public class DirectionalCompass : MonoBehaviour
 
     private bool TryUpdateClosestLocation()
     {
-        _entity = _info.GetEntity();
+        _compassCenter = _info.GetCompassCenter();
 
         CompassTarget newTarget = null;
 
         if (
-            _entity != null
-            && _info.CompassTargets.Where(ct => ct.IsActive() && ct.Position.Value is not null)
+            _info.CompassTargets.Where(ct => ct.IsActive() && ct.Position.Value is not null)
                 is IEnumerable<CompassTarget> activeTargets
             && activeTargets.Any()
         )
         {
-            newTarget = activeTargets.Aggregate(
-                (i1, i2) => SqrDistance(_entity, i1) < SqrDistance(_entity, i2) ? i1 : i2
-            );
+            newTarget = activeTargets.Aggregate((i1, i2) => SqrDistance(i1) < SqrDistance(i2) ? i1 : i2);
         }
 
         if (newTarget != CurrentTarget)
@@ -129,9 +124,9 @@ public class DirectionalCompass : MonoBehaviour
         return CurrentTarget is not null;
     }
 
-    private float SqrDistance(GameObject entity, CompassTarget location)
+    private float SqrDistance(CompassTarget location)
     {
-        return ((Vector2)location.Position.Value - (Vector2)entity.transform.position).sqrMagnitude;
+        return ((Vector2)location.Position.Value - _compassCenter).sqrMagnitude;
     }
 }
 
@@ -146,5 +141,5 @@ public abstract class CompassInfo
     public List<CompassTarget> CompassTargets { get; } = [];
 
     public abstract bool ActiveCondition();
-    public abstract GameObject GetEntity();
+    public abstract Vector2 GetCompassCenter();
 }
