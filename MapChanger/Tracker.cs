@@ -112,6 +112,13 @@ public class Tracker : HookModule
 
         switch (self.gameObject.name)
         {
+            case "Egg Sac":
+                if (scene is "Deepnest_East_14")
+                {
+                    _ = _obtainedSceneData.Add((self.gameObject.name, scene));
+                }
+
+                break;
             case "Grub Mimic":
             case "Grub Mimic 1":
             case "Grub Mimic 2":

@@ -1080,10 +1080,24 @@
     "SceneName": "Deepnest_45_v02",
     "Name": "Rancid_Egg-Weaver's_Den"
   },
+  // The game never respawns the shiny item if you leave the scene after breaking the sac
   "Rancid_Egg-Near_Quick_Slash": {
-    "$type": "MapChanger.Tracking.SdTrackingItem, MapChanger",
-    "Id": "Shiny Item(Clone)",
-    "SceneName": "Deepnest_East_14",
+
+    "$type": "MapChanger.Tracking.UnionTrackingItem, MapChanger",
+    "TrackingItems": [
+      {
+        "$type": "MapChanger.Tracking.SdTrackingItem, MapChanger",
+        "Id": "Shiny Item(Clone)",
+        "SceneName": "Deepnest_East_14",
+        "Name": "Rancid_Egg-Near_Quick_Slash-Shiny_Item"
+      },
+      {
+        "$type": "MapChanger.Tracking.SdTrackingItem, MapChanger",
+        "Id": "Egg Sac",
+        "SceneName": "Deepnest_East_14",
+        "Name": "Rancid_Egg-Near_Quick_Slash-Egg_Sac"
+      }
+    ],
     "Name": "Rancid_Egg-Near_Quick_Slash"
   },
   "Rancid_Egg-Upper_Kingdom's_Edge": {

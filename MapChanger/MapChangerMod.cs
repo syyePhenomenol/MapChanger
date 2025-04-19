@@ -9,7 +9,7 @@ public class MapChangerMod : Mod, ILocalSettings<Settings>
 
     public override string GetVersion()
     {
-        return "1.3.0";
+        return "1.3.1";
     }
 
     public void OnLoadLocal(Settings ls)
