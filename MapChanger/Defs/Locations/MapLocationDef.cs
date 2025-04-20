@@ -21,4 +21,10 @@ public record MapLocationDef
     /// </summary>
     [JsonProperty]
     public MapLocation[] MapLocations { get; init; }
+
+    /// <summary>
+    /// Coordinates of the location in the world. Can be null.
+    /// </summary>
+    [JsonProperty]
+    public WorldPositionDef WorldPosition { get; init; }
 }

@@ -5,7 +5,7 @@ namespace MapChanger.Input;
 public class ModEnabledInput : GlobalHotkeyInput
 {
     internal ModEnabledInput()
-        : base("Enable / Disable Map Mod", "Map Mods", KeyCode.M)
+        : base("Enable / Disable Map Mod", "MapMod", KeyCode.M)
     {
         Instance = this;
     }

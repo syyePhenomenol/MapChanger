@@ -5,7 +5,7 @@ namespace MapChanger.Input;
 public class ToggleModeInput : GlobalHotkeyInput
 {
     internal ToggleModeInput()
-        : base("Toggle Map Mode", "Map Mods", KeyCode.T)
+        : base("Toggle Map Mode", "MapMod", KeyCode.T)
     {
         Instance = this;
     }

@@ -8,7 +8,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 17.49,
+      "Y": 6.41
+    }
   },
   "Sly_(Key)": {
     "Name": "Sly_(Key)",
@@ -19,7 +23,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 17.49,
+      "Y": 6.41
+    }
   },
   "Iselda": {
     "Name": "Iselda",
@@ -30,7 +38,11 @@
         "X": 0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.84,
+      "Y": 7.25
+    }
   },
   "Salubra": {
     "Name": "Salubra",
@@ -41,7 +53,11 @@
         "X": 0.9,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.33,
+      "Y": 7.93
+    }
   },
   "Leg_Eater": {
     "Name": "Leg_Eater",
@@ -52,7 +68,11 @@
         "X": 0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.677,
+      "Y": 6.035
+    }
   },
   "Grubfather": {
     "Name": "Grubfather",
@@ -63,7 +83,11 @@
         "X": 0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.0,
+      "Y": 4.0
+    }
   },
   "Seer": {
     "Name": "Seer",
@@ -74,11 +98,14 @@
         "X": -0.6,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.0,
+      "Y": 10.0
+    }
   },
   "Lurien": {
     "Name": "Lurien",
-    //"SceneName": "Dream_Guardian_Lurien",
     "SceneName": "Ruins2_Watcher_Room",
     "MapLocations": [
       {
@@ -86,11 +113,14 @@
         "X": 0.3,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.07,
+      "Y": 135.23
+    }
   },
   "Monomon": {
     "Name": "Monomon",
-    //"SceneName": "Dream_Guardian_Monomon",
     "SceneName": "Fungus3_archive_02",
     "MapLocations": [
       {
@@ -98,11 +128,14 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.6324921,
+      "Y": 77.8490753
+    }
   },
   "Herrah": {
     "Name": "Herrah",
-    //"SceneName": "Dream_Guardian_Hegemol",
     "SceneName": "Deepnest_Spider_Town",
     "MapLocations": [
       {
@@ -110,7 +143,11 @@
         "X": 0.0,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.59,
+      "Y": 153.89
+    }
   },
   "World_Sense": {
     "Name": "World_Sense",
@@ -121,7 +158,11 @@
         "X": 0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.95,
+      "Y": 8.24
+    }
   },
   "Mothwing_Cloak": {
     "Name": "Mothwing_Cloak",
@@ -132,7 +173,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.22,
+      "Y": 27.2300014
+    }
   },
   "Mantis_Claw": {
     "Name": "Mantis_Claw",
@@ -143,7 +188,11 @@
         "X": -1.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 18.3962955,
+      "Y": 20.29
+    }
   },
   "Crystal_Heart": {
     "Name": "Crystal_Heart",
@@ -154,7 +203,11 @@
         "X": 1.9,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 243.63,
+      "Y": 9.29
+    }
   },
   "Monarch_Wings": {
     "Name": "Monarch_Wings",
@@ -165,7 +218,11 @@
         "X": -0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 66.31,
+      "Y": 232.8
+    }
   },
   "Shade_Cloak": {
     "Name": "Shade_Cloak",
@@ -176,7 +233,11 @@
         "X": 0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 102.13,
+      "Y": 17.07
+    }
   },
   "Isma's_Tear": {
     "Name": "Isma's_Tear",
@@ -187,11 +248,14 @@
         "X": 0.4,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 94.01,
+      "Y": 17.88
+    }
   },
   "Dream_Nail": {
     "Name": "Dream_Nail",
-    //"SceneName": "Dream_Nailcollection",
     "SceneName": "RestingGrounds_04",
     "MapLocations": [
       {
@@ -199,7 +263,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.96,
+      "Y": 5.97
+    }
   },
   "Vengeful_Spirit": {
     "Name": "Vengeful_Spirit",
@@ -210,7 +278,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.520031,
+      "Y": 11.563798
+    }
   },
   "Shade_Soul": {
     "Name": "Shade_Soul",
@@ -221,7 +293,11 @@
         "X": -0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.7547569,
+      "Y": 57.2261848
+    }
   },
   "Desolate_Dive": {
     "Name": "Desolate_Dive",
@@ -232,7 +308,11 @@
         "X": -0.1,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.55,
+      "Y": 13.54
+    }
   },
   "Descending_Dark": {
     "Name": "Descending_Dark",
@@ -243,7 +323,11 @@
         "X": 0.0,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 59.620533,
+      "Y": 51.4620972
+    }
   },
   "Howling_Wraiths": {
     "Name": "Howling_Wraiths",
@@ -254,7 +338,11 @@
         "X": -0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 132.99,
+      "Y": 11.83
+    }
   },
   "Abyss_Shriek": {
     "Name": "Abyss_Shriek",
@@ -265,7 +353,11 @@
         "X": -1.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 47.48,
+      "Y": 9.24
+    }
   },
   "Cyclone_Slash": {
     "Name": "Cyclone_Slash",
@@ -276,7 +368,11 @@
         "X": 0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.33,
+      "Y": 5.88
+    }
   },
   "Dash_Slash": {
     "Name": "Dash_Slash",
@@ -287,7 +383,11 @@
         "X": 2.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.71,
+      "Y": 5.86
+    }
   },
   "Great_Slash": {
     "Name": "Great_Slash",
@@ -298,7 +398,11 @@
         "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.83,
+      "Y": 5.89
+    }
   },
   "Baldur_Shell": {
     "Name": "Baldur_Shell",
@@ -309,7 +413,11 @@
         "X": 0.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 126.98,
+      "Y": 2.11
+    }
   },
   "Fury_of_the_Fallen": {
     "Name": "Fury_of_the_Fallen",
@@ -320,7 +428,11 @@
         "X": 0.9,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 179.28,
+      "Y": 17.75
+    }
   },
   "Lifeblood_Core": {
     "Name": "Lifeblood_Core",
@@ -331,7 +443,11 @@
         "X": 0.3,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 78.61,
+      "Y": 24.1047211
+    }
   },
   "Defender's_Crest": {
     "Name": "Defender's_Crest",
@@ -342,7 +458,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 80.92,
+      "Y": 6.39999962
+    }
   },
   "Flukenest": {
     "Name": "Flukenest",
@@ -353,7 +473,11 @@
         "X": -0.6,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 12.5533743,
+      "Y": 30.197731
+    }
   },
   "Thorns_of_Agony": {
     "Name": "Thorns_of_Agony",
@@ -364,7 +488,11 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 85.01,
+      "Y": 12.11
+    }
   },
   "Mark_of_Pride": {
     "Name": "Mark_of_Pride",
@@ -375,7 +503,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.25,
+      "Y": 18.8
+    }
   },
   "Sharp_Shadow": {
     "Name": "Sharp_Shadow",
@@ -386,7 +518,11 @@
         "X": 0.0,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.92,
+      "Y": 5.35
+    }
   },
   "Spore_Shroom": {
     "Name": "Spore_Shroom",
@@ -397,7 +533,11 @@
         "X": 0.2,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 48.18093,
+      "Y": 7.93
+    }
   },
   "Soul_Catcher": {
     "Name": "Soul_Catcher",
@@ -408,7 +548,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 37.81,
+      "Y": 20.32
+    }
   },
   "Soul_Eater": {
     "Name": "Soul_Eater",
@@ -419,7 +563,11 @@
         "X": 2.4,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 216.01,
+      "Y": 18.13
+    }
   },
   "Glowing_Womb": {
     "Name": "Glowing_Womb",
@@ -430,11 +578,14 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 93.83,
+      "Y": 20.24
+    }
   },
   "Nailmaster's_Glory": {
     "Name": "Nailmaster's_Glory",
-    //"SceneName": "Room_Sly_Storeroom",
     "SceneName": "Room_shop",
     "MapLocations": [
       {
@@ -442,7 +593,11 @@
         "X": -0.3,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.07,
+      "Y": 5.68718052
+    }
   },
   "Joni's_Blessing": {
     "Name": "Joni's_Blessing",
@@ -453,7 +608,11 @@
         "X": 0.4,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.199,
+      "Y": 6.462356
+    }
   },
   "Shape_of_Unn": {
     "Name": "Shape_of_Unn",
@@ -464,7 +623,11 @@
         "X": -0.2,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.75634,
+      "Y": 13.1848307
+    }
   },
   "Hiveblood": {
     "Name": "Hiveblood",
@@ -475,7 +638,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 37.8,
+      "Y": 12.97
+    }
   },
   "Dashmaster": {
     "Name": "Dashmaster",
@@ -486,7 +653,11 @@
         "X": -0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.0873375,
+      "Y": 3.95
+    }
   },
   "Quick_Slash": {
     "Name": "Quick_Slash",
@@ -497,7 +668,11 @@
         "X": -0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 61.07,
+      "Y": 47.55
+    }
   },
   "Spell_Twister": {
     "Name": "Spell_Twister",
@@ -508,7 +683,11 @@
         "X": 0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 71.56,
+      "Y": 50.26
+    }
   },
   "Deep_Focus": {
     "Name": "Deep_Focus",
@@ -519,7 +698,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.86,
+      "Y": 9.27
+    }
   },
   "Queen_Fragment": {
     "Name": "Queen_Fragment",
@@ -530,7 +713,11 @@
         "X": -0.1,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.44,
+      "Y": 12.33
+    }
   },
   "King_Fragment": {
     "Name": "King_Fragment",
@@ -546,11 +733,14 @@
         "X": 0.5,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.78,
+      "Y": 97.28
+    }
   },
   "Void_Heart": {
     "Name": "Void_Heart",
-    //"SceneName": "Dream_Abyss",
     "SceneName": "Abyss_15",
     "MapLocations": [
       {
@@ -558,7 +748,11 @@
         "X": 0.7,
         "Y": -2.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 143.99,
+      "Y": 11.32
+    }
   },
   "Dreamshield": {
     "Name": "Dreamshield",
@@ -569,7 +763,11 @@
         "X": -0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 15.7764254,
+      "Y": 7.51387262
+    }
   },
   "Weaversong": {
     "Name": "Weaversong",
@@ -580,7 +778,11 @@
         "X": 1.7,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 87.4,
+      "Y": 29.71
+    }
   },
   "Grimmchild": {
     "Name": "Grimmchild",
@@ -591,7 +793,11 @@
         "X": -0.8,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 75.0,
+      "Y": 7.0
+    }
   },
   "Unbreakable_Heart": {
     "Name": "Unbreakable_Heart",
@@ -602,7 +808,11 @@
         "X": -1.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.98,
+      "Y": 5.68000031
+    }
   },
   "Unbreakable_Greed": {
     "Name": "Unbreakable_Greed",
@@ -613,7 +823,11 @@
         "X": -1.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.98,
+      "Y": 5.68000031
+    }
   },
   "Unbreakable_Strength": {
     "Name": "Unbreakable_Strength",
@@ -624,7 +838,11 @@
         "X": -1.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.98,
+      "Y": 5.68000031
+    }
   },
   "City_Crest": {
     "Name": "City_Crest",
@@ -635,7 +853,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.66,
+      "Y": 2.94
+    }
   },
   "Tram_Pass": {
     "Name": "Tram_Pass",
@@ -646,7 +868,11 @@
         "X": -0.5,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.6,
+      "Y": 3.33703232
+    }
   },
   "Simple_Key-Basin": {
     "Name": "Simple_Key-Basin",
@@ -657,7 +883,11 @@
         "X": -0.7,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.04813,
+      "Y": 8.194823
+    }
   },
   "Simple_Key-City": {
     "Name": "Simple_Key-City",
@@ -668,7 +898,11 @@
         "X": 0.5,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 79.14,
+      "Y": 49.12
+    }
   },
   "Simple_Key-Lurker": {
     "Name": "Simple_Key-Lurker",
@@ -679,7 +913,11 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 169.51,
+      "Y": 51.67
+    }
   },
   "Shopkeeper's_Key": {
     "Name": "Shopkeeper's_Key",
@@ -690,7 +928,11 @@
         "X": 0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.8,
+      "Y": 40.47
+    }
   },
   "Love_Key": {
     "Name": "Love_Key",
@@ -701,7 +943,11 @@
         "X": 0.8,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 103.827019,
+      "Y": 35.8995361
+    }
   },
   "King's_Brand": {
     "Name": "King's_Brand",
@@ -712,7 +958,11 @@
         "X": -0.3,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 15.59,
+      "Y": 7.92
+    }
   },
   "Godtuner": {
     "Name": "Godtuner",
@@ -723,7 +973,11 @@
         "X": -0.7,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.77,
+      "Y": 15.0999994
+    }
   },
   "Collector's_Map": {
     "Name": "Collector's_Map",
@@ -734,7 +988,11 @@
         "X": -0.4,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.13,
+      "Y": 115.34
+    }
   },
   "Mask_Shard-Brooding_Mawlek": {
     "Name": "Mask_Shard-Brooding_Mawlek",
@@ -745,7 +1003,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 61.44,
+      "Y": 9.49
+    }
   },
   "Mask_Shard-Crossroads_Goam": {
     "Name": "Mask_Shard-Crossroads_Goam",
@@ -756,7 +1018,11 @@
         "X": -0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.38,
+      "Y": 24.18
+    }
   },
   "Mask_Shard-Stone_Sanctuary": {
     "Name": "Mask_Shard-Stone_Sanctuary",
@@ -767,7 +1033,11 @@
         "X": 1.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 18.07,
+      "Y": 8.02
+    }
   },
   "Mask_Shard-Queen's_Station": {
     "Name": "Mask_Shard-Queen's_Station",
@@ -778,7 +1048,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 44.5085449,
+      "Y": 30.5653076
+    }
   },
   "Mask_Shard-Deepnest": {
     "Name": "Mask_Shard-Deepnest",
@@ -789,7 +1063,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 91.67,
+      "Y": 14.57
+    }
   },
   "Mask_Shard-Waterways": {
     "Name": "Mask_Shard-Waterways",
@@ -800,7 +1078,11 @@
         "X": -0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 11.59,
+      "Y": 11.27
+    }
   },
   "Mask_Shard-Enraged_Guardian": {
     "Name": "Mask_Shard-Enraged_Guardian",
@@ -811,7 +1093,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.8,
+      "Y": 13.11
+    }
   },
   "Mask_Shard-Hive": {
     "Name": "Mask_Shard-Hive",
@@ -822,7 +1108,11 @@
         "X": -0.5,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 130.99,
+      "Y": 96.33
+    }
   },
   "Mask_Shard-Grey_Mourner": {
     "Name": "Mask_Shard-Grey_Mourner",
@@ -833,7 +1123,11 @@
         "X": 0.3,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.2174473,
+      "Y": 8.223626
+    }
   },
   "Mask_Shard-Bretta": {
     "Name": "Mask_Shard-Bretta",
@@ -844,7 +1138,11 @@
         "X": 0.6,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.79,
+      "Y": 7.674447
+    }
   },
   "Vessel_Fragment-Greenpath": {
     "Name": "Vessel_Fragment-Greenpath",
@@ -855,7 +1153,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 100.95,
+      "Y": 38.58
+    }
   },
   "Vessel_Fragment-City": {
     "Name": "Vessel_Fragment-City",
@@ -866,7 +1168,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.7158051,
+      "Y": 4.64360762
+    }
   },
   "Vessel_Fragment-Crossroads": {
     "Name": "Vessel_Fragment-Crossroads",
@@ -875,9 +1181,13 @@
       {
         "MappedScene": "Crossroads_37",
         "X": -0.3,
-        "Y": -0.0
+        "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.97,
+      "Y": 5.7
+    }
   },
   "Vessel_Fragment-Basin": {
     "Name": "Vessel_Fragment-Basin",
@@ -888,7 +1198,11 @@
         "X": 0.4,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 64.32,
+      "Y": 61.9099159
+    }
   },
   "Vessel_Fragment-Deepnest": {
     "Name": "Vessel_Fragment-Deepnest",
@@ -899,7 +1213,11 @@
         "X": 1.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 134.487244,
+      "Y": 27.2780628
+    }
   },
   "Vessel_Fragment-Stag_Nest": {
     "Name": "Vessel_Fragment-Stag_Nest",
@@ -910,7 +1228,11 @@
         "X": -1.7,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 80.57,
+      "Y": 7.7
+    }
   },
   "Charm_Notch-Shrumal_Ogres": {
     "Name": "Charm_Notch-Shrumal_Ogres",
@@ -921,7 +1243,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.03,
+      "Y": 22.4
+    }
   },
   "Charm_Notch-Fog_Canyon": {
     "Name": "Charm_Notch-Fog_Canyon",
@@ -932,11 +1258,14 @@
         "X": 0.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.0587616,
+      "Y": 8.902477
+    }
   },
   "Charm_Notch-Colosseum": {
     "Name": "Charm_Notch-Colosseum",
-    //"SceneName": "Room_Colosseum_Bronze",
     "SceneName": "Room_Colosseum_01",
     "MapLocations": [
       {
@@ -944,7 +1273,11 @@
         "X": 2.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.03,
+      "Y": 7.33
+    }
   },
   "Charm_Notch-Grimm": {
     "Name": "Charm_Notch-Grimm",
@@ -955,7 +1288,11 @@
         "X": -0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 79.05,
+      "Y": 6.873712
+    }
   },
   "Pale_Ore-Basin": {
     "Name": "Pale_Ore-Basin",
@@ -966,7 +1303,11 @@
         "X": -1.4,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.826726,
+      "Y": 15.18
+    }
   },
   "Pale_Ore-Crystal_Peak": {
     "Name": "Pale_Ore-Crystal_Peak",
@@ -977,7 +1318,11 @@
         "X": -1.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 43.67134,
+      "Y": 53.9633026
+    }
   },
   "Pale_Ore-Nosk": {
     "Name": "Pale_Ore-Nosk",
@@ -988,11 +1333,14 @@
         "X": 1.4,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 165.4571,
+      "Y": 3.244924
+    }
   },
   "Pale_Ore-Colosseum": {
     "Name": "Pale_Ore-Colosseum",
-    //"SceneName": "Room_Colosseum_Silver",
     "SceneName": "Room_Colosseum_01",
     "MapLocations": [
       {
@@ -1000,7 +1348,11 @@
         "X": 2.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.19,
+      "Y": 7.33
+    }
   },
   "Geo_Chest-False_Knight": {
     "Name": "Geo_Chest-False_Knight",
@@ -1011,7 +1363,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.7,
+      "Y": 12.7753906
+    }
   },
   "Geo_Chest-Soul_Master": {
     "Name": "Geo_Chest-Soul_Master",
@@ -1022,7 +1378,11 @@
         "X": -0.3,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.298597,
+      "Y": 108.816071
+    }
   },
   "Geo_Chest-Watcher_Knights": {
     "Name": "Geo_Chest-Watcher_Knights",
@@ -1033,7 +1393,11 @@
         "X": -0.5,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 11.85,
+      "Y": 106.72
+    }
   },
   "Geo_Chest-Greenpath": {
     "Name": "Geo_Chest-Greenpath",
@@ -1044,7 +1408,11 @@
         "X": 1.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 175.85,
+      "Y": 27.83
+    }
   },
   "Geo_Chest-Mantis_Lords": {
     "Name": "Geo_Chest-Mantis_Lords",
@@ -1055,7 +1423,11 @@
         "X": 0.4,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.89,
+      "Y": 19.79
+    }
   },
   "Geo_Chest-Resting_Grounds": {
     "Name": "Geo_Chest-Resting_Grounds",
@@ -1066,7 +1438,11 @@
         "X": 1.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 142.97,
+      "Y": 8.822608
+    }
   },
   "Geo_Chest-Crystal_Peak": {
     "Name": "Geo_Chest-Crystal_Peak",
@@ -1077,7 +1453,11 @@
         "X": -0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.89,
+      "Y": 15.79
+    }
   },
   "Geo_Chest-Weavers_Den": {
     "Name": "Geo_Chest-Weavers_Den",
@@ -1088,7 +1468,11 @@
         "X": 2.0,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.59,
+      "Y": 46.71
+    }
   },
   "Geo_Chest-Junk_Pit_1": {
     "Name": "Geo_Chest-Junk_Pit_1",
@@ -1099,7 +1483,11 @@
         "X": -0.4,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.34,
+      "Y": 12.68
+    }
   },
   "Geo_Chest-Junk_Pit_2": {
     "Name": "Geo_Chest-Junk_Pit_2",
@@ -1110,7 +1498,11 @@
         "X": -1.0,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.97,
+      "Y": 18.81
+    }
   },
   "Geo_Chest-Junk_Pit_3": {
     "Name": "Geo_Chest-Junk_Pit_3",
@@ -1121,7 +1513,11 @@
         "X": -1.3,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.65,
+      "Y": 18.39
+    }
   },
   "Geo_Chest-Junk_Pit_5": {
     "Name": "Geo_Chest-Junk_Pit_5",
@@ -1132,7 +1528,11 @@
         "X": -0.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.71,
+      "Y": 12.7
+    }
   },
   "Lumafly_Escape-Junk_Pit_Chest_4": {
     "Name": "Lumafly_Escape-Junk_Pit_Chest_4",
@@ -1143,7 +1543,11 @@
         "X": -1.6,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 12.64,
+      "Y": 18.81
+    }
   },
   "Rancid_Egg-Sheo": {
     "Name": "Rancid_Egg-Sheo",
@@ -1154,7 +1558,11 @@
         "X": -0.4,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 2.986076,
+      "Y": 6.28391457
+    }
   },
   "Rancid_Egg-Fungal_Core": {
     "Name": "Rancid_Egg-Fungal_Core",
@@ -1165,7 +1573,11 @@
         "X": -0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.39,
+      "Y": 36.37
+    }
   },
   "Rancid_Egg-Queen's_Gardens": {
     "Name": "Rancid_Egg-Queen's_Gardens",
@@ -1176,7 +1588,11 @@
         "X": -0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 48.6,
+      "Y": 18.4
+    }
   },
   "Rancid_Egg-Blue_Lake": {
     "Name": "Rancid_Egg-Blue_Lake",
@@ -1187,7 +1603,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 117.7,
+      "Y": 43.3
+    }
   },
   "Rancid_Egg-Crystal_Peak_Dive_Entrance": {
     "Name": "Rancid_Egg-Crystal_Peak_Dive_Entrance",
@@ -1198,7 +1618,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.2,
+      "Y": 35.3
+    }
   },
   "Rancid_Egg-Crystal_Peak_Dark_Room": {
     "Name": "Rancid_Egg-Crystal_Peak_Dark_Room",
@@ -1209,7 +1633,11 @@
         "X": -0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.45,
+      "Y": 58.31
+    }
   },
   "Rancid_Egg-Crystal_Peak_Tall_Room": {
     "Name": "Rancid_Egg-Crystal_Peak_Tall_Room",
@@ -1220,7 +1648,11 @@
         "X": -0.4,
         "Y": 1.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.9,
+      "Y": 149.3
+    }
   },
   "Rancid_Egg-City_of_Tears_Left": {
     "Name": "Rancid_Egg-City_of_Tears_Left",
@@ -1231,7 +1663,11 @@
         "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.99,
+      "Y": 92.15
+    }
   },
   "Rancid_Egg-City_of_Tears_Pleasure_House": {
     "Name": "Rancid_Egg-City_of_Tears_Pleasure_House",
@@ -1242,7 +1678,11 @@
         "X": 0.1,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.0,
+      "Y": 95.1
+    }
   },
   "Rancid_Egg-Beast's_Den": {
     "Name": "Rancid_Egg-Beast's_Den",
@@ -1253,7 +1693,11 @@
         "X": -0.3,
         "Y": 1.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 112.3,
+      "Y": 80.5
+    }
   },
   "Rancid_Egg-Dark_Deepnest": {
     "Name": "Rancid_Egg-Dark_Deepnest",
@@ -1264,7 +1708,11 @@
         "X": -0.9,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.9,
+      "Y": 5.4
+    }
   },
   "Rancid_Egg-Weaver's_Den": {
     "Name": "Rancid_Egg-Weaver's_Den",
@@ -1275,7 +1723,11 @@
         "X": 2.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 11.34,
+      "Y": 3.25
+    }
   },
   "Rancid_Egg-Near_Quick_Slash": {
     "Name": "Rancid_Egg-Near_Quick_Slash",
@@ -1286,7 +1738,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 75.5,
+      "Y": 24.4
+    }
   },
   "Rancid_Egg-Upper_Kingdom's_Edge": {
     "Name": "Rancid_Egg-Upper_Kingdom's_Edge",
@@ -1297,7 +1753,11 @@
         "X": 0.1,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 61.71,
+      "Y": 140.25
+    }
   },
   "Rancid_Egg-Waterways_East": {
     "Name": "Rancid_Egg-Waterways_East",
@@ -1308,7 +1768,11 @@
         "X": -0.1,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 61.8,
+      "Y": 30.4
+    }
   },
   "Rancid_Egg-Waterways_Main": {
     "Name": "Rancid_Egg-Waterways_Main",
@@ -1319,7 +1783,11 @@
         "X": -0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.3,
+      "Y": 18.2
+    }
   },
   "Rancid_Egg-Waterways_West_Bluggsac": {
     "Name": "Rancid_Egg-Waterways_West_Bluggsac",
@@ -1330,7 +1798,11 @@
         "X": -0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.6,
+      "Y": 16.4
+    }
   },
   "Rancid_Egg-Waterways_West_Pickup": {
     "Name": "Rancid_Egg-Waterways_West_Pickup",
@@ -1341,7 +1813,11 @@
         "X": -0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.1,
+      "Y": 43.2
+    }
   },
   "Rancid_Egg-Tuk_Defender's_Crest": {
     "Name": "Rancid_Egg-Tuk_Defender's_Crest",
@@ -1352,7 +1828,11 @@
         "X": 0.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 98.6,
+      "Y": 7.83
+    }
   },
   "Wanderer's_Journal-Cliffs": {
     "Name": "Wanderer's_Journal-Cliffs",
@@ -1363,7 +1843,11 @@
         "X": 1.0,
         "Y": -1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 120.42,
+      "Y": 30.31
+    }
   },
   "Wanderer's_Journal-Greenpath_Stag": {
     "Name": "Wanderer's_Journal-Greenpath_Stag",
@@ -1374,7 +1858,11 @@
         "X": 0.1,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.8914852,
+      "Y": 108.35
+    }
   },
   "Wanderer's_Journal-Greenpath_Lower": {
     "Name": "Wanderer's_Journal-Greenpath_Lower",
@@ -1385,7 +1873,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 44.39,
+      "Y": 31.21
+    }
   },
   "Wanderer's_Journal-Fungal_Wastes_Thorns_Gauntlet": {
     "Name": "Wanderer's_Journal-Fungal_Wastes_Thorns_Gauntlet",
@@ -1396,7 +1888,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.95,
+      "Y": 31.28
+    }
   },
   "Wanderer's_Journal-Above_Mantis_Village": {
     "Name": "Wanderer's_Journal-Above_Mantis_Village",
@@ -1407,7 +1903,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.52,
+      "Y": 25.19
+    }
   },
   "Wanderer's_Journal-Crystal_Peak_Crawlers": {
     "Name": "Wanderer's_Journal-Crystal_Peak_Crawlers",
@@ -1418,7 +1918,11 @@
         "X": 0.1,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 47.0798531,
+      "Y": 174.26
+    }
   },
   "Wanderer's_Journal-Resting_Grounds_Catacombs": {
     "Name": "Wanderer's_Journal-Resting_Grounds_Catacombs",
@@ -1429,7 +1933,11 @@
         "X": 2.4,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 220.822235,
+      "Y": 3.30006146
+    }
   },
   "Wanderer's_Journal-King's_Station": {
     "Name": "Wanderer's_Journal-King's_Station",
@@ -1440,7 +1948,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.0977859,
+      "Y": 20.242239
+    }
   },
   "Wanderer's_Journal-Pleasure_House": {
     "Name": "Wanderer's_Journal-Pleasure_House",
@@ -1451,7 +1963,11 @@
         "X": 0.0,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.2835236,
+      "Y": 5.1843276
+    }
   },
   "Wanderer's_Journal-City_Storerooms": {
     "Name": "Wanderer's_Journal-City_Storerooms",
@@ -1462,7 +1978,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.17,
+      "Y": 2.19
+    }
   },
   "Wanderer's_Journal-Ancient_Basin": {
     "Name": "Wanderer's_Journal-Ancient_Basin",
@@ -1473,7 +1993,11 @@
         "X": 1.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 160.66127,
+      "Y": 5.26
+    }
   },
   "Wanderer's_Journal-Kingdom's_Edge_Entrance": {
     "Name": "Wanderer's_Journal-Kingdom's_Edge_Entrance",
@@ -1484,7 +2008,11 @@
         "X": -0.5,
         "Y": -1.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.74,
+      "Y": 2.32
+    }
   },
   "Wanderer's_Journal-Kingdom's_Edge_Camp": {
     "Name": "Wanderer's_Journal-Kingdom's_Edge_Camp",
@@ -1495,7 +2023,11 @@
         "X": -0.4,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.2885,
+      "Y": 2.22676182
+    }
   },
   "Wanderer's_Journal-Kingdom's_Edge_Requires_Dive": {
     "Name": "Wanderer's_Journal-Kingdom's_Edge_Requires_Dive",
@@ -1506,7 +2038,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.07,
+      "Y": 25.3
+    }
   },
   "Hallownest_Seal-Crossroads_Well": {
     "Name": "Hallownest_Seal-Crossroads_Well",
@@ -1517,7 +2053,11 @@
         "X": -0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 40.6,
+      "Y": 30.19
+    }
   },
   "Hallownest_Seal-Greenpath": {
     "Name": "Hallownest_Seal-Greenpath",
@@ -1528,7 +2068,11 @@
         "X": -1.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.89,
+      "Y": 5.26
+    }
   },
   "Hallownest_Seal-Fog_Canyon_West": {
     "Name": "Hallownest_Seal-Fog_Canyon_West",
@@ -1539,7 +2083,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.47,
+      "Y": 15.23
+    }
   },
   "Hallownest_Seal-Fog_Canyon_East": {
     "Name": "Hallownest_Seal-Fog_Canyon_East",
@@ -1550,7 +2098,11 @@
         "X": -0.1,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.96,
+      "Y": 80.56
+    }
   },
   "Hallownest_Seal-Queen's_Station": {
     "Name": "Hallownest_Seal-Queen's_Station",
@@ -1561,7 +2113,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.16,
+      "Y": 14.357832
+    }
   },
   "Hallownest_Seal-Fungal_Wastes_Sporgs": {
     "Name": "Hallownest_Seal-Fungal_Wastes_Sporgs",
@@ -1572,7 +2128,11 @@
         "X": 0.5,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 104.658409,
+      "Y": 70.2761841
+    }
   },
   "Hallownest_Seal-Mantis_Lords": {
     "Name": "Hallownest_Seal-Mantis_Lords",
@@ -1583,7 +2143,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.7,
+      "Y": 28.82
+    }
   },
   "Hallownest_Seal-Resting_Grounds_Catacombs": {
     "Name": "Hallownest_Seal-Resting_Grounds_Catacombs",
@@ -1594,7 +2158,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 62.42,
+      "Y": 13.18
+    }
   },
   "Hallownest_Seal-King's_Station": {
     "Name": "Hallownest_Seal-King's_Station",
@@ -1605,7 +2173,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.14,
+      "Y": 24.3
+    }
   },
   "Hallownest_Seal-City_Rafters": {
     "Name": "Hallownest_Seal-City_Rafters",
@@ -1616,7 +2188,11 @@
         "X": 0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 80.63922,
+      "Y": 57.23
+    }
   },
   "Hallownest_Seal-Soul_Sanctum": {
     "Name": "Hallownest_Seal-Soul_Sanctum",
@@ -1627,7 +2203,11 @@
         "X": 0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.23,
+      "Y": 35.209
+    }
   },
   "Hallownest_Seal-Watcher_Knight": {
     "Name": "Hallownest_Seal-Watcher_Knight",
@@ -1638,7 +2218,11 @@
         "X": -0.2,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 26.15,
+      "Y": 113.18
+    }
   },
   "Hallownest_Seal-Deepnest_By_Mantis_Lords": {
     "Name": "Hallownest_Seal-Deepnest_By_Mantis_Lords",
@@ -1649,7 +2233,11 @@
         "X": 0.6,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 77.29805,
+      "Y": 30.21
+    }
   },
   "Hallownest_Seal-Beast's_Den": {
     "Name": "Hallownest_Seal-Beast's_Den",
@@ -1660,7 +2248,11 @@
         "X": 0.0,
         "Y": 1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.91,
+      "Y": 5.39
+    }
   },
   "Hallownest_Seal-Queen's_Gardens": {
     "Name": "Hallownest_Seal-Queen's_Gardens",
@@ -1671,7 +2263,11 @@
         "X": -0.7,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.14866352,
+      "Y": 23.28
+    }
   },
   "King's_Idol-Cliffs": {
     "Name": "King's_Idol-Cliffs",
@@ -1682,7 +2278,11 @@
         "X": -0.1,
         "Y": -1.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.15,
+      "Y": 3.23
+    }
   },
   "King's_Idol-Crystal_Peak": {
     "Name": "King's_Idol-Crystal_Peak",
@@ -1693,7 +2293,11 @@
         "X": 1.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 160.68,
+      "Y": 16.8370628
+    }
   },
   "King's_Idol-Glade_of_Hope": {
     "Name": "King's_Idol-Glade_of_Hope",
@@ -1704,7 +2308,11 @@
         "X": 1.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 196.51,
+      "Y": 26.2980957
+    }
   },
   "King's_Idol-Dung_Defender": {
     "Name": "King's_Idol-Dung_Defender",
@@ -1715,7 +2323,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.5146561,
+      "Y": 3.80851936
+    }
   },
   "King's_Idol-Great_Hopper": {
     "Name": "King's_Idol-Great_Hopper",
@@ -1726,7 +2338,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.69,
+      "Y": 4.22
+    }
   },
   "King's_Idol-Pale_Lurker": {
     "Name": "King's_Idol-Pale_Lurker",
@@ -1737,7 +2353,11 @@
         "X": 1.4,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 222.92,
+      "Y": 51.17
+    }
   },
   "King's_Idol-Deepnest": {
     "Name": "King's_Idol-Deepnest",
@@ -1748,7 +2368,11 @@
         "X": -0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.43930244,
+      "Y": 9.332907
+    }
   },
   "Arcane_Egg-Lifeblood_Core": {
     "Name": "Arcane_Egg-Lifeblood_Core",
@@ -1759,7 +2383,11 @@
         "X": 0.3,
         "Y": -0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 81.09,
+      "Y": 4.47
+    }
   },
   "Arcane_Egg-Shade_Cloak": {
     "Name": "Arcane_Egg-Shade_Cloak",
@@ -1770,7 +2398,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.01193,
+      "Y": 9.092091
+    }
   },
   "Arcane_Egg-Birthplace": {
     "Name": "Arcane_Egg-Birthplace",
@@ -1781,7 +2413,11 @@
         "X": -0.4,
         "Y": -2.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.91,
+      "Y": 4.26
+    }
   },
   "Whispering_Root-Crossroads": {
     "Name": "Whispering_Root-Crossroads",
@@ -1792,7 +2428,11 @@
         "X": 0.0,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.82,
+      "Y": 107.39
+    }
   },
   "Whispering_Root-Greenpath": {
     "Name": "Whispering_Root-Greenpath",
@@ -1803,7 +2443,11 @@
         "X": -1.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.47,
+      "Y": 27.47
+    }
   },
   "Whispering_Root-Leg_Eater": {
     "Name": "Whispering_Root-Leg_Eater",
@@ -1814,7 +2458,11 @@
         "X": 0.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.757885,
+      "Y": 11.4352818
+    }
   },
   "Whispering_Root-Mantis_Village": {
     "Name": "Whispering_Root-Mantis_Village",
@@ -1825,7 +2473,11 @@
         "X": 0.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.84,
+      "Y": 7.472892
+    }
   },
   "Whispering_Root-Deepnest": {
     "Name": "Whispering_Root-Deepnest",
@@ -1836,7 +2488,11 @@
         "X": -1.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.44913,
+      "Y": 40.4844322
+    }
   },
   "Whispering_Root-Queens_Gardens": {
     "Name": "Whispering_Root-Queens_Gardens",
@@ -1847,7 +2503,11 @@
         "X": 0.2,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.03,
+      "Y": 12.5246105
+    }
   },
   "Whispering_Root-Kingdoms_Edge": {
     "Name": "Whispering_Root-Kingdoms_Edge",
@@ -1858,7 +2518,11 @@
         "X": 0.1,
         "Y": -1.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 59.66,
+      "Y": 14.4306583
+    }
   },
   "Whispering_Root-Waterways": {
     "Name": "Whispering_Root-Waterways",
@@ -1869,7 +2533,11 @@
         "X": 0.3,
         "Y": -1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.01,
+      "Y": 14.35
+    }
   },
   "Whispering_Root-City": {
     "Name": "Whispering_Root-City",
@@ -1880,7 +2548,11 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 78.0734558,
+      "Y": 26.5312958
+    }
   },
   "Whispering_Root-Resting_Grounds": {
     "Name": "Whispering_Root-Resting_Grounds",
@@ -1891,7 +2563,11 @@
         "X": -0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 15.78,
+      "Y": 73.38
+    }
   },
   "Whispering_Root-Spirits_Glade": {
     "Name": "Whispering_Root-Spirits_Glade",
@@ -1902,7 +2578,11 @@
         "X": 1.0,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 153.34,
+      "Y": 60.51
+    }
   },
   "Whispering_Root-Crystal_Peak": {
     "Name": "Whispering_Root-Crystal_Peak",
@@ -1913,7 +2593,11 @@
         "X": 0.2,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 91.3152161,
+      "Y": 12.4715528
+    }
   },
   "Whispering_Root-Howling_Cliffs": {
     "Name": "Whispering_Root-Howling_Cliffs",
@@ -1924,7 +2608,11 @@
         "X": 0.3,
         "Y": -1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 83.61,
+      "Y": 19.55
+    }
   },
   "Whispering_Root-Ancestral_Mound": {
     "Name": "Whispering_Root-Ancestral_Mound",
@@ -1935,7 +2623,11 @@
         "X": -0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.30677,
+      "Y": 64.25
+    }
   },
   "Whispering_Root-Hive": {
     "Name": "Whispering_Root-Hive",
@@ -1946,7 +2638,11 @@
         "X": 0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 168.5323,
+      "Y": 28.433218
+    }
   },
   "Boss_Essence-Elder_Hu": {
     "Name": "Boss_Essence-Elder_Hu",
@@ -1957,11 +2653,14 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.29,
+      "Y": 3.26
+    }
   },
   "Boss_Essence-Xero": {
     "Name": "Boss_Essence-Xero",
-    //"SceneName": "RestingGrounds_02_boss",
     "SceneName": "RestingGrounds_02",
     "MapLocations": [
       {
@@ -1969,11 +2668,14 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 98.13,
+      "Y": 11.51
+    }
   },
   "Boss_Essence-Gorb": {
     "Name": "Boss_Essence-Gorb",
-    //"SceneName": "Cliffs_02_boss",
     "SceneName": "Cliffs_02",
     "MapLocations": [
       {
@@ -1981,11 +2683,14 @@
         "X": -0.9,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.19,
+      "Y": 33.37
+    }
   },
   "Boss_Essence-Marmu": {
     "Name": "Boss_Essence-Marmu",
-    //"SceneName": "Fungus3_40_boss",
     "SceneName": "Fungus3_40",
     "MapLocations": [
       {
@@ -1993,7 +2698,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 73.42,
+      "Y": 10.31
+    }
   },
   "Boss_Essence-No_Eyes": {
     "Name": "Boss_Essence-No_Eyes",
@@ -2004,7 +2713,11 @@
         "X": 0.7,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 49.72,
+      "Y": 3.21194124
+    }
   },
   "Boss_Essence-Galien": {
     "Name": "Boss_Essence-Galien",
@@ -2015,7 +2728,11 @@
         "X": -0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.12,
+      "Y": 14.32
+    }
   },
   "Boss_Essence-Markoth": {
     "Name": "Boss_Essence-Markoth",
@@ -2026,7 +2743,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.34,
+      "Y": 3.29960537
+    }
   },
   "Boss_Essence-Failed_Champion": {
     "Name": "Boss_Essence-Failed_Champion",
@@ -2037,11 +2758,14 @@
         "X": -0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.1781425,
+      "Y": 48.26121
+    }
   },
   "Boss_Essence-Soul_Tyrant": {
     "Name": "Boss_Essence-Soul_Tyrant",
-    //"SceneName": "Ruins1_24_boss_defeated",
     "SceneName": "Ruins1_24",
     "MapLocations": [
       {
@@ -2049,7 +2773,11 @@
         "X": 0.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.09,
+      "Y": 10.45
+    }
   },
   "Boss_Essence-Lost_Kin": {
     "Name": "Boss_Essence-Lost_Kin",
@@ -2060,7 +2788,11 @@
         "X": -0.9,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.25784,
+      "Y": 28.189003
+    }
   },
   "Boss_Essence-White_Defender": {
     "Name": "Boss_Essence-White_Defender",
@@ -2071,11 +2803,14 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.53,
+      "Y": 4.0
+    }
   },
   "Boss_Essence-Grey_Prince_Zote": {
     "Name": "Boss_Essence-Grey_Prince_Zote",
-    //"SceneName": "Room_Bretta_Basement",
     "SceneName": "Room_Bretta",
     "MapLocations": [
       {
@@ -2083,7 +2818,11 @@
         "X": 0.6,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.56,
+      "Y": 5.67
+    }
   },
   "Grub-Crossroads_Acid": {
     "Name": "Grub-Crossroads_Acid",
@@ -2094,7 +2833,11 @@
         "X": -0.5,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.98800087,
+      "Y": 44.47979
+    }
   },
   "Grub-Crossroads_Center": {
     "Name": "Grub-Crossroads_Center",
@@ -2105,7 +2848,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.1742554,
+      "Y": 16.6026573
+    }
   },
   "Grub-Crossroads_Stag": {
     "Name": "Grub-Crossroads_Stag",
@@ -2116,7 +2863,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.34,
+      "Y": 41.56556
+    }
   },
   "Grub-Crossroads_Spike": {
     "Name": "Grub-Crossroads_Spike",
@@ -2127,7 +2878,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.34,
+      "Y": 13.54
+    }
   },
   "Grub-Crossroads_Guarded": {
     "Name": "Grub-Crossroads_Guarded",
@@ -2138,7 +2893,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 49.8195724,
+      "Y": 3.4776125
+    }
   },
   "Grub-Greenpath_Cornifer": {
     "Name": "Grub-Greenpath_Cornifer",
@@ -2149,7 +2908,11 @@
         "X": 1.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 157.51741,
+      "Y": 21.55728
+    }
   },
   "Grub-Greenpath_Journal": {
     "Name": "Grub-Greenpath_Journal",
@@ -2160,7 +2923,11 @@
         "X": 0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.06,
+      "Y": 12.4698067
+    }
   },
   "Grub-Greenpath_MMC": {
     "Name": "Grub-Greenpath_MMC",
@@ -2171,7 +2938,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 135.62,
+      "Y": 24.41
+    }
   },
   "Grub-Greenpath_Stag": {
     "Name": "Grub-Greenpath_Stag",
@@ -2182,7 +2953,11 @@
         "X": 0.6,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 85.65975,
+      "Y": 24.4914875
+    }
   },
   "Grub-Fog_Canyon": {
     "Name": "Grub-Fog_Canyon",
@@ -2193,7 +2968,11 @@
         "X": -0.6,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.11,
+      "Y": 22.53
+    }
   },
   "Grub-Fungal_Bouncy": {
     "Name": "Grub-Fungal_Bouncy",
@@ -2204,7 +2983,11 @@
         "X": 1.0,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 142.77,
+      "Y": 50.66
+    }
   },
   "Grub-Fungal_Spore_Shroom": {
     "Name": "Grub-Fungal_Spore_Shroom",
@@ -2215,7 +2998,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.81960964,
+      "Y": 42.5054779
+    }
   },
   "Grub-Deepnest_Mimic": {
     "Name": "Grub-Deepnest_Mimic",
@@ -2226,7 +3013,11 @@
         "X": 0.6,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.83134,
+      "Y": 4.5
+    }
   },
   "Grub-Deepnest_Nosk": {
     "Name": "Grub-Deepnest_Nosk",
@@ -2237,7 +3028,11 @@
         "X": 0.9,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 100.17,
+      "Y": 36.5
+    }
   },
   "Grub-Deepnest_Spike": {
     "Name": "Grub-Deepnest_Spike",
@@ -2248,7 +3043,11 @@
         "X": -0.3,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.2251759,
+      "Y": 103.513344
+    }
   },
   "Grub-Dark_Deepnest": {
     "Name": "Grub-Dark_Deepnest",
@@ -2259,7 +3058,11 @@
         "X": 0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 122.549042,
+      "Y": 46.5745621
+    }
   },
   "Grub-Beast's_Den": {
     "Name": "Grub-Beast's_Den",
@@ -2270,7 +3073,11 @@
         "X": 0.0,
         "Y": 1.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 99.98,
+      "Y": 119.41
+    }
   },
   "Grub-Kingdom's_Edge_Oro": {
     "Name": "Grub-Kingdom's_Edge_Oro",
@@ -2281,7 +3088,11 @@
         "X": 1.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 154.35,
+      "Y": 22.6
+    }
   },
   "Grub-Kingdom's_Edge_Camp": {
     "Name": "Grub-Kingdom's_Edge_Camp",
@@ -2292,7 +3103,11 @@
         "X": 0.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 62.85,
+      "Y": 63.59
+    }
   },
   "Grub-Hive_External": {
     "Name": "Grub-Hive_External",
@@ -2303,7 +3118,11 @@
         "X": -0.9,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.3703575,
+      "Y": 139.468109
+    }
   },
   "Grub-Hive_Internal": {
     "Name": "Grub-Hive_Internal",
@@ -2314,7 +3133,11 @@
         "X": 0.5,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 209.39,
+      "Y": 126.47
+    }
   },
   "Grub-Basin_Requires_Wings": {
     "Name": "Grub-Basin_Requires_Wings",
@@ -2325,7 +3148,11 @@
         "X": 0.0,
         "Y": 0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 82.51846,
+      "Y": 85.47667
+    }
   },
   "Grub-Basin_Requires_Dive": {
     "Name": "Grub-Basin_Requires_Dive",
@@ -2336,7 +3163,11 @@
         "X": 1.3,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 152.45,
+      "Y": 4.52
+    }
   },
   "Grub-Waterways_Main": {
     "Name": "Grub-Waterways_Main",
@@ -2347,7 +3178,11 @@
         "X": 0.8,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 126.39,
+      "Y": 8.487976
+    }
   },
   "Grub-Isma's_Grove": {
     "Name": "Grub-Isma's_Grove",
@@ -2358,7 +3193,11 @@
         "X": 0.7,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 108.820229,
+      "Y": 53.5196762
+    }
   },
   "Grub-Waterways_Requires_Tram": {
     "Name": "Grub-Waterways_Requires_Tram",
@@ -2369,7 +3208,11 @@
         "X": 1.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 186.67,
+      "Y": 37.51
+    }
   },
   "Grub-City_of_Tears_Left": {
     "Name": "Grub-City_of_Tears_Left",
@@ -2380,7 +3223,11 @@
         "X": 0.3,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 50.89,
+      "Y": 142.444427
+    }
   },
   "Grub-Soul_Sanctum": {
     "Name": "Grub-Soul_Sanctum",
@@ -2391,7 +3238,11 @@
         "X": -0.3,
         "Y": -0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.40326262,
+      "Y": 24.52
+    }
   },
   "Grub-Watcher's_Spire": {
     "Name": "Grub-Watcher's_Spire",
@@ -2402,7 +3253,11 @@
         "X": -0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.1802845,
+      "Y": 50.56301
+    }
   },
   "Grub-City_of_Tears_Guarded": {
     "Name": "Grub-City_of_Tears_Guarded",
@@ -2413,7 +3268,11 @@
         "X": 0.8,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.5045662,
+      "Y": 6.593936
+    }
   },
   "Grub-King's_Station": {
     "Name": "Grub-King's_Station",
@@ -2424,7 +3283,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.29,
+      "Y": 5.54749727
+    }
   },
   "Grub-Resting_Grounds": {
     "Name": "Grub-Resting_Grounds",
@@ -2435,7 +3298,11 @@
         "X": 0.6,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 117.521782,
+      "Y": 17.4498749
+    }
   },
   "Grub-Crystal_Peak_Below_Chest": {
     "Name": "Grub-Crystal_Peak_Below_Chest",
@@ -2446,7 +3313,11 @@
         "X": -0.2,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 15.14,
+      "Y": 77.56
+    }
   },
   "Grub-Crystallized_Mound": {
     "Name": "Grub-Crystallized_Mound",
@@ -2457,7 +3328,11 @@
         "X": 0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 107.018753,
+      "Y": 69.4743
+    }
   },
   "Grub-Crystal_Peak_Spike": {
     "Name": "Grub-Crystal_Peak_Spike",
@@ -2468,7 +3343,11 @@
         "X": 0.1,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.47,
+      "Y": 75.45
+    }
   },
   "Grub-Crystal_Peak_Mimic": {
     "Name": "Grub-Crystal_Peak_Mimic",
@@ -2479,7 +3358,11 @@
         "X": 0.2,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.5735474,
+      "Y": 22.587923
+    }
   },
   "Grub-Crystal_Peak_Crushers": {
     "Name": "Grub-Crystal_Peak_Crushers",
@@ -2490,7 +3373,11 @@
         "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.85,
+      "Y": 26.51163
+    }
   },
   "Grub-Crystal_Heart": {
     "Name": "Grub-Crystal_Heart",
@@ -2501,7 +3388,11 @@
         "X": -1.7,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.48,
+      "Y": 33.603508
+    }
   },
   "Grub-Hallownest_Crown": {
     "Name": "Grub-Hallownest_Crown",
@@ -2512,7 +3403,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 51.14,
+      "Y": 6.61
+    }
   },
   "Grub-Howling_Cliffs": {
     "Name": "Grub-Howling_Cliffs",
@@ -2523,7 +3418,11 @@
         "X": 0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 87.01,
+      "Y": 52.5399857
+    }
   },
   "Grub-Queen's_Gardens_Stag": {
     "Name": "Grub-Queen's_Gardens_Stag",
@@ -2534,7 +3433,11 @@
         "X": -0.7,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 11.82825,
+      "Y": 35.4995346
+    }
   },
   "Grub-Queen's_Gardens_Marmu": {
     "Name": "Grub-Queen's_Gardens_Marmu",
@@ -2545,7 +3448,11 @@
         "X": -0.6,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.178318,
+      "Y": 94.46994
+    }
   },
   "Grub-Queen's_Gardens_Top": {
     "Name": "Grub-Queen's_Gardens_Top",
@@ -2556,7 +3463,11 @@
         "X": 0.1,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.2875576,
+      "Y": 134.4546
+    }
   },
   "Grub-Collector_1": {
     "Name": "Grub-Collector_1",
@@ -2567,7 +3478,11 @@
         "X": 0.5,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 64.2,
+      "Y": 115.4
+    }
   },
   "Grub-Collector_2": {
     "Name": "Grub-Collector_2",
@@ -2578,7 +3493,11 @@
         "X": 0.2,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.3,
+      "Y": 115.4
+    }
   },
   "Grub-Collector_3": {
     "Name": "Grub-Collector_3",
@@ -2589,7 +3508,11 @@
         "X": -0.1,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.5,
+      "Y": 115.4
+    }
   },
   "Mimic_Grub-Deepnest_1": {
     "Name": "Mimic_Grub-Deepnest_1",
@@ -2600,7 +3523,11 @@
         "X": 0.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 58.5,
+      "Y": 8.5
+    }
   },
   "Mimic_Grub-Deepnest_2": {
     "Name": "Mimic_Grub-Deepnest_2",
@@ -2611,7 +3538,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.3,
+      "Y": 7.5
+    }
   },
   "Mimic_Grub-Deepnest_3": {
     "Name": "Mimic_Grub-Deepnest_3",
@@ -2622,7 +3553,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 73.4,
+      "Y": 6.6
+    }
   },
   "Mimic_Grub-Crystal_Peak": {
     "Name": "Mimic_Grub-Crystal_Peak",
@@ -2633,7 +3568,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.5,
+      "Y": 3.6
+    }
   },
   "Crossroads_Map": {
     "Name": "Crossroads_Map",
@@ -2644,7 +3583,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.31,
+      "Y": 34.69
+    }
   },
   "Greenpath_Map": {
     "Name": "Greenpath_Map",
@@ -2655,7 +3598,11 @@
         "X": 1.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 160.343811,
+      "Y": 3.70533371
+    }
   },
   "Fog_Canyon_Map": {
     "Name": "Fog_Canyon_Map",
@@ -2666,7 +3613,11 @@
         "X": -0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.43,
+      "Y": 32.66
+    }
   },
   "Fungal_Wastes_Map": {
     "Name": "Fungal_Wastes_Map",
@@ -2677,7 +3628,11 @@
         "X": -1.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.65,
+      "Y": 35.71555
+    }
   },
   "Deepnest_Map-Upper": {
     "Name": "Deepnest_Map-Upper",
@@ -2688,7 +3643,11 @@
         "X": -0.3,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.16,
+      "Y": 4.9
+    }
   },
   "Deepnest_Map-Right": {
     "Name": "Deepnest_Map-Right",
@@ -2699,7 +3658,11 @@
         "X": -0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 49.2182465,
+      "Y": 23.8693924
+    }
   },
   "Ancient_Basin_Map": {
     "Name": "Ancient_Basin_Map",
@@ -2710,7 +3673,11 @@
         "X": 0.4,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.43,
+      "Y": 41.7066536
+    }
   },
   "Kingdom's_Edge_Map": {
     "Name": "Kingdom's_Edge_Map",
@@ -2721,7 +3688,11 @@
         "X": -0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.64430571,
+      "Y": 60.7542572
+    }
   },
   "City_of_Tears_Map": {
     "Name": "City_of_Tears_Map",
@@ -2732,7 +3703,11 @@
         "X": 0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.9620857,
+      "Y": 15.7213039
+    }
   },
   "Royal_Waterways_Map": {
     "Name": "Royal_Waterways_Map",
@@ -2743,7 +3718,11 @@
         "X": -0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.1,
+      "Y": 30.72
+    }
   },
   "Howling_Cliffs_Map": {
     "Name": "Howling_Cliffs_Map",
@@ -2754,7 +3733,11 @@
         "X": 1.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 125.579529,
+      "Y": 91.82
+    }
   },
   "Crystal_Peak_Map": {
     "Name": "Crystal_Peak_Map",
@@ -2765,7 +3748,11 @@
         "X": 0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 156.628479,
+      "Y": 8.636717
+    }
   },
   "Queen's_Gardens_Map": {
     "Name": "Queen's_Gardens_Map",
@@ -2776,7 +3763,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 53.4282341,
+      "Y": 22.66872
+    }
   },
   "Resting_Grounds_Map": {
     "Name": "Resting_Grounds_Map",
@@ -2787,7 +3778,11 @@
         "X": -0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.41,
+      "Y": 5.43130064
+    }
   },
   "Dirtmouth_Stag": {
     "Name": "Dirtmouth_Stag",
@@ -2798,7 +3793,11 @@
         "X": 0.3,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.4,
+      "Y": 20.4
+    }
   },
   "Crossroads_Stag": {
     "Name": "Crossroads_Stag",
@@ -2809,7 +3808,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.7,
+      "Y": 6.4
+    }
   },
   "Greenpath_Stag": {
     "Name": "Greenpath_Stag",
@@ -2820,7 +3823,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.7,
+      "Y": 6.4
+    }
   },
   "Queen's_Station_Stag": {
     "Name": "Queen's_Station_Stag",
@@ -2831,7 +3838,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.3,
+      "Y": 6.4
+    }
   },
   "Queen's_Gardens_Stag": {
     "Name": "Queen's_Gardens_Stag",
@@ -2842,7 +3853,11 @@
         "X": 1.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 159.8,
+      "Y": 13.4
+    }
   },
   "City_Storerooms_Stag": {
     "Name": "City_Storerooms_Stag",
@@ -2853,7 +3868,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.1,
+      "Y": 6.4
+    }
   },
   "King's_Station_Stag": {
     "Name": "King's_Station_Stag",
@@ -2864,7 +3883,11 @@
         "X": 0.3,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.1,
+      "Y": 6.4
+    }
   },
   "Resting_Grounds_Stag": {
     "Name": "Resting_Grounds_Stag",
@@ -2875,7 +3898,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.6,
+      "Y": 6.4
+    }
   },
   "Distant_Village_Stag": {
     "Name": "Distant_Village_Stag",
@@ -2886,7 +3913,11 @@
         "X": 0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.6,
+      "Y": 6.4
+    }
   },
   "Hidden_Station_Stag": {
     "Name": "Hidden_Station_Stag",
@@ -2897,7 +3928,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.0,
+      "Y": 6.4
+    }
   },
   "Stag_Nest_Stag": {
     "Name": "Stag_Nest_Stag",
@@ -2908,7 +3943,11 @@
         "X": -2.3,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.3,
+      "Y": 6.3
+    }
   },
   "Lifeblood_Cocoon-King's_Pass": {
     "Name": "Lifeblood_Cocoon-King's_Pass",
@@ -2919,7 +3958,11 @@
         "X": -0.9,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.97487,
+      "Y": 62.0903168
+    }
   },
   "Lifeblood_Cocoon-Ancestral_Mound": {
     "Name": "Lifeblood_Cocoon-Ancestral_Mound",
@@ -2930,7 +3973,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.2119331,
+      "Y": 48.2982864
+    }
   },
   "Lifeblood_Cocoon-Greenpath": {
     "Name": "Lifeblood_Cocoon-Greenpath",
@@ -2941,7 +3988,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.86,
+      "Y": 26.95
+    }
   },
   "Lifeblood_Cocoon-Fog_Canyon_West": {
     "Name": "Lifeblood_Cocoon-Fog_Canyon_West",
@@ -2952,7 +4003,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.85,
+      "Y": 13.61
+    }
   },
   "Lifeblood_Cocoon-Mantis_Village": {
     "Name": "Lifeblood_Cocoon-Mantis_Village",
@@ -2963,7 +4018,11 @@
         "X": -0.5,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.21,
+      "Y": 25.92
+    }
   },
   "Lifeblood_Cocoon-Failed_Tramway": {
     "Name": "Lifeblood_Cocoon-Failed_Tramway",
@@ -2974,7 +4033,11 @@
         "X": 0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 139.07,
+      "Y": 38.68
+    }
   },
   "Lifeblood_Cocoon-Galien": {
     "Name": "Lifeblood_Cocoon-Galien",
@@ -2985,7 +4048,11 @@
         "X": 0.0,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 72.47,
+      "Y": 50.37
+    }
   },
   "Lifeblood_Cocoon-Kingdom's_Edge": {
     "Name": "Lifeblood_Cocoon-Kingdom's_Edge",
@@ -2996,7 +4063,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.03,
+      "Y": 16.5
+    }
   },
   "Grimmkin_Flame-City_Storerooms": {
     "Name": "Grimmkin_Flame-City_Storerooms",
@@ -3007,7 +4078,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 71.09,
+      "Y": 22.22
+    }
   },
   "Grimmkin_Flame-Greenpath": {
     "Name": "Grimmkin_Flame-Greenpath",
@@ -3018,7 +4093,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.39,
+      "Y": 8.9
+    }
   },
   "Grimmkin_Flame-Crystal_Peak": {
     "Name": "Grimmkin_Flame-Crystal_Peak",
@@ -3029,7 +4108,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 110.63,
+      "Y": 6.9
+    }
   },
   "Grimmkin_Flame-King's_Pass": {
     "Name": "Grimmkin_Flame-King's_Pass",
@@ -3040,7 +4123,11 @@
         "X": -0.3,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 146.47,
+      "Y": 5.97
+    }
   },
   "Grimmkin_Flame-Resting_Grounds": {
     "Name": "Grimmkin_Flame-Resting_Grounds",
@@ -3051,7 +4138,11 @@
         "X": -0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.05,
+      "Y": 19.96
+    }
   },
   "Grimmkin_Flame-Kingdom's_Edge": {
     "Name": "Grimmkin_Flame-Kingdom's_Edge",
@@ -3062,7 +4153,11 @@
         "X": -0.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.5108147,
+      "Y": 72.6164551
+    }
   },
   "Grimmkin_Flame-Fungal_Core": {
     "Name": "Grimmkin_Flame-Fungal_Core",
@@ -3073,7 +4168,11 @@
         "X": -0.1,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.65,
+      "Y": 34.01
+    }
   },
   "Grimmkin_Flame-Ancient_Basin": {
     "Name": "Grimmkin_Flame-Ancient_Basin",
@@ -3084,7 +4183,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 100.37,
+      "Y": 17.94
+    }
   },
   "Grimmkin_Flame-Hive": {
     "Name": "Grimmkin_Flame-Hive",
@@ -3095,7 +4198,11 @@
         "X": 0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 86.0804,
+      "Y": 123.680229
+    }
   },
   "Grimmkin_Flame-Brumm": {
     "Name": "Grimmkin_Flame-Brumm",
@@ -3106,7 +4213,11 @@
         "X": -0.3,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.48,
+      "Y": 14.5803556
+    }
   },
   "Hunter's_Journal": {
     "Name": "Hunter's_Journal",
@@ -3117,7 +4228,11 @@
         "X": 0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 48.16,
+      "Y": 38.51
+    }
   },
   "Journal_Entry-Void_Tendrils": {
     "Name": "Journal_Entry-Void_Tendrils",
@@ -3128,7 +4243,11 @@
         "X": 1.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 218.31,
+      "Y": 50.75
+    }
   },
   "Journal_Entry-Charged_Lumafly": {
     "Name": "Journal_Entry-Charged_Lumafly",
@@ -3139,7 +4258,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.62,
+      "Y": 74.63
+    }
   },
   "Journal_Entry-Goam": {
     "Name": "Journal_Entry-Goam",
@@ -3150,7 +4273,11 @@
         "X": -0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 18.78,
+      "Y": 33.64
+    }
   },
   "Journal_Entry-Garpede": {
     "Name": "Journal_Entry-Garpede",
@@ -3161,7 +4288,11 @@
         "X": -1.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 10.93,
+      "Y": 52.73
+    }
   },
   "Journal_Entry-Seal_of_Binding": {
     "Name": "Journal_Entry-Seal_of_Binding",
@@ -3177,7 +4308,11 @@
         "X": 1.4,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 282.16,
+      "Y": 123.2
+    }
   },
   "Geo_Rock-Broken_Elevator_1": {
     "Name": "Geo_Rock-Broken_Elevator_1",
@@ -3188,7 +4323,11 @@
         "X": -0.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.074166,
+      "Y": 53.8175659
+    }
   },
   "Geo_Rock-Broken_Elevator_2": {
     "Name": "Geo_Rock-Broken_Elevator_2",
@@ -3199,7 +4338,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.890543,
+      "Y": 91.70493
+    }
   },
   "Geo_Rock-Broken_Elevator_3": {
     "Name": "Geo_Rock-Broken_Elevator_3",
@@ -3210,7 +4353,11 @@
         "X": 0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 26.66,
+      "Y": 98.61
+    }
   },
   "Geo_Rock-Broken_Bridge_Upper": {
     "Name": "Geo_Rock-Broken_Bridge_Upper",
@@ -3221,7 +4368,11 @@
         "X": -0.2,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.0757751,
+      "Y": 34.83622
+    }
   },
   "Geo_Rock-Broken_Bridge_Lower": {
     "Name": "Geo_Rock-Broken_Bridge_Lower",
@@ -3232,7 +4383,11 @@
         "X": -0.7,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.09491,
+      "Y": 4.92606449
+    }
   },
   "Geo_Rock-Broken_Bridge_Lower_Dupe": {
     "Name": "Geo_Rock-Broken_Bridge_Lower_Dupe",
@@ -3243,7 +4398,11 @@
         "X": -1.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 43.53579,
+      "Y": 4.99006939
+    }
   },
   "Geo_Rock-Abyss_1": {
     "Name": "Geo_Rock-Abyss_1",
@@ -3254,7 +4413,11 @@
         "X": 0.4,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 76.0348358,
+      "Y": 184.863464
+    }
   },
   "Geo_Rock-Abyss_2": {
     "Name": "Geo_Rock-Abyss_2",
@@ -3265,7 +4428,11 @@
         "X": 0.2,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 63.74,
+      "Y": 170.09
+    }
   },
   "Geo_Rock-Abyss_3": {
     "Name": "Geo_Rock-Abyss_3",
@@ -3276,7 +4443,11 @@
         "X": -0.1,
         "Y": -1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 42.01,
+      "Y": 76.26
+    }
   },
   "Geo_Rock-Basin_Tunnel": {
     "Name": "Geo_Rock-Basin_Tunnel",
@@ -3287,7 +4458,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 58.12402,
+      "Y": 12.63
+    }
   },
   "Geo_Rock-Basin_Grub": {
     "Name": "Geo_Rock-Basin_Grub",
@@ -3298,7 +4473,11 @@
         "X": 1.0,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 143.6396,
+      "Y": 69.91467
+    }
   },
   "Geo_Rock-Basin_Before_Broken_Vessel": {
     "Name": "Geo_Rock-Basin_Before_Broken_Vessel",
@@ -3309,7 +4488,11 @@
         "X": 0.5,
         "Y": -0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 117.73,
+      "Y": 9.92548752
+    }
   },
   "Geo_Rock-Cliffs_Main_1": {
     "Name": "Geo_Rock-Cliffs_Main_1",
@@ -3320,7 +4503,11 @@
         "X": 0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 44.35408,
+      "Y": 108.503548
+    }
   },
   "Geo_Rock-Cliffs_Main_2": {
     "Name": "Geo_Rock-Cliffs_Main_2",
@@ -3331,7 +4518,11 @@
         "X": 0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 50.76541,
+      "Y": 68.01698
+    }
   },
   "Geo_Rock-Cliffs_Main_3": {
     "Name": "Geo_Rock-Cliffs_Main_3",
@@ -3342,7 +4533,11 @@
         "X": 1.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 124.277237,
+      "Y": 72.8237152
+    }
   },
   "Geo_Rock-Cliffs_Main_4": {
     "Name": "Geo_Rock-Cliffs_Main_4",
@@ -3353,7 +4548,11 @@
         "X": 0.5,
         "Y": -0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 74.04561,
+      "Y": 36.77761
+    }
   },
   "Geo_Rock-Below_Gorb_Dupe": {
     "Name": "Geo_Rock-Below_Gorb_Dupe",
@@ -3364,7 +4563,11 @@
         "X": -1.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 50.3851051,
+      "Y": 16.574379
+    }
   },
   "Geo_Rock-Below_Gorb": {
     "Name": "Geo_Rock-Below_Gorb",
@@ -3375,7 +4578,11 @@
         "X": -0.8,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 62.94,
+      "Y": 16.574379
+    }
   },
   "Geo_Rock-Crossroads_Well": {
     "Name": "Geo_Rock-Crossroads_Well",
@@ -3386,7 +4593,11 @@
         "X": -0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.83,
+      "Y": 1.57
+    }
   },
   "Geo_Rock-Crossroads_Center_Grub": {
     "Name": "Geo_Rock-Crossroads_Center_Grub",
@@ -3397,7 +4608,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.5579185,
+      "Y": 15.587328
+    }
   },
   "Geo_Rock-Crossroads_Root": {
     "Name": "Geo_Rock-Crossroads_Root",
@@ -3408,7 +4623,11 @@
         "X": 0.3,
         "Y": 0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.29,
+      "Y": 107.71
+    }
   },
   "Geo_Rock-Crossroads_Root_Dupe_1": {
     "Name": "Geo_Rock-Crossroads_Root_Dupe_1",
@@ -3419,7 +4638,11 @@
         "X": -0.3,
         "Y": 0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 18.94,
+      "Y": 102.63
+    }
   },
   "Geo_Rock-Crossroads_Root_Dupe_2": {
     "Name": "Geo_Rock-Crossroads_Root_Dupe_2",
@@ -3430,7 +4653,11 @@
         "X": 0.0,
         "Y": 0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.2,
+      "Y": 102.66
+    }
   },
   "Geo_Rock-Crossroads_Aspid_Arena": {
     "Name": "Geo_Rock-Crossroads_Aspid_Arena",
@@ -3441,7 +4668,11 @@
         "X": -0.2,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.07,
+      "Y": 38.7
+    }
   },
   "Geo_Rock-Crossroads_Aspid_Arena_Dupe_1": {
     "Name": "Geo_Rock-Crossroads_Aspid_Arena_Dupe_1",
@@ -3452,7 +4683,11 @@
         "X": 0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 12.3835049,
+      "Y": 37.819355
+    }
   },
   "Geo_Rock-Crossroads_Aspid_Arena_Dupe_2": {
     "Name": "Geo_Rock-Crossroads_Aspid_Arena_Dupe_2",
@@ -3463,7 +4698,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.02,
+      "Y": 32.62
+    }
   },
   "Geo_Rock-Crossroads_Aspid_Arena_Hidden": {
     "Name": "Geo_Rock-Crossroads_Aspid_Arena_Hidden",
@@ -3474,7 +4713,11 @@
         "X": 0.4,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.52,
+      "Y": 33.62
+    }
   },
   "Geo_Rock-Crossroads_Above_False_Knight": {
     "Name": "Geo_Rock-Crossroads_Above_False_Knight",
@@ -3485,7 +4728,11 @@
         "X": 0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 64.67644,
+      "Y": 59.5381851
+    }
   },
   "Geo_Rock-Crossroads_Before_Acid_Grub": {
     "Name": "Geo_Rock-Crossroads_Before_Acid_Grub",
@@ -3496,7 +4743,11 @@
         "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.12111,
+      "Y": 14.67542
+    }
   },
   "Geo_Rock-Crossroads_Below_Goam_Mask_Shard": {
     "Name": "Geo_Rock-Crossroads_Below_Goam_Mask_Shard",
@@ -3507,7 +4758,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.27,
+      "Y": 2.62
+    }
   },
   "Geo_Rock-Crossroads_After_Goam_Mask_Shard": {
     "Name": "Geo_Rock-Crossroads_After_Goam_Mask_Shard",
@@ -3518,7 +4773,11 @@
         "X": 0.4,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 69.6878357,
+      "Y": 2.55463123
+    }
   },
   "Geo_Rock-Crossroads_Above_Lever": {
     "Name": "Geo_Rock-Crossroads_Above_Lever",
@@ -3529,7 +4788,11 @@
         "X": 0.4,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.9740219,
+      "Y": 14.58
+    }
   },
   "Geo_Rock-Crossroads_Before_Fungal": {
     "Name": "Geo_Rock-Crossroads_Before_Fungal",
@@ -3540,7 +4803,11 @@
         "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.226,
+      "Y": 19.288
+    }
   },
   "Geo_Rock-Crossroads_Before_Fungal_Dupe_1": {
     "Name": "Geo_Rock-Crossroads_Before_Fungal_Dupe_1",
@@ -3551,7 +4818,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.09,
+      "Y": 18.62
+    }
   },
   "Geo_Rock-Crossroads_Before_Fungal_Dupe_2": {
     "Name": "Geo_Rock-Crossroads_Before_Fungal_Dupe_2",
@@ -3562,7 +4833,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.99,
+      "Y": 23.3
+    }
   },
   "Geo_Rock-Crossroads_Before_Shops": {
     "Name": "Geo_Rock-Crossroads_Before_Shops",
@@ -3573,7 +4848,11 @@
         "X": 0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.5851936,
+      "Y": 39.63505
+    }
   },
   "Geo_Rock-Crossroads_Before_Glowing_Womb": {
     "Name": "Geo_Rock-Crossroads_Before_Glowing_Womb",
@@ -3584,7 +4863,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.69,
+      "Y": 13.5708342
+    }
   },
   "Geo_Rock-Crossroads_Above_Tram": {
     "Name": "Geo_Rock-Crossroads_Above_Tram",
@@ -3595,7 +4878,11 @@
         "X": 0.1,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.52,
+      "Y": 64.6
+    }
   },
   "Geo_Rock-Crossroads_Above_Mawlek": {
     "Name": "Geo_Rock-Crossroads_Above_Mawlek",
@@ -3606,7 +4893,11 @@
         "X": 0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 53.34,
+      "Y": 52.59
+    }
   },
   "Geo_Rock-Crossroads_Vessel_Fragment": {
     "Name": "Geo_Rock-Crossroads_Vessel_Fragment",
@@ -3617,7 +4908,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 90.10766,
+      "Y": 26.3522129
+    }
   },
   "Geo_Rock-Crossroads_Goam_Alcove": {
     "Name": "Geo_Rock-Crossroads_Goam_Alcove",
@@ -3628,7 +4923,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.79,
+      "Y": 10.6
+    }
   },
   "Geo_Rock-Crossroads_Goam_Damage_Boost": {
     "Name": "Geo_Rock-Crossroads_Goam_Damage_Boost",
@@ -3639,7 +4938,11 @@
         "X": 0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 101.056358,
+      "Y": 18.928688
+    }
   },
   "Geo_Rock-Crossroads_Tram": {
     "Name": "Geo_Rock-Crossroads_Tram",
@@ -3650,7 +4953,11 @@
         "X": -0.2,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.32,
+      "Y": 3.45
+    }
   },
   "Geo_Rock-Crossroads_Goam_Journal": {
     "Name": "Geo_Rock-Crossroads_Goam_Journal",
@@ -3661,7 +4968,11 @@
         "X": 0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.2385521,
+      "Y": 32.6070862
+    }
   },
   "Geo_Rock-Crossroads_Goam_Journal_Dupe": {
     "Name": "Geo_Rock-Crossroads_Goam_Journal_Dupe",
@@ -3672,7 +4983,11 @@
         "X": 0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.2482338,
+      "Y": 36.74561
+    }
   },
   "Geo_Rock-Ancestral_Mound": {
     "Name": "Geo_Rock-Ancestral_Mound",
@@ -3683,7 +4998,11 @@
         "X": 0.0,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.28835,
+      "Y": 45.5190163
+    }
   },
   "Geo_Rock-Ancestral_Mound_Dupe": {
     "Name": "Geo_Rock-Ancestral_Mound_Dupe",
@@ -3694,7 +5013,11 @@
         "X": 0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.4146461,
+      "Y": 45.6059036
+    }
   },
   "Geo_Rock-Ancestral_Mound_Tree": {
     "Name": "Geo_Rock-Ancestral_Mound_Tree",
@@ -3705,7 +5028,11 @@
         "X": 0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.22,
+      "Y": 59.67
+    }
   },
   "Geo_Rock-Ancestral_Mound_Tree_Dupe": {
     "Name": "Geo_Rock-Ancestral_Mound_Tree_Dupe",
@@ -3716,7 +5043,11 @@
         "X": 0.0,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.85,
+      "Y": 59.64
+    }
   },
   "Geo_Rock-Moss_Prophet": {
     "Name": "Geo_Rock-Moss_Prophet",
@@ -3727,7 +5058,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.48,
+      "Y": 8.66
+    }
   },
   "Geo_Rock-Moss_Prophet_Dupe": {
     "Name": "Geo_Rock-Moss_Prophet_Dupe",
@@ -3738,7 +5073,11 @@
         "X": -0.3,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.77924,
+      "Y": 5.69
+    }
   },
   "Geo_Rock-Deepnest_Below_Mimics": {
     "Name": "Geo_Rock-Deepnest_Below_Mimics",
@@ -3749,7 +5088,11 @@
         "X": 0.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.48,
+      "Y": 13.82
+    }
   },
   "Geo_Rock-Deepnest_Below_Mimics_Dupe": {
     "Name": "Geo_Rock-Deepnest_Below_Mimics_Dupe",
@@ -3760,7 +5103,11 @@
         "X": -0.2,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 17.34,
+      "Y": 13.85
+    }
   },
   "Geo_Rock-Deepnest_Below_Spike_Grub": {
     "Name": "Geo_Rock-Deepnest_Below_Spike_Grub",
@@ -3771,7 +5118,11 @@
         "X": -0.4,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.52,
+      "Y": 76.72
+    }
   },
   "Geo_Rock-Deepnest_Below_Spike_Grub_Dupe": {
     "Name": "Geo_Rock-Deepnest_Below_Spike_Grub_Dupe",
@@ -3782,7 +5133,11 @@
         "X": -0.1,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.62826,
+      "Y": 73.81636
+    }
   },
   "Geo_Rock-Deepnest_Spike_Grub_Right": {
     "Name": "Geo_Rock-Deepnest_Spike_Grub_Right",
@@ -3793,7 +5148,11 @@
         "X": 0.4,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.2,
+      "Y": 107.32
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_Garpede_Pogo": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_Garpede_Pogo",
@@ -3804,7 +5163,11 @@
         "X": 0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 81.16,
+      "Y": 23.96
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_Garpede_Pogo_Dupe": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_Garpede_Pogo_Dupe",
@@ -3815,7 +5178,11 @@
         "X": 0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 84.064,
+      "Y": 23.921
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_1": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_1",
@@ -3826,7 +5193,11 @@
         "X": 0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.6,
+      "Y": 34.9290924
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_2": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_2",
@@ -3837,7 +5208,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.8727646,
+      "Y": 11.7650433
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_3": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_Requires_Claw_3",
@@ -3848,7 +5223,11 @@
         "X": -0.5,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.35206,
+      "Y": 5.77594328
+    }
   },
   "Geo_Rock-Deepnest_Nosk_1": {
     "Name": "Geo_Rock-Deepnest_Nosk_1",
@@ -3859,7 +5238,11 @@
         "X": -0.4,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.68001,
+      "Y": 29.82047
+    }
   },
   "Geo_Rock-Deepnest_Nosk_2": {
     "Name": "Geo_Rock-Deepnest_Nosk_2",
@@ -3870,7 +5253,11 @@
         "X": -0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 49.45,
+      "Y": 15.87
+    }
   },
   "Geo_Rock-Deepnest_Nosk_3": {
     "Name": "Geo_Rock-Deepnest_Nosk_3",
@@ -3881,7 +5268,11 @@
         "X": -0.6,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.02,
+      "Y": 2.87
+    }
   },
   "Geo_Rock-Deepnest_Above_Galien": {
     "Name": "Geo_Rock-Deepnest_Above_Galien",
@@ -3892,7 +5283,11 @@
         "X": -0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.45005274,
+      "Y": 78.93091
+    }
   },
   "Geo_Rock-Deepnest_Galien_Spike": {
     "Name": "Geo_Rock-Deepnest_Galien_Spike",
@@ -3903,7 +5298,11 @@
         "X": 0.0,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.3220577,
+      "Y": 29.89369
+    }
   },
   "Geo_Rock-Deepnest_Garpede_1": {
     "Name": "Geo_Rock-Deepnest_Garpede_1",
@@ -3914,7 +5313,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 48.36,
+      "Y": 15.85
+    }
   },
   "Geo_Rock-Deepnest_Garpede_2": {
     "Name": "Geo_Rock-Deepnest_Garpede_2",
@@ -3925,7 +5328,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.7975159,
+      "Y": 26.7932148
+    }
   },
   "Geo_Rock-Dark_Deepnest_Above_Grub_1": {
     "Name": "Geo_Rock-Dark_Deepnest_Above_Grub_1",
@@ -3936,7 +5343,11 @@
         "X": 0.5,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 129.8224,
+      "Y": 60.8704758
+    }
   },
   "Geo_Rock-Dark_Deepnest_Above_Grub_2": {
     "Name": "Geo_Rock-Dark_Deepnest_Above_Grub_2",
@@ -3947,7 +5358,11 @@
         "X": -0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 99.62,
+      "Y": 49.79
+    }
   },
   "Geo_Rock-Dark_Deepnest_Bottom_Left": {
     "Name": "Geo_Rock-Dark_Deepnest_Bottom_Left",
@@ -3958,7 +5373,11 @@
         "X": -0.5,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 72.08,
+      "Y": 4.95
+    }
   },
   "Geo_Rock-Above_Mask_Maker_1": {
     "Name": "Geo_Rock-Above_Mask_Maker_1",
@@ -3969,7 +5388,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.60224533,
+      "Y": 49.8466034
+    }
   },
   "Geo_Rock-Above_Mask_Maker_2": {
     "Name": "Geo_Rock-Above_Mask_Maker_2",
@@ -3980,7 +5403,11 @@
         "X": 0.0,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.28,
+      "Y": 42.01
+    }
   },
   "Geo_Rock-Lower_Kingdom's_Edge_1": {
     "Name": "Geo_Rock-Lower_Kingdom's_Edge_1",
@@ -3991,7 +5418,11 @@
         "X": -0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.626259,
+      "Y": 23.951786
+    }
   },
   "Geo_Rock-Lower_Kingdom's_Edge_2": {
     "Name": "Geo_Rock-Lower_Kingdom's_Edge_2",
@@ -4002,7 +5433,11 @@
         "X": -0.5,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.927063,
+      "Y": 67.8372955
+    }
   },
   "Geo_Rock-Lower_Kingdom's_Edge_3": {
     "Name": "Geo_Rock-Lower_Kingdom's_Edge_3",
@@ -4013,7 +5448,11 @@
         "X": -0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.2729759,
+      "Y": 11.7842112
+    }
   },
   "Geo_Rock-Lower_Kingdom's_Edge_Dive": {
     "Name": "Geo_Rock-Lower_Kingdom's_Edge_Dive",
@@ -4024,7 +5463,11 @@
         "X": 0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 104.046783,
+      "Y": 5.83525
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Below_Bardoon": {
     "Name": "Geo_Rock-Kingdom's_Edge_Below_Bardoon",
@@ -4035,7 +5478,11 @@
         "X": -0.3,
         "Y": -0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.1596,
+      "Y": 44.5400047
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Oro_Far_Left": {
     "Name": "Geo_Rock-Kingdom's_Edge_Oro_Far_Left",
@@ -4046,7 +5493,11 @@
         "X": -2.5,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.42,
+      "Y": 32.5
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Oro_Middle_Left": {
     "Name": "Geo_Rock-Kingdom's_Edge_Oro_Middle_Left",
@@ -4057,7 +5508,11 @@
         "X": -1.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 123.372757,
+      "Y": 30.614603
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Above_Root": {
     "Name": "Geo_Rock-Kingdom's_Edge_Above_Root",
@@ -4068,7 +5523,11 @@
         "X": 0.3,
         "Y": -0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 77.7,
+      "Y": 29.63
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Above_Tower": {
     "Name": "Geo_Rock-Kingdom's_Edge_Above_Tower",
@@ -4079,7 +5538,11 @@
         "X": -0.6,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.76,
+      "Y": 57.6394424
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Below_Colosseum": {
     "Name": "Geo_Rock-Kingdom's_Edge_Below_Colosseum",
@@ -4090,7 +5553,11 @@
         "X": 0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 108.55,
+      "Y": 30.5442047
+    }
   },
   "Geo_Rock-Kingdom's_Edge_Above_420_Geo_Rock": {
     "Name": "Geo_Rock-Kingdom's_Edge_Above_420_Geo_Rock",
@@ -4101,7 +5568,11 @@
         "X": 0.8,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.173851,
+      "Y": 263.573761
+    }
   },
   "Geo_Rock-Kingdom's_Edge_420_Geo_Rock": {
     "Name": "Geo_Rock-Kingdom's_Edge_420_Geo_Rock",
@@ -4112,7 +5583,11 @@
         "X": 1.1,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.21,
+      "Y": 9.26
+    }
   },
   "Geo_Rock-Beast's_Den_Above_Trilobite": {
     "Name": "Geo_Rock-Beast's_Den_Above_Trilobite",
@@ -4123,7 +5598,11 @@
         "X": 0.3,
         "Y": 1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.48,
+      "Y": 120.85
+    }
   },
   "Geo_Rock-Beast's_Den_Above_Trilobite_Dupe": {
     "Name": "Geo_Rock-Beast's_Den_Above_Trilobite_Dupe",
@@ -4134,7 +5613,11 @@
         "X": 0.3,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.92,
+      "Y": 120.85
+    }
   },
   "Geo_Rock-Beast's_Den_Below_Herrah": {
     "Name": "Geo_Rock-Beast's_Den_Below_Herrah",
@@ -4145,7 +5628,11 @@
         "X": 0.6,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 95.25016,
+      "Y": 143.680969
+    }
   },
   "Geo_Rock-Beast's_Den_Below_Egg": {
     "Name": "Geo_Rock-Beast's_Den_Below_Egg",
@@ -4156,7 +5643,11 @@
         "X": 0.6,
         "Y": 1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 107.069489,
+      "Y": 69.8221741
+    }
   },
   "Geo_Rock-Beast's_Den_Below_Egg_Dupe": {
     "Name": "Geo_Rock-Beast's_Den_Below_Egg_Dupe",
@@ -4167,7 +5658,11 @@
         "X": -0.6,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 109.01,
+      "Y": 69.76
+    }
   },
   "Geo_Rock-Beast's_Den_Bottom": {
     "Name": "Geo_Rock-Beast's_Den_Bottom",
@@ -4178,7 +5673,11 @@
         "X": -0.6,
         "Y": 1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 102.025887,
+      "Y": 3.9145515
+    }
   },
   "Geo_Rock-Beast's_Den_Bottom_Dupe": {
     "Name": "Geo_Rock-Beast's_Den_Bottom_Dupe",
@@ -4189,7 +5688,11 @@
         "X": -0.3,
         "Y": 0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 104.803925,
+      "Y": 3.79593086
+    }
   },
   "Geo_Rock-Beast's_Den_After_Herrah": {
     "Name": "Geo_Rock-Beast's_Den_After_Herrah",
@@ -4200,7 +5703,11 @@
         "X": -0.3,
         "Y": 1.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 94.07,
+      "Y": 151.88
+    }
   },
   "Geo_Rock-Greenpath_Entrance": {
     "Name": "Geo_Rock-Greenpath_Entrance",
@@ -4211,7 +5718,11 @@
         "X": -0.8,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 42.6979675,
+      "Y": 20.7390728
+    }
   },
   "Geo_Rock-Greenpath_Waterfall": {
     "Name": "Geo_Rock-Greenpath_Waterfall",
@@ -4222,7 +5733,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.62,
+      "Y": 22.16
+    }
   },
   "Geo_Rock-Greenpath_Below_Skip_Squit": {
     "Name": "Geo_Rock-Greenpath_Below_Skip_Squit",
@@ -4233,7 +5748,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.91,
+      "Y": 21.88
+    }
   },
   "Geo_Rock-Greenpath_Skip_Squit": {
     "Name": "Geo_Rock-Greenpath_Skip_Squit",
@@ -4244,7 +5763,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.21,
+      "Y": 44.76
+    }
   },
   "Geo_Rock-Greenpath_Second_Skip_Fool_Eater": {
     "Name": "Geo_Rock-Greenpath_Second_Skip_Fool_Eater",
@@ -4255,7 +5778,11 @@
         "X": 0.5,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.91,
+      "Y": 25.67
+    }
   },
   "Geo_Rock-Greenpath_Second_Skip_Fool_Eater_Dupe": {
     "Name": "Geo_Rock-Greenpath_Second_Skip_Fool_Eater_Dupe",
@@ -4266,7 +5793,11 @@
         "X": 0.2,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 67.83,
+      "Y": 25.67
+    }
   },
   "Geo_Rock-Greenpath_Second_Skip_Lower": {
     "Name": "Geo_Rock-Greenpath_Second_Skip_Lower",
@@ -4277,7 +5808,11 @@
         "X": 0.5,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 62.2304764,
+      "Y": 2.85453558
+    }
   },
   "Geo_Rock-Greenpath_Below_Hornet": {
     "Name": "Geo_Rock-Greenpath_Below_Hornet",
@@ -4288,7 +5823,11 @@
         "X": -0.2,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 40.29,
+      "Y": 20.75
+    }
   },
   "Geo_Rock-Greenpath_Above_Thorns": {
     "Name": "Geo_Rock-Greenpath_Above_Thorns",
@@ -4299,7 +5838,11 @@
         "X": -0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.93,
+      "Y": 64.88
+    }
   },
   "Geo_Rock-Greenpath_Hunter's_Journal": {
     "Name": "Geo_Rock-Greenpath_Hunter's_Journal",
@@ -4310,7 +5853,11 @@
         "X": -0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 2.64,
+      "Y": 34.95
+    }
   },
   "Geo_Rock-Greenpath_Acid_Bridge": {
     "Name": "Geo_Rock-Greenpath_Acid_Bridge",
@@ -4321,7 +5868,11 @@
         "X": 0.7,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 136.329483,
+      "Y": 22.08
+    }
   },
   "Geo_Rock-Greenpath_After_MMC_Hidden": {
     "Name": "Geo_Rock-Greenpath_After_MMC_Hidden",
@@ -4332,7 +5883,11 @@
         "X": 0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.23,
+      "Y": 57.72
+    }
   },
   "Geo_Rock-Greenpath_After_MMC": {
     "Name": "Geo_Rock-Greenpath_After_MMC",
@@ -4343,7 +5898,11 @@
         "X": 0.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.2362328,
+      "Y": 19.8393517
+    }
   },
   "Geo_Rock-Greenpath_After_MMC_Dupe": {
     "Name": "Geo_Rock-Greenpath_After_MMC_Dupe",
@@ -4354,7 +5913,11 @@
         "X": -0.2,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.86,
+      "Y": 21.8
+    }
   },
   "Geo_Rock-Greenpath_Obbles_Fool_Eater": {
     "Name": "Geo_Rock-Greenpath_Obbles_Fool_Eater",
@@ -4365,7 +5928,11 @@
         "X": -0.5,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.554276,
+      "Y": 7.81710434
+    }
   },
   "Geo_Rock-Greenpath_Moss_Knights": {
     "Name": "Geo_Rock-Greenpath_Moss_Knights",
@@ -4376,7 +5943,11 @@
         "X": -0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 12.13,
+      "Y": 24.76
+    }
   },
   "Geo_Rock-Greenpath_Moss_Knights_Dupe_1": {
     "Name": "Geo_Rock-Greenpath_Moss_Knights_Dupe_1",
@@ -4387,7 +5958,11 @@
         "X": -0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.59,
+      "Y": 29.39
+    }
   },
   "Geo_Rock-Greenpath_Moss_Knights_Dupe_2": {
     "Name": "Geo_Rock-Greenpath_Moss_Knights_Dupe_2",
@@ -4398,7 +5973,11 @@
         "X": -0.4,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 2.89245582,
+      "Y": 24.8939247
+    }
   },
   "Geo_Rock-Greenpath_Below_Stag": {
     "Name": "Geo_Rock-Greenpath_Below_Stag",
@@ -4409,7 +5988,11 @@
         "X": -0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.21,
+      "Y": 56.7
+    }
   },
   "Geo_Rock-Greenpath_Below_Stag_Fool_Eater": {
     "Name": "Geo_Rock-Greenpath_Below_Stag_Fool_Eater",
@@ -4420,7 +6003,11 @@
         "X": -0.1,
         "Y": -0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.79,
+      "Y": 4.95
+    }
   },
   "Geo_Rock-Baldur_Shell_Top_Left": {
     "Name": "Geo_Rock-Baldur_Shell_Top_Left",
@@ -4431,7 +6018,11 @@
         "X": -1.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.19996929,
+      "Y": 34.27
+    }
   },
   "Geo_Rock-Baldur_Shell_Alcove": {
     "Name": "Geo_Rock-Baldur_Shell_Alcove",
@@ -4442,7 +6033,11 @@
         "X": -0.4,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 40.24,
+      "Y": 22.13
+    }
   },
   "Geo_Rock-Greenpath_MMC": {
     "Name": "Geo_Rock-Greenpath_MMC",
@@ -4453,7 +6048,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.025553,
+      "Y": 6.88045073
+    }
   },
   "Geo_Rock-Greenpath_Below_Toll": {
     "Name": "Geo_Rock-Greenpath_Below_Toll",
@@ -4464,7 +6063,11 @@
         "X": -0.1,
         "Y": -0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.3,
+      "Y": 9.68
+    }
   },
   "Geo_Rock-Greenpath_Toll_Hidden": {
     "Name": "Geo_Rock-Greenpath_Toll_Hidden",
@@ -4475,7 +6078,11 @@
         "X": -0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.85,
+      "Y": 86.61
+    }
   },
   "Geo_Rock-Greenpath_Toll_Hidden_Dupe": {
     "Name": "Geo_Rock-Greenpath_Toll_Hidden_Dupe",
@@ -4486,7 +6093,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.71133661,
+      "Y": 82.7481842
+    }
   },
   "Geo_Rock-Fungal_Below_Shrumal_Ogres": {
     "Name": "Geo_Rock-Fungal_Below_Shrumal_Ogres",
@@ -4497,7 +6108,11 @@
         "X": 0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.71,
+      "Y": 63.18
+    }
   },
   "Geo_Rock-Fungal_Above_Cloth": {
     "Name": "Geo_Rock-Fungal_Above_Cloth",
@@ -4508,7 +6123,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.67991424,
+      "Y": 32.79153
+    }
   },
   "Geo_Rock-Fungal_After_Cloth": {
     "Name": "Geo_Rock-Fungal_After_Cloth",
@@ -4519,7 +6138,11 @@
         "X": 0.5,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 66.455,
+      "Y": 66.825
+    }
   },
   "Geo_Rock-Fungal_Below_Pilgrim's_Way": {
     "Name": "Geo_Rock-Fungal_Below_Pilgrim's_Way",
@@ -4530,7 +6153,11 @@
         "X": 0.2,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 26.56508,
+      "Y": 61.9494972
+    }
   },
   "Geo_Rock-Fungal_Below_Pilgrim's_Way_Dupe": {
     "Name": "Geo_Rock-Fungal_Below_Pilgrim's_Way_Dupe",
@@ -4541,7 +6168,11 @@
         "X": -0.1,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 24.17,
+      "Y": 61.917263
+    }
   },
   "Geo_Rock-Mantis_Outskirts_Guarded": {
     "Name": "Geo_Rock-Mantis_Outskirts_Guarded",
@@ -4552,7 +6183,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.86555767,
+      "Y": 44.8398743
+    }
   },
   "Geo_Rock-Mantis_Outskirts_Guarded_Dupe": {
     "Name": "Geo_Rock-Mantis_Outskirts_Guarded_Dupe",
@@ -4563,7 +6198,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.85,
+      "Y": 44.75
+    }
   },
   "Geo_Rock-Mantis_Outskirts_Alcove": {
     "Name": "Geo_Rock-Mantis_Outskirts_Alcove",
@@ -4574,7 +6213,11 @@
         "X": 0.2,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.31,
+      "Y": 35.79
+    }
   },
   "Geo_Rock-Mantis_Village_After_Lever": {
     "Name": "Geo_Rock-Mantis_Village_After_Lever",
@@ -4585,7 +6228,11 @@
         "X": -0.4,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 62.70118,
+      "Y": 21.5454025
+    }
   },
   "Geo_Rock-Mantis_Village_Above_Claw": {
     "Name": "Geo_Rock-Mantis_Village_Above_Claw",
@@ -4596,7 +6243,11 @@
         "X": -1.0,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.43,
+      "Y": 33.68
+    }
   },
   "Geo_Rock-Mantis_Village_Above_Claw_Dupe": {
     "Name": "Geo_Rock-Mantis_Village_Above_Claw_Dupe",
@@ -4607,7 +6258,11 @@
         "X": -1.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.34,
+      "Y": 33.7
+    }
   },
   "Geo_Rock-Mantis_Village_Below_Lore": {
     "Name": "Geo_Rock-Mantis_Village_Below_Lore",
@@ -4618,7 +6273,11 @@
         "X": -0.7,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 43.58721,
+      "Y": 21.6144581
+    }
   },
   "Geo_Rock-Mantis_Village_Above_Lever": {
     "Name": "Geo_Rock-Mantis_Village_Above_Lever",
@@ -4629,7 +6288,11 @@
         "X": -0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 83.04,
+      "Y": 31.6071682
+    }
   },
   "Geo_Rock-Above_Mantis_Lords_1": {
     "Name": "Geo_Rock-Above_Mantis_Lords_1",
@@ -4640,7 +6303,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.6495476,
+      "Y": 50.5803452
+    }
   },
   "Geo_Rock-Above_Mantis_Lords_2": {
     "Name": "Geo_Rock-Above_Mantis_Lords_2",
@@ -4651,7 +6318,11 @@
         "X": -0.5,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 2.09,
+      "Y": 36.48
+    }
   },
   "Geo_Rock-Fungal_After_Bouncy_Grub": {
     "Name": "Geo_Rock-Fungal_After_Bouncy_Grub",
@@ -4662,7 +6333,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 92.42778,
+      "Y": 34.8883438
+    }
   },
   "Geo_Rock-Fungal_After_Bouncy_Grub_Dupe": {
     "Name": "Geo_Rock-Fungal_After_Bouncy_Grub_Dupe",
@@ -4673,7 +6348,11 @@
         "X": 0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 94.41,
+      "Y": 34.7875633
+    }
   },
   "Geo_Rock-Fungal_Bouncy_Grub_Lever": {
     "Name": "Geo_Rock-Fungal_Bouncy_Grub_Lever",
@@ -4684,7 +6363,11 @@
         "X": -0.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.55877,
+      "Y": 5.008116
+    }
   },
   "Geo_Rock-Fungal_After_Cornifer": {
     "Name": "Geo_Rock-Fungal_After_Cornifer",
@@ -4695,7 +6378,11 @@
         "X": -0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 74.9469,
+      "Y": 46.87639
+    }
   },
   "Geo_Rock-Fungal_Above_City_Entrance": {
     "Name": "Geo_Rock-Fungal_Above_City_Entrance",
@@ -4706,7 +6393,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 100.47,
+      "Y": 40.79
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_1": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_1",
@@ -4717,7 +6408,11 @@
         "X": -1.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 4.29,
+      "Y": 24.845
+    }
   },
   "Geo_Rock-Deepnest_By_Mantis_Lords_2": {
     "Name": "Geo_Rock-Deepnest_By_Mantis_Lords_2",
@@ -4728,7 +6423,11 @@
         "X": -0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.71,
+      "Y": 24.89
+    }
   },
   "Geo_Rock-Deepnest_Lower_Cornifer": {
     "Name": "Geo_Rock-Deepnest_Lower_Cornifer",
@@ -4739,7 +6438,11 @@
         "X": -0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 72.12656,
+      "Y": 17.9420624
+    }
   },
   "Geo_Rock-Fungal_Core_Entrance": {
     "Name": "Geo_Rock-Fungal_Core_Entrance",
@@ -4750,7 +6453,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 61.63,
+      "Y": 36.89
+    }
   },
   "Geo_Rock-Fungal_Core_Hidden": {
     "Name": "Geo_Rock-Fungal_Core_Hidden",
@@ -4761,7 +6468,11 @@
         "X": 0.0,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.09,
+      "Y": 102.0
+    }
   },
   "Geo_Rock-Fungal_Core_Above_Elder": {
     "Name": "Geo_Rock-Fungal_Core_Above_Elder",
@@ -4772,7 +6483,11 @@
         "X": 0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.806,
+      "Y": 46.9992561
+    }
   },
   "Geo_Rock-Queen's_Gardens_Acid_Entrance": {
     "Name": "Geo_Rock-Queen's_Gardens_Acid_Entrance",
@@ -4783,7 +6498,11 @@
         "X": 0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 94.6696854,
+      "Y": 16.87
+    }
   },
   "Geo_Rock-Queen's_Gardens_Below_Stag": {
     "Name": "Geo_Rock-Queen's_Gardens_Below_Stag",
@@ -4794,7 +6513,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.41,
+      "Y": 34.8
+    }
   },
   "Geo_Rock-Fog_Canyon_East": {
     "Name": "Geo_Rock-Fog_Canyon_East",
@@ -4805,7 +6528,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.993803,
+      "Y": 58.87676
+    }
   },
   "Geo_Rock-Love_Key": {
     "Name": "Geo_Rock-Love_Key",
@@ -4816,7 +6543,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.74,
+      "Y": 31.02
+    }
   },
   "Geo_Rock-Love_Key_Dupe": {
     "Name": "Geo_Rock-Love_Key_Dupe",
@@ -4827,7 +6558,11 @@
         "X": -0.8,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.51,
+      "Y": 5.83840227
+    }
   },
   "Geo_Rock-Queen's_Gardens_Above_Marmu": {
     "Name": "Geo_Rock-Queen's_Gardens_Above_Marmu",
@@ -4838,7 +6573,11 @@
         "X": -0.1,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.88,
+      "Y": 16.6701012
+    }
   },
   "Geo_Rock-Pale_Lurker": {
     "Name": "Geo_Rock-Pale_Lurker",
@@ -4849,7 +6588,11 @@
         "X": 0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 123.32,
+      "Y": 72.52
+    }
   },
   "Geo_Rock-Godhome_Pipeway": {
     "Name": "Geo_Rock-Godhome_Pipeway",
@@ -4860,7 +6603,11 @@
         "X": -0.8,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.99,
+      "Y": 5.46
+    }
   },
   "Geo_Rock-Hive_Entrance": {
     "Name": "Geo_Rock-Hive_Entrance",
@@ -4871,7 +6618,11 @@
         "X": 0.7,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 99.64955,
+      "Y": 36.2096443
+    }
   },
   "Geo_Rock-Hive_Outside_Bench": {
     "Name": "Geo_Rock-Hive_Outside_Bench",
@@ -4882,7 +6633,11 @@
         "X": -0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 125.261932,
+      "Y": 26.2036934
+    }
   },
   "Geo_Rock-Hive_Below_Root": {
     "Name": "Geo_Rock-Hive_Below_Root",
@@ -4893,7 +6648,11 @@
         "X": 0.6,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 191.32,
+      "Y": 18.04
+    }
   },
   "Geo_Rock-Hive_After_Root": {
     "Name": "Geo_Rock-Hive_After_Root",
@@ -4904,7 +6663,11 @@
         "X": -0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 138.29,
+      "Y": 74.04
+    }
   },
   "Geo_Rock-Hive_Below_Stash": {
     "Name": "Geo_Rock-Hive_Below_Stash",
@@ -4915,7 +6678,11 @@
         "X": 0.6,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 105.829422,
+      "Y": 112.179649
+    }
   },
   "Geo_Rock-Hive_Stash": {
     "Name": "Geo_Rock-Hive_Stash",
@@ -4926,7 +6693,11 @@
         "X": -0.2,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 58.57,
+      "Y": 130.06
+    }
   },
   "Geo_Rock-Hive_Stash_Dupe": {
     "Name": "Geo_Rock-Hive_Stash_Dupe",
@@ -4937,7 +6708,11 @@
         "X": -0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 51.0,
+      "Y": 131.14
+    }
   },
   "Geo_Rock-Hive_Below_Grub": {
     "Name": "Geo_Rock-Hive_Below_Grub",
@@ -4948,7 +6723,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 173.16,
+      "Y": 121.11
+    }
   },
   "Geo_Rock-Hive_Above_Mask": {
     "Name": "Geo_Rock-Hive_Above_Mask",
@@ -4959,7 +6738,11 @@
         "X": -0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 120.178291,
+      "Y": 120.066315
+    }
   },
   "Geo_Rock-Crystal_Peak_Lower_Middle": {
     "Name": "Geo_Rock-Crystal_Peak_Lower_Middle",
@@ -4970,7 +6753,11 @@
         "X": 0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 132.747879,
+      "Y": 25.77
+    }
   },
   "Geo_Rock-Crystal_Peak_Lower_Conveyer_1": {
     "Name": "Geo_Rock-Crystal_Peak_Lower_Conveyer_1",
@@ -4981,7 +6768,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 67.78553,
+      "Y": 9.56019
+    }
   },
   "Geo_Rock-Crystal_Peak_Lower_Conveyer_2": {
     "Name": "Geo_Rock-Crystal_Peak_Lower_Conveyer_2",
@@ -4992,7 +6783,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 90.027626,
+      "Y": 5.63558531
+    }
   },
   "Geo_Rock-Crystal_Peak_Before_Dark_Room": {
     "Name": "Geo_Rock-Crystal_Peak_Before_Dark_Room",
@@ -5003,7 +6798,11 @@
         "X": 0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.7054825,
+      "Y": 33.4389954
+    }
   },
   "Geo_Rock-Crystal_Peak_Before_Dark_Room_Dupe": {
     "Name": "Geo_Rock-Crystal_Peak_Before_Dark_Room_Dupe",
@@ -5014,7 +6813,11 @@
         "X": 0.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.82,
+      "Y": 34.47
+    }
   },
   "Geo_Rock-Crystal_Peak_Above_Spike_Grub": {
     "Name": "Geo_Rock-Crystal_Peak_Above_Spike_Grub",
@@ -5025,7 +6828,11 @@
         "X": -0.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.510585,
+      "Y": 13.58
+    }
   },
   "Geo_Rock-Crystal_Peak_Mimic_Grub": {
     "Name": "Geo_Rock-Crystal_Peak_Mimic_Grub",
@@ -5036,7 +6843,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 37.44095,
+      "Y": 20.3184547
+    }
   },
   "Geo_Rock-Crystal_Peak_Dive_Egg": {
     "Name": "Geo_Rock-Crystal_Peak_Dive_Egg",
@@ -5047,7 +6858,11 @@
         "X": -0.4,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.27,
+      "Y": 149.22
+    }
   },
   "Geo_Rock-Crystal_Peak_Dive_Egg_Dupe": {
     "Name": "Geo_Rock-Crystal_Peak_Dive_Egg_Dupe",
@@ -5058,7 +6873,11 @@
         "X": -0.1,
         "Y": 0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.68,
+      "Y": 157.0
+    }
   },
   "Geo_Rock-Crystal_Peak_Conga_Line": {
     "Name": "Geo_Rock-Crystal_Peak_Conga_Line",
@@ -5069,7 +6888,11 @@
         "X": 0.4,
         "Y": 1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 59.93,
+      "Y": 163.48
+    }
   },
   "Geo_Rock-Hallownest_Crown_Dive": {
     "Name": "Geo_Rock-Hallownest_Crown_Dive",
@@ -5080,7 +6903,11 @@
         "X": -0.6,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.03,
+      "Y": 52.63
+    }
   },
   "Geo_Rock-Hallownest_Crown_Dive_Dupe": {
     "Name": "Geo_Rock-Hallownest_Crown_Dive_Dupe",
@@ -5091,7 +6918,11 @@
         "X": -0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 16.3023586,
+      "Y": 51.62914
+    }
   },
   "Geo_Rock-Hallownest_Crown_Hidden": {
     "Name": "Geo_Rock-Hallownest_Crown_Hidden",
@@ -5102,7 +6933,11 @@
         "X": -0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.24,
+      "Y": 100.14
+    }
   },
   "Geo_Rock-Hallownest_Crown_Hidden_Dupe_1": {
     "Name": "Geo_Rock-Hallownest_Crown_Hidden_Dupe_1",
@@ -5113,7 +6948,11 @@
         "X": -0.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.68,
+      "Y": 95.57
+    }
   },
   "Geo_Rock-Hallownest_Crown_Hidden_Dupe_2": {
     "Name": "Geo_Rock-Hallownest_Crown_Hidden_Dupe_2",
@@ -5124,7 +6963,11 @@
         "X": 0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.54,
+      "Y": 95.6
+    }
   },
   "Geo_Rock-Crystal_Peak_Before_Crystal_Heart": {
     "Name": "Geo_Rock-Crystal_Peak_Before_Crystal_Heart",
@@ -5135,7 +6978,11 @@
         "X": -1.5,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 38.1,
+      "Y": 11.38
+    }
   },
   "Geo_Rock-Crystal_Peak_Entrance": {
     "Name": "Geo_Rock-Crystal_Peak_Entrance",
@@ -5146,7 +6993,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 42.5,
+      "Y": 2.6
+    }
   },
   "Geo_Rock-Crystal_Peak_Entrance_Dupe_1": {
     "Name": "Geo_Rock-Crystal_Peak_Entrance_Dupe_1",
@@ -5157,7 +7008,11 @@
         "X": 0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 39.22,
+      "Y": 2.6
+    }
   },
   "Geo_Rock-Crystal_Peak_Entrance_Dupe_2": {
     "Name": "Geo_Rock-Crystal_Peak_Entrance_Dupe_2",
@@ -5168,7 +7023,11 @@
         "X": 0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 70.65,
+      "Y": 2.6
+    }
   },
   "Geo_Rock-Crystal_Peak_Above_Crushers_Lower": {
     "Name": "Geo_Rock-Crystal_Peak_Above_Crushers_Lower",
@@ -5179,7 +7038,11 @@
         "X": -0.4,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.62,
+      "Y": 23.64
+    }
   },
   "Geo_Rock-Crystal_Peak_Above_Crushers_Higher": {
     "Name": "Geo_Rock-Crystal_Peak_Above_Crushers_Higher",
@@ -5190,7 +7053,11 @@
         "X": -0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.35,
+      "Y": 46.39
+    }
   },
   "Geo_Rock-Resting_Grounds_Catacombs_Grub": {
     "Name": "Geo_Rock-Resting_Grounds_Catacombs_Grub",
@@ -5201,7 +7068,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 96.92,
+      "Y": 17.64
+    }
   },
   "Geo_Rock-Resting_Grounds_Catacombs_Left_Dupe": {
     "Name": "Geo_Rock-Resting_Grounds_Catacombs_Left_Dupe",
@@ -5212,7 +7083,11 @@
         "X": -0.9,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 33.63,
+      "Y": 14.6194172
+    }
   },
   "Geo_Rock-Resting_Grounds_Catacombs_Left": {
     "Name": "Geo_Rock-Resting_Grounds_Catacombs_Left",
@@ -5223,7 +7098,11 @@
         "X": -0.6,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.55,
+      "Y": 14.6
+    }
   },
   "Geo_Rock-Overgrown_Mound": {
     "Name": "Geo_Rock-Overgrown_Mound",
@@ -5234,7 +7113,11 @@
         "X": -0.7,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 126.85,
+      "Y": 29.64
+    }
   },
   "Geo_Rock-Fluke_Hermit_Dupe": {
     "Name": "Geo_Rock-Fluke_Hermit_Dupe",
@@ -5245,7 +7128,11 @@
         "X": 0.7,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.93,
+      "Y": 74.08
+    }
   },
   "Geo_Rock-Fluke_Hermit": {
     "Name": "Geo_Rock-Fluke_Hermit",
@@ -5256,7 +7143,11 @@
         "X": 0.4,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.394572,
+      "Y": 85.1224442
+    }
   },
   "Geo_Rock-Pleasure_House": {
     "Name": "Geo_Rock-Pleasure_House",
@@ -5267,7 +7158,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.6,
+      "Y": 52.38
+    }
   },
   "Geo_Rock-City_of_Tears_Quirrel": {
     "Name": "Geo_Rock-City_of_Tears_Quirrel",
@@ -5278,7 +7173,11 @@
         "X": -0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.751545,
+      "Y": 42.44101
+    }
   },
   "Geo_Rock-City_of_Tears_Lemm": {
     "Name": "Geo_Rock-City_of_Tears_Lemm",
@@ -5289,7 +7188,11 @@
         "X": -0.5,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.9068985,
+      "Y": 29.4045219
+    }
   },
   "Geo_Rock-City_of_Tears_Above_Lemm": {
     "Name": "Geo_Rock-City_of_Tears_Above_Lemm",
@@ -5300,7 +7203,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.1529427,
+      "Y": 69.40981
+    }
   },
   "Geo_Rock-Soul_Sanctum": {
     "Name": "Geo_Rock-Soul_Sanctum",
@@ -5311,7 +7218,11 @@
         "X": 0.0,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.28,
+      "Y": 96.4441757
+    }
   },
   "Geo_Rock-Watcher's_Spire": {
     "Name": "Geo_Rock-Watcher's_Spire",
@@ -5322,7 +7233,11 @@
         "X": -0.6,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.117435,
+      "Y": 73.46977
+    }
   },
   "Geo_Rock-Above_King's_Station": {
     "Name": "Geo_Rock-Above_King's_Station",
@@ -5333,7 +7248,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.3516464,
+      "Y": 44.4322624
+    }
   },
   "Geo_Rock-King's_Station": {
     "Name": "Geo_Rock-King's_Station",
@@ -5344,7 +7263,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 43.45423,
+      "Y": 24.44513
+    }
   },
   "Geo_Rock-King's_Pass_Left": {
     "Name": "Geo_Rock-King's_Pass_Left",
@@ -5355,7 +7278,11 @@
         "X": -1.3,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.26,
+      "Y": 10.577
+    }
   },
   "Geo_Rock-King's_Pass_Below_Fury": {
     "Name": "Geo_Rock-King's_Pass_Below_Fury",
@@ -5366,7 +7293,11 @@
         "X": 0.6,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 162.75,
+      "Y": 5.67
+    }
   },
   "Geo_Rock-King's_Pass_Hidden": {
     "Name": "Geo_Rock-King's_Pass_Hidden",
@@ -5377,7 +7308,11 @@
         "X": -0.9,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 59.5337,
+      "Y": 45.5848236
+    }
   },
   "Geo_Rock-King's_Pass_Collapse": {
     "Name": "Geo_Rock-King's_Pass_Collapse",
@@ -5388,7 +7323,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 108.017792,
+      "Y": 54.701107
+    }
   },
   "Geo_Rock-King's_Pass_Above_Fury": {
     "Name": "Geo_Rock-King's_Pass_Above_Fury",
@@ -5399,7 +7338,11 @@
         "X": 0.9,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 164.51,
+      "Y": 35.71
+    }
   },
   "Geo_Rock-Waterways_Tuk": {
     "Name": "Geo_Rock-Waterways_Tuk",
@@ -5410,7 +7353,11 @@
         "X": 1.1,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 147.424667,
+      "Y": 40.4010048
+    }
   },
   "Geo_Rock-Waterways_Tuk_Alcove": {
     "Name": "Geo_Rock-Waterways_Tuk_Alcove",
@@ -5421,7 +7368,11 @@
         "X": 0.5,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 108.84,
+      "Y": 21.46
+    }
   },
   "Geo_Rock-Waterways_Left": {
     "Name": "Geo_Rock-Waterways_Left",
@@ -5432,7 +7383,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.02925,
+      "Y": 25.36001
+    }
   },
   "Geo_Rock-Waterways_East": {
     "Name": "Geo_Rock-Waterways_East",
@@ -5443,7 +7398,11 @@
         "X": -0.7,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 15.3171177,
+      "Y": 59.6382751
+    }
   },
   "Geo_Rock-Waterways_Flukemarm": {
     "Name": "Geo_Rock-Waterways_Flukemarm",
@@ -5454,7 +7413,11 @@
         "X": -0.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.25,
+      "Y": 19.43
+    }
   },
   "Boss_Geo-Massive_Moss_Charger": {
     "Name": "Boss_Geo-Massive_Moss_Charger",
@@ -5465,7 +7428,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 49.0,
+      "Y": 7.8
+    }
   },
   "Boss_Geo-Gorgeous_Husk": {
     "Name": "Boss_Geo-Gorgeous_Husk",
@@ -5476,7 +7443,11 @@
         "X": -0.1,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 54.0,
+      "Y": 6.4
+    }
   },
   "Boss_Geo-Sanctum_Soul_Warrior": {
     "Name": "Boss_Geo-Sanctum_Soul_Warrior",
@@ -5487,7 +7458,11 @@
         "X": 0.1,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.0,
+      "Y": 75.0
+    }
   },
   "Boss_Geo-Elegant_Soul_Warrior": {
     "Name": "Boss_Geo-Elegant_Soul_Warrior",
@@ -5498,7 +7473,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.0,
+      "Y": 40.0
+    }
   },
   "Boss_Geo-Crystal_Guardian": {
     "Name": "Boss_Geo-Crystal_Guardian",
@@ -5509,7 +7488,11 @@
         "X": 0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.0,
+      "Y": 11.5
+    }
   },
   "Boss_Geo-Enraged_Guardian": {
     "Name": "Boss_Geo-Enraged_Guardian",
@@ -5520,7 +7503,11 @@
         "X": 0.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 30.0,
+      "Y": 11.5
+    }
   },
   "Boss_Geo-Gruz_Mother": {
     "Name": "Boss_Geo-Gruz_Mother",
@@ -5531,7 +7518,11 @@
         "X": 0.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 92.5,
+      "Y": 15.5
+    }
   },
   "Boss_Geo-Vengefly_King": {
     "Name": "Boss_Geo-Vengefly_King",
@@ -5542,7 +7533,11 @@
         "X": -0.7,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.0,
+      "Y": 13.5
+    }
   },
   "Soul_Totem-Basin": {
     "Name": "Soul_Totem-Basin",
@@ -5553,7 +7548,11 @@
         "X": -0.7,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.59793663,
+      "Y": 53.26731
+    }
   },
   "Soul_Totem-Cliffs_Main": {
     "Name": "Soul_Totem-Cliffs_Main",
@@ -5564,7 +7563,11 @@
         "X": 1.0,
         "Y": -1.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 115.73,
+      "Y": 23.5
+    }
   },
   "Soul_Totem-Cliffs_Gorb": {
     "Name": "Soul_Totem-Cliffs_Gorb",
@@ -5575,7 +7578,11 @@
         "X": -1.6,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 12.88,
+      "Y": 3.85
+    }
   },
   "Soul_Totem-Cliffs_Joni's": {
     "Name": "Soul_Totem-Cliffs_Joni's",
@@ -5586,7 +7593,11 @@
         "X": 0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.73,
+      "Y": 52.46
+    }
   },
   "Soul_Totem-Crossroads_Goam_Journal": {
     "Name": "Soul_Totem-Crossroads_Goam_Journal",
@@ -5597,7 +7608,11 @@
         "X": 0.1,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.93833,
+      "Y": 11.3686829
+    }
   },
   "Soul_Totem-Crossroads_Shops": {
     "Name": "Soul_Totem-Crossroads_Shops",
@@ -5608,7 +7623,11 @@
         "X": 0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 45.675,
+      "Y": 14.366
+    }
   },
   "Soul_Totem-Crossroads_Mawlek_Upper": {
     "Name": "Soul_Totem-Crossroads_Mawlek_Upper",
@@ -5619,7 +7638,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 25.87,
+      "Y": 17.606
+    }
   },
   "Soul_Totem-Crossroads_Acid": {
     "Name": "Soul_Totem-Crossroads_Acid",
@@ -5630,7 +7653,11 @@
         "X": 0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.028,
+      "Y": 11.64
+    }
   },
   "Soul_Totem-Crossroads_Mawlek_Lower": {
     "Name": "Soul_Totem-Crossroads_Mawlek_Lower",
@@ -5641,7 +7668,11 @@
         "X": -0.2,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.84,
+      "Y": 32.69
+    }
   },
   "Soul_Totem-Crossroads_Myla": {
     "Name": "Soul_Totem-Crossroads_Myla",
@@ -5652,7 +7683,11 @@
         "X": 0.0,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 29.77,
+      "Y": 25.85
+    }
   },
   "Soul_Totem-Ancestral_Mound": {
     "Name": "Soul_Totem-Ancestral_Mound",
@@ -5663,7 +7698,11 @@
         "X": 0.3,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 35.01,
+      "Y": 35.16
+    }
   },
   "Soul_Totem-Distant_Village": {
     "Name": "Soul_Totem-Distant_Village",
@@ -5674,7 +7713,11 @@
         "X": -0.7,
         "Y": -1.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.338395,
+      "Y": 34.73291
+    }
   },
   "Soul_Totem-Deepnest_Vessel": {
     "Name": "Soul_Totem-Deepnest_Vessel",
@@ -5685,7 +7728,11 @@
         "X": 1.4,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 195.361969,
+      "Y": 11.6
+    }
   },
   "Soul_Totem-Mask_Maker": {
     "Name": "Soul_Totem-Mask_Maker",
@@ -5696,7 +7743,11 @@
         "X": -0.2,
         "Y": -0.9
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 8.55,
+      "Y": 8.48
+    }
   },
   "Soul_Totem-Lower_Kingdom's_Edge_1": {
     "Name": "Soul_Totem-Lower_Kingdom's_Edge_1",
@@ -5707,7 +7758,11 @@
         "X": -0.3,
         "Y": -0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 6.06,
+      "Y": 10.33
+    }
   },
   "Soul_Totem-Lower_Kingdom's_Edge_2": {
     "Name": "Soul_Totem-Lower_Kingdom's_Edge_2",
@@ -5718,7 +7773,11 @@
         "X": 0.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 51.04,
+      "Y": 3.53
+    }
   },
   "Soul_Totem-Upper_Kingdom's_Edge": {
     "Name": "Soul_Totem-Upper_Kingdom's_Edge",
@@ -5729,7 +7788,11 @@
         "X": 0.5,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 83.22,
+      "Y": 135.55
+    }
   },
   "Soul_Totem-Kingdom's_Edge_Camp": {
     "Name": "Soul_Totem-Kingdom's_Edge_Camp",
@@ -5740,7 +7803,11 @@
         "X": -0.9,
         "Y": 0.6
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.48,
+      "Y": 100.09
+    }
   },
   "Soul_Totem-Oro_Dive_2": {
     "Name": "Soul_Totem-Oro_Dive_2",
@@ -5751,7 +7818,11 @@
         "X": 0.5,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 113.89,
+      "Y": 56.38
+    }
   },
   "Soul_Totem-Oro_Dive_1": {
     "Name": "Soul_Totem-Oro_Dive_1",
@@ -5762,7 +7833,11 @@
         "X": 0.8,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 131.55,
+      "Y": 53.44
+    }
   },
   "Soul_Totem-Oro": {
     "Name": "Soul_Totem-Oro",
@@ -5773,7 +7848,11 @@
         "X": 0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.23,
+      "Y": 4.94
+    }
   },
   "Soul_Totem-420_Geo_Rock": {
     "Name": "Soul_Totem-420_Geo_Rock",
@@ -5784,7 +7863,11 @@
         "X": 1.4,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.16,
+      "Y": 116.55
+    }
   },
   "Soul_Totem-Beast's_Den": {
     "Name": "Soul_Totem-Beast's_Den",
@@ -5795,7 +7878,11 @@
         "X": 0.3,
         "Y": 1.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.6342468,
+      "Y": 43.2505
+    }
   },
   "Soul_Totem-Greenpath_Hunter's_Journal": {
     "Name": "Soul_Totem-Greenpath_Hunter's_Journal",
@@ -5806,7 +7893,11 @@
         "X": -0.3,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.68,
+      "Y": 28.33
+    }
   },
   "Soul_Totem-Greenpath_MMC": {
     "Name": "Soul_Totem-Greenpath_MMC",
@@ -5817,7 +7908,11 @@
         "X": -0.3,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 3.86388588,
+      "Y": 26.4450073
+    }
   },
   "Soul_Totem-Greenpath_Below_Toll": {
     "Name": "Soul_Totem-Greenpath_Below_Toll",
@@ -5828,7 +7923,11 @@
         "X": 0.6,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 95.84,
+      "Y": 3.627
+    }
   },
   "Soul_Totem-Before_Pilgrim's_Way": {
     "Name": "Soul_Totem-Before_Pilgrim's_Way",
@@ -5839,7 +7938,11 @@
         "X": 0.3,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.06,
+      "Y": 24.26
+    }
   },
   "Soul_Totem-Pilgrim's_Way": {
     "Name": "Soul_Totem-Pilgrim's_Way",
@@ -5850,7 +7953,11 @@
         "X": -0.1,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 71.11,
+      "Y": 37.23
+    }
   },
   "Soul_Totem-Fungal_Core": {
     "Name": "Soul_Totem-Fungal_Core",
@@ -5861,7 +7968,11 @@
         "X": -0.5,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.753107,
+      "Y": 56.4500122
+    }
   },
   "Soul_Totem-Top_Left_Queen's_Gardens": {
     "Name": "Soul_Totem-Top_Left_Queen's_Gardens",
@@ -5872,7 +7983,11 @@
         "X": 0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 67.84,
+      "Y": 16.71
+    }
   },
   "Soul_Totem-Below_Marmu": {
     "Name": "Soul_Totem-Below_Marmu",
@@ -5883,7 +7998,11 @@
         "X": -1.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 59.47,
+      "Y": 3.43
+    }
   },
   "Soul_Totem-Upper_Crystal_Peak": {
     "Name": "Soul_Totem-Upper_Crystal_Peak",
@@ -5894,7 +8013,11 @@
         "X": -0.2,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.2629166,
+      "Y": 76.1101456
+    }
   },
   "Soul_Totem-Hallownest_Crown": {
     "Name": "Soul_Totem-Hallownest_Crown",
@@ -5905,7 +8028,11 @@
         "X": 0.1,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.87,
+      "Y": 35.7
+    }
   },
   "Soul_Totem-Outside_Crystallized_Mound": {
     "Name": "Soul_Totem-Outside_Crystallized_Mound",
@@ -5916,7 +8043,11 @@
         "X": 0.9,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 90.93,
+      "Y": 49.310112
+    }
   },
   "Soul_Totem-Crystal_Heart_1": {
     "Name": "Soul_Totem-Crystal_Heart_1",
@@ -5927,7 +8058,11 @@
         "X": -0.6,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 81.141,
+      "Y": 51.512
+    }
   },
   "Soul_Totem-Crystal_Heart_2": {
     "Name": "Soul_Totem-Crystal_Heart_2",
@@ -5938,7 +8073,11 @@
         "X": 1.8,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 240.600677,
+      "Y": 41.33
+    }
   },
   "Soul_Totem-Crystallized_Mound": {
     "Name": "Soul_Totem-Crystallized_Mound",
@@ -5949,7 +8088,11 @@
         "X": 0.6,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 52.74961,
+      "Y": 35.2407722
+    }
   },
   "Soul_Totem-Resting_Grounds": {
     "Name": "Soul_Totem-Resting_Grounds",
@@ -5960,7 +8103,11 @@
         "X": 0.2,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.48,
+      "Y": 35.78
+    }
   },
   "Soul_Totem-Below_Xero": {
     "Name": "Soul_Totem-Below_Xero",
@@ -5971,7 +8118,11 @@
         "X": -0.7,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.221,
+      "Y": 15.346
+    }
   },
   "Soul_Totem-Sanctum_Below_Soul_Master": {
     "Name": "Soul_Totem-Sanctum_Below_Soul_Master",
@@ -5982,7 +8133,11 @@
         "X": 0.5,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 56.9,
+      "Y": 5.0
+    }
   },
   "Soul_Totem-Sanctum_Below_Chest": {
     "Name": "Soul_Totem-Sanctum_Below_Chest",
@@ -5993,7 +8148,11 @@
         "X": -0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.69,
+      "Y": 97.31
+    }
   },
   "Soul_Totem-Sanctum_Above_Grub": {
     "Name": "Soul_Totem-Sanctum_Above_Grub",
@@ -6004,7 +8163,11 @@
         "X": -0.3,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 7.63,
+      "Y": 48.61
+    }
   },
   "Soul_Totem-Waterways_Entrance": {
     "Name": "Soul_Totem-Waterways_Entrance",
@@ -6015,7 +8178,11 @@
         "X": -1.0,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.21,
+      "Y": 34.321
+    }
   },
   "Soul_Totem-Top_Left_Waterways": {
     "Name": "Soul_Totem-Top_Left_Waterways",
@@ -6026,7 +8193,11 @@
         "X": -0.9,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 10.62,
+      "Y": 41.5428963
+    }
   },
   "Soul_Totem-Waterways_East": {
     "Name": "Soul_Totem-Waterways_East",
@@ -6037,7 +8208,11 @@
         "X": -0.6,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 28.76,
+      "Y": 38.51
+    }
   },
   "Soul_Totem-Waterways_Flukemarm": {
     "Name": "Soul_Totem-Waterways_Flukemarm",
@@ -6048,7 +8223,11 @@
         "X": 0.8,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 135.14,
+      "Y": 7.37
+    }
   },
   "Soul_Totem-White_Palace_Entrance": {
     "Name": "Soul_Totem-White_Palace_Entrance",
@@ -6064,7 +8243,11 @@
         "X": -1.0,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 14.9328308,
+      "Y": 50.64687
+    }
   },
   "Soul_Totem-White_Palace_Hub": {
     "Name": "Soul_Totem-White_Palace_Hub",
@@ -6080,7 +8263,11 @@
         "X": -0.7,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 5.3,
+      "Y": 55.67
+    }
   },
   "Soul_Totem-White_Palace_Left": {
     "Name": "Soul_Totem-White_Palace_Left",
@@ -6096,7 +8283,11 @@
         "X": -0.4,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.91,
+      "Y": 57.65
+    }
   },
   "Soul_Totem-White_Palace_Final": {
     "Name": "Soul_Totem-White_Palace_Final",
@@ -6112,7 +8303,11 @@
         "X": -0.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.0,
+      "Y": 40.89
+    }
   },
   "Soul_Totem-White_Palace_Right": {
     "Name": "Soul_Totem-White_Palace_Right",
@@ -6128,7 +8323,11 @@
         "X": 0.2,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 13.9099674,
+      "Y": 115.72805
+    }
   },
   "Soul_Totem-Path_of_Pain_Below_Lever": {
     "Name": "Soul_Totem-Path_of_Pain_Below_Lever",
@@ -6144,7 +8343,11 @@
         "X": -0.9,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 77.33,
+      "Y": 34.9
+    }
   },
   "Soul_Totem-Path_of_Pain_Left_of_Lever": {
     "Name": "Soul_Totem-Path_of_Pain_Left_of_Lever",
@@ -6160,7 +8363,11 @@
         "X": -0.6,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 53.81,
+      "Y": 64.78
+    }
   },
   "Soul_Totem-Path_of_Pain_Entrance": {
     "Name": "Soul_Totem-Path_of_Pain_Entrance",
@@ -6176,7 +8383,11 @@
         "X": -0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 230.95,
+      "Y": 13.9
+    }
   },
   "Soul_Totem-Path_of_Pain_Second": {
     "Name": "Soul_Totem-Path_of_Pain_Second",
@@ -6189,10 +8400,14 @@
       },
       {
         "MappedScene": "Abyss_05",
-        "X": 0,
+        "X": 0.0,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 161.97,
+      "Y": 12.9787941
+    }
   },
   "Soul_Totem-Path_of_Pain_Hidden": {
     "Name": "Soul_Totem-Path_of_Pain_Hidden",
@@ -6208,7 +8423,11 @@
         "X": 0.3,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 165.47,
+      "Y": 120.82
+    }
   },
   "Soul_Totem-Path_of_Pain_Below_Thornskip": {
     "Name": "Soul_Totem-Path_of_Pain_Below_Thornskip",
@@ -6224,7 +8443,11 @@
         "X": 0.6,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 105.24,
+      "Y": 34.89
+    }
   },
   "Soul_Totem-Path_of_Pain_Final": {
     "Name": "Soul_Totem-Path_of_Pain_Final",
@@ -6240,7 +8463,11 @@
         "X": 0.9,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 27.61,
+      "Y": 170.92
+    }
   },
   "Soul_Totem-Pale_Lurker": {
     "Name": "Soul_Totem-Pale_Lurker",
@@ -6251,7 +8478,11 @@
         "X": -0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 65.76,
+      "Y": 79.58321
+    }
   },
   "Lore_Tablet-City_Entrance": {
     "Name": "Lore_Tablet-City_Entrance",
@@ -6262,7 +8493,11 @@
         "X": 0.0,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 23.43,
+      "Y": 28.21
+    }
   },
   "Lore_Tablet-Pleasure_House": {
     "Name": "Lore_Tablet-Pleasure_House",
@@ -6273,7 +8508,11 @@
         "X": 0.3,
         "Y": -0.7
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 22.67,
+      "Y": 7.04156256
+    }
   },
   "Lore_Tablet-Sanctum_Entrance": {
     "Name": "Lore_Tablet-Sanctum_Entrance",
@@ -6284,7 +8523,11 @@
         "X": 0.3,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.17,
+      "Y": 66.1211548
+    }
   },
   "Lore_Tablet-Sanctum_Past_Soul_Master": {
     "Name": "Lore_Tablet-Sanctum_Past_Soul_Master",
@@ -6295,7 +8538,11 @@
         "X": 0.3,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 36.14,
+      "Y": 97.31
+    }
   },
   "Lore_Tablet-Watcher's_Spire": {
     "Name": "Lore_Tablet-Watcher's_Spire",
@@ -6306,7 +8553,11 @@
         "X": 0.0,
         "Y": 0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 46.53,
+      "Y": 118.15
+    }
   },
   "Lore_Tablet-Archives_Upper": {
     "Name": "Lore_Tablet-Archives_Upper",
@@ -6317,7 +8568,11 @@
         "X": 0.1,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 96.8,
+      "Y": 162.28
+    }
   },
   "Lore_Tablet-Archives_Left": {
     "Name": "Lore_Tablet-Archives_Left",
@@ -6328,7 +8583,11 @@
         "X": -0.2,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 20.43,
+      "Y": 88.28
+    }
   },
   "Lore_Tablet-Archives_Right": {
     "Name": "Lore_Tablet-Archives_Right",
@@ -6339,7 +8598,11 @@
         "X": 0.4,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 98.14,
+      "Y": 78.32
+    }
   },
   "Lore_Tablet-Pilgrim's_Way_1": {
     "Name": "Lore_Tablet-Pilgrim's_Way_1",
@@ -6350,7 +8613,11 @@
         "X": 0.7,
         "Y": 0.0
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 107.12,
+      "Y": 8.75
+    }
   },
   "Lore_Tablet-Pilgrim's_Way_2": {
     "Name": "Lore_Tablet-Pilgrim's_Way_2",
@@ -6361,7 +8628,11 @@
         "X": -0.9,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 21.53,
+      "Y": 13.37
+    }
   },
   "Lore_Tablet-Mantis_Outskirts": {
     "Name": "Lore_Tablet-Mantis_Outskirts",
@@ -6372,7 +8643,11 @@
         "X": 1.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 158.96,
+      "Y": 11.17
+    }
   },
   "Lore_Tablet-Mantis_Village": {
     "Name": "Lore_Tablet-Mantis_Village",
@@ -6383,7 +8658,11 @@
         "X": -0.7,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 47.24,
+      "Y": 27.25
+    }
   },
   "Lore_Tablet-Greenpath_Upper_Hidden": {
     "Name": "Lore_Tablet-Greenpath_Upper_Hidden",
@@ -6394,7 +8673,11 @@
         "X": 0.5,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 68.4,
+      "Y": 25.29
+    }
   },
   "Lore_Tablet-Greenpath_Below_Toll": {
     "Name": "Lore_Tablet-Greenpath_Below_Toll",
@@ -6405,7 +8688,11 @@
         "X": -0.2,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 41.96,
+      "Y": 4.33
+    }
   },
   "Lore_Tablet-Greenpath_Lifeblood": {
     "Name": "Lore_Tablet-Greenpath_Lifeblood",
@@ -6416,7 +8703,11 @@
         "X": -0.4,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 9.31,
+      "Y": 33.37
+    }
   },
   "Lore_Tablet-Greenpath_Stag": {
     "Name": "Lore_Tablet-Greenpath_Stag",
@@ -6427,7 +8718,11 @@
         "X": 0.6,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 78.78,
+      "Y": 37.19
+    }
   },
   "Lore_Tablet-Greenpath_QG": {
     "Name": "Lore_Tablet-Greenpath_QG",
@@ -6438,7 +8733,11 @@
         "X": -0.9,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 55.42,
+      "Y": 11.38
+    }
   },
   "Lore_Tablet-Greenpath_Lower_Hidden": {
     "Name": "Lore_Tablet-Greenpath_Lower_Hidden",
@@ -6449,7 +8748,11 @@
         "X": 0.8,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 85.68,
+      "Y": 4.29
+    }
   },
   "Lore_Tablet-Dung_Defender": {
     "Name": "Lore_Tablet-Dung_Defender",
@@ -6460,7 +8763,11 @@
         "X": 0.6,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 91.58,
+      "Y": 56.43
+    }
   },
   "Lore_Tablet-Spore_Shroom": {
     "Name": "Lore_Tablet-Spore_Shroom",
@@ -6471,7 +8778,11 @@
         "X": 0.4,
         "Y": 0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 57.11,
+      "Y": 42.6
+    }
   },
   "Lore_Tablet-Fungal_Wastes_Hidden": {
     "Name": "Lore_Tablet-Fungal_Wastes_Hidden",
@@ -6482,7 +8793,11 @@
         "X": -0.2,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 19.76,
+      "Y": 31.45
+    }
   },
   "Lore_Tablet-Fungal_Wastes_Below_Shrumal_Ogres": {
     "Name": "Lore_Tablet-Fungal_Wastes_Below_Shrumal_Ogres",
@@ -6493,7 +8808,11 @@
         "X": 0.1,
         "Y": -0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 31.85,
+      "Y": 11.77
+    }
   },
   "Lore_Tablet-Fungal_Core": {
     "Name": "Lore_Tablet-Fungal_Core",
@@ -6504,7 +8823,11 @@
         "X": 0.3,
         "Y": 0.4
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 51.92821,
+      "Y": 100.29
+    }
   },
   "Lore_Tablet-Ancient_Basin": {
     "Name": "Lore_Tablet-Ancient_Basin",
@@ -6515,7 +8838,11 @@
         "X": 0.3,
         "Y": 1.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 60.76,
+      "Y": 232.62
+    }
   },
   "Lore_Tablet-King's_Pass_Focus": {
     "Name": "Lore_Tablet-King's_Pass_Focus",
@@ -6526,7 +8853,11 @@
         "X": 0.0,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 111.46,
+      "Y": 34.66
+    }
   },
   "Lore_Tablet-King's_Pass_Fury": {
     "Name": "Lore_Tablet-King's_Pass_Fury",
@@ -6537,7 +8868,11 @@
         "X": 1.2,
         "Y": -0.5
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 191.99,
+      "Y": 24.52
+    }
   },
   "Lore_Tablet-King's_Pass_Exit": {
     "Name": "Lore_Tablet-King's_Pass_Exit",
@@ -6548,7 +8883,11 @@
         "X": 1.0,
         "Y": 0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 170.48,
+      "Y": 64.61
+    }
   },
   "Lore_Tablet-World_Sense": {
     "Name": "Lore_Tablet-World_Sense",
@@ -6559,7 +8898,11 @@
         "X": -0.1,
         "Y": -0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 34.95,
+      "Y": 8.24
+    }
   },
   "Lore_Tablet-Howling_Cliffs": {
     "Name": "Lore_Tablet-Howling_Cliffs",
@@ -6570,7 +8913,11 @@
         "X": 1.2,
         "Y": -0.8
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 127.3,
+      "Y": 57.72
+    }
   },
   "Lore_Tablet-Kingdom's_Edge": {
     "Name": "Lore_Tablet-Kingdom's_Edge",
@@ -6581,7 +8928,11 @@
         "X": 0.8,
         "Y": -0.3
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 32.55,
+      "Y": 210.53
+    }
   },
   "Lore_Tablet-Palace_Workshop": {
     "Name": "Lore_Tablet-Palace_Workshop",
@@ -6597,7 +8948,11 @@
         "X": 0.8,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 101.12,
+      "Y": 21.3
+    }
   },
   "Lore_Tablet-Palace_Throne": {
     "Name": "Lore_Tablet-Palace_Throne",
@@ -6613,7 +8968,11 @@
         "X": 1.1,
         "Y": -0.2
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 110.47,
+      "Y": 95.43
+    }
   },
   "Lore_Tablet-Path_of_Pain_Entrance": {
     "Name": "Lore_Tablet-Path_of_Pain_Entrance",
@@ -6629,6 +8988,10 @@
         "X": 1.2,
         "Y": 0.1
       }
-    ]
+    ],
+    "WorldPosition": {
+      "X": 263.56,
+      "Y": 13.4
+    }
   }
 }
