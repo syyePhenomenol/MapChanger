@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using MapChanger.Map;
-using UnityEngine;
 
 namespace MapChanger.Defs;
 
@@ -45,9 +44,8 @@ public record WorldMapPosition : MapRoomPosition
             return false;
         }
 
-        Vector2 spriteSize = roomSprite.GetComponent<SpriteRenderer>().sprite.bounds.size;
-        RelativeX = (mapLocation.X / tmd.Width * spriteSize.x) - (spriteSize.x / 2f);
-        RelativeY = (mapLocation.Y / tmd.Height * spriteSize.y) - (spriteSize.y / 2f);
+        RelativeX = (mapLocation.X / tmd.Width * roomSprite.Dimensions.x) - (roomSprite.Dimensions.x / 2f);
+        RelativeY = (mapLocation.Y / tmd.Height * roomSprite.Dimensions.y) - (roomSprite.Dimensions.y / 2f);
         X = baseX + RelativeX;
         Y = baseY + RelativeY;
         return true;

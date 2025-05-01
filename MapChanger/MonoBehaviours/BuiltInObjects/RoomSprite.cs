@@ -35,6 +35,8 @@ public class RoomSprite : ColoredMapObject, ISelectable
     public string Key => Rsd.SceneName;
     public Vector2 Position => transform.position;
 
+    internal Vector2 Dimensions { get; private set; }
+
     internal void Initialize(RoomSpriteDef rsd)
     {
         Rsd = rsd;
@@ -50,6 +52,8 @@ public class RoomSprite : ColoredMapObject, ISelectable
         {
             _sr = GetComponentInChildren<SpriteRenderer>();
         }
+
+        Dimensions = _sr.sprite.bounds.size;
 
         OrigColor = _sr.color;
 
