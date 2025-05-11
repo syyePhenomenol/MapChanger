@@ -19,11 +19,11 @@ public class MapUILayerUpdater : HookModule
 
     public override void OnQuitToMenu()
     {
-        Events.OnWorldMap += OnOpenWorldMap;
-        Events.OnQuickMap += OnOpenQuickMap;
-        Events.OnCloseMap += OnCloseMap;
-
         RemoveMapLayers();
+
+        Events.OnWorldMap -= OnOpenWorldMap;
+        Events.OnQuickMap -= OnOpenQuickMap;
+        Events.OnCloseMap -= OnCloseMap;
     }
 
     public static void Add(MapUILayer layer)
