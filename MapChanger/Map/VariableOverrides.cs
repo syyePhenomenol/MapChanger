@@ -77,8 +77,6 @@ internal class VariableOverrides : HookModule
 
     private static void ReplaceVariablesFSM(On.PlayMakerFSM.orig_Start orig, PlayMakerFSM self)
     {
-        orig(self);
-
         try
         {
             if (
@@ -113,6 +111,8 @@ internal class VariableOverrides : HookModule
         {
             MapChangerMod.Instance.LogError(e);
         }
+
+        orig(self);
 
         static void ReplaceBool(FsmState state, int index, OverrideType type)
         {
