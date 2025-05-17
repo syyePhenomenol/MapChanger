@@ -7,7 +7,7 @@ namespace MapChanger;
 public class MapMode
 {
     public (string, string) ModeKey => (Mod, ModeName);
-    public virtual string Mod => "MapChangerMod";
+    public virtual string Mod => nameof(MapChangerMod);
     public virtual string ModeName => "Disabled";
 
     /// <summary>

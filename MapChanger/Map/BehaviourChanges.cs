@@ -172,7 +172,7 @@ internal class BehaviourChanges : HookModule
     {
         // MapChangerMod.Instance.LogDebug($"HideCompassInNonMappedScene");
 
-        if (Settings.MapModEnabled() && _sceneMapZone is not MapZone.NONE)
+        if (MapChangerMod.IsEnabled() && _sceneMapZone is not MapZone.NONE)
         {
             self.doorMapZone = _sceneMapZone.ToString();
             _overrideMapZone = true;
@@ -210,7 +210,7 @@ internal class BehaviourChanges : HookModule
     private static void SetQuickMapZone(On.HutongGames.PlayMaker.FsmState.orig_OnEnter orig, FsmState self)
     {
         if (
-            Settings.MapModEnabled()
+            MapChangerMod.IsEnabled()
             && self.Name is "Check Area"
             && self.Fsm.GameObjectName is "Quick Map"
             && (
@@ -230,7 +230,7 @@ internal class BehaviourChanges : HookModule
     private static void ZoomFasterOnKeyboard(On.GameMap.orig_Update orig, GameMap self)
     {
         if (
-            Settings.MapModEnabled()
+            MapChangerMod.IsEnabled()
             && self.canPan
             && (UnityEngine.Input.GetKey(KeyCode.LeftShift) || UnityEngine.Input.GetKey(KeyCode.RightShift))
         )
@@ -297,7 +297,7 @@ internal class BehaviourChanges : HookModule
     /// <param name="self"></param>
     private static bool DisableUpdatedMapPrompt(On.GameManager.orig_UpdateGameMap orig, GameManager self)
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             return false;
         }
@@ -327,7 +327,7 @@ internal class BehaviourChanges : HookModule
 
         public override void OnEnter()
         {
-            if (Settings.CurrentMode().VanillaPins ?? true)
+            if (ModeManager.CurrentMode().VanillaPins ?? true)
             {
                 PlayMakerFSM.BroadcastEvent("NEW MAP KEY ADDED");
                 MapKey?.gameObject.LocateMyFSM("Control")?.SendEvent("MAP KEY UP");

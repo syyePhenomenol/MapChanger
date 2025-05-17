@@ -38,16 +38,16 @@ public class AreaName : ColoredMapObject
 
     private bool AreaNamesEnabled()
     {
-        return !(Settings.MapModEnabled() && Settings.CurrentMode().DisableAreaNames);
+        return !(MapChangerMod.IsEnabled() && ModeManager.CurrentMode().DisableAreaNames);
     }
 
     public override void UpdateColor()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                Color = Settings.CurrentMode().AreaNameColorOverride(this) ?? OrigColor;
+                Color = ModeManager.CurrentMode().AreaNameColorOverride(this) ?? OrigColor;
             }
             catch (Exception e)
             {

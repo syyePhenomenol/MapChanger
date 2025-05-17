@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using GlobalEnums;
 using HutongGames.PlayMaker;
 using MapChanger.Map;
-using MapChanger.UI;
 using UnityEngine;
 using Vasi;
 
@@ -14,14 +13,13 @@ public static class Events
 {
     internal static readonly IEnumerable<HookModule> HookModules =
     [
-        new Settings(),
+        new ModeManager(),
         new Tracker(),
         new VariableOverrides(),
         new BehaviourChanges(),
         new BuiltInObjects(),
         new InputManager(),
-        new PauseMenu(),
-        new MapUILayerUpdater(),
+        new BuiltInUI(),
         new MapObjectUpdater(),
     ];
 
@@ -73,7 +71,7 @@ public static class Events
         }
 
         // Disable all changes if no modes were added
-        if (!Settings.HasModes())
+        if (!ModeManager.HasModes())
         {
             return;
         }
@@ -113,7 +111,7 @@ public static class Events
             MapChangerMod.Instance.LogError(e);
         }
 
-        if (!Settings.HasModes())
+        if (!ModeManager.HasModes())
         {
             return orig(self);
         }

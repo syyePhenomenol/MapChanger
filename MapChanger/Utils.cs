@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using GlobalEnums;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -33,6 +34,11 @@ public static class Utils
     public static string ToCleanName(this string name)
     {
         return name.Replace("-", " ").Replace("_", " ");
+    }
+
+    public static string ToWhitespaced(this string text)
+    {
+        return Regex.Replace(text, "(?<char>[A-Z])", match => " " + match.Groups["char"].Value);
     }
 
     public static bool HasMapSetting(MapZone mapZone)

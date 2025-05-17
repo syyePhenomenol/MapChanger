@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using GlobalEnums;
 using MapChanger.MonoBehaviours;
@@ -53,6 +54,21 @@ public class MapObjectUpdater : HookModule
         Add(panner);
     }
 
+    internal static void Update()
+    {
+        foreach (var mapObject in _mapObjects)
+        {
+            try
+            {
+                mapObject.MainUpdate();
+            }
+            catch (Exception e)
+            {
+                MapChangerMod.Instance.LogError(e);
+            }
+        }
+    }
+
     private void BeforeOpenWorldMap(GameMap obj)
     {
         ClearNullMapObjects();
@@ -69,14 +85,6 @@ public class MapObjectUpdater : HookModule
     {
         ClearNullMapObjects();
         Update();
-    }
-
-    internal static void Update()
-    {
-        foreach (var mapObject in _mapObjects)
-        {
-            mapObject.MainUpdate();
-        }
     }
 
     private void ClearNullMapObjects()

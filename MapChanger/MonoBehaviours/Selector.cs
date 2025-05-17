@@ -155,7 +155,6 @@ public abstract class Selector : MapObject, IPeriodicUpdater
         Sr.color = DEFAULT_COLOR;
         Sr.sortingLayerName = HUD;
 
-        transform.localScale = Vector3.one * SpriteSize;
         transform.localPosition = new Vector3(0, 0, MAP_FRONT_Z);
     }
 
@@ -172,6 +171,8 @@ public abstract class Selector : MapObject, IPeriodicUpdater
             StopPeriodicUpdate();
             SelectedObject = null;
         }
+
+        transform.localScale = Vector3.one * SpriteSize * MapChangerMod.GS.UIScale;
     }
 
     protected virtual void Select(ISelectable selectable)

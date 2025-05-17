@@ -4,25 +4,22 @@ using MagicUI.Elements;
 namespace MapChanger.UI;
 
 /// <summary>
-/// Buttons that belong in a toggleable panel in the pause menu.
+/// A button that belongs in a toggleable panel in the pause menu.
 /// </summary>
-/// <param name="name"></param>
+/// <param name="root"></param>
 /// <param name="mod"></param>
-public abstract class ExtraButton(string name, string mod) : ButtonWrapper(name, mod)
+/// <param name="name"></param>
+public abstract class ExtraButton : PauseMenuButton
 {
-    protected override Button MakeButton(LayoutRoot root)
+    protected override Button Build(PauseMenuLayout layout)
     {
-        return new Button(root, FullName)
+        return new Button(layout, Name)
         {
             HorizontalAlignment = HorizontalAlignment.Center,
             VerticalAlignment = VerticalAlignment.Center,
             Borderless = true,
-            MinHeight = 28f,
-            MinWidth = 85f,
-            Content = Name,
             Font = MagicUI.Core.UI.TrajanNormal,
-            FontSize = 11,
-            Margin = 0f,
+            Margin = 8f,
         };
     }
 }

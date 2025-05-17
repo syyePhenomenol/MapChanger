@@ -29,11 +29,11 @@ public class QuickMapTitle : ColoredMapObject
 
     public override void UpdateColor()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                Color = Settings.CurrentMode().QuickMapTitleColorOverride(this) ?? OrigColor;
+                Color = ModeManager.CurrentMode().QuickMapTitleColorOverride(this) ?? OrigColor;
             }
             catch (Exception e)
             {

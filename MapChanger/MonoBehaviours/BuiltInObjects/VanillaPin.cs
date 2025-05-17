@@ -17,7 +17,7 @@ public abstract class VanillaPin : MapObject
 
     private bool VanillaPinsEnabled()
     {
-        return !Settings.MapModEnabled() || (Settings.CurrentMode().VanillaPins ?? true);
+        return !MapChangerMod.IsEnabled() || (ModeManager.CurrentMode().VanillaPins ?? true);
     }
 
     private bool HasEncounteredLocation()
@@ -25,6 +25,6 @@ public abstract class VanillaPin : MapObject
         return (
                 PlayerData.instance.GetBool(HasPinBoolName)
                 && PlayerData.instance.GetVariable<List<string>>(SceneListName).Contains(transform.parent.name)
-            ) || (Settings.CurrentMode().VanillaPins ?? false);
+            ) || (ModeManager.CurrentMode().VanillaPins ?? false);
     }
 }

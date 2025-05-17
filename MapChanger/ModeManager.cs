@@ -1,41 +1,28 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using InControl;
 using MapChanger.Map;
-using MapChanger.UI;
 using Modding;
-using Newtonsoft.Json;
 using UnityEngine;
 
 namespace MapChanger;
 
-public class Settings : HookModule
+public class ModeManager : HookModule
 {
-    [JsonProperty]
-    public bool Enabled { get; private set; } = false;
-
-    [JsonProperty]
-    public string CurrentMod { get; private set; } = nameof(MapChangerMod);
-
-    [JsonProperty]
-    public string CurrentModeName { get; private set; } = "Disabled";
-
-    private static List<MapMode> _modes = [];
-
+    private static readonly List<MapMode> _modes = [];
     private static int _modeIndex = 0;
 
-    public static event Action OnSettingChanged;
-
-    internal static Settings Instance { get; set; }
+    // When the map mod is enabled/disabled, or when the mode is changed
+    public static event Action OnModeChanged;
 
     public override void OnEnterGame()
     {
         // Check if the mode can be loaded from a previously saved Settings
         for (var i = 0; i < _modes.Count; i++)
         {
-            if (_modes[i].ModeKey == (Instance.CurrentMod, Instance.CurrentModeName))
+            if (_modes[i].ModeKey == (MapChangerMod.LS.CurrentMod, MapChangerMod.LS.CurrentModeName))
             {
                 _modeIndex = i;
                 MapChangerMod.Instance.LogDebug($"Mode set to {CurrentMode().ModeKey} from loaded Settings");
@@ -55,12 +42,29 @@ public class Settings : HookModule
             }
         }
 
+        MapChangerMod.LS.SetCurrentMode(CurrentMode());
         MapChangerMod.Instance.LogDebug($"Mode initialized to {CurrentMode().ModeKey}");
     }
 
     public override void OnQuitToMenu()
     {
-        _modes = [];
+        _modes.Clear();
+    }
+
+    public static MapMode CurrentMode()
+    {
+        if (!HasModes())
+        {
+            return new();
+        }
+
+        if (_modeIndex >= _modes.Count)
+        {
+            MapChangerMod.Instance.LogWarn("Mode index overflow");
+            _modeIndex = 0;
+        }
+
+        return _modes[_modeIndex];
     }
 
     public static bool HasModes()
@@ -82,64 +86,38 @@ public class Settings : HookModule
         }
     }
 
-    public static bool MapModEnabled()
-    {
-        return Instance.Enabled;
-    }
-
     public static void ToggleModEnabled()
     {
-        if (!_modes.Any())
+        if (!HasModes())
+        {
             return;
+        }
 
-        Instance.Enabled = !Instance.Enabled;
-
+        MapChangerMod.LS.ToggleEnabled();
+        MapChangerMod.Instance.LogDebug($"Map mod toggled to {(MapChangerMod.LS.Enabled ? "Enabled" : "Disabled")}");
         UIManager.instance.checkpointSprite.Show();
         UIManager.instance.checkpointSprite.Hide();
-
-        SettingChanged();
-    }
-
-    public static MapMode CurrentMode()
-    {
-        if (!_modes.Any())
-        {
-            return new();
-        }
-
-        if (_modeIndex >= _modes.Count)
-        {
-            MapChangerMod.Instance.LogWarn("Mode index overflow");
-            _modeIndex = 0;
-        }
-
-        return _modes[_modeIndex];
+        ModeChanged();
     }
 
     public static void ToggleMode()
     {
-        if (!_modes.Any() || !Instance.Enabled)
+        if (!HasModes() || !MapChangerMod.LS.Enabled)
         {
             return;
         }
 
         _modeIndex = (_modeIndex + 1) % _modes.Count;
+        MapChangerMod.LS.SetCurrentMode(CurrentMode());
         MapChangerMod.Instance.LogDebug($"Mode set to {CurrentMode().ModeKey}");
-        SettingChanged();
+        ModeChanged();
     }
 
-    private static void SettingChanged()
+    private static void ModeChanged()
     {
-        Instance.CurrentMod = CurrentMode().Mod;
-        Instance.CurrentModeName = CurrentMode().ModeName;
-
-        PauseMenu.Update();
-        MapUILayerUpdater.Update();
-        MapObjectUpdater.Update();
-
         try
         {
-            OnSettingChanged?.Invoke();
+            OnModeChanged?.Invoke();
         }
         catch (Exception e)
         {
@@ -148,7 +126,7 @@ public class Settings : HookModule
 
         if (States.WorldMapOpen)
         {
-            _ = GameManager.instance.StartCoroutine(CloseAndOpenWorldMap());
+            GameManager.instance.StartCoroutine(CloseAndOpenWorldMap());
         }
 
         if (States.QuickMapOpen)

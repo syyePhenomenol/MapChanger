@@ -24,6 +24,6 @@ public class ToggleModeInput : GlobalHotkeyInput
 
     public override void DoAction()
     {
-        Settings.ToggleMode();
+        ModeManager.ToggleMode();
     }
 }

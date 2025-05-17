@@ -186,23 +186,23 @@ internal class VariableOverrides : HookModule
     {
         if (
             name is GOT_WHITE_PALACE_MAP or GOT_GODHOME_MAP
-            && Settings.MapModEnabled()
-            && Settings.CurrentMode().FullMap
+            && MapChangerMod.IsEnabled()
+            && ModeManager.CurrentMode().FullMap
         )
         {
             return true;
         }
 
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             if (name.StartsWith(MAP_PREFIX))
             {
-                if (name.EndsWith(HAS_MAP) && Settings.CurrentMode().ForceHasMap)
+                if (name.EndsWith(HAS_MAP) && ModeManager.CurrentMode().ForceHasMap)
                 {
                     return true;
                 }
 
-                if (Settings.CurrentMode().FullMap)
+                if (ModeManager.CurrentMode().FullMap)
                 {
                     return true;
                 }
@@ -212,12 +212,12 @@ internal class VariableOverrides : HookModule
 
             if (name.StartsWith(PINS_PREFIX))
             {
-                return Settings.CurrentMode().VanillaPins ?? GetOriginalBool(name);
+                return ModeManager.CurrentMode().VanillaPins ?? GetOriginalBool(name);
             }
 
             if (name.StartsWith(MARKERS_PREFIX))
             {
-                return Settings.CurrentMode().MapMarkers ?? GetOriginalBool(name);
+                return ModeManager.CurrentMode().MapMarkers ?? GetOriginalBool(name);
             }
         }
         else if (name.StartsWith(MAP_PREFIX) || name.StartsWith(PINS_PREFIX) || name.StartsWith(MARKERS_PREFIX))
@@ -234,9 +234,9 @@ internal class VariableOverrides : HookModule
     {
         if (
             name is "scenesMapped"
-            && Settings.MapModEnabled()
-            && Settings.CurrentMode().ImmediateMapUpdate
-            && (PlayerData.instance.GetBool("hasQuill") || Settings.CurrentMode().ForceHasQuill)
+            && MapChangerMod.IsEnabled()
+            && ModeManager.CurrentMode().ImmediateMapUpdate
+            && (PlayerData.instance.GetBool("hasQuill") || ModeManager.CurrentMode().ForceHasQuill)
         )
         {
             return Tracker.ScenesVisited;
@@ -247,14 +247,14 @@ internal class VariableOverrides : HookModule
             return value;
         }
 
-        if (!Settings.MapModEnabled())
+        if (!MapChangerMod.IsEnabled())
         {
             return GetOriginalVariable<List<string>>(name);
         }
 
         if (name.StartsWith(PINS_PREFIX) && type == typeof(List<string>))
         {
-            if ((!Settings.CurrentMode().VanillaPins) ?? false)
+            if ((!ModeManager.CurrentMode().VanillaPins) ?? false)
             {
                 return new List<string>();
             }

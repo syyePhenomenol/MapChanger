@@ -67,11 +67,11 @@ public class RoomSprite : ColoredMapObject, ISelectable
 
     private bool IsActive()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                return Settings.CurrentMode().RoomActiveOverride(this) ?? DefaultActive();
+                return ModeManager.CurrentMode().RoomActiveOverride(this) ?? DefaultActive();
             }
             catch (Exception e)
             {
@@ -83,7 +83,7 @@ public class RoomSprite : ColoredMapObject, ISelectable
 
         bool DefaultActive()
         {
-            return (Settings.MapModEnabled() && Settings.CurrentMode().FullMap)
+            return (MapChangerMod.IsEnabled() && ModeManager.CurrentMode().FullMap)
                 || PlayerData.instance.GetVariable<List<string>>("scenesMapped").Contains(Rsd.SceneName)
                 || Finder.IsMinimalMapScene(transform.name);
         }
@@ -91,11 +91,11 @@ public class RoomSprite : ColoredMapObject, ISelectable
 
     public override void UpdateColor()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                Color = Settings.CurrentMode().RoomColorOverride(this) ?? OrigColor;
+                Color = ModeManager.CurrentMode().RoomColorOverride(this) ?? OrigColor;
             }
             catch (Exception e)
             {
@@ -110,11 +110,11 @@ public class RoomSprite : ColoredMapObject, ISelectable
 
     public bool CanSelect()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                return Settings.CurrentMode().RoomCanSelectOverride(this) ?? gameObject.activeInHierarchy;
+                return ModeManager.CurrentMode().RoomCanSelectOverride(this) ?? gameObject.activeInHierarchy;
             }
             catch (Exception e)
             {

@@ -1,46 +1,36 @@
 ﻿using MagicUI.Core;
 using MagicUI.Elements;
+using UnityEngine;
 
 namespace MapChanger.UI;
 
 /// <summary>
 /// A button that is persistently displayed in the main buttons grid on the pause menu.
 /// </summary>
-/// <param name="name"></param>
+/// <param name="root"></param>
 /// <param name="mod"></param>
-/// <param name="row"></param>
-/// <param name="column"></param>
-public abstract class MainButton(string name, string mod, int row, int column) : ButtonWrapper(name, mod)
+/// <param name="name"></param>
+public abstract class MainButton() : PauseMenuButton()
 {
-    public int Row { get; } = row;
-    public int Column { get; } = column;
-
-    protected override Button MakeButton(LayoutRoot root)
+    protected override Button Build(PauseMenuLayout layout)
     {
-        return new Button(root, Name)
+        return new Button(layout, Name)
         {
             HorizontalAlignment = HorizontalAlignment.Center,
             VerticalAlignment = VerticalAlignment.Center,
-            BorderColor = Colors.GetColor(ColorSetting.UI_Borders),
-            MinHeight = 28f,
-            MinWidth = 95f,
             Font = MagicUI.Core.UI.TrajanBold,
-            FontSize = 11,
-            Margin = 0f,
-        }
-            .WithProp(GridLayout.Row, Row)
-            .WithProp(GridLayout.Column, Column);
+            Margin = 8f,
+        };
     }
 
     public override void Update()
     {
-        if (Settings.MapModEnabled() && Settings.CurrentMode().Mod == Mod)
-        {
-            Button.Visibility = Visibility.Visible;
-        }
-        else
-        {
-            Button.Visibility = Visibility.Hidden;
-        }
+        base.Update();
+        Button.BorderColor = GetBorderColor();
+    }
+
+    protected internal virtual Color GetBorderColor()
+    {
+        return Colors.GetColor(ColorSetting.UI_Neutral);
     }
 }

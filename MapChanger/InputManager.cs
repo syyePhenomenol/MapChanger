@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using MapChanger.Input;
@@ -32,7 +33,7 @@ public class InputManager : HookModule
 
     public static void AddRange(IEnumerable<BindableInput> inputs)
     {
-        foreach (var input in inputs)
+        foreach (var input in inputs ?? [])
         {
             Add(input);
         }
@@ -40,17 +41,24 @@ public class InputManager : HookModule
 
     public static void Add(BindableInput input)
     {
-        _bindableInputs.Add(input);
-
-        if (!Dependencies.HasDebugMod)
+        try
         {
-            return;
+            _bindableInputs.Add(input);
+
+            if (!Dependencies.HasDebugMod)
+            {
+                return;
+            }
+
+            if (!_bindingNames.Contains(input.Name))
+            {
+                DebugModInterop.AddBinding(input.Name, input.Category);
+                _ = _bindingNames.Add(input.Name);
+            }
         }
-
-        if (!_bindingNames.Contains(input.Name))
+        catch (Exception e)
         {
-            DebugModInterop.AddBinding(input.Name, input.Category);
-            _ = _bindingNames.Add(input.Name);
+            MapChangerMod.Instance.LogError(e);
         }
     }
 

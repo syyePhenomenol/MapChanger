@@ -46,7 +46,7 @@ public class MapObject : MonoBehaviour
     {
         gameObject.layer = UI_LAYER;
 
-        ActiveModifiers.Add(Settings.MapModEnabled);
+        ActiveModifiers.Add(MapChangerMod.IsEnabled);
     }
 
     /// <summary>

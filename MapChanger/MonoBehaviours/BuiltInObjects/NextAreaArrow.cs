@@ -41,11 +41,11 @@ public class NextAreaArrow : ColoredMapObject
 
     private bool IsActive()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                return Settings.CurrentMode().NextAreaArrowActiveOverride(this) ?? DefaultActive();
+                return ModeManager.CurrentMode().NextAreaArrowActiveOverride(this) ?? DefaultActive();
             }
             catch (Exception e)
             {
@@ -65,11 +65,11 @@ public class NextAreaArrow : ColoredMapObject
 
     public override void UpdateColor()
     {
-        if (Settings.MapModEnabled())
+        if (MapChangerMod.IsEnabled())
         {
             try
             {
-                Color = Settings.CurrentMode().NextAreaColorOverride(MiscObjectDef) ?? OrigColor;
+                Color = ModeManager.CurrentMode().NextAreaColorOverride(MiscObjectDef) ?? OrigColor;
             }
             catch (Exception e)
             {
