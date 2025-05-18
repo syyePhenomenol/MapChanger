@@ -7,7 +7,7 @@ internal class ModDisabledTitle : PauseMenuTitle
     protected internal override TextFormat GetDefaultTextFormat()
     {
         return new(
-            $"Press {ModEnabledInput.Instance.GetBindingsText()} to enable map mod",
+            $"{"Press".L()} {ModEnabledInput.Instance.GetBindingsText()} {"to enable map mod".L()}",
             Colors.GetColor(ColorSetting.UI_Neutral)
         );
     }

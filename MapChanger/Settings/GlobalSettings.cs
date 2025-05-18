@@ -9,6 +9,9 @@ public class GlobalSettings
     [JsonProperty]
     public float UIScale { get; private set; } = 1.2f;
 
+    [JsonProperty]
+    public bool ShowPauseMenu { get; private set; } = true;
+
     public void ToggleUIScale()
     {
         for (var i = 0; i < _scaleFactors.Length; i++)
@@ -21,5 +24,10 @@ public class GlobalSettings
         }
 
         UIScale = 1f;
+    }
+
+    public void ToggleShowPauseMenu()
+    {
+        ShowPauseMenu = !ShowPauseMenu;
     }
 }

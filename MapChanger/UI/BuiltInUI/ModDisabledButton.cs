@@ -13,7 +13,7 @@ internal class ModDisabledButton : MainButton
 
     protected internal override TextFormat GetTextFormat()
     {
-        return new("Mod\nDisabled", Colors.GetColor(ColorSetting.UI_Disabled));
+        return new("Mod\nDisabled".L(), Colors.GetColor(ColorSetting.UI_Disabled));
     }
 
     protected internal override Color GetBorderColor()

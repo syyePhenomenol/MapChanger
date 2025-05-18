@@ -24,7 +24,7 @@ public class PauseMenuTitle : PauseMenuElement<TextObject>
 
     protected internal virtual TextFormat GetDefaultTextFormat()
     {
-        return new(Layout.Mod, Colors.GetColor(ColorSetting.UI_Neutral));
+        return new(Layout.Mod.L(), Colors.GetColor(ColorSetting.UI_Neutral));
     }
 
     internal void SetOverrideButton(PauseMenuButton overrideButton)

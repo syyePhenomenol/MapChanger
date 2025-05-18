@@ -12,7 +12,7 @@ public class MapChangerMod : Mod, IGlobalSettings<GlobalSettings>, ILocalSetting
 
     public override string GetVersion()
     {
-        return "1.3.4";
+        return "1.3.5";
     }
 
     public void OnLoadGlobal(GlobalSettings s)

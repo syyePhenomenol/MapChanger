@@ -19,8 +19,6 @@ public abstract class PauseMenuLayout : UILayout
     public PauseMenuLayout(string mod, string name)
         : base(mod, name)
     {
-        VisibilityCondition = () => GameManager.instance.IsGamePaused() && ActiveCondition();
-
         _fullVerticalStack = new(this, $"{mod} Full Vertical Stack")
         {
             Padding = new Padding(10f, 750f, 0f, 0f),
@@ -176,6 +174,11 @@ public abstract class PauseMenuLayout : UILayout
         }
 
         return false;
+    }
+
+    protected override bool ActiveCondition()
+    {
+        return GameManager.instance.IsGamePaused() && MapChangerMod.GS.ShowPauseMenu;
     }
 
     protected abstract PauseMenuTitle GetTitle();
