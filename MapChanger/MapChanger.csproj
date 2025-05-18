@@ -194,6 +194,9 @@
 	  <Reference Include="MagicUI">
 	    <HintPath>$(HollowKnightRefs)\Mods\MagicUI\MagicUI.dll</HintPath>
 	  </Reference>
+	  <Reference Include="Satchel">
+	    <HintPath>$(HollowKnightRefs)\Mods\Satchel\Satchel.dll</HintPath>
+	  </Reference>
 	  <Reference Include="MMHOOK_Assembly-CSharp">
 	    <HintPath>$(HollowKnightRefs)\MMHOOK_Assembly-CSharp.dll</HintPath>
 	  </Reference>

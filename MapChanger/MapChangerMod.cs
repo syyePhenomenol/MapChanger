@@ -4,11 +4,13 @@ using Modding;
 
 namespace MapChanger;
 
-public class MapChangerMod : Mod, IGlobalSettings<GlobalSettings>, ILocalSettings<LocalSettings>
+public class MapChangerMod : Mod, IGlobalSettings<GlobalSettings>, ILocalSettings<LocalSettings>, ICustomMenuMod
 {
     public static MapChangerMod Instance { get; private set; }
     public static GlobalSettings GS { get; private set; } = new();
     public static LocalSettings LS { get; private set; } = new();
+
+    public bool ToggleButtonInsideMenu => false;
 
     public override string GetVersion()
     {
@@ -69,5 +71,15 @@ public class MapChangerMod : Mod, IGlobalSettings<GlobalSettings>, ILocalSetting
     public static void ResetGlobalSettings()
     {
         GS = new();
+    }
+
+    public override string GetMenuButtonText()
+    {
+        return "Map Mod".L();
+    }
+
+    public MenuScreen GetMenuScreen(MenuScreen modListMenu, ModToggleDelegates? toggleDelegates)
+    {
+        return ModMenu.GetMenuScreen(modListMenu);
     }
 }

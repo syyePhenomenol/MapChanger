@@ -10,7 +10,7 @@ internal class ModDisabledMenu : PauseMenuLayout
 
     protected override bool ActiveCondition()
     {
-        return !MapChangerMod.IsEnabled();
+        return base.ActiveCondition() && !MapChangerMod.IsEnabled();
     }
 
     protected override PauseMenuTitle GetTitle()
