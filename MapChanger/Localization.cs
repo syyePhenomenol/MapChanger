@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using MapChanger;
+
+namespace MapChanger;
 
 public static class Localization
 {
