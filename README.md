@@ -6,10 +6,11 @@ MapChanger is a Hollow Knight API for modifying the existing map behaviour.
 
 # Dependencies:
 - [MagicUI](https://github.com/BadMagic100/HollowKnight.MagicUI)
-- [Vasi](https://github.com/fifty-six/HollowKnight.Vasi)
 - [Satchel](https://github.com/PrashantMohta/Satchel)
+- [Vasi](https://github.com/fifty-six/HollowKnight.Vasi)
 
 # Optional and compatible:
+- [AdditionalMaps](https://github.com/SFGrenade/AdditionalMaps)
 - [DebugMod](https://github.com/TheMulhima/HollowKnight.DebugMod)
 
 
