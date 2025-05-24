@@ -47,14 +47,7 @@ public class MapObjectUpdater : HookModule
         _mapObjects.Add(mapObject);
     }
 
-    private static void AddMapPanner(GameObject goMap)
-    {
-        var panner = Utils.MakeMonoBehaviour<MapPanner>(goMap, "Map Panner");
-        panner.Initialize(goMap);
-        Add(panner);
-    }
-
-    internal static void Update()
+    public static void Update()
     {
         foreach (var mapObject in _mapObjects)
         {
@@ -67,6 +60,13 @@ public class MapObjectUpdater : HookModule
                 MapChangerMod.Instance.LogError(e);
             }
         }
+    }
+
+    private static void AddMapPanner(GameObject goMap)
+    {
+        var panner = Utils.MakeMonoBehaviour<MapPanner>(goMap, "Map Panner");
+        panner.Initialize(goMap);
+        Add(panner);
     }
 
     private void BeforeOpenWorldMap(GameMap obj)

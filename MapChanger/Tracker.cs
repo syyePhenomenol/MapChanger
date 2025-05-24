@@ -14,7 +14,7 @@ public class Tracker : HookModule
     private static HashSet<(string, string)> _obtainedSceneData;
     private static HashSet<string> _scenesVisited;
 
-    internal static List<string> ScenesVisited => [.. _scenesVisited];
+    internal static List<string> ScenesVisitedList => [.. _scenesVisited];
 
     public override void OnEnterGame()
     {
@@ -38,6 +38,11 @@ public class Tracker : HookModule
         On.GeoRock.SetMyID -= RenameDupeGeoRockIds;
 
         UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= AddSceneVisited;
+    }
+
+    public static void AddSceneVisited(string scene)
+    {
+        _scenesVisited.Add(scene);
     }
 
     public static bool HasClearedLocation(string name)
@@ -215,7 +220,7 @@ public class Tracker : HookModule
 
     private static void AddSceneVisited(Scene from, Scene to)
     {
-        _ = _scenesVisited.Add(to.name);
+        AddSceneVisited(to.name);
     }
 
     private class TrackGeoRock : FsmStateAction

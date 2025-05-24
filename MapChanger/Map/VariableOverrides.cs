@@ -239,7 +239,7 @@ internal class VariableOverrides : HookModule
             && (PlayerData.instance.GetBool("hasQuill") || ModeManager.CurrentMode().ForceHasQuill)
         )
         {
-            return Tracker.ScenesVisited;
+            return Tracker.ScenesVisitedList;
         }
 
         if (!name.StartsWith(MAP_PREFIX) && !name.StartsWith(PINS_PREFIX))
