@@ -7,4 +7,6 @@ public abstract class HookModule
 {
     public abstract void OnEnterGame();
     public abstract void OnQuitToMenu();
+
+    public virtual void Rebuild() { }
 }
