@@ -27,6 +27,7 @@ public class MapMode
 
     /// <summary>
     /// Determines if the map immediately gets filled in when visiting a new scene with Quill.
+    /// If false, the player must sit at a bench and have Quill to update the map (Vanilla behaviour).
     /// </summary>
     public virtual bool ImmediateMapUpdate => false;
 

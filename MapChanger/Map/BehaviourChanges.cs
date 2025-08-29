@@ -291,13 +291,13 @@ internal class BehaviourChanges : HookModule
 
     /// <summary>
     /// QoL improvement which prevents the "Map Updated" prompt from occurring in most cases.
-    /// If the game is saved while the mod is enabled, scenesMapped doesn't get updated. This is intentional.
+    /// If the game is saved while the mod is enabled (with ImmediateMapUpdate), scenesMapped doesn't get updated. This is intentional.
     /// </summary>
     /// <param name="orig"></param>
     /// <param name="self"></param>
     private static bool DisableUpdatedMapPrompt(On.GameManager.orig_UpdateGameMap orig, GameManager self)
     {
-        if (MapChangerMod.IsEnabled())
+        if (MapChangerMod.IsEnabled() && ModeManager.CurrentMode().ImmediateMapUpdate)
         {
             return false;
         }
