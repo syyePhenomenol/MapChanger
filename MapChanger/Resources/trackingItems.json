@@ -1131,8 +1131,22 @@
     "Name": "Rancid_Egg-Waterways_West_Pickup"
   },
   "Rancid_Egg-Tuk_Defender's_Crest": {
-    "$type": "MapChanger.Tracking.PdBoolTrackingItem, MapChanger",
-    "PdBoolName": "tukMet",
+    "$type": "MapChanger.Tracking.UnionTrackingItem, MapChanger",
+    "TrackingItems": [
+      // Since the egg is technically replenishable, meeting Tuk is enough
+      {
+        "$type": "MapChanger.Tracking.PdBoolTrackingItem, MapChanger",
+        "PdBoolName": "tukMet",
+        "Name": "Rancid_Egg-Tuk_Defender's_Crest"
+      },
+      // in Steel Soul, Tuk is dead and the egg is a shiny item that doesn't replenish
+      {
+        "$type": "MapChanger.Tracking.SdTrackingItem, MapChanger",
+        "Id": "Shiny Item",
+        "SceneName": "Waterways_03",
+        "Name": "Rancid_Egg-Tuk_Defender's_Crest"
+      }
+    ],
     "Name": "Rancid_Egg-Tuk_Defender's_Crest"
   },
   "Wanderer's_Journal-Cliffs": {
