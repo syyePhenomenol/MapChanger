@@ -37,6 +37,10 @@
 		<WarningLevel>4</WarningLevel>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(HollowKnightRefs)' != '' and Exists('$(HollowKnightRefs)/TeamCherry.Localization.dll')">
+		<DefineConstants>$(DefineConstants);HOLLOW_KNIGHT_UNITY6</DefineConstants>
+	</PropertyGroup>
+
 	<Target Name="CopyMod" AfterTargets="PostBuildEvent">
 		<RemoveDir Directories="$(ExportDir)/$(TargetName)/" />
 		<MakeDir Directories="$(ExportDir)/$(TargetName)/" />
@@ -230,7 +234,7 @@
 	  <Reference Include="UnityEngine.InputLegacyModule">
 	    <HintPath>$(HollowKnightRefs)\UnityEngine.InputLegacyModule.dll</HintPath>
 	  </Reference>
-	  <Reference Include="UnityEngine.TextCoreModule">
+	  <Reference Include="UnityEngine.TextCoreModule" Condition="Exists('$(HollowKnightRefs)/UnityEngine.TextCoreModule.dll')">
 	    <HintPath>$(HollowKnightRefs)\UnityEngine.TextCoreModule.dll</HintPath>
 	  </Reference>
 	  <Reference Include="UnityEngine.TextRenderingModule">

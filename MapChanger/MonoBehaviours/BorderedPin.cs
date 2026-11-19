@@ -49,7 +49,8 @@ public class BorderedPin : Pin
         goBorder.transform.SetParent(transform, false);
 
         _borderSr = goBorder.AddComponent<SpriteRenderer>();
-        _borderSr.sortingLayerName = HUD;
+        _borderSr.sortingLayerName = PinSortingLayer;
+        _borderSr.sortingOrder = PinSortingOrder;
         UpdateBorder();
     }
 

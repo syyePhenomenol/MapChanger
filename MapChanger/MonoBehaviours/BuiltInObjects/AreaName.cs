@@ -1,7 +1,11 @@
 ﻿using System;
 using MapChanger.Defs;
-using TMPro;
 using UnityEngine;
+#if HOLLOW_KNIGHT_UNITY6
+using TextMeshPro = TMProOld.TextMeshPro;
+#else
+using TextMeshPro = TMPro.TextMeshPro;
+#endif
 
 namespace MapChanger.MonoBehaviours;
 

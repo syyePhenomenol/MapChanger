@@ -5,6 +5,14 @@ namespace MapChanger.MonoBehaviours;
 
 public class Pin : MapObject
 {
+#if HOLLOW_KNIGHT_UNITY6
+    protected const string PinSortingLayer = "Inventory";
+    protected const int PinSortingOrder = 1;
+#else
+    protected const string PinSortingLayer = HUD;
+    protected const int PinSortingOrder = 0;
+#endif
+
     private bool _snapPosition = true;
 
     private IMapPosition _mapPosition;
@@ -69,7 +77,8 @@ public class Pin : MapObject
         goPinSprite.transform.SetParent(transform, false);
 
         Sr = goPinSprite.AddComponent<SpriteRenderer>();
-        Sr.sortingLayerName = HUD;
+        Sr.sortingLayerName = PinSortingLayer;
+        Sr.sortingOrder = PinSortingOrder;
     }
 
     private void UpdatePosition()

@@ -22,7 +22,8 @@ public class BorderedBackgroundPin : BorderedPin
         goBackground.transform.SetParent(transform, false);
 
         _backgroundSr = goBackground.AddComponent<SpriteRenderer>();
-        _backgroundSr.sortingLayerName = HUD;
+        _backgroundSr.sortingLayerName = PinSortingLayer;
+        _backgroundSr.sortingOrder = PinSortingOrder;
         _backgroundSr.transform.localPosition = new Vector3(0f, 0f, 0.00001f);
     }
 }
