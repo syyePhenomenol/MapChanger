@@ -38,7 +38,7 @@ public static class Utils
 
     public static string ToWhitespaced(this string text)
     {
-        return Regex.Replace(text, "(?<char>[A-Z])", match => " " + match.Groups["char"].Value);
+        return Regex.Replace(text, "(?<!^)(?<char>[A-Z])", match => " " + match.Groups["char"].Value);
     }
 
     public static bool HasMapSetting(MapZone mapZone)
